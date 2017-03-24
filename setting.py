@@ -52,7 +52,9 @@ ADMINS = ["kidozh@kidozh.com", ]
 # set debug value according to system type
 if os.environ.get('OS') == 'Windows_NT':
     DEBUG = True
-    LOGFILE = False
+
+    LOGFILE = 'log/site.log'
+    #LOGFILE = False
 
 else:
     DEBUG = False
