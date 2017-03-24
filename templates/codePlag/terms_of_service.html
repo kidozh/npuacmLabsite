@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}服务条款 |{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row doc-title">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>服务条款</h1>
+        </div>
+    </div>
+    <div class="row doc">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>欢迎使用代码查重服务</h1>
+            <p>您使用我们的服务即表示您已同意本条款。请仔细阅读。</p>
+            <hr/>
+            <h1>使用服务</h1>
+            <p>您必须遵守服务中提供的所有政策。</p>
+            <p>请勿滥用我们的服务。举例而言，请勿干扰我们的服务或尝试使用除我们提供的界面和指示以外的方法访问这些服务。
+                您仅能在法律（包括适用的出口和再出口管制法律和法规）允许的范围内使用我们的服务。如果您不遵守我们的条款或政策，
+                或者我们在调查可疑的不当行为，我们可以暂停或停止向您提供服务。</p>
+            <p>在您使用服务的过程中，我们可能会向您发送服务公告、管理消息和其他信息。您可以选择不接收上述某些信息。</p>
+            <h1>修改和终止服务</h1>
+            <p>我们始终在不断更改和改进我们的服务。我们可能会增加或删除功能，也可能暂停或彻底停止某项服务。</p>
+            <p>您可以随时停止使用我们的服务，尽管我们对此表示非常遗憾。我们也可能随时停止向您提供服务，
+                或随时对我们的服务增加或设置新的限制。</p>
+            <hr/>
+            <h1>对于查重服务单体的解释</h1>
+            <p>您可以提供两份代码来进行查询，我们会基于k-grams对于您的代码进行分割并且查询其相似度</p>
+
+            <blockquote >
+                <h3>特殊注意点</h3>
+                <p>对于C/C++代码，请提供两份能够正确编译、语法正确的代码。
+                    我们会基于其生成AST（抽象语法树）。然后根据增益之后的代码进行k-grams的分割并且查询其相似度</p>
+            </blockquote>
+
+
+            <h1>对于查重服务文件版本的解释</h1>
+            <p>正在内测中</p>
+            <h1><i class="fa fa-code-fork"></i> Fork us on github</h1>
+            <p><a href="https://github.com/kidozh/codePlagiarism">https://github.com/kidozh/codePlagiarism</a> </p>
+
+        </div>
+    </div>
+</div>
+
+{% end %}

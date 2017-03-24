@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}查重结果{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row plag-result-title">
+        <div class="col-md-9 col-md-offset-3">
+            <h1>文件相似度</h1>
+        </div>
+    </div>
+    <div class="row file-info">
+        <div class="col-md-8 col-md-offset-2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>参数/指标</th>
+                        <th>值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>文件名</td>
+                        <td>{{ filename }}</td>
+                    </tr>
+                    <tr>
+                        <td>邮箱地址</td>
+                        <td>{{ email }}</td>
+                    </tr>
+                    <tr>
+                        <td>统一标识符（UUID）</td>
+                        <td>{{ uuidCode }}</td>
+                    </tr>
+                    <tr>
+                        <td>检索的文件类型</td>
+                        <td>{{ language }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="text-center">比赛代码复核</h3>
+        <p class="text-center">点击下面的子文件夹标识符获得该文件夹下的所有代码相似度信息。</p>
+        <div class="col-md-10 col-md-offset-1">
+            <div id="accordion" class="plag-result-accordion" role="tablist" aria-multiselectable="true">
+                {% for prob,simarray in simInfo.simiMatrix.items() %}
+                {% set problemLen = len(simInfo.probFile[prob]) %}
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading{{ prob }}">
+                        <h4 class="panel-title text-center">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#prob{{ prob }}" aria-expanded="true" aria-controls="prob{{ prob }}">
+                                {{ prob }}
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="prob{{ prob }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ prob }}">
+                        {# simInfo.probFile #}
+
+                        <blockquote>
+                            <p>共计:{{ problemLen }}个数据</p>
+                        </blockquote>
+
+                        {% for indexA,valueA in enumerate(simInfo.simiMatrix[prob]) %}
+                            {% set show = False %}
+                            <div class="row prob-item">
+                                <!-- prepare first block -->
+
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        {% for indexB,valueB in enumerate(simInfo.simiMatrix[prob][indexA]) %}
+                                        {# <p>{{ simInfo.probFile[indexA] }} : {{ simInfo.probFile[indexB] }} -> {{ simarray[indexA][indexB] }}</p> #}
+                                            {% if simarray[indexA][indexB] > 0.5 and indexA != indexB %}
+                                            {% set show = True %}
+                                            <div class="col-md-4 compare-prob">
+                                                <div class="prob-wrap" data-toggle="tooltip" data-placement="top" title="比较项">
+                                                    <span class="file-name"> {{ simInfo.probFile[prob][indexB] }}</span>
+                                                    <span class="simi">{{ simInfo.simiMatrix[prob][indexA][indexB]*100 }}%</span>
+                                                </div>
+                                            </div>
+                                            {% end %}
+
+                                        {% end %}
+                                    </div>
+
+                                </div>
+                                {% if show %}
+                                <div class="col-md-3">
+                                    <div class="col-md-12 orign-prob" data-toggle="tooltip" data-placement="top" title="比较项">
+                                        <p class="text-center prob-title">{{ simInfo.probFile[prob][indexA] }}</p>
+                                    </div>
+                                </div>
+                                {% end %}
+                            </div>
+
+                        {% end %}
+                    </div>
+                </div>
+                {% end %}
+            </div>
+
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block footerJS %}
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+{% end %}

@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}注册{% end %}
+
+{% block head %}
+
+
+{% end %}
+
+{% block content %}
+<div class="container-fluid" style="min-height: 100%" >
+    <div class="row register" id="register">
+        <div class="col-md-4 register-board" >
+            <h1 class="text-right">代码查重 - 注册</h1>
+            <p class="text-right">{% module get_option('SITE_NAME') %}</p>
+        </div>
+        <div class="col-md-8" id="register_form">
+            <form method="post" action="">
+                {% raw xsrf_form_html() %}
+                <div class="register-form-header">
+                    <ol>
+                        <li v-for="notice in notices">
+                            {% raw '{{' %} notice.text {% raw '}}' %}
+                        </li>
+                    </ol>
+                    <p>{% raw '{{' %} warning {% raw '}}' %}</p>
+                </div>
+                <div class="register-form-body">
+                    <div class="form-group">
+                        <input v-model="email" class="form-control" name="email" placeholder="邮箱">
+                    </div>
+                </div>
+                <div class="register-form-foot row">
+                    <div class="col-md-2 col-md-offset-5">
+                        <button class="btn btn-large btn-register btn-block" type="submit">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    var reMatchEmail = /(.*?)@(.*?)/;
+    var loginAuth = new Vue({
+        el:'#register_form',
+        data:{
+            isEdu:false,
+            email:'',
+            notices:[
+                {text:'您需要一个大学/研究院所的邮箱'},
+                {text:'请您向lab@npuacm.info发送邮件人工审核'}
+            ],
+            warning:''
+        },
+        watch: {
+            // 如果 email 发生改变，这个函数就会运行
+            email: function (newEmail) {
+                try{
+                    if(reMatchEmail.test(newEmail)){
+                        this.warning = '';
+
+                        matchArray = newEmail.match(/^(.*?)@(.+)$/);
+                        // get domain from email address
+                        if (matchArray.length >= 3){
+                            domainAddr = matchArray[2];
+                        }
+                        else{
+                            domainAddr = '';
+                        }
+                        if (/^.+\.edu\.cn$/.test(domainAddr)){
+                            this.warning = '欢迎您使用我们的查重系统';
+                        }
+                        else if(/npuacm\.info$/.test(domainAddr)){
+                            this.warning = '内部系统的同学啦~';
+                        }
+                        else if(/rwth-aachen\.de$/.test(domainAddr)){
+                            this.warning = '欢迎亚琛工业大学的您使用我们的查重系统';
+                        }
+                        else {
+                            this.warning = '很抱歉，我们目前只接受*.edu.cn的邮箱，您可以在提交注册后联系lab@npuacm.info来完成人工注册';
+                        }
+
+
+                    }
+                    else{
+                        this.warning = '您输入的邮件格式有问题，Orz';
+                    }
+
+                }
+                catch (e){
+                    console.log(e);
+                }
+
+            }
+        },
+    });
+
+</script>
+
+{% end %}

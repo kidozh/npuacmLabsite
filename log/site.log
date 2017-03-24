@@ -1,0 +1,291 @@
+2017-01-03 00:00:39,013 INFO: 200 GET /admin/manage/ (::1) 1062.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:01:13,769 INFO: 200 GET /admin/manage/ (::1) 1057.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:05:26,286 INFO: 200 GET /admin/manage/ (::1) 1073.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:07:04,545 INFO: 200 GET /admin/manage/ (::1) 1066.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:07:49,937 INFO: 200 GET /admin/manage/ (::1) 1059.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:09:58,076 INFO: 200 GET /admin/manage/ (::1) 1054.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:18:06,378 INFO: 200 GET /admin/manage/ (::1) 1074.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:22:03,262 INFO: 200 GET /admin/manage/ (::1) 1056.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:25:51,494 INFO: 200 GET /admin/manage/ (::1) 1070.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:25:51,936 INFO: 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 399.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:27:51,430 INFO: 200 GET /admin/manage/ (::1) 1076.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:31:23,365 INFO: F:\python\tornado\Tjango\setting.py modified; restarting server [in D:\Canopy\User\lib\site-packages\tornado\autoreload.py:204]
+2017-01-03 00:31:25,453 INFO: F:\python\tornado\Tjango\setting.py modified; restarting server [in D:\Canopy\User\lib\site-packages\tornado\autoreload.py:204]
+2017-01-03 00:33:59,687 INFO: 200 GET /admin/login/ (::1) 26.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:34:00,075 INFO: 304 GET /static/admin/css/style.css (::1) 326.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:34:02,303 INFO: 200 GET /admin/manage/ (::1) 1031.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:35:46,065 INFO: 200 GET /admin/manage/ (::1) 1078.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:36:08,354 INFO: 200 GET /admin/manage/ (::1) 1050.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:15,140 INFO: 200 GET /admin/manage/ (::1) 1032.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:15,506 INFO: 200 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (::1) 348.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:15,509 INFO: 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:15,512 INFO: 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:15,515 INFO: 200 GET /static/admin/css/manageStyle.css?v=6b5f66537d4f2b6c6bb2817231f8a35b (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:22,107 INFO: 200 GET /admin/manage/ (::1) 1035.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:23,023 INFO: 304 GET /static/admin/css/manageStyle.css?v=6b5f66537d4f2b6c6bb2817231f8a35b (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:23,026 INFO: 304 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:23,029 INFO: 304 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:23,029 INFO: 304 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:25,786 WARNING: 404 GET /favicon.ico (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:38:32,088 WARNING: 404 GET /favicon.ico (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:39:22,621 INFO: 200 GET /admin/manage/ (::1) 1083.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:39:23,002 INFO: 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 336.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:39:23,003 INFO: 304 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:39:23,005 INFO: 304 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:39:23,006 INFO: 304 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:40:40,289 INFO: 200 GET /admin/manage/ (::1) 1086.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:40:40,681 INFO: 304 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 334.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:40:40,684 INFO: 304 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:40:40,686 INFO: 304 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:40:40,688 INFO: 304 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:41:11,849 INFO: 200 GET /admin/manage/ (::1) 1033.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:41:11,878 INFO: 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:41:43,940 INFO: 200 GET /admin/manage/ (::1) 1071.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:49:15,871 INFO: 200 GET /admin/manage/ (::1) 1078.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:53:30,946 INFO: 200 GET /admin/manage/ (::1) 1088.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:59:32,115 INFO: 200 GET /admin/manage/ (::1) 1088.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:59:32,576 INFO: 200 GET /static/admin/js/manage/config.js?v=22d17c7345cd90197ebfe87bd31cfd99 (::1) 350.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 00:59:50,657 INFO: 200 GET /admin/manage/ (::1) 1054.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:03:12,181 INFO: 200 GET /admin/manage/ (::1) 1083.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:09:36,992 INFO: 200 GET /admin/manage/ (::1) 1080.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:09:37,447 INFO: 200 GET /static/admin/js/manage/config.js?v=9c5dc992b4a2149f1245466da58ea567 (::1) 380.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:15:30,696 INFO: 200 GET /admin/manage/ (::1) 1104.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:18:17,582 INFO: 200 GET /admin/manage/ (::1) 1078.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:19:53,684 INFO: 200 GET /admin/manage/ (::1) 1086.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:21:54,407 INFO: 200 GET /admin/manage/ (::1) 1065.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:22:45,986 INFO: 200 GET /admin/manage/ (::1) 1037.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:26:11,454 INFO: 200 GET /admin/manage/ (::1) 1069.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:34:51,698 INFO: 200 GET /admin/manage/ (::1) 1095.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:35:00,808 INFO: 200 GET /admin/manage/ (::1) 1032.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:36:47,403 INFO: 200 GET /admin/manage/ (::1) 1108.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:57:17,618 INFO: 200 GET /admin/manage/ (::1) 1064.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 01:57:55,253 INFO: 200 GET /admin/manage/ (::1) 1068.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:03:32,464 INFO: 200 GET / (::1) 6.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:03:32,882 INFO: 200 GET /static/css/portal/style.css?v=91057ed38c17dfea4092fbd5791e0c47 (::1) 359.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:03:36,733 INFO: 200 GET /admin/login/ (::1) 28.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:03:36,812 INFO: 304 GET /static/admin/css/style.css (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:04:17,543 INFO: 200 GET /admin/login/ (::1) 29.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:05:19,099 INFO: 200 GET /admin/login/ (::1) 38.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:05:41,601 INFO: 200 GET /admin/manage/ (::1) 1037.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:06:25,437 INFO: 200 GET /admin/manage/ (::1) 1034.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:06:35,424 INFO: 200 GET /admin/login/ (::1) 30.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:20:06,795 INFO: F:\python\tornado\Tjango\setting.py modified; restarting server [in D:\Canopy\User\lib\site-packages\tornado\autoreload.py:204]
+2017-01-03 02:21:17,739 INFO: 200 GET / (192.168.1.5) 13.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:18,122 INFO: 200 GET /static/css/portal/style.css?v=91057ed38c17dfea4092fbd5791e0c47 (192.168.1.5) 347.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:24,155 WARNING: 404 GET /favicon.ico (192.168.1.5) 6.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:32,482 INFO: 200 GET /admin/login/ (192.168.1.5) 60.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:34,736 INFO: 200 GET /static/admin/css/style.css?v=45b62edcaecbde22b0a18ad44bd3f61e (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:34,762 INFO: 200 GET /static/admin/css/style.css (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:35,436 WARNING: 404 GET /favicon.ico (192.168.1.5) 4.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:44,999 INFO: 302 POST /admin/login/ (192.168.1.5) 788.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:45,000 ERROR: Uncaught exception POST /admin/login/ (192.168.1.5)
+HTTPServerRequest(protocol='http', host='192.168.1.8:8000', method='POST', uri='/admin/login/', version='HTTP/1.1', remote_ip='192.168.1.5', headers={'Origin': 'http://192.168.1.8:8000', 'Content-Length': '102', 'Accept-Language': 'zh-CN,en-US;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.1.8:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://192.168.1.8:8000/admin/login/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|46044603|bc4d0ff08b8160206a3e1102b40e4c46|1483406492', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; MI 5 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.146 Mobile Safari/537.36 XiaoMi/MiuiBrowser/8.4.6', 'Content-Type': 'application/x-www-form-urlencoded'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 98, in post
+    self.render('contrib/admin/login.html', **args)
+TypeError: render() argument after ** must be a mapping, not tuple
+2017-01-03 02:21:46,142 INFO: 200 GET /admin/manage/ (192.168.1.5) 1063.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:46,272 INFO: 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:46,276 INFO: 200 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:46,706 INFO: 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (192.168.1.5) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:21:46,867 INFO: 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (192.168.1.5) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:28,131 INFO: 200 GET / (192.168.1.6) 4.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:28,157 INFO: 200 GET /static/css/portal/style.css?v=91057ed38c17dfea4092fbd5791e0c47 (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:32,759 INFO: 200 GET /query/ (192.168.1.6) 7.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:32,805 INFO: 200 GET /static/css/queryProblem/style.css?v=6048e518c91d28fc6ee9963bf5d39057 (192.168.1.6) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:42,316 INFO: 200 GET /query/ (192.168.1.6) 13.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:43,305 INFO: 304 GET / (192.168.1.6) 9.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:55,690 INFO: 200 GET /admin/login/ (192.168.1.6) 21.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:55,719 INFO: 200 GET /static/admin/css/style.css?v=45b62edcaecbde22b0a18ad44bd3f61e (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:28:55,726 INFO: 200 GET /static/admin/css/style.css (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:12,532 INFO: 302 POST /admin/login/ (192.168.1.6) 351.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:12,532 ERROR: Uncaught exception POST /admin/login/ (192.168.1.6)
+HTTPServerRequest(protocol='http', host='192.168.1.8:8000', method='POST', uri='/admin/login/', version='HTTP/1.1', remote_ip='192.168.1.6', headers={'Origin': 'http://192.168.1.8:8000', 'Content-Length': '102', 'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.1.8:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://192.168.1.8:8000/admin/login/', 'Cookie': '_accept_cookie=1; _xsrf=2|e692bcd5|28abed7679a4112f8ee5f51bfa162e38|1483406912', 'Upgrade-Insecure-Requests': '1', 'Content-Type': 'application/x-www-form-urlencoded'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 98, in post
+    self.render('contrib/admin/login.html', **args)
+TypeError: render() argument after ** must be a mapping, not tuple
+2017-01-03 02:29:13,651 INFO: 200 GET /admin/manage/ (192.168.1.6) 1055.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:13,756 INFO: 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (192.168.1.6) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:13,759 INFO: 200 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:13,766 INFO: 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:13,769 INFO: 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:21,650 INFO: 200 GET /admin/manage/ (192.168.1.6) 1062.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:21,746 INFO: 304 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (192.168.1.6) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:21,750 INFO: 304 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (192.168.1.6) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:21,753 INFO: 304 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (192.168.1.6) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:29:21,755 INFO: 304 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (192.168.1.6) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:35:14,533 INFO: 200 GET /admin/manage/?q=yu&search= (192.168.1.6) 1062.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:35:45,759 INFO: 304 GET / (192.168.1.6) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:41:50,884 INFO: 304 GET / (192.168.1.5) 4.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:41:51,306 WARNING: 404 GET /favicon.ico (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:42:06,135 INFO: 304 GET / (192.168.1.5) 8.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:42:06,417 WARNING: 404 GET /favicon.ico (192.168.1.5) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:56:49,298 INFO: 200 GET /admin/manage/ (192.168.1.5) 1062.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:56:49,493 INFO: 304 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (192.168.1.5) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:56:49,503 INFO: 304 GET /static/admin/css/light-custome.css?v=5938dc9c6856e940a7d67b26740ccbf9 (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:56:49,634 INFO: 304 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (192.168.1.5) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:56:49,648 INFO: 304 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (192.168.1.5) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 02:59:59,963 INFO: 304 GET / (192.168.1.5) 9.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 03:00:00,372 WARNING: 404 GET /favicon.ico (192.168.1.5) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:25,815 INFO: 302 GET /admin/manage/ (::1) 5.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:27,204 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 1383.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:28,493 INFO: 304 GET /static/admin/css/style.css (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:31,051 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 9.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:45,976 INFO: 200 POST /admin/login/ (::1) 205.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:45,977 ERROR: Uncaught exception POST /admin/login/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/login/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '102', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/?next=%2Fadmin%2Fmanage%2F', 'Cache-Control': 'max-age=0', 'Cookie': 'csrftoken=JHTXaFbn2qW0MSBlS4mD8lqJNj5ymREL; _xsrf=2|3575007d|e4f293b88eaa1880233827a1ae4c39e7|1480862861; username="2|1:0|10:1482162945|8:username|8:a2lkb3po|64849fbfcf17061deb04b8057dc481193b49435643546acfbe272efe651192ca"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 98, in post
+    self.render('contrib/admin/login.html', **args)
+TypeError: render() argument after ** must be a mapping, not tuple
+2017-01-03 09:42:49,457 WARNING: 404 GET /admin/login/1 (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:42:55,595 INFO: 200 GET /admin/login/ (::1) 10.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:43:05,036 INFO: 302 POST /admin/login/ (::1) 353.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:43:05,036 ERROR: Uncaught exception POST /admin/login/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/login/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '102', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/', 'Cache-Control': 'max-age=0', 'Cookie': 'csrftoken=JHTXaFbn2qW0MSBlS4mD8lqJNj5ymREL; _xsrf=2|3575007d|e4f293b88eaa1880233827a1ae4c39e7|1480862861; username="2|1:0|10:1482162945|8:username|8:a2lkb3po|64849fbfcf17061deb04b8057dc481193b49435643546acfbe272efe651192ca"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 98, in post
+    self.render('contrib/admin/login.html', **args)
+TypeError: render() argument after ** must be a mapping, not tuple
+2017-01-03 09:43:06,408 INFO: 200 GET /admin/manage/ (::1) 1357.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:05,009 WARNING: 404 GET /favicon.ico (::1) 4.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:10,276 INFO: 302 GET /admin/manage/ (::1) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:10,286 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 8.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:12,740 INFO: 200 GET /static/admin/css/style.css?v=45b62edcaecbde22b0a18ad44bd3f61e (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:12,744 INFO: 200 GET /static/admin/css/style.css (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:50,822 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 11.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:44:50,936 WARNING: 404 GET /favicon.ico (::1) 3.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:17,328 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 10.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:17,365 INFO: 200 GET /static/admin/css/style.css?v=45b62edcaecbde22b0a18ad44bd3f61e (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:17,368 INFO: 200 GET /static/admin/css/style.css (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:22,742 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 11.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:34,069 INFO: 200 GET /static/admin/css/style.css (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:34,072 INFO: 200 GET /static/admin/css/style.css?v=45b62edcaecbde22b0a18ad44bd3f61e (::1) 2.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:53,246 INFO: 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 451.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:54,040 INFO: 304 GET /static/admin/css/style.css?v=45b62edcaecbde22b0a18ad44bd3f61e (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 09:45:55,276 INFO: 304 GET /static/admin/css/style.css (::1) 1.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:00:15,144 INFO: 200 GET /admin/manage/ (::1) 1045.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:04:20,987 INFO: 200 GET /admin/manage/ (::1) 1112.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:05:56,569 INFO: 200 GET /admin/manage/ (::1) 1227.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:06:30,638 INFO: 200 GET /admin/manage/ (::1) 1058.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:11:27,619 INFO: 200 GET /admin/manage/ (::1) 1061.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:12:56,433 INFO: 200 GET /admin/manage/ (::1) 1060.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:14:37,816 INFO: 200 GET /admin/manage/ (::1) 1080.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:42:47,828 ERROR: Uncaught exception GET /admin/manage/config/show/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/config/show/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': '_accept_cookie=1; csrftoken=JHTXaFbn2qW0MSBlS4mD8lqJNj5ymREL; _xsrf=2|3575007d|e4f293b88eaa1880233827a1ae4c39e7|1480862861; username="2|1:0|10:1483432985|8:username|8:a2lkb3po|a7557169a5739cfe0634f1cb220d91cc209db494c92052cc6c737d19ea3121dd"', 'Upgrade-Insecure-Requests': '1'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 2717, in wrapper
+    return method(self, *args, **kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 256, in get
+    self.write_error(404)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 45, in write_error
+    self.render('contrib/admin/error.html', **args)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 704, in render
+    html = self.render_string(template_name, **kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 811, in render_string
+    return t.generate(**namespace)
+  File "D:\Canopy\User\lib\site-packages\tornado\template.py", line 278, in generate
+    return execute()
+  File "contrib/admin/error_html.generated.py", line 24, in _tt_execute
+    _tt_tmp = handler.status_code  # contrib/admin/error.html:11 (via contrib\admin\base.html:44)
+AttributeError: 'appModelManager' object has no attribute 'status_code'
+2017-01-03 10:42:47,848 ERROR: Uncaught exception in write_error [in D:\Canopy\User\lib\site-packages\tornado\web.py:978]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 976, in send_error
+    self.write_error(status_code, **kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 45, in write_error
+    self.render('contrib/admin/error.html', **args)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 704, in render
+    html = self.render_string(template_name, **kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 811, in render_string
+    return t.generate(**namespace)
+  File "D:\Canopy\User\lib\site-packages\tornado\template.py", line 278, in generate
+    return execute()
+  File "contrib/admin/error_html.generated.py", line 24, in _tt_execute
+    _tt_tmp = handler.status_code  # contrib/admin/error.html:11 (via contrib\admin\base.html:44)
+AttributeError: 'appModelManager' object has no attribute 'status_code'
+2017-01-03 10:42:47,849 ERROR: 500 GET /admin/manage/config/show/ (::1) 53.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:43:09,157 ERROR: Uncaught exception GET /admin/manage/admin/show/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/admin/show/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': '_accept_cookie=1; csrftoken=JHTXaFbn2qW0MSBlS4mD8lqJNj5ymREL; _xsrf=2|3575007d|e4f293b88eaa1880233827a1ae4c39e7|1480862861; username="2|1:0|10:1483432985|8:username|8:a2lkb3po|a7557169a5739cfe0634f1cb220d91cc209db494c92052cc6c737d19ea3121dd"', 'Upgrade-Insecure-Requests': '1'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 2717, in wrapper
+    return method(self, *args, **kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 256, in get
+    self.write_error(404)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 45, in write_error
+    self.render('contrib/admin/error.html', **args)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 704, in render
+    html = self.render_string(template_name, **kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 811, in render_string
+    return t.generate(**namespace)
+  File "D:\Canopy\User\lib\site-packages\tornado\template.py", line 278, in generate
+    return execute()
+  File "contrib/admin/error_html.generated.py", line 24, in _tt_execute
+    _tt_tmp = handler.status_code  # contrib/admin/error.html:11 (via contrib\admin\base.html:44)
+AttributeError: 'appModelManager' object has no attribute 'status_code'
+2017-01-03 10:43:09,161 ERROR: Uncaught exception in write_error [in D:\Canopy\User\lib\site-packages\tornado\web.py:978]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 976, in send_error
+    self.write_error(status_code, **kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 45, in write_error
+    self.render('contrib/admin/error.html', **args)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 704, in render
+    html = self.render_string(template_name, **kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 811, in render_string
+    return t.generate(**namespace)
+  File "D:\Canopy\User\lib\site-packages\tornado\template.py", line 278, in generate
+    return execute()
+  File "contrib/admin/error_html.generated.py", line 24, in _tt_execute
+    _tt_tmp = handler.status_code  # contrib/admin/error.html:11 (via contrib\admin\base.html:44)
+AttributeError: 'appModelManager' object has no attribute 'status_code'
+2017-01-03 10:43:09,163 ERROR: 500 GET /admin/manage/admin/show/ (::1) 19.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:43:12,223 ERROR: Uncaught exception GET /admin/manage/admin/show/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/admin/show/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': '_accept_cookie=1; csrftoken=JHTXaFbn2qW0MSBlS4mD8lqJNj5ymREL; _xsrf=2|3575007d|e4f293b88eaa1880233827a1ae4c39e7|1480862861; username="2|1:0|10:1483432985|8:username|8:a2lkb3po|a7557169a5739cfe0634f1cb220d91cc209db494c92052cc6c737d19ea3121dd"', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'}) [in D:\Canopy\User\lib\site-packages\tornado\web.py:1496]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 1413, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 2717, in wrapper
+    return method(self, *args, **kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 256, in get
+    self.write_error(404)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 45, in write_error
+    self.render('contrib/admin/error.html', **args)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 704, in render
+    html = self.render_string(template_name, **kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 811, in render_string
+    return t.generate(**namespace)
+  File "D:\Canopy\User\lib\site-packages\tornado\template.py", line 278, in generate
+    return execute()
+  File "contrib/admin/error_html.generated.py", line 24, in _tt_execute
+    _tt_tmp = handler.status_code  # contrib/admin/error.html:11 (via contrib\admin\base.html:44)
+AttributeError: 'appModelManager' object has no attribute 'status_code'
+2017-01-03 10:43:12,226 ERROR: Uncaught exception in write_error [in D:\Canopy\User\lib\site-packages\tornado\web.py:978]
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 976, in send_error
+    self.write_error(status_code, **kwargs)
+  File "F:\python\tornado\Tjango\contrib\admin\view.py", line 45, in write_error
+    self.render('contrib/admin/error.html', **args)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 704, in render
+    html = self.render_string(template_name, **kwargs)
+  File "D:\Canopy\User\lib\site-packages\tornado\web.py", line 811, in render_string
+    return t.generate(**namespace)
+  File "D:\Canopy\User\lib\site-packages\tornado\template.py", line 278, in generate
+    return execute()
+  File "contrib/admin/error_html.generated.py", line 24, in _tt_execute
+    _tt_tmp = handler.status_code  # contrib/admin/error.html:11 (via contrib\admin\base.html:44)
+AttributeError: 'appModelManager' object has no attribute 'status_code'
+2017-01-03 10:43:12,227 ERROR: 500 GET /admin/manage/admin/show/ (::1) 15.00ms [in D:\Canopy\User\lib\site-packages\tornado\web.py:1908]
+2017-01-03 10:44:17,605 INFO: F:\python\tornado\Tjango\setting.py modified; restarting server [in D:\Canopy\User\lib\site-packages\tornado\autoreload.py:204]

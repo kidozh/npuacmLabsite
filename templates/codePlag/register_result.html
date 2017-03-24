@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}注册账户{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row register-result">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>注册成功~</h1>
+            <hr/>
+            {% if validEmail %}
+            <h5>下一步</h5>
+            <p>您只需要在您注册的邮箱中找到激活邮件并且访问链接来激活账户即可。</p>
+            {% else %}
+            <h5>下一步</h5>
+            <p>您不是我们指定的自动注册的用户，为了确保本站的安全运作，请您联系<a href="mailto:lab@npuacm.info">lab.npuacm.info</a>来辅助您激活账户。</p>
+            <h5>您应该注意</h5>
+            <ul>
+                <li><p>请使用注册的邮箱发送邮件，代发送的邮件我们一律不会通过认证</p></li>
+                <li><p>请简单的说明使用查重系统的原因</p></li>
+            </ul>
+
+            {% end %}
+            <p>如果您对于我们有任何疑问，欢迎来邮件<a href="mailto:lab@npuacm.info">lab@npuacm.info</a></p>
+            <p class="text-right">祝您使用愉快！</p>
+            <p class="text-right">{% module get_option('SITE_NAME') %}敬上</p>
+        </div>
+    </div>
+</div>
+
+{% end %}

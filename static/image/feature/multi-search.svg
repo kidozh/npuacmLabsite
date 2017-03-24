@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="169.333mm" height="169.333mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 16933 16933"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#00AD7C}
+    .fil0 {fill:#07689F}
+    .fil2 {fill:#A2D5F2}
+    .fil5 {fill:#D53939}
+    .fil4 {fill:#FF7E67}
+    .fil3 {fill:yellow}
+   ]]>
+  </style>
+ </defs>
+ <g id="图层_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="11309" cy="11460" r="4233"/>
+  <ellipse class="fil1" cx="6853" cy="16619" rx="6773" ry="6849"/>
+  <circle class="fil2" cx="14800" cy="16526" r="3387"/>
+  <circle class="fil3" cx="-398" cy="15948" r="2117"/>
+  <circle class="fil4" cx="4338" cy="11505" r="2963"/>
+  <circle class="fil5" cx="9788" cy="3792" r="847"/>
+ </g>
+</svg>

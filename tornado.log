@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/handlers.py", line 928, in emit
+    smtp = smtplib.SMTP(self.mailhost, port, timeout=self._timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 317, in connect
+    (code, msg) = self.getreply()
+  File "/usr/lib/python2.7/smtplib.py", line 365, in getreply
+    + str(e))
+SMTPServerDisconnected: Connection unexpectedly closed: timed out
+Logged from file web.py, line 1524
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/handlers.py", line 928, in emit
+    smtp = smtplib.SMTP(self.mailhost, port, timeout=self._timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 317, in connect
+    (code, msg) = self.getreply()
+  File "/usr/lib/python2.7/smtplib.py", line 365, in getreply
+    + str(e))
+SMTPServerDisconnected: Connection unexpectedly closed: timed out
+Logged from file web.py, line 976
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/handlers.py", line 928, in emit
+    smtp = smtplib.SMTP(self.mailhost, port, timeout=self._timeout)
+  File "/usr/lib/python2.7/smtplib.py", line 256, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python2.7/smtplib.py", line 317, in connect
+    (code, msg) = self.getreply()
+  File "/usr/lib/python2.7/smtplib.py", line 365, in getreply
+    + str(e))
+SMTPServerDisconnected: Connection unexpectedly closed: timed out
+Logged from file web.py, line 1946

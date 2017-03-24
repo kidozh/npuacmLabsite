@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block webTitle %}{% end %} | 代码查重</title>
+
+    {% include 'head.html' %}
+    {% block head %}{% end %}
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+</head>
+<body>
+{% include 'navbar.html' %}
+{% block content %}
+
+{% end %}
+
+{% include 'foot.html' %}
+
+{% block footerJS %}
+
+{% end %}
+
+</body>
+</html>

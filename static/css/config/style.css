@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+code,
+span,
+body,
+html {
+    font-family: 'Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+*{
+    font-family: 'Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.top-bar{
+    background: #1F4E5F;
+}
+
+.top-bar *{
+    background: #1F4E5F;
+}
+
+.top-bar li{
+    color: #F4F7F7;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.top-bar li a{
+    color: #F4F7F7;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.title-bar {
+    background-color: #00AD7C;
+}
+
+.title-bar *{
+    background-color: #00AD7C;
+}
+
+.title-bar button{
+    color: #52D681;
+}
+
+.title-bar span{
+    color: #FFF8B5;
+}
+
+.off-canvas{
+    background: #F5E495;
+}
+
+.off-canvas>ul,
+.off-canvas>ol{
+    background: #FFC47F;
+    color: #F7825D;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.off-canvas p,
+.off-canvas a{
+    color: #00032D;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.off-canvas .display{
+    padding-left: 2rem;
+    padding-right: 3rem;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.site-title ,
+.menu-text,
+.title-bar-title{
+    font-family: 'Audiowide', cursive, sans-serif;
+}
+
+.configure-form {
+    background: #00AD7C;
+    border-radius: 1rem;
+    color: #477998;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.configure-form h1,
+.configure-form h2,
+.configure-form h3,
+.configure-form h4,
+.configure-form h5,
+.configure-form h6 {
+    color: #f9f2f4;
+}
+
+.configure-form p{
+    color: #52D681;
+}
+
+.configure-form a,
+.configure-form label{
+    color: #FFFFFF;
+    transition: 0.25s;
+}
+
+.configure-form a:hover,
+.configure-form label:hover{
+    color: #FFF84D;
+}
+
+.configure-form input,
+.configure-form select{
+    border-radius: 0.4rem;
+    border-width: 0.15rem;
+    border-color: #f9f2f4;
+    font-family: "Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+    transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+}
+
+.configure-form input:hover,
+.configure-form input:active{
+    border-color: #B5FF7D;
+}
+
+.configure-form button {
+    border-radius: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.configure-form .submit-button {
+    background-color: #D3504A;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+.configure-form .submit-button:hover{
+    background-color: #A63636;
+}
+
+code {
+    background: #f9f2f4;
+    color: #C0392B;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    border-width: 0;
+}
+
+footer {
+    background: #FAF99F;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Exo 2','Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+footer p{
+    color: #D65F5F;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+footer a{
+    color: #78D8D0;
+    transition-duration: 0.5s;
+}
+
+footer a:hover{
+    color: #A1F6B6;
+}
+
+pre {
+    background-color: #FFFFFF;
+    color: #1D2D44;
+    border-color: #B4DC7F;
+    border-width: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Ubuntu mono','Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}

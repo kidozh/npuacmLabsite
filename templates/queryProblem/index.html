@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="row intro-screen" style="padding-top: 3rem">
+        <div class="columns medium-8 medium-offset-2">
+            <h1 class="text-center site-title">NPUACM LAB</h1>
+            <h3 class="text-center"><span class="fa fa-globe"></span> 支持的OJ</h3>
+            <ul class="breadcrumbs">
+                <li><a href="http://poj.org/">POJ</a></li>
+                <li><a href="http://acm.hdu.edu.cn/">HDU</a></li>
+                <li><a href="http://acm.zju.edu.cn/onlinejudge/">ZOJ</a></li>
+                <li><a href="http://codeforces.com/">Codeforce</a></li>
+                <li><a href="http://acm.fzu.edu.cn/">FZU</a></li>
+                <li><a href="http://acdream.info/">ACDream</a></li>
+                <li><a href="http://www.lydsy.com/JudgeOnline/">BZOJ</a></li>
+                <li><a href="http://acm.timus.ru/">URAL</a></li>
+                <li><a href="http://acm.csu.edu.cn/OnlineJudge/">CSU</a></li>
+                <li><a href="http://acm.hust.edu.cn/">HUST</a></li>
+                <li><a href="http://www.spoj.com/">SPOJ</a></li>
+                <li><a href="http://acm.sgu.ru/">SGU</a></li>
+                <li><a href="http://acm.hust.edu.cn/vjudge/toIndex.action">Vjudge</a></li>
+                <li><a href="http://acm.bnu.edu.cn/v3/">BNU</a></li>
+                <li><a href="http://acm.cqu.edu.cn/">CQU</a></li>
+                <li><a href="http://acm.uestc.edu.cn/">UESTC</a><small><span class="fa fa-check"></span> </small></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row query-form">
+        <div class="columns medium-8 medium-offset-2 query-chart">
+            <form action="" method="post">
+                <div class="row query-item">
+                    <h1 class="text-center">查询题量</h1>
+                    <p class="text-center"><a href="{{ reverse_url('acmDetectInfo.view.queryRequestHandler') }}">实验版 &gt </a></p>
+                </div>
+                {% if error %}
+                <div class="row query-item">
+                    <div class="column medium-10 medium-offset-1">
+                        <h5 class="text-center">出现错误</h5>
+                        <p>格式不满足要求，两个账号均应由数字、大小写字母和下划线组成。</p>
+                        <p>如果您确实有特殊账号需要查询，请fork项目自行修改即可。</p>
+                    </div>
+
+                </div>
+                {% end %}
+
+
+                <div class="row query-item">
+                    <div class="columns medium-10 medium-offset-1">
+                        <label><span data-tooltip  title="账号应由数字、大小写字母和下划线组成" >主账号</span>
+                            <input name="mainName" type="text" pattern="^[\u4e00-\u9fa5_a-zA-Z0-9]*$" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="row query-item">
+                    <div class="columns medium-10 medium-offset-1">
+                        <label><span data-tooltip  title="账号应由数字、大小写字母和下划线组成">副账号</span>
+                            <input name="viceName" type="text" pattern="^[\u4e00-\u9fa5_a-zA-Z0-9]+$">
+                        </label>
+                        <p class="help-text">如果您具有两个账号，并且想合并去重查询，您可以填入此项。</p>
+                    </div>
+                </div>
+                {% raw xsrf_form_html() %}
+                <div class="row query-item">
+                    <div class="columns medium-3 medium-offset-1">
+                        <button class="button alert form-submit-button" type="submit">提交</button>
+                    </div>
+                    <div class="columns medium-3">
+                        <button class="button primary form-reset-button" type="reset">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+{% end %}

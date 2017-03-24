@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="body" data-made-with-foundation="">
+    <tr>
+        <td class="float-center" align="center" valign="top">
+            <center data-parsed="">
+                <table class="spacer float-center">
+                    <tbody>
+                    <tr>
+                        <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table align="center" class="container float-center">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <table class="spacer">
+                                <tbody>
+                                <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="row">
+                                <tbody>
+                                <tr>
+                                    <th class="small-12 large-12 columns first last">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <h1>感谢您的注册！</h1>
+                                                    <p>您可以直接使用下面的信息来使用我们的查重代码服务.</p>
+                                                    <table class="spacer">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="callout">
+                                                        <tr>
+                                                            <th class="callout-inner secondary">
+                                                                <table class="row">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <th class="small-12 large-6 columns first">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <p> <strong>邮箱</strong><br> {{ email }} </p>
+                                                                                        <p> <strong>Email Address</strong><br> {{ email }} </p>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </th>
+                                                                        <th class="small-12 large-6 columns last">
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <p> <strong>授权密钥</strong><br> {{ AuthKey }} </p>
+                                                                                        <p> <strong>Access Key</strong><br> {{ AuthKey }} </p>
+
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </th>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </th>
+                                                            <th class="expander"></th>
+                                                        </tr>
+                                                    </table>
+
+                                                    <hr>
+                                                    <h4>下一步</h4>
+                                                    {% set encryptSite = reverse_url('codePlag.view.authRequestHandler',encryptString) %}
+                                                    <p>请登录<a href="https://lab.npuacm.info{{ encryptSite }}">https://lab.npuacm.info{{ encryptSite }}</a>激活您的账户，以便开始使用查重服务。</p>
+
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="row footer text-center">
+                                <tbody>
+                                <tr>
+                                    <th class="small-12 large-3 columns first">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <p> 联系我们<br> lab@npuacm.info </p>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th class="small-12 large-3 columns">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <p>地址<br/>
+                                                        陕西省西安市长安区西北工业大学长安校区计算机学院110室
+                                                    </p>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th class="small-12 large-3 columns last">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <p> 谈笑风生QQ群<br> 569122469 </p>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </center>
+        </td>
+    </tr>
+</table>
+{% end %}

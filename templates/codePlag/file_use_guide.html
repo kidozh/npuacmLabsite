@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}文件查重使用向导 |{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row doc-title">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>文件使用向导</h1>
+        </div>
+    </div>
+    <div class="row doc">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>欢迎使用代码查重服务</h1>
+            <p>在使用前，请允许我向您介绍如何使用代码查重服务。</p>
+            <hr/>
+            <h1>步骤</h1>
+            <ul>
+                <li>注册并且激活账号</li>
+                <li>上传ZIP文件</li>
+                <li>等待判定并下载结果</li>
+            </ul>
+            <h1>注册并且激活帐号</h1>
+            <p>首先，请您于<a href="{{ reverse_url('codePlag.view.accessUserRegisterRequestHandler') }}">{{ reverse_url('codePlag.view.accessUserRegisterRequestHandler') }}</a>注册账号 </p>
+            <p>注册时，您需要注意您的账户类型</p>
+            <p>我们根据邮箱的来源采用两种注册方式：自动注册通过和手工注册通过</p>
+            <p>自动注册通过的账号类型
+                <ol>
+                    <li>中国大陆教育类邮箱：*.edu.cn（例如X北工业大学：xxx@mail.nwpu.edu.cn）</li>
+                    <li>内部账号：npuacm.info</li>
+                    <li>rwth-aachen.de</li>
+                </ol>
+            </p>
+            <p>手动注册的账号
+                <ol><li>其他账户</li></ol>
+            </p>
+            <p>对于自动注册通过的账号，请您直接点击激活邮件即可完成注册。</p>
+            <p>对于手动注册的账号，您需要发送邮件至<a href="mailto:lab@npuacm.info">lab@npacm.info</a>来手动注册。
+            此账号目前只在9：00-21：00（中欧标准时间）答复您的邮件。</p>
+            <h1>上传ZIP文件</h1>
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                如果您是Virtual Judge（HUSTOJ）用户
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <ol>
+                            <li><p>您可以使用Manager的账号登陆HUSTOJ</p></li>
+                            <li><p>在您的比赛主页上，Setting &gt; Export submissions &gt; Download 中下载由HUSTOJ导出的ZIP文件。 </p></li>
+                            <li><p>在<a href=" {{ reverse_url('codePlag.view.jplagCheckerRequestHandler') }}">{{ reverse_url("codePlag.view.jplagCheckerRequestHandler") }}</a>
+                                填入正确的邮箱地址和<a href="#"  data-toggle="tooltip" data-placement="top" title="您可以在激活邮件中找到，其通常是8位、由数字和字母组成的字符串">授权码</a> ，
+                                并且输入您需要查重的语言类型。JPLAG核心会自动检索所有相关语言后缀的文件，并且检出相似度。
+                            </p></li>
+                            <li><p>在结果页获得对应Problem下所有代码的相似度</p></li>
+                            <li><p>在结果页右下角直接下载结果</p></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                其他用户
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <ol>
+                            <li><p>准备文件</p></li>
+                            <li><p>在<a href=" {{ reverse_url('codePlag.view.jplagCheckerRequestHandler') }}">{{ reverse_url("codePlag.view.jplagCheckerRequestHandler") }}</a>
+                                填入正确的邮箱地址和<a href="#"  data-toggle="tooltip" data-placement="top" title="您可以在激活邮件中找到，其通常是8位、由数字和字母组成的字符串">授权码</a> ，
+                                并且输入您需要查重的语言类型。JPLAG核心会自动检索所有相关语言后缀的文件，并且检出相似度。
+                            </p></li>
+                            <li><p>在结果页获得对应子文件夹下所有代码的相似度</p></li>
+                            <li><p>在结果页右下角直接下载结果</p></li>
+                        </ol>
+                        <h2>准备ZIP文件</h2>
+                        <p>您需要注意文件的结构</p>
+                        <p>
+                            + 子文件夹1<br/>
+                                &nbsp;&nbsp;- 代码A.xxx<br/>
+                                &nbsp;&nbsp;- 代码B.xxx<br/>
+                                &nbsp;&nbsp;- 代码C.xxx<br/>
+                                &nbsp;&nbsp;- 代码D.xxx<br/>
+                                &nbsp;&nbsp;- ...<br/>
+                            + 子文件夹2<br/>
+                            + 子文件夹3<br/>
+                            + 子文件夹4<br/>
+
+                        </p>
+                        <p>JPLAG将会分别检索每个子文件下所有的文件并且得到每个子文件夹下文件之间的相似度。
+                            需要注意的是，JPLAG在给出结果的时候并不会跨子文件查重，其只会检索同一个子文件
+                            夹下的所有文件并给出该子文件夹下的所有文件的相似度</p>
+                        <p>JPLAG同样不能保证在特定语言下所有的代码都能通过YACC词法分析，不能通过词法分析
+                            的文件将会在对比相似度的时候忽略。</p>
+                        <p>假设无法通过词法分析的文件太多，建议您使用通用查询来获得查重结果（无分析文件供下载）</p>
+                        <p>文件最大是10MB</p>
+                    </div>
+                </div>
+            </div>
+            <h1>下载结果</h1>
+            <p>JPLAG会检索文件并且您可以得到一个概略的查重结果页面。</p>
+            <p>您点击右下角的图标直接下载查重结果文件。</p>
+            <p>Note
+                <ul>
+                    <li>由于JPLAG不支持中文，故所有非ASCII码的字符串都会被替换为???</li>
+                    <li>压缩包之中每个文件夹代表对应文件夹/问题的所有问题下的相似度结果，
+                        您可以使用浏览器打开对应文件夹下的<code>index.html</code>来获得查重结果</li>
+                    <li>您在对比重复度的时候，建议您使用MAX，这样会更加灵敏。</li>
+                </ul>
+            </p>
+
+            <p>如果您有任何问题，欢迎发送邮件至<a href="mailto:kidozh@npuacm.info">kidozh@npuacm.info</a>。</p>
+
+        </div>
+    </div>
+</div>
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+{% end %}

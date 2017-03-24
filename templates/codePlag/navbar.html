@@ -1,0 +1,172 @@
+<header class="navbar navbar-light navbar-static-top bd-navbar" role="banner">
+    <div class="clearfix">
+        <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+        </button>
+        <a class="navbar-brand hidden-sm-up" href="{{ reverse_url('codePlag.view.plagPortalRequestHandler') }}">NPUACM</a>
+    </div>
+
+
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+        <nav class="nav navbar-nav">
+            <a class="nav-link nav-item" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-item" href="{{ reverse_url('codePlag.view.checkerRequestHandler') }}">快速对比</a>
+            <a class="nav-link nav-item" href="{{ reverse_url('codePlag.view.fileCheckerRequestHandler') }}">通用查重</a>
+            <a class="nav-link nav-item" href="{{ reverse_url('codePlag.view.jplagCheckerRequestHandler') }}">指定代码查重</a>
+        </nav>
+        <nav class="nav navbar-nav navbar-right">
+
+        </nav>
+
+        <div class="pull-right">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="{{ reverse_url('codePlag.view.accessUserRegisterRequestHandler') }}">注册</a> </li>
+                {% if handler.get_secure_cookie('authEmail')  %}
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#fileArchive" href="javascript:getArchiveData();">{{ handler.get_secure_cookie('authEmail') }}</a> </li>
+                {% end %}
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="fileArchive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">{{ handler.get_secure_cookie('authEmail') }}的文件历史情况</h4>
+            </div>
+            <div class="modal-body">
+                <div id="fileArchive">
+                    <h6 class="text-center">第{{! page }}页</h6>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>统一标识符</td>
+                            <td>文件名</td>
+                            <td>代码类型</td>
+                            <td>提交时间</td>
+                            <td>下载</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="query in archive">
+                            <td>{{! query.id }}</td>
+                            <td>{{! query.uuid }}</td>
+                            <td>{{! query.filename }}</td>
+                            <td>{{! query.codeType }}</td>
+                            <td>{{! query.submitTime }}</td>
+                            <td><a class="btn btn-warning" :href="query.downloadUrl"><i class="fa fa-download"></i></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="javascript:fileArchive.page=1;getArchiveData(1,1);" type="button" class="btn btn-success">获得最近查询情况</button>
+                <button type="button" onclick="javascript:frontPage();" class="btn btn-primary">上一页</button>
+                <button type="button" onclick="javascript:nextPage();" class="btn btn-primary">下一页</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function nextPage(){
+        fileArchive.page+=1;
+        fileArchive.draw +=1;
+        getArchiveData(fileArchive.page,fileArchive.draw)
+    }
+    function frontPage(){
+        if (fileArchive.page>1){
+            fileArchive.page-=1;
+            fileArchive.draw -=1;
+            getArchiveData(fileArchive.page,fileArchive.draw);
+        }
+        else{
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.error('数据已经见底了！','无法上一页');
+
+
+            }, 100);
+        }
+
+
+    }
+    function  getArchiveData(page,draw){
+        xhr = $.ajax({
+            url:"{{ reverse_url('codePlag.view.fileArchiveQueryRequestHandler') }}",
+            // data which api server can accept
+            data:{
+                page:page,
+                draw:draw
+            },
+            dataType:"json",
+            type:"GET",
+            cache: false,
+            success: function (data) {
+                // deal with these data
+                // traverse all ac
+                fileArchive.archive = [];
+                for (item in data['data']){
+                    fileArchive.archive.push(data['data'][item]);
+                    console.log(data['data'][item]);
+                }
+
+
+                setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 10000
+                    };
+                    toastr.success('数据已经刷新','成功');
+
+
+                }, 100)
+
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 10000
+                    };
+                    toastr.error('无法连接至API','获取历史数据失败');
+
+
+                }, 1300);
+
+            }
+
+
+        });
+    }
+    var fileArchive = null;
+    $(document).ready(function(){
+        fileArchive = new Vue({
+            el:'#fileArchive',
+            data: {
+                archive:[],
+                page:1,
+                draw:1
+            }
+        });
+
+    });
+</script>

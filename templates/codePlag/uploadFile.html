@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block webTitle %} 上传文件 {% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row title-screen">
+        <div class="col-md-8 col-md-offset-1">
+            <h1 class="">查询文件相似度</h1>
+        </div>
+    </div>
+    <div class="row file-form-screen">
+        <div class="col-md-10 col-md-offset-1">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% raw xsrf_form_html() %}
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="如果您具有中国大陆高等院校的邮箱，您可以直接注册。">
+                    <label for="email">受信邮箱地址</label>
+                    <input type="email" class="form-control" name="email" placeholder="请输入受信邮箱地址">
+                </div>
+
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="授权口令是您注册生成的一段代码，您可以直接在邮件中得到Access-key。">
+                    <label for="accessKey">受信密钥</label>
+                    <input type="text" class="form-control" name="accessKey">
+                </div>
+
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="大小限制：10MB。">
+                    <label for="option">上传文件类型</label>
+                    <select name="language" class="form-control">
+                        <option value="char">普通字符串</option>
+                        <option value="c/c++">Pure C</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="我们有权对具有恶意行为的用户以及用户所在邮箱组（例如*@nwpu.edu.cn）拒绝服务。">
+                    <label>压缩ZIP文件</label>
+                    <input type="file" class="form-control" name="file">
+                </div>
+
+                <div class="form-group">
+                    <input class="btn btn-large btn-info-outline" type="submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+{% end %}

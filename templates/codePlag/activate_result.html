@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}{{ reason }}{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-md-12 ">
+            <h1>{% if auth %}激活成功{% else %}激活失败{% end %}</h1>
+            <p>{{ reason }}</p>
+            <ul>
+                <li>邮箱 ： {{ email }}</li>
+            </ul>
+            <p><a href="/" class="btn btn-success">回到主页</a> </p>
+        </div>
+    </div>
+</div>
+{% end %}

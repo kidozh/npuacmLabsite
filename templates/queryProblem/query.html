@@ -1,0 +1,399 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <!-- Add dataTable support for data change -->
+    <link href="//cdn.bootcss.com/datatables/1.10.12/css/dataTables.foundation.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.bootcss.com/datatables/1.10.12/js/dataTables.foundation.js"></script>
+{% end %}
+
+{% block content %}
+    <div class="row feature-screen" style="padding-top: 3rem;padding-bottom: 2rem">
+        <div class="columns medium-10 medium-offset-1">
+            <h1 class="text-center site-title">NPUACM查题系统<small>beta</small></h1>
+            <p class="text-center">Like Tornado</p>
+            <!--<h3 class="text-center">在<a href="https://github.com/kidozh/tornado_site"><span class="fa fa-github"></span></a>上关注我们更多</h3>-->
+        </div>
+    </div>
+    <div class="row count-screen ">
+        <div class="medium-4 columns">
+            <h5>您需要注意，当网络波动的时候，我们的数据将会不精确，请您留心。</h5>
+        </div>
+        <div class="medium-4 columns">
+            <p class="text-center">查询时长</p>
+            <h1 class="text-center" id="escape-time"></h1>
+        </div>
+        <div class="medium-4 columns">
+            <div class="">
+                <h5 class="text-center">新增一个查询</h5>
+                <p class="text-center"><a class=" text-center" style="font-size: 1.2rem" onclick="javascript:openAddNewModal();">点击这里</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row realtime-screen" id="realtime-screen">
+        <h2 class="text-center">实时情况查询</h2>
+        <div class="columns medium-10 medium-offset-1 table-scroll">
+            <table class="table transparent-table" id="realtime-table">
+                <thead>
+                    <tr>
+                        <th>OJ</th>
+                        <th>被查询者</th>
+                        <th>已经获得的AC量</th>
+                        <th>已经获得的提交量</th>
+                        <th>查询时间 </th>
+                        <th>查询时长（秒）</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+    <div class="row result-screen" id="result-screen" style="">
+        <!-- this is result page and not shown until the query finished -->
+        <div class="medium-8 medium-offset-2 table-scroll result-table" >
+            <table id="result-table" class="transparent-table" >
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <th> 查询的OJ </th>
+                        <th> 通过 </th>
+                        <th> 提交 </th>
+
+                        <th> 查看具体题目 </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!-- reveal -->
+<div class="reveal custom-reveal" id="modal" data-reveal>
+    <h1><span id="oj-name"></span>的具体AC题目</h1>
+    <p id="ac-problem" style="word-break: break-all;word-wrap: break-word; "></p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+<!-- reveal -->
+<div class="reveal custom-reveal" id="addNewModal" data-reveal>
+    <div class="row reveal-title" >
+        <div class="medium-10 medium-offset-1">
+            <h1>新增查找</h1>
+        </div>
+    </div>
+    <div class="row reveal-body">
+        <h5 class="text-center">请输入一个账号</h5>
+        <div class="columns medium-8 medium-offset-2">
+            <input class="new-input-user" pattern='^\w*$' placeholder="请输入账号" id="new-input-user">
+        </div>
+        <p id="error-text"></p>
+        <a class="botton text-right pull-right" onclick="javascript:addNewTask();" >新增这个账号</a>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+</div>
+
+{% end %}
+
+{% block script %}
+<script>
+    var globalData = false;
+    var dateTime = new Date().getTime();
+    var revKey = Math.random().toString();
+    var elapseSec = 0;
+    // set for remain task
+    var remainTask = 0;
+
+    function MergeArray(arr1,arr2){
+        var _arr = new Array();
+        for(var i=0;i<arr1.length;i++){
+            _arr.push(arr1[i]);
+        }
+        for(var i=0;i<arr2.length;i++){
+            var flag = true;
+            for(var j=0;j<arr1.length;j++){
+                if(arr2[i]==arr1[j]){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag){
+                _arr.push(arr2[i]);
+            }
+        }
+        return _arr;
+    }
+
+    function appendData(data){
+        if (globalData == false){
+            // first time just pass variable
+            globalData = data;
+            console.log('copy array successfully')
+        }
+        else{
+            // this is for merge data
+            // for local one
+            for (var item in data['ac']){
+                globalData['ac'][item] = MergeArray(globalData['ac'][item],data['ac'][item]);
+                globalData['submit'][item] += data['submit'][item];
+            }
+            for (var item in data['wrongOJ']){
+                globalData['wrongOJ'][item] = MergeArray(globalData['wrongOJ'][item],data['wrongOJ'][item]);
+            }
+        }
+
+    }
+
+    function renderData(){
+        if (globalData && remainTask <= 0 ){
+            // make sure global data exist and have finished all the task
+            var tableData = [];
+            var cnt=0;
+            var totAC=0;
+            var totSubmit = 0;
+            for (var item in globalData['ac']){
+                cnt+=1;
+                if (item != 'vjudge'){
+                    totAC+=globalData['ac'][item].length;
+                    totSubmit+=globalData['submit'][item];
+                }
+                var ojInfo = [
+                    cnt,
+                    item.toUpperCase(),
+                    globalData['ac'][item].length,
+                    globalData['submit'][item],
+                    '<a href="javascript:getDetail(\'' + item +'\')">点击获得'+item.toUpperCase()+'的情况</a>'
+                ];
+                //console.log(ojInfo);
+                tableData.push(ojInfo);
+            }
+            var totInfo = [
+                cnt+1,
+                '合计',
+                totAC,
+                totSubmit,
+                ''
+            ];
+            tableData.push(totInfo);
+            // try to reinit the table
+            if ( $.fn.dataTable.isDataTable( '#result-table' ) ) {
+                table = $('#result-table').DataTable();
+            }
+            else {
+                table = $('#result-table').DataTable( {
+                    paging: false
+                });
+            }
+            // destroy the table
+            table.destroy();
+            // init table
+            $('#result-table').DataTable({
+                data:tableData,
+                buttons: [
+                    'copy', 'excel', 'pdf'
+                ]
+            });
+        }
+        else{
+            console.log(globalData);
+            console.log(remainTask);
+        }
+    }
+
+    function queryInfo(mainName){
+        if (mainName.length == 0){
+            // if null just return null
+            console.log(mainName);
+            return false;
+        }
+        else{
+            remainTask +=1;
+        }
+        xhr = $.ajax({
+            url:"/query/api/",
+            // data which api server can accept
+            data:{
+                mainName:mainName,
+                viceName:'',
+                timestamp: dateTime,
+                revKey:revKey
+            },
+            //dataType:"json",
+            type:"GET",
+            cache: false,
+            success: function (data) {
+                // remove task from queue
+                remainTask -= 1
+                //$('#realtime-screen').hide();
+                $('#result-screen').slideDown("slow");
+                //globalData = data;
+                // merge global data and fetched data
+                appendData(data);
+                renderData();
+                console.log(data);
+
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                remainTask -=1;
+                console.error(xhr.status);
+                console.error(thrownError);
+                alert('抱歉，数据出错...');
+
+            }
+
+
+        });
+
+
+    }
+
+    function getDetail(oj){
+
+        $('#modal #oj-name').text(oj.toUpperCase());
+        oj = oj.toLowerCase();
+        $('#modal #ac-problem').text(window.globalData['ac'][oj]);
+        $('#modal').foundation('open');
+    }
+
+    function getRealTimeInfo(mainName){
+        var domain = document.domain;
+        if (domain== 'localhost' || domain == '127.0.0.1'){
+            port=8000;
+            protocol = 'ws';
+        }
+        else{
+            port=80;
+            protocol = 'wss'
+        }
+        var websocketURL = protocol+'://'+domain+':'+port+'/query/realtime/';
+        if(window.WebSocket != undefined) {
+	        var connection = new WebSocket(websocketURL);
+        }
+        else{
+            alert('你的浏览器不支持websocket技术吗？');
+            return false;
+        }
+        var ws = new WebSocket(websocketURL);
+        // notice callback
+        ws.onmessage = function (event) {
+            realInfo = JSON.parse(event.data);
+
+            //select table and add a row
+            var table = document.getElementById('realtime-table');
+            var tr = table.insertRow();
+
+            // show final icons
+            var finalIcon = new Array();
+            finalIcon[0]='<span class="fa fa-remove" style="color:orangered"></span>';
+            finalIcon[1]='<span class="fa fa-ok" style="color:aqua"></span>';
+            var dictKey = ['oj','name','ac','submit','queryTime','extra'];
+            for (var i in dictKey){
+                key = dictKey[i];
+                if (realInfo[key] == undefined){
+                    break;
+                }
+                var td = tr.insertCell();
+
+                if (key == 'oj'){
+                    td.innerText = realInfo[key].toUpperCase();
+                }
+                else if(key == 'queryTime'){
+                    var date = new Date(parseFloat(realInfo[key])*1000);
+                    td.innerText = date.toLocaleString().replace(/:\d{1,2}$/,' ');
+                }
+                else{
+                    td.innerText = realInfo[key]
+                }
+            }
+
+        };
+
+        ws.onerror=function(event){
+            console.error("Error: " + event);
+        };
+
+        ws.onclose = function(){
+            console.log('Disconnected');
+        };
+
+        ws.onopen = function(){
+            // append this to the server
+            $('#realtime-screen').slideDown("slow");
+            $('#result-screen').slideUp("slow");
+            var infoDict = {
+                mainName: mainName,
+                viceName:'',
+                queryTime:dateTime,
+                // gennerate key for unique...
+                revKey:revKey
+            };
+            ws.send(JSON.stringify(infoDict));
+        };
+
+        return ws;
+    }
+
+    function countSec(){
+        elapseSec +=1;
+        var interval =  setInterval(function(){
+            if(remainTask == 0){
+                clearInterval(interval);
+            }
+            else{
+                elapseSec +=1;
+                $('#escape-time').text(elapseSec);
+            }
+        }, 1000);
+    }
+
+    function addTask(name){
+        // get information in advance
+        var newWebsocket = getRealTimeInfo(name);
+        queryInfo(name);
+        countSec();
+    }
+
+    function openAddNewModal(){
+        $('#new-input-user').val('');
+        $('#error-text').text('');
+        $('#addNewModal').foundation('open');
+    }
+
+    function addNewTask(){
+        name =  $('#new-input-user').val();
+        console.log(name);
+        if (name.search(/^\w+$/)!= -1){
+            // find the value
+            addTask(name);
+            $('#addNewModal').foundation('close');
+        }
+        else{
+            $('#error-text').text('您的输入并不符合要求，请重试。')
+        }
+
+
+    }
+
+    $(document).ready(function () {
+        var ws = getRealTimeInfo('{{ mainName }}');
+        var viceWS = getRealTimeInfo('{{ viceName }}');
+        // send init information
+        queryInfo('{{ mainName }}');
+        queryInfo('{{ viceName }}');
+        countSec();
+
+    });
+</script>
+
+
+{% end %}

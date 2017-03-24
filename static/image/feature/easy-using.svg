@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="169.333mm" height="169.333mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 16933 16933"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#C4EDDE;stroke-width:135.46}
+    .str1 {stroke:#F73859;stroke-width:423.33;stroke-linecap:round;stroke-linejoin:round}
+    .fil1 {fill:none}
+    .fil0 {fill:#384259}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M5225 5406l7486 0 0 6796 -7486 0 0 -6796z"/>
+    </clipPath>
+ </defs>
+ <g id="图层_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="847" y="3387" width="15240" height="10160"/>
+  <g id="_1949347779024">
+   <g style="clip-path:url(#id0)">
+    <image x="5225" y="5406" width="7487" height="6796" xlink:href="easy-using_Images\easy-using_ImgID1.png"/>
+   </g>
+  </g>
+  <polyline id="对钩" class="fil1 str1" points="5378,9423 7051,11210 11555,5723 "/>
+ </g>
+</svg>

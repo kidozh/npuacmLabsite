@@ -1,0 +1,20 @@
+<footer class="foot">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <p class="text-center">© {{ datetime.datetime.now().year }} {% module get_option('site_name') %}. 版权所有</p>
+                <!--<p class="text-center">Driven By Tornado.</p>-->
+                <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-envelope-o"></i>kidozh[at]npuacm.info </a> </li>
+                    <li><a href="#"><i class="fa fa-location-arrow"></i>西北工业大学长安校区计算机学院110室</a> </li>
+                    <li><a href="#"><i class="fa fa-qq"></i>群 198820787</a> </li>
+                </ul>
+                <ul class="list-inline">
+                    <li><a href="{{ reverse_url('codePlag.view.docRequestHandler','privacy') }}">隐私</a> </li>
+                    <li><a href="{{ reverse_url('codePlag.view.docRequestHandler','terms_of_service') }}">服务条款</a> </li>
+                    <li><a href="{{ reverse_url('codePlag.view.docRequestHandler','contact') }}">联系我们</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

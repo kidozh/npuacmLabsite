@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block webTitle %}FAQ{% end %}
+{% block head %}
+
+{% end %}
+
+{% block content %}
+<div class="container-fluid" style="max-width: none">
+    <div class="row jumbotron" style="margin-bottom: 0;">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>常见问题集</h1>
+        </div>
+    </div>
+    <div class="row faq-main-screen">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>1. 为什么现在只支持单账号查询？会恢复吗？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>根据我们的调查，绝大多数用户都不需要两个账号的去重查询，为了加快浏览器渲染速度，我们移除了在主页的双账号查询功能。</p>
+                    <p>您可以使用主站的服务来进行并行查询。</p>
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>2. 实时查询功能怎么被移除了？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>由于我们的新查询系统使用了非阻塞异步爬虫，查询速度极快，Websocket双向通信反而减慢了速度，所以移除。</p>
+                    <p>同时我们也放弃了部分少见、速度不稳定的OJ支持</p>
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>3. 能说说移除了哪些OJ吗？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>对比我们老版本（运行在主站的爬虫），我们移除了SGU、TIMUS、UVA和CQU的OJ支持。</p>
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>4. 为什么出现了好多我不认识的OJ名字？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>这是因为您在Virtual Judge上提交了该OJ上的代码所致。</p>
+                    <p>或者<del>重名</del>大雾。。。</p>
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>5. 为什么查不到我的题目？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>有可能是网络波动，您可以重新刷新查询界面。</p>
+                    <p>如果还是出现问题，非常感谢您给我们提Issue。<a href="https://github.com/kidozh/tjango">点击我</a></p>
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>6. 此项目开源吗？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>此项目在Github上有我们的代码托管。<a href="https://github.com/kidozh/tjango">点击我</a> </p>
+                    <p>同时非常欢迎您给我们提出建议和BUG。</p>
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>7. 最近查询速度怎么明显变慢了？</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>这是因为CF的API响应速度变慢所致，然而CF是常见的OJ，我们并不能因为因此移除CF支持，请见谅。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% end %}

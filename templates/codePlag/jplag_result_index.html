@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}文件查重结果{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 plag-result-title">
+            <h1 class="text-center">文件查重率结果反馈</h1>
+            <p class="text-center">Power By JPLAG</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>参数/指标</th>
+                        <th>值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>文件名</td>
+                        <td>{{ filename }}</td>
+                    </tr>
+                    <tr>
+                        <td>邮箱地址</td>
+                        <td>{{ email }}</td>
+                    </tr>
+                    <tr>
+                        <td>统一标识符（UUID）</td>
+                        <td>{{ uuidCode }}</td>
+                    </tr>
+                    <tr>
+                        <td>检索的文件类型</td>
+                        <td>{{ language }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h3 class="text-center">比赛代码复核</h3>
+            <p class="text-center">点击下面的子文件夹标识符获得该文件夹下的所有代码相似度信息。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div id="accordion" class="plag-result-accordion" role="tablist" aria-multiselectable="true">
+                {% for prob in contestIndex %}
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading{{ prob }}">
+                        <h4 class="panel-title text-center">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#prob{{ prob }}" aria-expanded="true" aria-controls="prob{{ prob }}">
+                                {{ prob }}
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="prob{{ prob }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ prob }}">
+                        {# simInfo.probFile #}
+                        <p class="text-center">SCAN：{{ praseDictInfo[prob]['validSubmission'] }}</p>
+
+                        {% for orign,compareList in praseDictInfo[prob]['simiRatio'].items() %}
+                            <div class="row prob-item">
+                                <!-- prepare first block -->
+                                <div class="col-md-3">
+                                    <div class="col-md-12 orign-prob" data-toggle="tooltip" data-placement="top" title="比较项">
+                                        <p class="text-center prob-title">{{ orign }}</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        {% for compare,ratio in compareList %}
+                                        {# <p>{{ simInfo.probFile[indexA] }} : {{ simInfo.probFile[indexB] }} -> {{ simarray[indexA][indexB] }}</p> #}
+
+                                            <div class="col-md-4 compare-prob">
+                                                <div class="prob-wrap" data-toggle="tooltip" data-placement="top" title="比较项">
+                                                    <span class="file-name"> {{ compare }}</span>
+                                                    <span class="simi">{{ ratio }}</span>
+                                                </div>
+                                            </div>
+
+
+                                        {% end %}
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        {% end %}
+                    </div>
+                </div>
+                {% end %}
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<span>
+    <div>
+        <button href="{{ reverse_url('codePlag.view.exportJplagData',uuidCode,filename) }}" class="btn btn-success-outline export-button"  data-toggle="tooltip" data-placement="top" title="下载导出的ZIP文件">
+            <a href="{{ reverse_url('codePlag.view.exportJplagData',uuidCode,filename) }}"><i class="fa fa-download"></i></a>
+        </button>
+    </div>
+</span>
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+{% end %}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cf65e128-941e-4610-8ac0-a3148702b845" name="115.159.115.19" url="http://lab.npuacm.info">
+        <fileTransfer host="115.159.115.19" port="21" rootFolder="/Tjango" password="dff0dfc2dfcbdfc4dfcddf92df9fdf98df9adf93df9cdf9d" username="ubuntu">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

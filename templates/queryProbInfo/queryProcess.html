@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% block webTitle %}查询题目{% end %}
+
+{% block head %}
+<!-- vue -->
+<script src="//cdn.bootcss.com/vue/2.1.4/vue.js"></script>
+
+<link href="//cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/toastr.js/latest/toastr.min.js"></script>
+
+<script src="{{ static_url('js/queryProbInfo/queryProbInfo.js') }}"></script>
+
+{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row intro-section">
+        <div class="col-md-12">
+            <h1 class="text-center" style="font-weight: lighter">查询情况</h1>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1" id="queryInfoBox">
+            <div class="card-deck-wrapper">
+                <div class="card-deck">
+                    <div class="card">
+
+                        <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-user"></i>您所查询的账号</h4>
+                            <p class="card-text">{% raw '{{ name }}' %}</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-clock-o"></i>服务器受理时间</h4>
+                            <p class="card-text">{{ datetime.datetime.now() }}</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-th-large"></i>已经查询时长</h4>
+                            <p class="card-text">{% raw '{{ secondElapse }}' %}秒</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row table-section">
+        <h2 class="text-center" style="font-weight: lighter">结果</h2>
+        <div class="col-md-10 col-md-offset-1">
+            <div id="app" class="table-responsive">
+                <data-table :data="data" :column="column"></data-table>
+            </div>
+
+            <template id="data-table">
+                <table class="table table-hover">
+                    <thead class="thead-default">
+                    <tr>
+                        <td>#</td>
+                        <td>OJ</td>
+                        <td>通过</td>
+                        <td>提交</td>
+                    </tr>
+
+                    </thead>
+                    <tr v-for="v in data">
+                        <td v-for="col in column">
+                            {% raw '{{v[col]}}' %}
+                        </td>
+                    </tr>
+                </table>
+            </template>
+        </div>
+    </div>
+</div>
+
+
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    // function
+    var t;
+    function timedCount()
+    {
+        countSecBox.secondElapse +=1;
+        t=setTimeout("timedCount()",1000)
+    }
+    function queryInfo(name){
+        if (name){
+            // if null just return null
+            console.log(name);
+        }
+        else{
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.error('您的账号为空','查询出错');
+
+
+            }, 1300)
+            return false;
+        }
+        xhr = $.ajax({
+            url:"{{ reverse_url('acmDetectInfo.view.multipleQueryHandler') }}",
+            // data which api server can accept
+            data:{
+                name:name,
+            },
+            dataType:"json",
+            type:"GET",
+            cache: false,
+            success: function (data) {
+                // deal with these data
+                // traverse all ac
+                number = 0;
+                totAC = 0;
+                totSubmit = 0
+                for(var key in data['ac']){
+
+                    acList = data['ac'][key];
+
+                    if(data['submit'].hasOwnProperty(key)){
+                        submit = data['submit'][key];
+                    }
+                    else{
+                        submit = 0;
+                    }
+                    totAC +=acList.length;
+                    totSubmit +=submit;
+                    var appendData = {
+                        ac:acList.length,
+                        oj:key,
+                        submit:submit,
+                        number:number
+                    };
+                    resTable.data.push(appendData);
+                    number++;
+
+                }
+                var appendData = {
+                    ac:totAC,
+                    oj:'总计',
+                    submit:totSubmit,
+                    number:number
+                };
+                resTable.data.push(appendData);
+                clearInterval(t);
+
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 10000
+                    };
+                    toastr.error('无法连接至API','获取数据失败');
+
+
+                }, 1300)
+
+            }
+
+
+        });
+
+
+    }
+    var orignalName = '{{ name }}';
+
+    var countSecBox = new Vue({
+        el:'#queryInfoBox',
+        data:{
+            name:'{{ name }}',
+            secondElapse:0
+        }
+    });
+    $(document).ready(function(){
+        // start to recond data
+        timedCount();
+        queryInfo(orignalName);
+
+    });
+    var data = [];
+
+    Vue.component('data-table', {
+        template: '#data-table',
+        props: {
+            data: {
+                type: Array,
+                required: true
+            },
+            column: {
+                type: Array,
+                required: true
+            }
+        }
+    });
+
+    var resTable = new Vue({
+        el: '#app',
+        data: {
+            data: data,
+            column: ['number', 'oj', 'ac','submit']
+        }
+
+    });
+
+
+</script>
+{% end %}

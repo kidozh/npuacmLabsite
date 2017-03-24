@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+input,
+body,
+html {
+    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+p,label,span{
+    font-family: 'Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span{
+    color: #2E3E54;
+}
+
+a{
+    color: #FFE77C;
+}
+
+a:hover,
+a:focus,
+a:visited{
+    color: #FCF7F8;
+}
+
+/* navigation */
+.top-nav {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    border: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.top-nav .navbar-brand {
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.top-nav .navbar-toggle {
+    border-radius: 0.3rem;
+    border: rgba(0, 0, 0, 0.5);
+}
+
+.top-nav .navbar-nav > li.top-nav-item > a {
+    color: rgba(0, 0, 0, 0.5);
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.top-nav .navbar-nav > li.top-nav-item > a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* for query screen */
+.form-section{
+    padding: 15rem 1rem 10rem 1rem;
+
+
+}
+
+.form-section input{
+    background: transparent;
+}
+
+/*.form-section .input label{
+    color: #ffffff ;
+}
+
+.form-section input:hover,
+.form-section input:focus,
+.form-section input:visited{
+    background: transparent !important;
+}
+
+*/
+.form-section h1,
+.form-section h2,
+.form-section h3,
+.form-section h4,
+.form-section h5,
+.form-section h6,
+.form-section p,
+.form-section a{
+    color: rgb(52, 73, 94);
+    font-weight: lighter;
+}
+
+.form-section .highlight-title{
+    color: #A50029;
+}
+
+
+
+.feature-section{
+
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.feature-section .feature{
+    padding: 3rem 1rem 2rem 3rem;
+}
+
+.feature-section .feature h1,
+.feature-section .feature h2,
+.feature-section .feature h3,
+.feature-section .feature h4,
+.feature-section .feature h5,
+.feature-section .feature h6,
+.feature-section .feature p{
+    color: #f9f2f4;
+}
+
+/* query screen */
+.intro-section{
+    padding: 3rem;
+}
+
+/* table screen */
+.table-section {
+    padding: 5rem 2rem 3rem 2rem;
+}
+
+/* FAQ */
+.faq-main-screen{
+    padding: 3rem;
+    background-color: #454A57;
+}
+
+.faq-main-screen h1,
+.faq-main-screen h2,
+.faq-main-screen h3,
+.faq-main-screen h4,
+.faq-main-screen h5,
+.faq-main-screen h6{
+    font-weight: lighter;
+    color: #E24147;
+}
+
+.faq-main-screen p,span,a{
+    color: #D2C7C6;
+}
+
+.faq-item {
+    padding: 1rem 0 2rem 1rem;
+    border-bottom: 1px dashed #2E383F;
+}
+
+.faq-item .faq-question{
+    font-weight: lighter;
+    padding: 1rem 0 2rem 0;
+}
+
+.faq-item .faq-answer{
+    padding-left: 2rem;
+}
+
+.foot {
+    padding:15px 15px 15px 15px;
+    background: #30444B;
+}
+
+.foot h1,
+.foot h2,
+.foot h3,
+.foot h4,
+.foot h5,
+.foot h6,
+.foot small{
+    color: #FFF35F;
+}
+
+.foot p{
+    color:#F88334;
+
+}
+
+.color-line {
+    background: #f7f9fa;
+    height: 0.5rem;
+    background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-image: -moz-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-image: -ms-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-image: linear-gradient(to right, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-size: 100% 6px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+/* feature */
+
+.feature{
+    background: #2D2D2D;
+}
+
+.feature h1,
+.feature h2,
+.feature h3,
+.feature h4,
+.feature h5,
+.feature h6,
+.feature p,
+.feature label,
+.feature span{
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.feature a{
+    color: #ffcd05;
+    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.feature a:hover,
+.feature a:focus{
+    color: #FFE77C;
+}
+
+.feature .main-screen{
+    padding: 10rem 3rem 10rem 4rem;
+}
+
+.feature .main-screen .main-title{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.feature .main-screen .main-note{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature .main-image-screen {
+    padding-bottom: 10rem;
+    padding-top: 1rem;
+}
+
+.feature .text-highlight{
+    font-size: 7rem;
+    color: #FC5130;
+
+}
+
+.feature .feature-item{
+    padding: 3rem 0 0 3rem;
+}

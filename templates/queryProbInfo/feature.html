@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block webTitle %}特征{% end %}
+{% block head %}
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+{% end %}
+
+{% block content %}
+<div class="container-fluid feature" style="max-width: none">
+    <div class="row">
+        <div class="col-md-6 main-screen animated fadeIn">
+            <h1 class="text-center main-title">查询</h1>
+            <p class="text-center main-note">滴水不漏</p>
+            <p class="text-center"><a href="{{ reverse_url('acmDetectInfo.view.queryRequestHandler') }}" class="btn btn-large btn-warning-outline">START NOW</a></p>
+        </div>
+        <div class="col-md-6">
+            <div class="main-image-screen text-center animated fadeIn">
+                <img src="{{ static_url('image/feature/save-time.svg') }}" class="img-responsive">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 animated slideInUp infinity feature-item">
+            <h1><span class="text-highlight">5</span>倍速度</h1>
+            <h3 class="sub-header">面对疾风吧</h3>
+            <p>采用Tornado多协程<sup>*</sup>以及异步非阻塞的爬虫，使得速度提高了至少5倍</p>
+            <p>根据运行于主站的典型样本，典型值为4s，最长时间（VjudgeX系列）10s。</p>
+            <p>老司机，还不上车？</p>
+        </div>
+        <div class="col-md-6">
+            <div class="feature-image text-center animated fadeIn">
+                <img src="{{ static_url('image/feature/ultra-speed.svg') }}" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="feature-image text-center animated fadeIn">
+                <img src="{{ static_url('image/feature/complete-search.svg') }}" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-md-6 animated slideInUp infinity feature-item">
+            <h1><span class="text-highlight">全</span>面检索</h1>
+            <h3 class="sub-header">岂止于全</h3>
+            <p>常见的OJ一网打尽，更有联合Virtual Judge的去重。</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 animated slideInUp infinity feature-item">
+            <h1><span class="text-highlight">好</span>用</h1>
+            <h3 class="sub-header">直观、简洁和易用</h3>
+            <p>Bootstrap<sup>4</sup>为响应式提供完全支持。</p>
+            <p></p>
+        </div>
+        <div class="col-md-6">
+            <div class="feature-image text-center animated fadeIn">
+                <img src="{{ static_url('image/feature/easy-using.svg') }}" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+           <div class="feature-image text-center animated fadeIn">
+                <img src="{{ static_url('image/feature/multi-search.svg') }}" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-md-6 animated slideInUp infinity feature-item">
+            <h1><span class="text-highlight">多</span>扩展</h1>
+            <h3 class="sub-header">缤纷多彩</h3>
+            <p>查重系统、推荐系统和积分系统都正在路上。</p>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.html' %}
+{% end %}

@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}单体版本查重率{% end %}
+
+{% block head %}
+<script src="//cdn.bootcss.com/codemirror/5.23.0/codemirror.min.js"></script>
+<link href="//cdn.bootcss.com/codemirror/5.23.0/codemirror.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/diff_match_patch/20121119/diff_match_patch.js"></script>
+<script src="//cdn.bootcss.com/codemirror/5.23.0/addon/merge/merge.js"></script>
+<link href="//cdn.bootcss.com/codemirror/5.23.0/addon/merge/merge.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/vue/2.1.10/vue.min.js"></script>
+
+<script src="{{ static_url('js/plag/codemirror-config.js') }}"></script>
+{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 plag-result-title">
+            <h1 class="text-center">查重率结果反馈</h1>
+        </div>
+    </div>
+    <div class="row plag-result-table">
+        <div class="col-md-8 table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>左侧代码</th>
+                        <th>右侧代码</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>代码长度</td>
+                        <td>{{ len(codeA) }}</td>
+                        <td>{{ len(codeB) }}</td>
+                    </tr>
+                    <tr>
+                        <td>指纹数目</td>
+                        <td>{{ len(winnowA) }}</td>
+                        <td>{{ len(winnowB) }}</td>
+                    </tr>
+                    <tr>
+                        <td>共享指纹</td>
+                        <td colspan=2 class="text-center">{{ unionFingerPrintCnt }}</td>
+                    </tr>
+
+                    <tr class="table-info">
+                        <td>重复度</td>
+                        <td>{{ A2B }}</td>
+                        <td>{{ B2A }}</td>
+                    </tr>
+                    <tr>
+                        <td>类型</td>
+                        <td colspan=2 class="text-center">{{ codeType }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <form action="" method="post">
+                {% raw xsrf_form_html() %}
+
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <h6 class="text-right">文本类型</h6>
+                    </div>
+                    <div class="col-md-8">
+                        <select v-model="selectedLanguage" class="form-control" name="codeType">
+                            <option value="c/c++">C/C++</option>
+                            <option value="char">普通字符串</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+
+                    <div class="col-md-6">
+                        <textarea id="codeA" class="form-control codeMirror-code" name="codeA">{{ codeA }}</textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea id="codeB" class="form-control codeMirror-code" name="codeB">{{ codeB }}</textarea>
+                    </div>
+
+
+                </div>
+                <div class="form-group">
+                    <p class="text-center"><button class="btn btn-large btn-success btn-large" type="submit">检测相似度</button></p>
+                </div>
+            </form>
+    </div>
+</div>
+
+{% end %}

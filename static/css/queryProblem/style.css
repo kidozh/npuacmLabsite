@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+code,
+span,
+body,
+html {
+    font-family: 'Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+*{
+    font-family: 'Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.top-bar{
+    background: #1F4E5F;
+}
+
+.top-bar *{
+    background: #1F4E5F;
+}
+
+.top-bar li{
+    color: #F4F7F7;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.top-bar li a{
+    color: #F4F7F7;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.title-bar {
+    background-color: #00AD7C;
+}
+
+.title-bar *{
+    background-color: #00AD7C;
+}
+
+.title-bar button{
+    color: #52D681;
+}
+
+.title-bar span{
+    color: #FFF8B5;
+}
+
+.off-canvas{
+    background: #F5E495;
+}
+
+.off-canvas>ul,
+.off-canvas>ol{
+    background: #FFC47F;
+    color: #F7825D;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.off-canvas p,
+.off-canvas a{
+    color: #00032D;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.off-canvas .display{
+    padding-left: 2rem;
+    padding-right: 3rem;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.site-title ,
+.menu-text,
+.title-bar-title{
+    font-family: 'Audiowide', cursive, "微软雅黑",sans-serif;
+}
+
+
+
+.intro-screen {
+    background: #FF512F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FF512F , #F09819); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FF512F , #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 0 0 0;
+    max-width: none;
+    padding-bottom: 3rem;
+}
+
+.intro-screen h1,
+.intro-screen h2,
+.intro-screen h3,
+.intro-screen h4,
+.intro-screen h5,
+.intro-screen h6,
+.intro-screen p,
+.intro-screen span{
+    color: #f9f2f4;
+
+}
+
+.intro-screen a{
+    color: #FFF8B5;
+    transition-duration: 0.6s;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Exo 2',"微软雅黑", sans-serif;
+}
+
+.intro-screen a:hover {
+    color: #00032D;
+    text-decoration: none;
+}
+
+.intro-screen .site-title {
+    color: #FFC47F;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: solid #f9f2f4 0.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Audiowide', cursive, sans-serif;
+}
+
+.query-form {
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 3rem 4rem 3rem 4rem;
+    margin: 0 0 0 0;
+    max-width: none;
+    color: #FFFFFF;
+}
+
+.query-form .query-chart{
+    background: #00ADB5;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.query-form h1,
+.query-form h2,
+.query-form h3,
+.query-form h4,
+.query-form h5,
+.query-form h6,
+.query-form p{
+    color: #393E46;
+}
+
+.query-form a{
+    color: #222831;
+    transition-duration: 0.6s;
+}
+
+.query-form a:hover,
+.query-form a:visited,
+.query-form a:focus{
+    color: #EEEEEE;
+}
+
+.query-chart .query-item{
+    color: #FFFFFF;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.query-chart .query-item h1,
+.query-chart .query-item h2,
+.query-chart .query-item h3,
+.query-chart .query-item h4,
+.query-chart .query-item h5,
+.query-chart .query-item h6,
+.query-chart .query-item p{
+    color: #FFFFFF;
+}
+
+.query-chart .query-item:first-child{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.query-chart .query-item:last-child{
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.query-chart .query-item:nth-child(4n){
+    background: #12162F;
+}
+
+.query-chart .query-item:nth-child(4n+1){
+    background: #F24230;
+}
+
+.query-chart .query-item:nth-child(4n+2){
+    background: #F9BE6B;
+}
+
+.query-chart .query-item:nth-child(4n+3){
+    background: #5CA4A9;
+}
+
+.query-chart .query-item input{
+    border-radius: 0.5rem;
+    border: #00032D 0.1rem solid;
+    transition-duration: 0.7s;
+    transition-property: border;
+}
+
+.query-chart .query-item input:hover,
+.query-chart .query-item input:focus{
+    border-radius: 0.5rem;
+    border: #00F32D 0.15rem solid;
+}
+
+.query-chart .query-item .form-submit-button{
+    background-color: #EA384D;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.query-chart .query-item .form-submit-button:hover{
+    background-color: #D31027;
+    transition-duration: 0.5s;
+}
+
+.query-chart .query-item .form-reset-button{
+    background-color: #4776E6;
+    border-radius: 1rem;
+    color: #f9f2f4;
+    transition-duration: 0.5s;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.query-chart .query-item .form-reset-button:hover{
+    background-color: #8E54E9;
+    color: #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+code {
+    background: #f9f2f4;
+    color: #C0392B;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    border-width: 0;
+}
+
+footer {
+    background: #00AD7C;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    font-family: 'Exo 2','Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+footer *{
+    font-family: 'Exo 2','Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+footer .list-unstyled{
+    list-style: none;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p{
+    color: #FFF8B5;
+
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+footer a{
+    color: #B5FF7D;
+    transition-duration: 0.5s;
+}
+
+footer a:hover{
+    color: #52D681;
+    transition-duration: 0.75s;
+}
+
+footer .resume {
+    border-right: #f9f2f4 solid 0.2rem;
+    transition-duration: 0.3s;
+    transition-timing-function:cubic-bezier(0.55, 0.09, 0.68, 0.53);
+}
+
+footer .resume:hover{
+    border-right-width: 0;
+}
+
+pre {
+    background-color: #FFFFFF;
+    color: #1D2D44;
+    border-color: #B4DC7F;
+    border-width: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Ubuntu mono','Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
+
+.feature-screen {
+    max-width: none;
+    margin: 0 0 0 0;
+
+    background: #EB3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EB3349, #F45C43); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EB3349, #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.feature-screen h1,
+.feature-screen h2,
+.feature-screen h3,
+.feature-screen h4,
+.feature-screen h5,
+.feature-screen h6,
+.feature-screen p{
+    color: #f9f2f4;
+}
+
+.feature-screen a{
+    color: #FFC47F;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+}
+
+.feature-screen a:hover {
+    color: #FFFFFF;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+}
+
+.realtime-screen {
+    padding: 2rem 0 2rem 0;
+    background: #67B26F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-width: none;
+    margin: 0 0 0 0;
+}
+
+.realtime-screen h1,
+.realtime-screen h2,
+.realtime-screen h3,
+.realtime-screen h4,
+.realtime-screen h5,
+.realtime-screen h6,
+.realtime-screen p{
+    color:#f9f2f4;
+}
+
+.realtime-screen a{
+    color: #9bc200;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+}
+
+.realtime-screen a:hover{
+    color: #52D681;
+}
+
+.transparent-table {
+    background: transparent;
+}
+
+
+.transparent-table thead{
+    background: transparent;
+}
+
+.transparent-table tbody{
+    background: transparent;
+}
+
+.transparent-table tr td,
+.transparent-table tr th{
+    background: transparent;
+    color :#f9f2f4;
+}
+
+.transparent-table tbody tr:nth-child(odd),
+.transparent-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.transparent-table a{
+    color: #f9f2f4;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.transparent-table a:hover,
+.transparent-table a:focus,
+.transparent-table a:visited{
+    color: #fffff9;
+}
+
+table {
+    border:#fffff9 0.12rem solid;
+}
+
+.result-screen {
+    max-width: none;
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #02AAB0, #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #02AAB0, #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.result-screen label{
+    color: #f9f2f4;
+}
+
+.result-screen .result-table {
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 1.5rem;
+}
+
+.count-screen{
+    max-width: none;
+    padding: 2rem 0 2rem 0;
+    background: #FA7F7F;
+}
+
+.count-screen h1,
+.count-screen h2,
+.count-screen h3,
+.count-screen h4,
+.count-screen h5,
+.count-screen h6,
+.count-screen p,
+.count-screen span,
+.count-screen label,
+.count-screen a{
+    color: #F8FBA2;
+}
+
+.count-screen input{
+    border-radius: 0.5rem;
+
+}
+
+.count-screen #escape-time{
+    color: #C2FCD9;
+    font-family: 'Exo 2', "微软雅黑", sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.custom-reveal{
+    background: #00AD7C;
+    border-radius: 2rem;
+    color: #52D681;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.custom-reveal:focus{
+    border: none;
+}
+
+.custom-reveal h1,
+.custom-reveal h2,
+.custom-reveal h3,
+.custom-reveal h4,
+.custom-reveal h5,
+.custom-reveal h6,
+.custom-reveal p,
+.count-screen label,
+.custom-reveal span{
+    color: #ffffff;
+}
+
+.custom-reveal a{
+    color: #B5FF7D;
+    transition: color 0.3s ease-in;
+}
+
+.custom-reveal a:hover{
+    color: #FFF8B5;
+}
+
+.custom-reveal .reveal-title{
+    border-bottom: #52D681 0.1rem solid;
+    margin-bottom: 1rem;
+}
+
+.reveal-body label{
+    color: #f9f2f4;
+}
+
+.reveal-body input{
+    background: rgba(0,0,0,0.1);
+    border:none;
+    border-radius: 1rem;
+    color: #ffffff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    transition: border 0.4s ease-in;
+    font-family: 'Exo 2', "微软雅黑", sans-serif;
+}
+
+.reveal-body input:hover,
+.reveal-body input:focus{
+    border:0.2rem #FFF8B5 solid;
+}
+
+

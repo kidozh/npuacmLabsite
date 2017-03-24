@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+
+{% block webTitle %}首页{% end %}
+
+{% block content %}
+<div class="container-fluid" style="max-width: none">
+    <div class="row intro-screen">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 class="text-center title animated zoomIn">代码查重</h1>
+            <p class="text-center sub-title animated zoomIn">Make contest more transparent.</p>
+        </div>
+    </div>
+    <div class="row feature-screen">
+        <a href="{{ reverse_url('codePlag.view.checkerRequestHandler') }}" class="animated zoomIn">
+            <div class="col-md-4 feature-item feature-item-1">
+                <h1>单体版</h1>
+                <p>快速查询文本或代码的相似度。</p>
+            </div>
+        </a>
+        <a href="{{ reverse_url('codePlag.view.fileCheckerRequestHandler') }}" class="animated zoomIn">
+            <div class="col-md-4 feature-item feature-item-2">
+                <h1>通用文件查询</h1>
+                <p>查询一个压缩文件中所有文件的相似度*</p>
+            </div>
+        </a>
+        <a href="{{ reverse_url('codePlag.view.jplagCheckerRequestHandler') }}" class="animated zoomIn">
+            <div class="col-md-4 feature-item feature-item-3">
+                <h1>源代码文件查询</h1>
+                <p>查询指定语境下的所有源代码的相似度*</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+{% end %}
