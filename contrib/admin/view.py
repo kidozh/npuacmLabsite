@@ -741,12 +741,4 @@ if __name__ == '__main__':
     '''
 
     # gennerate super-admin user
-    from db import database
 
-    database.connect()
-    try:
-        database.create_tables([admin])
-    except:
-        pass
-    new_adminUser = admin(username='kidozh', password='8520967123',isStaff=True,isAdmin=True)
-    new_adminUser.save()

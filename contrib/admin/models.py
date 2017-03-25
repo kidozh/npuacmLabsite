@@ -26,4 +26,13 @@ class admin(baseModel):
         return bcrypt.checkpw(password.encode('utf-8'), self.password.encode('utf-8')) and len(password) > 8
 
 
-
+class log(baseModel):
+    queryTime = DateTimeField()
+    logType = CharField(max_length=20)
+    logLevel = CharField(max_length=10)
+    requestStatus = SmallIntegerField()
+    # GET or POST
+    requestType = CharField(max_length=8)
+    requestURL = TextField()
+    requestIP = CharField(max_length=20)
+    requestDuration = FloatField()

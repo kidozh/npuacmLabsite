@@ -5,6 +5,7 @@ import os
 
 import tornado.httpserver
 import tornado.ioloop
+import tornado.ioloop
 import tornado.options
 import tornado.web
 import os
@@ -46,12 +47,15 @@ if __name__ == "__main__":
     # --------------------------------------------------
     if hasattr(Setting._wrapped, "LOGFILE") and Setting._wrapped.LOGFILE:
         import logging
+        import yaml
+        import logging.config
         from logging import StreamHandler
         from logging.handlers import RotatingFileHandler,SMTPHandler,TimedRotatingFileHandler
 
         logFilePath = Setting._wrapped.LOGFILE
+        logging.config.dictConfig(yaml.load(open('logging.yaml', 'r')))
 
-        # file_handler = RotatingFileHandler(logFilePath, 'a',1 * 1024 * 1024, 10)
+        '''# file_handler = RotatingFileHandler(logFilePath, 'a',1 * 1024 * 1024, 10)
 
         # roll info at midnight
         file_handler = TimedRotatingFileHandler(logFilePath,when='midnight')
@@ -82,7 +86,7 @@ if __name__ == "__main__":
                                             Setting._wrapped.ADMINS, "站点出错了！",
                                             credentials,secure=True)
                 mail_handler.setLevel(logging.ERROR)
-                RootLogger.addHandler(mail_handler)
+                RootLogger.addHandler(mail_handler)'''
 
     # -------------------------------------------
     #
@@ -110,4 +114,8 @@ if __name__ == "__main__":
 
     http_server = tornado.httpserver.HTTPServer(app,xheaders = True)
     http_server.listen(options.port)
+    # import prase log
+    from contrib.admin.log import praseLog
+    # call back in 10 mins
+    tornado.ioloop.PeriodicCallback(praseLog,10*60*1000).start()
     tornado.ioloop.IOLoop.instance().start()
