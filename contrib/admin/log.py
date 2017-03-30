@@ -85,7 +85,7 @@ class log_praser(BaseHandler):
             import time
             lastest_log_update_time,created = configOption.get_or_create(name='lastest_log_update_time',
                                                                 defaults={'value': str(time.time())})
-            lastest_log_update_time = str(time.time())
+            lastest_log_update_time.value = str(time.time())
             lastest_log_update_time.save()
             BaseHandler.on_finish(self)
 
