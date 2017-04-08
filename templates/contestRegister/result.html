@@ -1,58 +1,59 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row ">
-        <div class="col-md-10 col-md-offset-1 jumbotron">
-            <h1 class="text-center notice-title"><span class="fa fa-ok"></span>注册成功</h1>
-            <p>您的报名信息如下：</p>
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>值</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>姓名</td>
-                    <td>{{ stuInfo.name }}</td>
-                </tr>
-                <tr>
-                    <td>学号</td>
-                    <td>{{ stuInfo.stuID }}</td>
-                </tr>
-                <tr>
-                    <td>性别</td>
-                    <td>{{  dict(stuInfo.genderChoices)[stuInfo.gender]  }}</td>
-                </tr>
-                <tr>
-                    <td>邮箱</td>
-                    <td>{{ stuInfo.email }}</td>
-                </tr>
-                <tr>
-                    <td>学院</td>
-                    <td>{{ dict(stuInfo.schoolChoice)[stuInfo.college] }}</td>
-                </tr>
-                <tr>
-                    <td>电话号码</td>
-                    <td>{{ stuInfo.phone }}</td>
-                </tr>
-                <tr>
-                    <td>注册时间</td>
-                    <td>{{ stuInfo.registerTime }}</td>
-                </tr>
-                </tbody>
+<div class="jumbotron">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-10 col-md-offset-1 ">
+                <h1 class="text-center notice-title"><span class="fa fa-ok"></span>注册成功</h1>
+                <p>您的报名信息如下：</p>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>值</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>姓名</td>
+                        <td>{{ stuInfo.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>学号</td>
+                        <td>{{ stuInfo.stuID }}</td>
+                    </tr>
+                    <tr>
+                        <td>性别</td>
+                        <td>{{  dict(stuInfo.genderChoices)[stuInfo.gender]  }}</td>
+                    </tr>
+                    <tr>
+                        <td>邮箱</td>
+                        <td>{{ stuInfo.email }}</td>
+                    </tr>
+                    <tr>
+                        <td>学院</td>
+                        <td>{{ dict(stuInfo.schoolChoice)[stuInfo.college] }}</td>
+                    </tr>
+                    <tr>
+                        <td>电话号码</td>
+                        <td>{{ stuInfo.phone }}</td>
+                    </tr>
+                    <tr>
+                        <td>注册时间</td>
+                        <td>{{ stuInfo.registerTime }}</td>
+                    </tr>
+                    </tbody>
 
-            </table>
-            <p>如果你想修改上述信息，请联系<a href="mailto:kidozh@npuacm.info">kidozh@npuacm.info</a> </p>
+                </table>
+                <p>如果你想修改上述信息，请联系<a href="mailto:kidozh@npuacm.info">kidozh@npuacm.info</a> </p>
 
 
-            <p><a class="btn btn-danger btn-lg" href="{{ reverse_url('contestRegister.views.registerRequestHandler') }}">Back</a> </p>
+                <p><a class="btn btn-danger btn-lg" href="{{ reverse_url('contestRegister.views.registerRequestHandler') }}">Back</a> </p>
+
+            </div>
 
         </div>
-
     </div>
 </div>
-
 {% end %}

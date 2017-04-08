@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input{
+    font-weight: 300 !important;
+    font-family: 'Lato',  "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, "微软雅黑", sans-serif;
+}
+
+.title{
+    font-weight: 300;
+
+}
+
+html,body {
+    height: 100% ;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.jumbotron {
+    height: 100%;
+}
+
+.text-intro {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    font-size: .8em;
+
+    padding: 8rem 3rem 4rem 2rem;
+    z-index: 1;
+}
+
+.btn-lg {
+    padding: 1rem 6rem 1rem 6rem;
+}
+
+.btn-lg:hover .fa{
+    transform: translate(4rem,0);
+    transition: .35s all ease-in;
+}
