@@ -11,7 +11,7 @@ urlpatterns = [
     (r"^/queryProb",include('acmDetectInfo.urls')),
     (r"^/admin",include('contrib.admin.urls')),
     (r"^/plag",include('codePlag.urls')),
-
+    (r'^/contest2017',include('contestRegister.urls')),
     # need place last
     (r'(.*?)','portal.view.baseRedirectHandler')
 ]

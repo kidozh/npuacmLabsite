@@ -13,7 +13,7 @@ DB_HOST = 'localhost'
 DB_USER = 'root'
 
 # password for database
-DB_PASSWD = ''
+DB_PASSWD = '8520967123'
 
 # database's type
 DB_TYPE = 'mysql'
@@ -31,6 +31,7 @@ INSTALLED_APPS = (
     'conf',
     'acmDetectInfo',
     'codePlag',
+    'contestRegister'
 )
 
 # for root urls

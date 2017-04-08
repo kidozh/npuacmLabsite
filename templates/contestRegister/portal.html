@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-10 col-md-offset-1 jumbotron">
+            <h1 class="text-center">欢迎造访西北工业大学ACM报名系统</h1>
+            <p>开始报名</p>
+            <p><a class="btn btn-danger" href="{{ reverse_url('contestRegister.views.registerRequestHandler') }}">开始</a> </p>
+
+        </div>
+
+    </div>
+</div>
+
+{% end %}
