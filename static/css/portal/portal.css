@@ -28,6 +28,23 @@ html {
 
 html,body {
     height: 100% ;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* prevent blank on the right of screen */
+.container,
+.container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 0 0;
 }
 
 .fullscreen{
