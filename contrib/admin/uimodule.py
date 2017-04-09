@@ -33,13 +33,20 @@ class optionModule(tornado.web.UIModule):
     def render(self,option):
         from conf.models import configOption
         from db import database
-        database.connect()
+        flag = False
+        try:
+            database.connect()
+        except:
+            flag = True
+            pass
         if configOption.select().where(configOption.name == option).exists():
-            database.close()
+            if not flag:
+                database.close()
             return configOption.get(configOption.name == option).value
 
         else:
-            database.close()
+            if not flag:
+                database.close()
             return ''
 
 class appModelModule(tornado.web.UIModule):

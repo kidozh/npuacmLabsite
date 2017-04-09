@@ -30,7 +30,7 @@ html,body {
     height: 100% ;
 }
 
-.container-fluid{
+.fullscreen{
     height: 100%;
 }
 
@@ -1213,4 +1213,50 @@ textarea[readonly] {
 .footer-screen p{
     color: #F3F7F0;
     font-weight: 300;
+}
+
+
+/* design for notification */
+.notice-display{
+    display:block;
+}
+
+.notice-screen{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.notice-screen h1,
+.notice-screen h2,
+.notice-screen h3,
+.notice-screen h4,
+.notice-screen h5,
+.notice-screen h6,
+.notice-screen p{
+    color: #eee;
+}
+
+.notice-screen a{
+    color:#F2BDD0;
+    transition: all .35s;
+}
+
+.notice-screen a:hover,
+.notice-screen a:focus{
+    color:#DDE0DF;
+    text-decoration: none;
+}
+
+.notice-screen .notice{
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.notice button{
+    color:#eee;
+}
+
+.notice button span{
+    color:#eee;
 }

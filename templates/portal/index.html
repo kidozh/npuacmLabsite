@@ -12,9 +12,22 @@
 
 
 {% block content %}
+
+
+
+<div class="container-fluid notice-screen">
+    <div class="row">
+        <div class="alert alert-dismissible notice" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="text-center">省赛报名已经开始，请点击<a href="{{ reverse_url('contestRegister.views.portalRequestHandler') }}">这里</a>进行报名。</h5>
+        </div>
+    </div>
+</div>
+
+
 {% include 'navbar.html' %}
 
-<div class="container-fluid" data-spy="scroll" data-target="#navbar-portal" data-offset="0">
+<div class="container-fluid fullscreen" data-spy="scroll" data-target="#navbar-portal" data-offset="0">
     <div class="row portal-screen" id="particles-js" style="min-height: 100%">
         <div class="col-md-10 col-md-offset-2 text-intro">
             <h1 class="portal-title">西北工业大学ACM实验站</h1>
