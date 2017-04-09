@@ -108,7 +108,7 @@
                         <li><a href="http://acm.cqu.edu.cn/">CQU</a></li>
                         <li><a href="http://acm.uestc.edu.cn/">UESTC</a></li>
                     </ul>
-                    <p class="text-center"><a href="{{ reverse_url('acmCralwer.view.queryIndexHandler') }}" class="btn">转到 <i class="fa fa-arrow-right"></i></a> </p>
+                    <a href="{{ reverse_url('acmCralwer.view.queryIndexHandler') }}" class="btn">转到 <i class="fa fa-arrow-right"></i></a>
                 </div>
                 <div role="tabpanel" class="tab-pane fade in" id="antiCheat" aria-labelledby="antiCheat-tab">
                     <p>提供快捷而全面的反作弊服务。</p>
@@ -118,7 +118,7 @@
                         <li>基于C语言的抽象语法树检测</li>
                         <li>JPLAG驱动的针对特定语言的检测</li>
                     </ul>
-                    <p class="text-center"><a href="{{ reverse_url('codePlag.view.plagPortalRequestHandler') }}" class="btn">转到 <i class="fa fa-arrow-right"></i></a>  </p>
+                    <a href="{{ reverse_url('codePlag.view.plagPortalRequestHandler') }}" class="btn">转到 <i class="fa fa-arrow-right"></i></a>
                 </div>
                 <div role="tabpanel" class="tab-pane fade in" id="query" aria-labelledby="query-tab">
                     <p>异步非阻塞，高并发的Tornado爬虫，支持全国外主流OJ的查询。</p>
@@ -138,7 +138,7 @@
                         <li><a href="http://acm.bnu.edu.cn/v3/">BNU</a></li>
                         <li><a href="http://acm.uestc.edu.cn/">UESTC</a></li>
                     </ul>
-                    <p class="text-center"><a href="{{ reverse_url('acmDetectInfo.view.queryRequestHandler') }}" class="btn">转到 <i class="fa fa-arrow-right"></i></a> </p>
+                    <a href="{{ reverse_url('acmDetectInfo.view.queryRequestHandler') }}" class="btn">转到 <i class="fa fa-arrow-right"></i></a>
 
                 </div>
 
@@ -187,11 +187,11 @@
             "closeButton": false,
             "debug": false,
             "newestOnTop": false,
-            "progressBar": true,
-            "positionClass": "toast-top-right",
+            "progressBar": false,
+            "positionClass": "toast-bottom-right",
             "preventDuplicates": false,
             "onclick": null,
-            "showDuration": "3000",
+            "showDuration": "300",
             "hideDuration": "1000",
             "timeOut": "5000",
             "extendedTimeOut": "1000",
