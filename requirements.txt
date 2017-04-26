@@ -1,8 +1,9 @@
 tornado
 winnowing
-bcrypt
 sqlalchemy
 peewee
 psutil
 bcrypt
 pycparser
+sqlalchemy-utils
+MySQL-python

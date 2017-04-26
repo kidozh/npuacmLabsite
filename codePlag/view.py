@@ -80,8 +80,10 @@ class fileCheckerRequestHandler(BaseHandler):
         import uuid
         import zipfile
         email = self.get_argument('email')
+        # cancel account permit temporarily
         accessKey = self.get_argument('accessKey')
         # need check right first
+
         if not filePermitArchive.filter(email=email,isAuth=True,isBanned=False,auth_key=accessKey).exists():
             self._reason = '传递的Email值或者准入密钥有问题或者您的Email没有验证成功'
             self.write_error(500)

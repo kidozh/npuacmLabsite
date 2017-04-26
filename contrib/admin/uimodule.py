@@ -3,31 +3,6 @@ __author__ = 'kidozh'
 
 import tornado.web
 import re
-class urlModule(tornado.web.UIModule):
-    def render(self,uimodule,*args,**kwargs):
-        from conf.urls import urlPackage
-        from conf import setting
-        import tornado.web
-        Setting = setting()
-        Setting._setup()
-
-        urlMapper = urlPackage(Setting._wrapped.ROOT_URLCONF)
-        urlHandler = urlMapper.detectURL()
-        for it in urlHandler:
-            if isinstance(it,tornado.web.URLSpec):
-                url = it._path
-                moduleStr = it.handler_class.__name__
-            else:
-                url,moduleStr = it
-            if moduleStr == uimodule:
-                # filter invalid characters
-                purifyURL = re.match(r'\W+(/.+)$',url)
-                regexURL = purifyURL.group(1)
-                u = tornado.web.URLSpec(regexURL,None)
-                print args,kwargs,u.reverse(**kwargs)
-                return u.reverse(**kwargs)
-                # return purifyURL.group(1)
-        return ''
 
 class optionModule(tornado.web.UIModule):
     def render(self,option):

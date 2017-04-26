@@ -21,7 +21,6 @@ urlpatterns = [
 ]
 
 UImodule = {
-    'get_url_from_handler': contrib.admin.uimodule.urlModule,
     'get_option':contrib.admin.uimodule.optionModule,
     'adminlte_load_left_sidebar':contrib.admin.uimodule.appModelModule
 }

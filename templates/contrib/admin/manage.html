@@ -337,7 +337,7 @@
     var myChart = echarts.init(document.getElementById('main'));
     function getHardwareInfo(){
         xhr = $.ajax({
-            url:"{% module get_url_from_handler('contrib.admin.view.statusAPIHandler') %}",
+            url:"{{ reverse_url('contrib.admin.view.statusAPIHandler') }}",
             // data which api server can accept
             data:{
 

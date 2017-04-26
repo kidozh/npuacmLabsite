@@ -13,7 +13,7 @@
 
         </div>
         <div class="col-md-8 col-lg-6 ">
-            <form action="{% module get_url_from_handler('contrib.admin.view.authRequestHandler') %}" method="post">
+            <form action="{{ reverse_url('contrib.admin.view.authRequestHandler') }}" method="post">
                 <div class="login-form">
                     <div class="form-group">
                         <label>{{ handler._reason }}</label>
