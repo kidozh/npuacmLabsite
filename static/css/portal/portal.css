@@ -1232,6 +1232,15 @@ textarea[readonly] {
     font-weight: 300;
 }
 
+.footer-screen p a {
+    color:#F3F7F0;
+    transition: .35s all ease-in;
+}
+
+.footer-screen p a:hover{
+    color:#FFFFFF;
+}
+
 
 /* design for notification */
 .notice-display{
