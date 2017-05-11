@@ -7,9 +7,11 @@
     <div class="row title-screen">
         <div class="col-md-8 col-md-offset-1">
             <h1 class="">查询文件相似度</h1>
+            <p><a href="{{ reverse_url('codePlag.view.jplagFreeCheckerRequestHandler') }}">免费版现在<del>以更绿</del>推出</a> </p>
         </div>
     </div>
     <div class="row file-form-screen">
+
         <div class="col-md-10 col-md-offset-1">
             <form action="" method="post" enctype="multipart/form-data">
                 {% raw xsrf_form_html() %}

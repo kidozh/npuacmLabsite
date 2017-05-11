@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block webTitle %} 上传文件 | 免费 {% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row title-screen">
+        <div class="col-md-8 col-md-offset-1">
+            <h1 class="">查询文件相似度 - 免费版</h1>
+        </div>
+    </div>
+    <div class="row file-form-screen">
+        <div class="col-md-10 col-md-offset-1">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% raw xsrf_form_html() %}
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="您需要一个有效的邮箱。">
+                    <label for="email">邮箱地址</label>
+                    <input type="email" class="form-control" name="email" placeholder="请输入受信邮箱地址">
+                </div>
+
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="根据文件类型不同，扫描的文件也是不一样的。">
+                    <label for="option">上传文件类型</label>
+                    <select name="language" class="form-control" required>
+                        <option value="char">普通字符串</option>
+                        <option value="text">长文本</option>
+                        <option value="c/c++">C/C++</option>
+                        <option value="java17">Java17</option>
+                        <option value="java15">Java15</option>
+                        <option value="java15">Java15dm</option>
+                        <option value="java12">Java12</option>
+                        <option value="java11">Java11</option>
+                        <option value="c#-1.2">C#</option>
+                        <option value="scheme">scheme</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group" data-toggle="tooltip" data-placement="top" title="\w+\.zip。">
+                    <label>压缩ZIP文件</label>
+                    <input type="file" class="form-control" name="file">
+                </div>
+                <div class="form-group">
+                    <p><input type="checkbox">我已经查看了<a href="{{ reverse_url("codePlag.view.docRequestHandler",'file_use_guide') }}">文件查重向导</a></p>
+                </div>
+
+                <div class="form-group">
+                    <input class="btn btn-large btn-info-outline" type="submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+{% end %}

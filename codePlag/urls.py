@@ -11,5 +11,6 @@ urlpatterns = [
     ('/register/','codePlag.view.accessUserRegisterRequestHandler'),
     ('/auth/(.*?)/','codePlag.view.authRequestHandler'),
     ('/export/(.*?)/(.*?)/','codePlag.view.exportJplagData'),
+    ('/freejplagFile/','codePlag.view.jplagFreeCheckerRequestHandler'),
 
 ]

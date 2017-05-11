@@ -20,7 +20,14 @@
                 <li>上传ZIP文件</li>
                 <li>等待判定并下载结果</li>
             </ul>
-            <h1>注册并且激活帐号</h1>
+
+            <!-- alert for free -->
+            <div class="alert alert-success" role="alert">
+                目前处于<strong>免费</strong>状态，您不需要注册就可以使用查重服务！
+
+            </div>
+
+            <h1>注册并且激活帐号 </h1>
             <p>首先，请您于<a href="{{ reverse_url('codePlag.view.accessUserRegisterRequestHandler') }}">{{ reverse_url('codePlag.view.accessUserRegisterRequestHandler') }}</a>注册账号 </p>
             <p>注册时，您需要注意您的账户类型</p>
             <p>我们根据邮箱的来源采用两种注册方式：自动注册通过和手工注册通过</p>
