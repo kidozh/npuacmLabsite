@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+input,
+body,
+html {
+    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+p,label,span{
+    font-family: 'Roboto',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span{
+    color: #2E3E54;
+}
+
+a{
+    color: #FFE77C;
+}
+
+a:hover,
+a:focus,
+a:visited{
+    color: #FCF7F8;
+}
+
+/* prevent blank on the right of screen */
+.container,
+.container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 0 0;
+}
+
+/* navigation */
+.top-nav {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    border: 0;
+    z-index: 2;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.top-nav .navbar-brand {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.top-nav .navbar-toggle {
+    border-radius: 0.3rem;
+    border: rgba(0, 0, 0, 0.5);
+}
+
+.top-nav .navbar-nav > li.top-nav-item > a {
+    color: rgba(0, 0, 0, 0.5);
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.top-nav .navbar-nav > li.top-nav-item > a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar a{
+    transition: .35s all;
+}
+
+.navbar a:hover,
+.navbar a:focus{
+    border-bottom: 0.2rem solid #42b983;
+    font-weight: 500;
+}
+
+/* for query screen */
+.form-section{
+    padding: 15rem 1rem 10rem 1rem;
+
+
+}
+
+.form-section input{
+    background: transparent;
+}
+
+/*.form-section .input label{
+    color: #ffffff ;
+}
+
+.form-section input:hover,
+.form-section input:focus,
+.form-section input:visited{
+    background: transparent !important;
+}
+
+*/
+.form-section h1,
+.form-section h2,
+.form-section h3,
+.form-section h4,
+.form-section h5,
+.form-section h6,
+.form-section p,
+.form-section a{
+    color: rgb(52, 73, 94);
+    font-weight: 300;
+}
+
+.form-section .highlight-title{
+    color: #A50029;
+}
+
+
+.color-line {
+    background: #f7f9fa;
+    height: 0.5rem;
+    background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-image: -moz-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-image: -ms-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-image: linear-gradient(to right, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+    background-size: 100% 6px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+.intro-screen{
+    background: url("/static/image/plag/background/geometry2.png") repeat;
+
+    padding: 10rem 5rem 10rem 5rem;
+}
+
+.intro-screen h1,
+.intro-screen h2,
+.intro-screen h3,
+.intro-screen h4,
+.intro-screen h5,
+.intro-screen h6 {
+    color: #34495e;
+}
+
+
+.intro-screen p{
+    color: #2c3e50;
+    font-family: 'Dosis', sans-serif;
+}
+
+.intro-screen .title{
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.intro-screen .sub-title{
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+
+.feature-screen{
+    padding: 3rem 4rem 3rem 4rem;
+    background: url("/static/image/plag/background/seigaiha.png") repeat;
+}
+
+.feature-screen  .feature-item-1 {
+
+    color: #f9f2f4;
+    background: #e43a15; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #e43a15 , #e65245); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.feature-screen .feature-item-2 {
+    color: #f9f2f4;
+
+    background: #005C97; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.feature-screen .feature-item-3 {
+    color: #f9f2f4;
+
+
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.feature-screen  .feature-item{
+    padding: 3rem 3rem 2rem 3rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.feature-item:hover,
+.feature-item:active{
+    transform: scale(1.05,1.05);
+    -webkit-transform: scale(1.05,1.05);
+    z-index: 10;
+    border-radius: 0.3rem !important;
+    animation: pulse-background 5s infinite cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    transform-style: preserve-3d;
+}
+
+/* for change background */
+
+@keyframes pulse-background {
+    0% {
+        background: #FA0337;
+    }
+    20% {
+        background: #FFC50D;
+    }
+    40% {
+        background: #02AB67;
+    }
+    60% {
+        background: #12D7E5;
+    }
+    80%{
+        background: #02448D;
+    }
+    100%{
+        background: #FA0337;
+    }
+
+}
+
+
+.feature-screen .feature-item h1,
+.feature-screen .feature-item h2,
+.feature-screen .feature-item h3,
+.feature-screen .feature-item h4,
+.feature-screen .feature-item h5,
+.feature-screen .feature-item h6,
+.feature-screen .feature-item p,
+.feature-screen .feature-item span{
+    color: #f9f2f4;
+}
+
+
+footer {
+    background: #50514F;
+    color: #fff;
+    position: relative;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p,
+footer span,
+footer label,
+footer a{
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Oxygen,'Microsoft YaHei UI',Sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    transition: all .35s;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #FF5A5F;
+}
+
+.title-row{
+    padding: 3rem 2rem 3rem 2rem;
+    background: url("/static/image/plag/background/geometry2.png") repeat;
+
+}
+
+.title-row h1,
+.title-row h2,
+.title-row h3,
+.title-row h4,
+.title-row h5,
+.title-row h6,
+.title-row p{
+    color: #50514F;
+}
+
+.article-row {
+    padding: 4rem 3rem 4rem 3rem;
+}
+
+.tool-banner{
+    padding: 3rem 2rem 3rem 2rem;
+    background: #457fca;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.transfer-board{
+    padding: 2rem;
+}
+
+.tool-banner h1,
+.tool-banner h2,
+.tool-banner h3,
+.tool-banner h4,
+.tool-banner h5,
+.tool-banner h6{
+    color: #FFF8B5;
+}
+
+

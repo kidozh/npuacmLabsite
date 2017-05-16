@@ -12,6 +12,7 @@ urlpatterns = [
     (r"^/admin",include('contrib.admin.urls')),
     (r"^/plag",include('codePlag.urls')),
     (r'^/contest2017',include('contestRegister.urls')),
+    (r'^/usefulTools',include('usefulTools.urls')),
     # need place last
     (r'(.*?)','portal.view.baseRedirectHandler')
 ]

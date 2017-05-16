@@ -7,7 +7,7 @@ import os
 SECRET_KEY = ')ac#4j9=^i7!5drrf)36r50!ot$4xa2%(v58a'
 
 # host for database
-DB_HOST = 'localhost'
+DB_HOST = '127.0.0.1'
 
 # username for database
 DB_USER = 'root'
@@ -31,7 +31,8 @@ INSTALLED_APPS = (
     'conf',
     'acmDetectInfo',
     'codePlag',
-    'contestRegister'
+    'contestRegister',
+    'usefulTools'
 )
 
 # for root urls

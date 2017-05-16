@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}中德成绩转换{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row title-row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 class="text-title">中德成绩转换</h1>
+
+        </div>
+    </div>
+    <div class="row article-row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>APS官方算法</h1>
+            <p>巴伐利亚算法</p>
+
+            <h1>算法说明</h1>
+            <p>APS绩点＝1＋3×（最高成绩－你的中国成绩）/（最高成绩－及格成绩）</p>
+
+            <h1>中德成绩转换对应表</h1>
+            <table class="table table-striped">
+                <thead class="thead-inverse">
+                <tr>
+                    <td>评定</td>
+                    <td>德国成绩</td>
+                    <td>百分制成绩</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Excellent</td><td>1</td><td>100</td><td>A</td></tr>
+                <tr><td></td><td>1,1</td><td>99</td><td>A</td></tr>
+                <tr><td></td><td>1,2</td><td>97</td><td>A</td></tr>
+                <tr><td></td><td>1,3</td><td>96</td><td>A</td></tr>
+                <tr><td></td><td>1,4</td><td>95</td><td>A</td></tr>
+                <tr><td></td><td>1,5</td><td>93</td><td>A</td></tr>
+                <tr><td>Very good</td><td>1,6</td><td>92</td><td>A</td></tr>
+                <tr><td></td><td>1,7</td><td>91</td><td>A</td></tr>
+                <tr><td></td><td>1,8</td><td>89</td><td>B</td></tr>
+                <tr><td></td><td>1,9</td><td>88</td><td>B</td></tr>
+                <tr><td></td><td>2</td><td>87</td><td>B</td></tr>
+                <tr><td></td><td>2,1</td><td>85</td><td>B</td></tr>
+                <tr><td></td><td>2,2</td><td>84</td><td>B</td></tr>
+                <tr><td></td><td>2,3</td><td>83</td><td>B</td></tr>
+                <tr><td>Good</td><td>2,4</td><td>81</td><td>B</td></tr>
+                <tr><td></td><td>2,5</td><td>80</td><td>B</td></tr>
+                <tr><td></td><td>2,6</td><td>79</td><td>C</td></tr>
+                <tr><td></td><td>2,7</td><td>77</td><td>C</td></tr>
+                <tr><td></td><td>2,8</td><td>76</td><td>C</td></tr>
+                <tr><td></td><td>2,9</td><td>75</td><td>C</td></tr>
+                <tr><td>Satisfactory</td><td>3</td><td>73</td><td>C</td></tr>
+                <tr><td></td><td>3,1</td><td>72</td><td>C</td></tr>
+                <tr><td></td><td>3,2</td><td>71</td><td>C</td></tr>
+                <tr><td></td><td>3,3</td><td>69</td><td>D</td></tr>
+                <tr><td></td><td>3,4</td><td>68</td><td>D</td></tr>
+                <tr><td></td><td>3,5</td><td>67</td><td>D</td></tr>
+                <tr><td>Pass</td><td>3,6</td><td>65</td><td>D</td></tr>
+                <tr><td></td><td>3,7</td><td>64</td><td>D</td></tr>
+                <tr><td></td><td>3,8</td><td>63</td><td>D</td></tr>
+                <tr><td></td><td>3,9</td><td>61</td><td>D</td></tr>
+                <tr><td></td><td>4</td><td>60</td><td>D</td></tr>
+                <tr><td>Fail</td><td>&lt; 4</td><td>&lt; 60</td><td>F</td></tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+    <div class="row tool-banner">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>成绩兑换助手</h1>
+        </div>
+    </div>
+    <div class="row transfer-board" id="score-transfer">
+        <div class="col-md-6">
+            <input class="form-control" v-model="cn_message" type="number" placeholder="请输入中国成绩">
+            <p>德方转换成绩应为 : {{! de2cn_message }}</p>
+        </div>
+        <div class="col-md-6">
+            <input class="form-control" v-model="de_message" type="number" placeholder="请输入德方成绩">
+            <p>中方转换成绩应为 : {{! cn2de_message }}</p>
+        </div>
+    </div>
+</div>
+
+
+{% end %}
+
+{% block footerJS %}
+<script>
+    function descoreLower1() {
+        toastr["info"]("德方成绩应该是大于1小于5的数字", "德方成绩不正确");
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-bottom-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    }
+
+    $(document).ready(function () {
+        var transferDiv = new Vue({
+            el: '#score-transfer',
+            data: {
+                picked: '',
+                cn_message:'',
+                de_message:'',
+                de2cn_message:'',
+                cn2de_message:''
+            },
+            watch:{
+                cn_message: function (cn_message) {
+                    this.de2cn_message = 1 + 3 * (100-this.cn_message)/(100-60);
+                    this.de2cn_message = this.de2cn_message.toFixed(1)
+
+                },
+                de_message: function (cn_message) {
+                    if (this.de_message<1 || this.de_message>5){
+                        descoreLower1();
+                        this.cn2de_message = ''
+                    }
+                    else{
+                        this.cn2de_message = 100 - 40*(this.de_message-1)/3
+                        this.cn2de_message = this.cn2de_message.toFixed(1);
+                    }
+
+
+                },
+
+            }
+        })
+    })
+
+</script>
+
+{% end %}
