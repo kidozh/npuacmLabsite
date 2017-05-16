@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <p class="text-center">Copyrights &copy; <a href="/">{% module get_option('SITE_NAME') %}</a> All Rights reversed.</p>
+                <p class="text-center">Copyrights &copy; {{ datetime.datetime.now().year }} {% module get_option('SITE_NAME') %} All rights reversed.</p>
                 <p class="text-center">{% module get_option('BEIAN_NUM') %}</p>
             </div>
         </div>
