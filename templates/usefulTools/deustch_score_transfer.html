@@ -18,8 +18,11 @@
             <h1>算法说明</h1>
             <p>APS绩点＝1＋3×（最高成绩－你的中国成绩）/（最高成绩－及格成绩）</p>
 
+            <h1>计算小工具</h1>
+            <p>您可以使用小工具来获得对应关系：<a href="#score-transfer">点击我</a> </p>
+
             <h1>中德成绩转换对应表</h1>
-            <table class="table table-striped">
+            <table class="table">
                 <thead class="thead-inverse">
                 <tr>
                     <td>评定</td>
@@ -29,13 +32,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr><td>Excellent</td><td>1</td><td>100</td><td>A</td></tr>
+                <tr class="table-success"><td>Excellent</td><td>1</td><td>100</td><td>A</td></tr>
                 <tr><td></td><td>1,1</td><td>99</td><td>A</td></tr>
                 <tr><td></td><td>1,2</td><td>97</td><td>A</td></tr>
                 <tr><td></td><td>1,3</td><td>96</td><td>A</td></tr>
                 <tr><td></td><td>1,4</td><td>95</td><td>A</td></tr>
                 <tr><td></td><td>1,5</td><td>93</td><td>A</td></tr>
-                <tr><td>Very good</td><td>1,6</td><td>92</td><td>A</td></tr>
+                <tr class="table-info"><td>Very good</td><td>1,6</td><td>92</td><td>A</td></tr>
                 <tr><td></td><td>1,7</td><td>91</td><td>A</td></tr>
                 <tr><td></td><td>1,8</td><td>89</td><td>B</td></tr>
                 <tr><td></td><td>1,9</td><td>88</td><td>B</td></tr>
@@ -43,24 +46,24 @@
                 <tr><td></td><td>2,1</td><td>85</td><td>B</td></tr>
                 <tr><td></td><td>2,2</td><td>84</td><td>B</td></tr>
                 <tr><td></td><td>2,3</td><td>83</td><td>B</td></tr>
-                <tr><td>Good</td><td>2,4</td><td>81</td><td>B</td></tr>
+                <tr class="table-warning"><td>Good</td><td>2,4</td><td>81</td><td>B</td></tr>
                 <tr><td></td><td>2,5</td><td>80</td><td>B</td></tr>
                 <tr><td></td><td>2,6</td><td>79</td><td>C</td></tr>
                 <tr><td></td><td>2,7</td><td>77</td><td>C</td></tr>
                 <tr><td></td><td>2,8</td><td>76</td><td>C</td></tr>
                 <tr><td></td><td>2,9</td><td>75</td><td>C</td></tr>
-                <tr><td>Satisfactory</td><td>3</td><td>73</td><td>C</td></tr>
+                <tr class="table-danger"><td>Satisfactory</td><td>3</td><td>73</td><td>C</td></tr>
                 <tr><td></td><td>3,1</td><td>72</td><td>C</td></tr>
                 <tr><td></td><td>3,2</td><td>71</td><td>C</td></tr>
                 <tr><td></td><td>3,3</td><td>69</td><td>D</td></tr>
                 <tr><td></td><td>3,4</td><td>68</td><td>D</td></tr>
                 <tr><td></td><td>3,5</td><td>67</td><td>D</td></tr>
-                <tr><td>Pass</td><td>3,6</td><td>65</td><td>D</td></tr>
+                <tr class="bg-danger"><td>Pass</td><td>3,6</td><td>65</td><td>D</td></tr>
                 <tr><td></td><td>3,7</td><td>64</td><td>D</td></tr>
                 <tr><td></td><td>3,8</td><td>63</td><td>D</td></tr>
                 <tr><td></td><td>3,9</td><td>61</td><td>D</td></tr>
                 <tr><td></td><td>4</td><td>60</td><td>D</td></tr>
-                <tr><td>Fail</td><td>&lt; 4</td><td>&lt; 60</td><td>F</td></tr>
+                <tr class="bg-"><td>Fail</td><td>&lt; 4</td><td>&lt; 60</td><td>F</td></tr>
                 </tbody>
             </table>
 
@@ -69,7 +72,7 @@
     </div>
     <div class="row tool-banner">
         <div class="col-md-10 col-md-offset-1">
-            <h1>成绩兑换助手</h1>
+            <h1 name="transfer-tools" id="transfer-tools">成绩兑换助手</h1>
         </div>
     </div>
     <div class="row transfer-board" id="score-transfer">
@@ -90,13 +93,57 @@
 {% block footerJS %}
 <script>
     function descoreLower1() {
-        toastr["info"]("德方成绩应该是大于1小于5的数字", "德方成绩不正确");
+        toastr["warning"]("德方成绩应该是大于1小于5的数字");
 
         toastr.options = {
             "closeButton": false,
             "debug": false,
             "newestOnTop": false,
-            "progressBar": false,
+            "progressBar": true,
+            "positionClass": "toast-bottom-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    }
+
+    function cnScoreIncorrect() {
+        toastr["warning"]("中方成绩应该是大于等于0小于等于100的数字");
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar":true,
+            "positionClass": "toast-bottom-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    }
+
+    function scoreWarn(info) {
+        toastr["info"](info);
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar":true,
             "positionClass": "toast-bottom-right",
             "preventDuplicates": false,
             "onclick": null,
@@ -123,8 +170,22 @@
             },
             watch:{
                 cn_message: function (cn_message) {
-                    this.de2cn_message = 1 + 3 * (100-this.cn_message)/(100-60);
-                    this.de2cn_message = this.de2cn_message.toFixed(1)
+                    if(this.cn_message>100 || this.cn_message<0){
+                        cnScoreIncorrect();
+                        this.de2cn_message = '';
+                    }
+                    else {
+
+
+                        this.de2cn_message = 1 + 3 * (100-this.cn_message)/(100-60);
+                        this.de2cn_message = this.de2cn_message.toFixed(1);
+
+                        if(this.cn_message<=60){
+                            scoreWarn('一般德国高校对于不及格的判定，统一转换为5分。');
+                            this.de2cn_message = 5;
+                        }
+                    }
+
 
                 },
                 de_message: function (cn_message) {
@@ -135,6 +196,11 @@
                     else{
                         this.cn2de_message = 100 - 40*(this.de_message-1)/3
                         this.cn2de_message = this.cn2de_message.toFixed(1);
+
+                        if(this.de_message>4 ){
+                            scoreWarn('一般德国高校对于不及格的判定，统一转换为5分，所以你的转换的中国成绩，在0-60分范围内波动。');
+                        }
+
                     }
 
 
