@@ -368,7 +368,7 @@ class multipleQueryHandler(BaseHandler):
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
             'Accept-Encoding': 'deflate',}
-        response = yield AsyncHTTPClient().fetch(url,headers=headers, raise_error=False,request_timeout=20)
+        response = yield AsyncHTTPClient().fetch(url,headers=headers, raise_error=False,request_timeout=10)
         raise gen.Return(response)
 
 
@@ -650,16 +650,16 @@ class bulkQueryRequestHandler(BaseHandler):
         self._q = queues.Queue()
         self.filterOJ = set([])
         self.infoDict = {}
-        email = self.get_argument('email')
+        #email = self.get_argument('email')
         self.query = probCrawler.crawler(queryName='')
-        accessKey = self.get_argument('accessKey')
+        #accessKey = self.get_argument('accessKey')
         from codePlag.models import filePermitArchive
         # need check right first
-        if not filePermitArchive.filter(email=email,isAuth=True,isBanned=False,auth_key=accessKey).exists():
-            self._reason = '传递的Email值或者准入密钥有问题/您的Email没有验证成功'
-            self._status_code = 500
-            self.write_error(500)
-            return
+        #if not filePermitArchive.filter(email=email,isAuth=True,isBanned=False,auth_key=accessKey).exists():
+        #    self._reason = '传递的Email值或者准入密钥有问题/您的Email没有验证成功'
+        #    self._status_code = 500
+        #    self.write_error(500)
+        #    return
         bulkAccount = self.get_argument('namelist')
         # split the text according to lines
         accountList = bulkAccount.split()

@@ -28,7 +28,17 @@
 
                         <div class="card-block">
                             <h4 class="card-title"><i class="fa fa-user"></i>您所查询的账号</h4>
-                            <p class="card-text">{% raw '{{ name }}' %}</p>
+                            <p class="card-text">
+
+                            <ul>
+                                <li v-for="todo in name">
+                                    {{! todo }}
+                                </li>
+                            </ul>
+
+
+
+                            </p>
 
                         </div>
                     </div>
@@ -48,6 +58,15 @@
                             <h4 class="card-title"><i class="fa fa-th-large"></i>已经查询时长</h4>
                             <p class="card-text">{% raw '{{ secondElapse }}' %}秒</p>
 
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-block">
+                            <h4 class="card-title"><i class="fa fa-th-large"></i>新增一个查询</h4>
+                            <p class="card-text" v-if="prohibitNewQuery"><a class="btn btn-danger"><span class="fa fa-spin fa-circle-o-notch"></span> 暂不可用</a> </p>
+                            <p class="card-text" v-if="permitNewQuery"><a data-toggle="modal" data-target="#addNewQuery" class="btn btn-success"><span class="fa fa-spin fa-ok"></span>新增查询</a> </p>
                         </div>
                     </div>
 
@@ -86,6 +105,35 @@
 </div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="addNewQuery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">新的查询</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for=new-name" class="form-control-label">新的查询账户:</label>
+                        <input type="text" class="form-control" id="new-name">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="doneNewQuery();">查询</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 {% end %}
 
@@ -93,6 +141,16 @@
 <script>
     // function
     var t;
+    var globalInfo;
+    var firstSubmitReturned = false;
+
+    function doneNewQuery() {
+        var newName = $('#new-name').val();
+        $('#new-name').val('');
+        addNewUser(newName);
+        $('#addNewQuery').modal('hide');
+    }
+
     function timedCount()
     {
         countSecBox.secondElapse +=1;
@@ -114,7 +172,7 @@
                 toastr.error('您的账号为空','查询出错');
 
 
-            }, 1300)
+            }, 1300);
             return false;
         }
         xhr = $.ajax({
@@ -127,11 +185,24 @@
             type:"GET",
             cache: false,
             success: function (data) {
+
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.success('完成对于'+name+'的题数查询');
+
                 // deal with these data
                 // traverse all ac
                 number = 0;
                 totAC = 0;
-                totSubmit = 0
+                totSubmit = 0;
+                globalInfo = data;
+                firstSubmitReturned = true;
+                countSecBox.prohibitNewQuery = false;
+
                 for(var key in data['ac']){
 
                     acList = data['ac'][key];
@@ -189,10 +260,18 @@
     var countSecBox = new Vue({
         el:'#queryInfoBox',
         data:{
-            name:'{{ name }}',
-            secondElapse:0
+            name:['{{ name }}'],
+            secondElapse:0,
+            prohibitNewQuery:true,
+        },
+        computed:{
+            permitNewQuery:function () {
+                return !this.prohibitNewQuery;
+            }
         }
     });
+
+
     $(document).ready(function(){
         // start to recond data
         timedCount();
@@ -223,6 +302,210 @@
         }
 
     });
+
+    /* function for add new user */
+    function addNewUser(name) {
+        if(!firstSubmitReturned){
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.error('第一份查询未返回，并行查询被拒绝。您可以等结果出来之后在进行下一次查询。');
+
+
+            }, 1300);
+            return false;
+        }
+
+        if (name){
+
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.info(name+'的查询正在进行中。。。请等待，么么哒！');
+
+
+            }, 1300);
+
+            // if null just return null
+            console.log(name);
+        }
+        else{
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.error('您的账号为空','查询出错');
+
+
+            }, 1300);
+            return false;
+        }
+
+        timedCount();
+
+        xhr = $.ajax({
+            url:"{{ reverse_url('acmDetectInfo.view.multipleQueryHandler') }}",
+            // data which api server can accept
+            data:{
+                name:name
+            },
+            dataType:"json",
+            type:"GET",
+            cache: false,
+            success: function (data) {
+                // deal with these data
+                // traverse all ac
+                number = 0;
+                totAC = 0;
+                totSubmit = 0;
+
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 10000
+                };
+                toastr.success('完成对于'+name+'的题数查询');
+
+                // merge this data with original data first...
+                if(!mergeResData(data)){
+                    return false;
+                }
+                else{
+                    // do copy
+                    data = globalInfo;
+                }
+
+                // truncate list first
+                resTable.data = [];
+
+                for(var key in data['ac']){
+
+                    acList = data['ac'][key];
+                    /* judge if submit has corresponding oj */
+                    if(data['submit'].hasOwnProperty(key)){
+                        submit = data['submit'][key];
+                    }
+                    else{
+                        submit = 0;
+                    }
+                    totAC +=acList.length;
+                    //console.log(acList.length);
+                    totSubmit +=submit;
+                    var appendData = {
+                        ac:acList.length,
+                        oj:key,
+                        submit:submit,
+                        number:number
+                    };
+                    resTable.data.push(appendData);
+                    number++;
+
+                }
+                var appendData = {
+                    ac:totAC,
+                    oj:'总计',
+                    submit:totSubmit,
+                    number:number
+                };
+                resTable.data.push(appendData);
+                countSecBox.name.push(name);
+                clearInterval(t);
+
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 10000
+                    };
+                    toastr.error('无法连接至API','获取数据失败');
+
+
+                }, 1300)
+
+            }
+
+
+        });
+    }
+
+    function mergeResData(newData) {
+        //console.log('# Start to merge...');
+        var traverseKey = new Set();
+        // get all keys from both dict
+        for(var i in newData['ac']){traverseKey.add(i)};
+        for(var i in globalInfo['ac']){traverseKey.add(i)};
+        //console.log(traverseKey);
+        // tranverse all data
+        for(var oj of traverseKey){
+            // manage AC first
+            if(globalInfo['ac'].hasOwnProperty(oj)){
+                // it shows that this OJ has its history problem
+
+                // merge it
+                if (!newData['ac'].hasOwnProperty(oj)){
+                    //new Data doesn't have corresponding keys, just skip it
+
+                }
+                else{
+                    //console.log('Merge '+oj+'Original :'+globalInfo['ac'][oj].length+newData['ac'][oj]);
+                    // need merge
+                    globalInfo['ac'][oj] = globalInfo['ac'][oj].concat(newData['ac'][oj]);
+                    //console.log('Merge '+oj+' After :'+globalInfo['ac'][oj].length);
+                    // get unique list from list
+                    globalInfo['ac'][oj] = globalInfo['ac'][oj].filter( function( item, index, inputArray ) {
+                        return inputArray.indexOf(item) == index;
+                    });
+                    //console.log('Merge '+oj+' Unique :'+globalInfo['ac'][oj].length);
+                }
+            }
+            else{
+                // new dictionary must have its key, so there is no need to check the exsit of key
+                globalInfo['ac'][oj] = newData['ac'][oj]
+            }
+
+            // deal with submit...
+            if(globalInfo['submit'].hasOwnProperty(oj)){
+                // it shows that this OJ has its history problem
+                // merge it
+                if (!newData['submit'].hasOwnProperty(oj)){
+                    //new Data doesn't have corresponding keys, just skip it
+                }
+                else{
+                    // need merge
+                    globalInfo['submit'][oj]+=newData['submit'][oj];
+
+                }
+            }
+            else{
+                // new dictionary must have its key, so there is no need to check the exsit of key
+                globalInfo['submit'][oj] = newData['submit'][oj]
+            }
+
+        }
+
+        // do responsive update...
+        return true;
+
+
+
+
+
+    };
 
 
 </script>
