@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 
 h1,
 h2,
@@ -11,7 +11,7 @@ a,
 input,
 body,
 html {
-    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Lato',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 p,label,span{
@@ -229,12 +229,12 @@ a:visited{
 .feature span{
     color: #ffffff;
     font-weight: lighter;
-    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Lato',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .feature a{
     color: #ffcd05;
-    font-family: 'Oxygen',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Lato',"Ubuntu", "微软雅黑", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .feature a:hover,
@@ -269,4 +269,190 @@ a:visited{
 
 .feature .feature-item{
     padding: 3rem 0 0 3rem;
+}
+
+/* CRON */
+.cron-intro{
+    background: url(/static/image/portal/pexels-photo-large.jpg) no-repeat center top;
+    padding: 10rem 3rem 10rem 3rem;
+    /* text-align: center; */
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cron-intro h1,
+.cron-intro h2,
+.cron-intro h3,
+.cron-intro h4,
+.cron-intro h5,
+.cron-intro h6,
+.cron-intro p{
+    color: #fffff9;
+}
+
+.cron-intro .intro-main{
+    font-size: 4rem;
+    font-family: 'Lato', "微软雅黑", sans-serif;
+    padding-bottom: 3rem;
+    letter-spacing: 1.5rem;
+}
+
+.cron-intro p{
+    font-size: 2rem;
+}
+
+.submit-screen{
+    background: #171f26;
+    padding: 5rem 3rem 5rem 3rem;
+}
+
+.submit-screen h1,
+.submit-screen h2,
+.submit-screen h3,
+.submit-screen h4,
+.submit-screen h5,
+.submit-screen h6,
+.submit-screen p,
+.submit-screen label,
+.submit-screen li{
+    color: hsla(0,0%,100%,.8);
+}
+
+.submit-screen .form-control{
+    background: #283542;
+    border: none;
+    border-radius: 0;
+    color: hsla(0,0%,100%,.8);
+    font-family: Roboto,"Microsoft YaHei UI",sans-serif;
+    padding: 1.2rem 1.5rem;
+}
+
+.submit-screen .form-control:before{
+    content: "$";
+    opacity: .5;
+}
+
+.submit-screen .btn-submit{
+    background: #1094e8;
+    border-radius: 0;
+    border: none;
+
+}
+
+.pass-intro{
+    background: url(/static/image/portal/pexels-photo-262669.jpeg) no-repeat center top;
+    padding: 10rem 3rem 10rem 3rem;
+    /* text-align: center; */
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pass-intro h1,
+.pass-intro h2,
+.pass-intro h3,
+.pass-intro h4,
+.pass-intro h5,
+.pass-intro h6,
+.pass-intro p{
+    color: #fffff9;
+}
+
+.pass-intro .intro-main{
+    font-size: 4rem;
+    font-family: 'Lato', "微软雅黑", sans-serif;
+    padding-bottom: 3rem;
+    letter-spacing: 1.5rem;
+}
+
+.pass-intro p{
+    font-size: 2rem;
+}
+
+
+/* prevent blank on the right of screen */
+.container,
+.container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 0 0;
+}
+
+.dropdown-item{
+    margin-left: 0 !important;
+    color: #2b2d2f !important;
+}
+
+
+.realtime-intro{
+    background: url(/static/image/portal/sky-night-space-galaxy.jpeg) no-repeat center top;
+    padding: 10rem 3rem 10rem 3rem;
+    /* text-align: center; */
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.realtime-intro h1,
+.realtime-intro h2,
+.realtime-intro h3,
+.realtime-intro h4,
+.realtime-intro h5,
+.realtime-intro h6,
+.realtime-intro p{
+    color: #fffff9;
+}
+
+.realtime-intro .intro-main{
+    font-size: 4rem;
+    font-family: 'Lato', "微软雅黑", sans-serif;
+    padding-bottom: 3rem;
+    letter-spacing: 1.5rem;
+}
+
+.realtime-intro p{
+    font-size: 2rem;
+}
+
+.btn-realtime{
+    padding: 1rem 3rem 1rem 3rem;
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#FFF8B5;
 }

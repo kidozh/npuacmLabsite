@@ -10,6 +10,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-toggleable-sm" id="navbar-collapse">
             <ul class="nav navbar-nav pull-right">
+                <li class="nav-item top-nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">扩展</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item nav-link" href="{{ reverse_url('acmDetectInfo.view.boardRequestHandler') }}">排行榜</a>
+                        <a class="dropdown-item nav-link" href="{{ reverse_url('acmDetectInfo.view.bulkQueryRequestHandler') }}">批量查找</a>
+                        <a class="dropdown-item nav-link" href="{{ reverse_url('acmDetectInfo.view.cronQueryRequestHandler') }}">定时查找</a>
+
+
+                    </div>
+                </li>
+
                 <li class='top-nav-item nav-item'>
                     <a href="" class="nav-link">关于</a>
                 </li>
@@ -21,6 +34,8 @@
                 <li class='top-nav-item nav-item'>
                     <a href="{{ reverse_url('acmDetectInfo.view.docRequestHandler','feature') }}"  class="nav-link">特征</a>
                 </li>
+
+
 
             </ul>
         </div><!-- /.navbar-collapse -->

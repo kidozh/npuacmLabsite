@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block webTitle %}定时查询{% end %}
+
+{% block content %}
+
+<div class="container-fluid" style="max-width: none">
+    <div class="row cron-intro">
+        <div class="col-md-8 col-md-offset-2">
+
+            <h1 class="text-center intro-main">- CRON -</h1>
+            <p class="text-center lead">我们与你一起见证你的ACM之路。</p>
+            <p class="text-center">每天我们都将定时检查您当天的成果并且记录下来，您的每日努力，我们都用心记录。</p>
+            <p class="text-center"><a class="btn btn-realtime" href="{{ reverse_url('acmDetectInfo.view.cronRealtimeRequestHandler') }}">实时情况查看</a> </p>
+        </div>
+    </div>
+    <div class="row submit-screen">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="" method="post">
+                {% raw xsrf_form_html() %}
+                <div class="form-group">
+                    <h3 class="text-center">开始</h3>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">邮箱</label>
+                    <input type="email" name="email" maxlength="50" required class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="邮箱是审核的依据">
+
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">账户</label>
+                    <input type="text" name="account" maxlength="30" required class="form-control" id="inputAccount" aria-describedby="emailHelp" placeholder="请输入一个账户">
+
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-submit"><span class="fa fa-arrow-right"></span></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+{% include 'footer.html' %}
+
+{% end %}

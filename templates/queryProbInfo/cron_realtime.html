@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row realtime-intro">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 class="text-center intro-main">- CRON -</h1>
+            <p class="text-center">实时情况</p>
+        </div>
+    </div>
+    <div class="row submit-screen">
+        <div class="col-md-10 col-md-offset-1">
+            <h3>上次更新时间</h3>
+            {% if lastQuerytime %}
+            <p>上次更新于{{ lastQuerytime }}</p>
+            {% else %}
+            <p>很抱歉，目前账号并没有得到更新。</p>
+            {% end %}
+            <h3>系统每日更新时间</h3>
+            <p>{{ everyhour }}时</p>
+            <h3>每日会查询的账号：</h3>
+            <p>共{{ len(accounts) }}个。</p>
+            <ul>
+                {% for account in accounts %}
+                <li>{{ account }}</li>
+
+                {% end %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% end %}

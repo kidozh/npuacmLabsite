@@ -22,3 +22,10 @@ class acRecordArchive(baseModel):
     # non-ac archive
     submitNum = IntegerField()
     ratio = FloatField()
+
+class cronInfo(baseModel):
+    email = CharField(max_length=50)
+    account = CharField(max_length=30)
+    isPermit = BooleanField(default=True)
+    freezeDay = IntegerField(default=0)
+    createTime = DateTimeField(default=datetime.datetime.now())

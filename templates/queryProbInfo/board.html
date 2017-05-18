@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<!--<link href="//cdn.bootcss.com/datatables/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">-->
+<link href="//cdn.bootcss.com/datatables/1.10.15/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.bootcss.com/datatables/1.10.15/js/dataTables.bootstrap4.min.js"></script>
+{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>排行榜</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table" id="board">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total</th>
+                    <th>Submit</th>
+                    <th>POJ</th>
+                    <th>HDU</th>
+                    <th>ZOJ</th>
+                    <th>CF</th>
+                    <th>ACdream</th>
+                    <th>BZOJ</th>
+                    <th>Others</th>
+                    <th>查询时间</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block footerJS %}
+<script type="application/javascript">
+    function getCookie(name) {
+        var c = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        return c ? c[1] : undefined;
+    }
+
+    function addData(){
+        var data = {};
+        head = $('table thead tr th');
+
+        data['_xsrf'] = getCookie('_xsrf');
+        return data;
+    }
+
+    $(document).ready(function () {
+        $(document).ready(function() {
+            $('#board').dataTable( {
+                "processing": true,
+                "serverSide": true,
+                "ajax":{
+                    url:"{{ reverse_url('acmDetectInfo.view.boardRequestHandler') }}",
+                    type: 'POST',
+                    data:addData()
+                }
+
+            } );
+        } );
+
+    })
+
+</script>
+{% end %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block webTitle %}定时查询{% end %}
+
+{% block content %}
+
+<div class="container-fluid" style="max-width: none">
+    <div class="row pass-intro">
+        <div class="col-md-8 col-md-offset-2">
+
+            <h1 class="text-center intro-main">- CRON -</h1>
+            <p class="text-center lead">你的申请已经通过！</p>
+
+        </div>
+    </div>
+    <div class="row submit-screen">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>说明</h3>
+            <p>如果您在连续14天及其以上未在{{ account }}刷题，我们有权<strong>不通知</strong>您对您的账号停止服务。</p>
+            <p>在以下情况下，我们不会通过定时查询服务的审核：</p>
+            <p>
+                <ul>
+                    <li>非个人账户（例如Vjudge系列）</li>
+                    <li>具有明显侮辱性质的账户</li>
+                    <li>邮箱账户无法联系</li>
+                </ul>
+            </p>
+            <p>请保持您的邮箱{{ email }}在最近1天内接受信息，我们会对您的账户进行人工审核，若不通过，将会以邮件的形式通知您。</p>
+            <p>我们对您账户的一些疑问，需求，都只会通过邮箱：{{ email }}向您联络。同时，由于我们的性质，我们的服务是免费的。</p>
+            <p>在服务过程中，如果有任何疑问，您可以随时发邮件至kidozh@npuacm.info。</p>
+        </div>
+    </div>
+
+</div>
+
+{% include 'footer.html' %}
+
+{% end %}

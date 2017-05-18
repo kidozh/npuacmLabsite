@@ -582,6 +582,8 @@ class appModelApiManager(BaseHandler):
         length = self.get_argument('length')
 
 
+
+
         # read columns configuration from dataTable
         i = 0
         success = True

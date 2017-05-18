@@ -24,3 +24,11 @@ UImodule = {
     'get_option':contrib.admin.uimodule.optionModule,
     'adminlte_load_left_sidebar':contrib.admin.uimodule.appModelModule
 }
+
+from contrib.admin.log import praseLog
+
+# cron should be (func,every ms)
+
+cron = [
+    (praseLog,10*60*1000)
+]

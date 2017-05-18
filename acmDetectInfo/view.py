@@ -18,7 +18,8 @@ import urllib2
 import json
 import logging
 import time
-from .models import acRecordArchive
+from .models import acRecordArchive,cronInfo
+from conf.models import configOption
 
 class queryRequestHandler(BaseHandler):
     def get(self,*args, **kwargs):
@@ -325,8 +326,8 @@ class echoProblemHandler(tornado.websocket.WebSocketHandler):
             # search for relative client
             for client in cls.clients:
                 if client['mainName'] == revInfo['mainName'] \
-                and str(client['queryTime']) == str(revInfo['queryTime']) \
-                and str(client['revKey']) == str(revInfo['revKey']):
+                        and str(client['queryTime']) == str(revInfo['queryTime']) \
+                        and str(client['revKey']) == str(revInfo['revKey']):
                     # send client and json
                     client['echoHandler'].write_message(json.dumps(infoDict))
         else:
@@ -365,9 +366,9 @@ class multipleQueryHandler(BaseHandler):
     def fetch(self,url):
         # print('fetcing', url)
         headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'deflate',}
+                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                   'Accept-Language': 'en-US,en;q=0.5',
+                   'Accept-Encoding': 'deflate',}
         response = yield AsyncHTTPClient().fetch(url,headers=headers, raise_error=False,request_timeout=10)
         raise gen.Return(response)
 
@@ -446,14 +447,21 @@ class multipleQueryHandler(BaseHandler):
 
         for _ in range(100): # open up 100 process
             self.worker()
-        # yield self._q.join(timeout=timedelta(seconds=30))
+            # yield self._q.join(timeout=timedelta(seconds=30))
 
     @tornado.web.asynchronous
     #@tornado.gen.engine
     @tornado.gen.coroutine
     def get(self,*args,**kwargs):
         import probCrawler
+
+
         name = self.get_argument("name")
+        if authName(name) == None:
+            self._reason = '错误的用户名'
+            self.write_error(500)
+            return
+
         revKey = self.get_argument('revKey',None)
         timestamp =self.get_argument('timestamp',None)
         self.query = probCrawler.crawler(queryName=name)
@@ -498,16 +506,18 @@ class multipleQueryHandler(BaseHandler):
             pojNum = len(dataDict['ac'].get('poj',[])),
             hduNum = len(dataDict['ac'].get('hdu',[])),
             zojNum = len(dataDict['ac'].get('zoj',[])),
-            cfNum = len(dataDict['ac'].get('codeforces',[])),
+            cfNum = len(dataDict['ac'].get('codeforces',[])) + len(dataDict['ac'].get('CodeForces',[])),
             acdreamNum = len(dataDict['ac'].get('acdream',[])),
 
-            bzojNum = len(dataDict['ac'].get('hysbz',[])),
+            bzojNum = len(dataDict['ac'].get('hysbz',[])) + len(dataDict['ac'].get('bzoj',[])),
             otherOJNum = tot-len(dataDict['ac'].get('poj',[]))
-                            -len(dataDict['ac'].get('hdu',[]))
-                            -len(dataDict['ac'].get('zoj',[]))
-                            -len(dataDict['ac'].get('codeforces',[]))
-                            -len(dataDict['ac'].get('acdream',[]))
-                            -len(dataDict['ac'].get('hysbz',[])),
+                         -len(dataDict['ac'].get('hdu',[]))
+                         -len(dataDict['ac'].get('zoj',[]))
+                         -len(dataDict['ac'].get('codeforces',[]))
+                         -len(dataDict['ac'].get('acdream',[]))
+                         -len(dataDict['ac'].get('hysbz',[]))
+                         -len(dataDict['ac'].get('bzoj',[]))
+                         -len(dataDict['ac'].get('CodeForces',[])),
 
             totalNum = tot,
             submitNum = submitTot,
@@ -522,7 +532,7 @@ class multipleQueryHandler(BaseHandler):
 
 class docRequestHandler(BaseHandler):
     def get(self,pageName,*args,**kwargs):
-        if pageName not in ['about','faq','feature','bulk_query_guide']:
+        if pageName not in ['about','faq','feature','bulk_query_guide','cron_realtime']:
             self.write_error(404)
         try:
             self.render('queryProbInfo/%s.html' % (pageName),*args)
@@ -530,6 +540,66 @@ class docRequestHandler(BaseHandler):
             raise e
             self._reason = '瞄~'
             self.write_error(404)
+
+# ----- BOARD ------
+class boardRequestHandler(BaseHandler):
+    def get(self):
+        self.render('queryProbInfo/board.html')
+
+
+    def post(self):
+        draw = self.get_argument('draw')
+        start = self.get_argument('start')
+        start = int(start)
+        length = self.get_argument('length')
+        length = int(length)
+        tabHead = ['name','totalNum','submitNum','pojNum','hduNum','zojNum','cfNum','acdreamNum','bzojNum','otherOJNum','queryTime']
+
+        orderIndex = self.get_argument('order[0][column]', None)
+        orderIndex = int(orderIndex)
+        orderType = self.get_argument('order[0][dir]', None)
+        orderField = []
+        if (orderIndex != None and orderType !=None):
+            if(orderType == 'desc'):
+                orderField.append(getattr(acRecordArchive,tabHead[orderIndex]).desc())
+            else:
+                orderField.append(getattr(acRecordArchive, tabHead[orderIndex]))
+
+
+        dataDict = {}
+        dataDict['draw'] = draw
+        filterName = self.get_argument('search[value]',None)
+        recordsTotal = acRecordArchive.select().count()
+        if filterName:
+            query = acRecordArchive.select().order_by(*orderField).where(acRecordArchive.name.contains(filterName))[start:start+length]
+            dataDict['recordsFiltered'] = acRecordArchive.select().order_by(*orderField).where(acRecordArchive.name.contains(filterName)).count()
+        else:
+            query = acRecordArchive.select().order_by(*orderField)[start:start+length]
+            dataDict['recordsFiltered'] = recordsTotal
+        data = []
+        dataDict['recordsTotal'] = recordsTotal
+
+
+        for record in query:
+            # get corresponding value
+            everyRecords = []
+            for field in tabHead:
+                # print(getattr(record,field))
+                if( field != 'queryTime'):
+                    everyRecords.append(getattr(record,field))
+                else:
+                    # transfer datetime
+                    timeStamp = getattr(record,field).strftime("%Y-%m-%d %H:%M:%S")
+                    everyRecords.append(timeStamp)
+
+            data.append(everyRecords)
+
+
+        dataDict['data'] = data
+
+        self.write(json.dumps(dataDict))
+        self.finish()
+
 
 class bulkQueryRequestHandler(BaseHandler):
     import probCrawler
@@ -548,9 +618,9 @@ class bulkQueryRequestHandler(BaseHandler):
     def fetch(self,url):
         # print('fetcing', url)
         headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'deflate',}
+                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                   'Accept-Language': 'en-US,en;q=0.5',
+                   'Accept-Encoding': 'deflate',}
         response = yield AsyncHTTPClient().fetch(url,headers=headers, raise_error=False,request_timeout=10)
         raise gen.Return(response)
 
@@ -634,7 +704,7 @@ class bulkQueryRequestHandler(BaseHandler):
 
 
 
-        # yield self._q.join(timeout=timedelta(seconds=30))
+            # yield self._q.join(timeout=timedelta(seconds=30))
 
 
     def get(self,*args,**kwargs):
@@ -676,3 +746,252 @@ class bulkQueryRequestHandler(BaseHandler):
         print self.infoDict
         import tornado.escape
         self.write(tornado.escape.json_encode(self.infoDict))
+
+#  -------------------------------------
+#  CRON TAB FOR QUERY
+#  -------------------------------------
+
+class cronQueryRequestHandler(BaseHandler):
+    def get(self):
+        args = locals()
+        args.pop('self')
+        self.render('queryProbInfo/cronQuery.html', **args)
+
+    def post(self):
+        email = self.get_argument('email')
+        account = self.get_argument('account')
+
+        a = cronInfo(
+            email=email,
+            account=account
+        )
+
+        a.save()
+
+        args = locals()
+        args.pop('self')
+        self.render('queryProbInfo/cronQueryResult.html', **args)
+
+class cronTask(object):
+    import probCrawler
+    # default crawler object
+    query = probCrawler.crawler(queryName='test')
+    # storage all the info about the bulk OJ
+    infoDict = {}
+    filterOJ = set([])
+
+    @gen.coroutine
+    def worker(self):
+        while not self._q.empty():
+            yield self.run()
+
+    @gen.coroutine
+    def fetch(self, url):
+        # print('fetcing', url)
+        headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0',
+                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                   'Accept-Language': 'en-US,en;q=0.5',
+                   'Accept-Encoding': 'deflate', }
+        response = yield AsyncHTTPClient().fetch(url, headers=headers, raise_error=False, request_timeout=10)
+        raise gen.Return(response)
+
+    @gen.coroutine
+    def run(self):
+        import probCrawler
+        try:
+            oj, url, name = yield self._q.get()
+            res = yield self.fetch(url)
+            html = res.body
+            # print oj,type(html)
+            if html:
+                # deal according to strategy
+                # json-format uestc,codeforce,vjudge
+                if oj == 'acdream':
+                    res = self.query.getAsyncACdream(html)
+                if oj == 'uestc':
+                    res = self.query.getAsyncUestc(html)
+                if oj == 'vjudge':
+                    res = self.query.paraseVjudgeJSON(html)
+
+                if oj == 'codeforces':
+                    res = self.query.paraseCodeforceJSON(html)
+
+                elif self.query.getOJAuthRule(oj):
+                    # get non-JSON format data
+                    url, acRegex, submitRegex = self.query.getOJAuthRule(oj)
+                    res = self.query.actRegexRules(html, acRegex, submitRegex, oj)
+
+                else:
+                    # fail
+                    pass
+                for oj, ac, submit in res:
+                    self.infoDict[name][oj] = (ac, submit)
+                    pass
+                    # print oj,ac,submit
+
+
+        finally:
+            self._q.task_done()
+
+    @gen.coroutine
+    def genTask(self, name=''):
+
+        # name = self.name
+        import probCrawler
+        self.name = name
+
+        # initialize the dict
+        self.infoDict[name] = {}
+        # traverse non-auth oj rule
+        for oj, website, acRegex, submitRegex in self.query.getNoAuthRules():
+            success = False
+            otherInfo = 0
+            # build the URL
+            url = website % name
+            # put into queue
+            yield self._q.put((oj, url, name))
+        # ACDream,Codeforces,vjudge,uestc
+        oj = 'uestc'
+        url = 'http://acm.uestc.edu.cn/user/userCenterData/%s' % name
+        yield self._q.put((oj, url, name))
+        oj = 'acdream'
+        url = 'http://acdream.info/user/%s' % name
+        yield self._q.put((oj, url, name))
+        oj = 'vjudge'
+        url = 'https://cn.vjudge.net/user/solveDetail/%s' % name
+        yield self._q.put((oj, url, name))
+        oj = 'codeforces'
+        loopFlag = True
+        loopTimes = 0
+        count = 1000
+        startItem = 1 + loopTimes * count
+        url = 'http://codeforces.com/api/user.status?handle=%s&from=%s' % (name, startItem)
+        yield self._q.put((oj, url, name))
+
+        for _ in range(100):  # open up 100 process
+            self.worker()
+            #yield self._q.join(timeout=timedelta(seconds=30))
+
+
+
+    #@tornado.web.asynchronous
+    # @tornado.gen.engine
+    @gen.coroutine
+    def startScan(self, *args, **kwargs):
+        # we will use plagiarism system permission
+        import probCrawler
+        self._q = queues.Queue()
+
+        # email = self.get_argument('email')
+        self.query = probCrawler.crawler(queryName='')
+
+
+        accountList = cronInfo.filter(isPermit=True)[:]
+
+        accounts = set([cronAccount.account for cronAccount in accountList])
+        for cronAccount in accounts:
+            print(cronAccount)
+            self.genTask(name=cronAccount)
+
+
+
+        yield self._q.join(timeout=timedelta(seconds=100))
+
+
+
+        print(self.infoDict)
+        dataSource = []
+
+        # database storage
+        for name,dataDict in self.infoDict.items():
+            # get total data
+            tot = 0
+            submitTot = 0
+            for oj,resTuple in dataDict.items():
+                ac,submit = resTuple
+                tot += int(ac)
+                submitTot += int(submit)
+                # change tuple str redirecting
+                dataDict[oj] = (int(ac),int(submit))
+
+            ratio = tot / submitTot
+            defaultOption = (0,0)
+            saveData = dict(
+                name=name,
+                pojNum=dataDict.get('poj', defaultOption)[0],
+                hduNum=dataDict.get('hdu', defaultOption)[0],
+                zojNum=dataDict.get('zoj', defaultOption)[0],
+                cfNum=int(dataDict.get('codeforces', defaultOption)[0]) + int(dataDict.get('CodeForces',defaultOption)[0]),
+                acdreamNum=dataDict.get('acdream', defaultOption)[0],
+
+                bzojNum=dataDict.get('hysbz', defaultOption)[0]+dataDict.get('bzoj', defaultOption)[0],
+                otherOJNum=tot - dataDict.get('poj', defaultOption)[0]
+                           - dataDict.get('hdu', defaultOption)[0]
+                           - dataDict.get('zoj', defaultOption)[0]
+                           - dataDict.get('codeforces', defaultOption)[0]
+                           - dataDict.get('acdream', defaultOption)[0]
+                           - dataDict.get('hysbz', defaultOption)[0]
+                           - dataDict.get('bzoj', defaultOption)[0],
+
+                totalNum=tot,
+                submitNum=submitTot,
+                ratio=ratio,
+            )
+            dataSource.append(saveData)
+
+        from db import database
+        # Insert rows 1000 at a time.
+        with database.atomic():
+            for idx in range(0, len(dataSource), 1000):
+                acRecordArchive.insert_many(dataSource[idx:idx + 1000]).execute()
+        print('Done')
+
+
+            #response = yield AsyncHTTPClient().fetch('http://npuacm.info')
+            #raise gen.Return(response)
+
+class cronTestRequestHandler(BaseHandler):
+    @gen.coroutine
+    def get(self):
+
+        import datetime
+
+        cronScan()
+
+        self.write('%s'%(datetime.datetime.now().second))
+
+def cronScan():
+    # check date for deciding whether this period task is done or not
+    # start only in directed hours every day default is 3 am
+    exeHour,created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+    exeHour.save()
+    if datetime.datetime.now().hour == int(exeHour.value):
+        a = cronTask()
+        a.startScan()
+        import time
+        saveTime = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+        exeQueryTime,created = configOption.get_or_create(name='EXE_QUERY_TIME', value=saveTime)
+        exeQueryTime.save()
+        logging.log(20, '[CRON] Started @%sh , executed .%s' % (datetime.datetime.now().hour, exeHour.value))
+    else:
+        logging.log(20,'[CRON] Started @%sh ,but not executed .%s'%(datetime.datetime.now().hour,exeHour.value) )
+    return
+
+class cronRealtimeRequestHandler(BaseHandler):
+    def get(self):
+        if configOption.select().where(configOption.name=='EXE_QUERY_TIME').exists():
+            lastQuerytime = configOption.get(configOption.name=='EXE_QUERY_TIME').value
+        else:
+            lastQuerytime = None
+
+        exeHour, created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+        everyhour = exeHour.value
+
+        accountList = cronInfo.filter(isPermit=True)[:]
+
+        accounts = set([cronAccount.account for cronAccount in accountList])
+
+        args = locals()
+        args.pop('self')
+        self.render('queryProbInfo/cron_realtime.html', **args)
+

@@ -11,7 +11,7 @@ import tornado.web
 import os
 
 # import URL manually
-from conf.urls import urlPackage,templateModuleFinder
+from conf.urls import urlPackage,templateModuleFinder,periodTaskFinder
 
 from tornado.options import options,define
 # define the port in order to simplify debug mode
@@ -115,7 +115,11 @@ if __name__ == "__main__":
     http_server = tornado.httpserver.HTTPServer(app,xheaders = True)
     http_server.listen(options.port)
     # import prase log
-    from contrib.admin.log import praseLog
-    # call back in 10 mins
-    tornado.ioloop.PeriodicCallback(praseLog,10*60*1000).start()
+
+    # gather all cron
+    cronFinder = periodTaskFinder()
+    for (func,ms) in cronFinder.periodTask:
+        print('[CRON] %s will recycle in every %s ' %(func,ms))
+        tornado.ioloop.PeriodicCallback(func,ms).start()
+    print('[CRON] all task is listed...')
     tornado.ioloop.IOLoop.instance().start()

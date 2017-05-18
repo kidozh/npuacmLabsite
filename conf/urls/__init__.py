@@ -129,4 +129,38 @@ class templateModuleFinder:
                     raise ImproperlyConfigured('UImodule in %s should be configured in dict way' %(app) )
             return returnedDict
 
+class periodTaskFinder:
+    def __init__(self):
+        '''
+        init conf object and get searched path
+        :return:
+        '''
+        # get conf object
+        from conf import setting
+        Setting = setting()
+        Setting._setup()
+        self.searchApp = getattr(Setting._wrapped,'INSTALLED_APPS')
 
+    @property
+    def periodTask(self):
+        '''
+        generate a task recursively
+        :return: 
+        '''
+        if not self.searchApp:
+            # return a null dict
+            return None
+        else :
+
+            returnedList = []
+            for app in self.searchApp:
+                appUrlPath = '%s.urls' %(app)
+                appUrlConf = import_module(appUrlPath)
+                appUIDict = getattr(appUrlConf,'cron',[])
+                # traverse dict and try to import it
+                if isinstance(appUIDict,list):
+                    # merge dict
+                    returnedList.extend(appUIDict)
+                else:
+                    raise ImproperlyConfigured('UImodule in %s should be configured in dict way' %(app) )
+            return returnedList
