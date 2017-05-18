@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="364c09fe-4311-4225-b11e-f7aa0a8a51f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/queryProbInfo/board.html" afterPath="$PROJECT_DIR$/templates/queryProbInfo/board.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/queryProbInfo/historySearch.html" afterPath="$PROJECT_DIR$/templates/queryProbInfo/historySearch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html" afterPath="$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html" />
     </list>
     <list id="1a6d81b2-094a-421d-8a57-b7db1f525df0" name="New changelist" comment="" />
     <ignored path="Tjango.iws" />
@@ -58,23 +60,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/acmDetectInfo/models.py">
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/head.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding>
-                <element signature="e#47#67#0" expanded="true" />
-              </folding>
+              <caret line="21" column="191" lean-forward="false" selection-start-line="21" selection-start-column="191" selection-end-line="21" selection-end-column="191" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/head.html">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="191" lean-forward="false" selection-start-line="21" selection-start-column="191" selection-end-line="21" selection-end-column="191" />
+            <state relative-caret-position="95">
+              <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="board.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/board.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cronQuery.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cronQuery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cronQueryResult.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cronQueryResult.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bulk_query_guide.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/bulk_query_guide.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-765">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bulk_query.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/bulk_query.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -92,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historySearch.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="historySearch.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/historySearch.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <caret line="74" column="27" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
               <folding>
                 <element signature="e#2080#2086#0#HTML" expanded="true" />
                 <element signature="e#2679#2698#0#HTML" expanded="true" />
@@ -105,24 +155,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/navbar.html">
+      <file leaf-file-name="queryProcess.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="128" lean-forward="false" selection-start-line="12" selection-start-column="128" selection-end-line="12" selection-end-column="128" />
+            <state relative-caret-position="136">
+              <caret line="134" column="27" lean-forward="false" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/queryProbInfo/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="704" column="7" lean-forward="false" selection-start-line="704" selection-start-column="7" selection-end-line="704" selection-end-column="7" />
-              <folding>
-                <element signature="e#14213#14479#2" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -215,7 +253,6 @@
         <option value="$PROJECT_DIR$/templates/usefulTools/foot.html" />
         <option value="$PROJECT_DIR$/static/js/portal/revulation-slide.js" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/bulk_query_guide.html" />
-        <option value="$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/faq.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/base.html" />
         <option value="$PROJECT_DIR$/acmDetectInfo/models.py" />
@@ -229,14 +266,15 @@
         <option value="$PROJECT_DIR$/templates/queryProbInfo/cronRealtime.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/cronQuery.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html" />
-        <option value="$PROJECT_DIR$/templates/queryProbInfo/footer.html" />
         <option value="$PROJECT_DIR$/acmDetectInfo/urls.py" />
-        <option value="$PROJECT_DIR$/templates/queryProbInfo/board.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/head.html" />
         <option value="$PROJECT_DIR$/static/css/queryProbInfo/style.css" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/navbar.html" />
         <option value="$PROJECT_DIR$/acmDetectInfo/view.py" />
+        <option value="$PROJECT_DIR$/templates/queryProbInfo/footer.html" />
+        <option value="$PROJECT_DIR$/templates/queryProbInfo/board.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/historySearch.html" />
+        <option value="$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html" />
       </list>
     </option>
   </component>
@@ -910,20 +948,6 @@
       <option name="presentableId" value="Default" />
       <updated>1478707543424</updated>
     </task>
-    <task id="LOCAL-00011" summary="add fast problem non-blocking async crawler">
-      <created>1484694203148</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1484694203148</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fix some bug in crawler">
-      <created>1484695138564</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1484695138564</updated>
-    </task>
     <task id="LOCAL-00013" summary="fix some known bug in crawler">
       <created>1484695326611</created>
       <option name="number" value="00013" />
@@ -1253,7 +1277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1495130047911</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="add history module">
+      <created>1495130439542</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1495130439542</updated>
+    </task>
+    <task id="LOCAL-00061" summary="modify some detail">
+      <created>1495131379607</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1495131379607</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1267,6 +1305,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-6" width="1301" height="774" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22302158" sideWeight="0.45064378" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1276,7 +1315,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440946" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31811023" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22290076" sideWeight="0.5104167" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22302158" sideWeight="0.5493562" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1308,7 +1347,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add deleting function" />
     <MESSAGE value="add fast problem non-blocking async crawler" />
     <MESSAGE value="fix some bug in crawler" />
     <MESSAGE value="fix some known bug in crawler" />
@@ -1333,7 +1371,8 @@
     <MESSAGE value="add multiple user query in detecting users' problem" />
     <MESSAGE value="add CRON module" />
     <MESSAGE value="add history module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add history module" />
+    <MESSAGE value="modify some detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify some detail" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1411,14 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/bulk_query_guide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1506,14 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cronQueryResult.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -1633,14 +1656,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cronQuery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/portal/foot.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1657,34 +1672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/bulk_query.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/board.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -1725,22 +1716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1007">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="191" lean-forward="false" selection-start-line="21" selection-start-column="191" selection-end-line="21" selection-end-column="191" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1759,14 +1734,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="21" column="191" lean-forward="false" selection-start-line="21" selection-start-column="191" selection-end-line="21" selection-end-column="191" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/historySearch.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <caret line="74" column="27" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
           <folding>
             <element signature="e#2080#2086#0#HTML" expanded="true" />
             <element signature="e#2679#2698#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/queryProcess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="134" column="27" lean-forward="false" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cronQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cronQueryResult.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/bulk_query_guide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/bulk_query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/board.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
