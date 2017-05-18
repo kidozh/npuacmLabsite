@@ -181,7 +181,7 @@ a:visited{
 }
 
 .foot {
-    padding:15px 15px 15px 15px;
+    padding:2rem 3rem 2rem 3rem;
     background: #30444B;
 }
 
@@ -193,10 +193,13 @@ a:visited{
 .foot h6,
 .foot small{
     color: #FFF35F;
+    font-family: Lato,"Microsoft YaHei UI",sans-serif;
 }
 
-.foot p{
+.foot p,
+.foot a{
     color:#F88334;
+    font-family: Lato,"Microsoft YaHei UI",sans-serif;
 
 }
 

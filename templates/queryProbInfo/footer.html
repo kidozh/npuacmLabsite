@@ -1,7 +1,8 @@
 <div class="container-fluid foot">
     <div class="row ">
-        <div class="col-md-12">
-            <p class="text-center">© {{ datetime.datetime.now().year }} {% module get_option('site_name') %}. All Rights Reserved</p>
+        <div class="col-md-10 col-md-offset-1">
+            <p class="text-center">Copyrights © {{ datetime.datetime.now().year }} {% module get_option('site_name') %}. All Rights Reserved</p>
+            <p class="text-center"> {% module get_option('BEIAN_NUM') %}</p>
         </div>
         <!--<div class="col-md-3 col-md-offset-1">
             <p class="text-right">Developed by NWPUACM</p>
