@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="364c09fe-4311-4225-b11e-f7aa0a8a51f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/back2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/clouds-space-sky-the-planet-the-rocket_2880x1800_sc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/pexels-photo-262669.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/pexels-photo-large.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/sky-night-space-galaxy.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html" afterPath="$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html" />
     </list>
     <list id="1a6d81b2-094a-421d-8a57-b7db1f525df0" name="New changelist" comment="" />
     <ignored path="Tjango.iws" />
@@ -72,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acmDetectInfo/view.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="77">
@@ -84,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cron_realtime.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cron_realtime.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -236,11 +232,11 @@
         <option value="$PROJECT_DIR$/templates/queryProbInfo/navbar.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/bulk_query.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/cronRealtime.html" />
-        <option value="$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/cronQuery.html" />
         <option value="$PROJECT_DIR$/static/css/queryProbInfo/style.css" />
         <option value="$PROJECT_DIR$/acmDetectInfo/urls.py" />
         <option value="$PROJECT_DIR$/acmDetectInfo/view.py" />
+        <option value="$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html" />
       </list>
     </option>
   </component>
@@ -914,13 +910,6 @@
       <option name="presentableId" value="Default" />
       <updated>1478707543424</updated>
     </task>
-    <task id="LOCAL-00005" summary="add DataTables to admin Page">
-      <created>1483573456944</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1483573456944</updated>
-    </task>
     <task id="LOCAL-00006" summary="add link to admin page and turn all reverse_url into Tornado build-in function">
       <created>1483575534811</created>
       <option name="number" value="00006" />
@@ -1257,7 +1246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495103838711</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="add CRON module">
+      <created>1495103982178</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1495103982178</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1272,7 +1268,7 @@
   <component name="ToolWindowManager">
     <frame x="65" y="-6" width="1301" height="774" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22302158" sideWeight="0.45064378" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22302158" sideWeight="0.45064378" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5136157" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19104716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1280,7 +1276,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496077" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31811023" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22290076" sideWeight="0.5104167" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22302158" sideWeight="0.5493562" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1734,14 +1730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acmDetectInfo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -1765,6 +1753,14 @@
           <folding>
             <element signature="e#116#159#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
