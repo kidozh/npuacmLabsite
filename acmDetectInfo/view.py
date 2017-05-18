@@ -995,3 +995,50 @@ class cronRealtimeRequestHandler(BaseHandler):
         args.pop('self')
         self.render('queryProbInfo/cron_realtime.html', **args)
 
+class historyRequestHandler(BaseHandler):
+    def get(self):
+        args = locals()
+        args.pop('self')
+        self.render('queryProbInfo/historySearch.html', **args)
+
+    def post(self):
+        name = self.get_argument('name')
+        time1 = self.get_argument('time')
+        # form a query sentence
+        if(time1 == 'w'):
+            beforeDay = 7
+        elif(time1 == 'm'):
+            beforeDay = 30
+        elif(time1 == 'y'):
+            beforeDay = 365
+        elif(time1 == 'a'):
+            # Infinity
+            beforeDay = 10000
+        else:
+            beforeDay = 0
+
+        retDict = {}
+        retDict['name'] = name
+        query = acRecordArchive.select().where(acRecordArchive.name==name,
+                                       acRecordArchive.queryTime.between(datetime.date.today()-datetime.timedelta(days=beforeDay),datetime.date.today())
+                                       )
+
+        if (not len(query)):
+            self.write_error(404)
+            self.finish()
+        else:
+            retDict['date'] = []
+            fields = [ 'pojNum', 'hduNum', 'zojNum', 'cfNum', 'acdreamNum', 'bzojNum','otherOJNum']
+            for oj in fields:
+                # initialize it
+                retDict[oj] = []
+            for everyArchive in query:
+                # generate date first
+                retDict['date'].append(time.mktime(everyArchive.queryTime.timetuple()))
+                for oj in fields:
+                    retDict[oj].append(int(getattr(everyArchive,oj)))
+
+        self.write(tornado.escape.json_encode(retDict))
+        self.finish()
+
+

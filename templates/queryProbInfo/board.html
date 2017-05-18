@@ -61,7 +61,8 @@
                 "ajax":{
                     url:"{{ reverse_url('acmDetectInfo.view.boardRequestHandler') }}",
                     type: 'POST',
-                    data:addData()
+                    data:addData(),
+                    cache: false,
                 }
 
             } );

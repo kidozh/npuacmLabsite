@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<script src="//cdn.bootcss.com/echarts/3.5.4/echarts.min.js"></script>
+<script src="//cdn.bootcss.com/vue/2.3.3/vue.js"></script>
+<link href="//cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/toastr.js/latest/toastr.min.js"></script>
+
+{% end %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row history-bg" id="search">
+        <!-- left banner -->
+        <div class="col-md-4">
+            <div class="card search-card">
+                <div class="card-block" >
+                    <h4 class="card-title text-center title">搜索历史<small>beta</small></h4>
+                    <div class="form-group">
+                        <input v-model="name" class="form-control history-input" placeholder="请输入你的账户名称">
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="week" value="w" v-model="time">
+                        <label for="week">最近一周</label>
+
+                        <input type="radio" id="two" value="m" v-model="time">
+                        <label for="two">最近一个月</label>
+                        <br>
+                        <input type="radio" id="y" value="y" v-model="time">
+                        <label for="y">最近一年</label>
+
+                        <input type="radio" id="a" value="a" v-model="time">
+                        <label for="a">所有</label>
+                    </div>
+                    <a onclick="getData();" class="btn btn-block btn-search">搜索{{! name }}</a>
+                </div>
+            </div>
+            <!--next CV -->
+            <div class="card">
+
+                <div class="card-block">
+                    <h4 class="card-title">欢迎使用</h4>
+                    <p class="card-text">你可以联合<a href="{{ reverse_url('acmDetectInfo.view.cronQueryRequestHandler') }}">定时查重</a>来联合使用</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-block">
+                    <h4 class="card-title">Copyrights &copy; 2014 - {{ datetime.datetime.now().year }}</h4>
+                    <p class="card-text"> {% module get_option('site_name') %}. All rights reserved</p>
+                    <p class="card-text"> {% module get_option('BEIAN_NUM') %}</p>
+                    <p class="card-text"> {% module get_option('POLICE_BEIAN_NAME') %} </p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="col-md-8" id="chart-info">
+            <!-- eCharts area -->
+            <h1 class="text-center" v-if="name">{{! name }}的情况</h1>
+            <div class="chart-card" id="history-chart" style="height: 80%">
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% end %}
+
+{% block footerJS %}
+<script>
+    var searchBox = new Vue({
+        el: '#search',
+        data: {
+            name:'',
+            time:'m'
+        }
+    });
+
+    var chartBox = new Vue({
+        el: '#chart-info',
+        data: {
+            name:''
+        }
+    });
+
+    var  myChart;
+
+    function getCookie(name) {
+        var c = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        return c ? c[1] : undefined;
+    }
+
+    function addData(){
+        var data = {};
+
+        data['_xsrf'] = getCookie('_xsrf');
+        return data;
+    }
+
+    function genChartOption(data) {
+        //deal with time
+        for( timestamp in data['date']){
+            data['date'][timestamp] = new Date(data['date'][timestamp])
+
+        }
+
+        option = {
+            title: {
+                text: data['name']+'的情况'
+            },
+            tooltip : {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross'
+
+                }
+            },
+
+            toolbox: {
+                feature: {
+                    dataZoom: {
+                        yAxisIndex: 'none'
+                    },
+                    saveAsImage: {}
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis : [
+                {
+                    type : '',
+                    boundaryGap : false,
+                    data : data['date']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'POJ',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['pojNum']
+                },
+                {
+                    name:'HDU',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['hduNum']
+                },
+                {
+                    name:'ZOJ',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['zojNum']
+                },
+                {
+                    name:'CodeForces',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['cfNum']
+                },
+                {
+                    name:'ACDream',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['acdreamNum']
+                },
+                {
+                    name:'BZOJ',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['bzojNum']
+                },
+                {
+                    name:'其他',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {normal: {}},
+                    data:data['otherOJmNum']
+                }
+            ]
+        };
+        chartBox.name = data['name']
+        return option;
+
+    }
+
+    function getData() {
+
+        myChart.showLoading();
+        xhr = $.ajax({
+            url:"{{ reverse_url('acmDetectInfo.view.historyRequestHandler') }}",
+            // data which api server can accept
+            data:{
+                name:searchBox.name,
+                time:searchBox.time,
+                _xsrf:getCookie('_xsrf')
+
+            },
+            dataType:"json",
+            type:'POST',
+            cache: false,
+
+
+            success: function (data) {
+                myChart.hideLoading();
+                option = genChartOption(data);
+                console.log(option);
+                myChart.setOption(option,true);
+
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                setTimeout(function() {
+                    toastr.options = {
+                        closeButton: true,
+                        progressBar: true,
+                        showMethod: 'slideDown',
+                        timeOut: 10000
+                    };
+                    toastr.error('用户名不存在或者查询方式出错');
+
+
+                }, 1300)
+
+            }
+
+
+        });
+    }
+
+    $(document).ready(function () {
+
+
+
+        // declear a eCharts instance
+        myChart = echarts.init(document.getElementById('history-chart'));
+        myChart.showLoading();
+        // declear a Vue instance
+
+
+
+        // do ajax request
+        //myChart.setOption(data);
+    })
+</script>
+{% end %}

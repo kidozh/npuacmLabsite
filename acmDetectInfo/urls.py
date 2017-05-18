@@ -12,6 +12,7 @@ urlpatterns = [
     ('/cron/realtime/','acmDetectInfo.view.cronRealtimeRequestHandler'),
     ('/board/','acmDetectInfo.view.boardRequestHandler'),
     ('/update/manually/','acmDetectInfo.view.cronTestRequestHandler'),
+    ('/history/','acmDetectInfo.view.historyRequestHandler')
 ]
 
 # cron should be like (time,function)
