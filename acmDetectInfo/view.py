@@ -1029,16 +1029,20 @@ class historyRequestHandler(BaseHandler):
         else:
             retDict['date'] = []
             fields = [ 'pojNum', 'hduNum', 'zojNum', 'cfNum', 'acdreamNum', 'bzojNum','otherOJNum']
+            last ={}
             for oj in fields:
                 # initialize it
                 retDict[oj] = []
+                last[oj] = 0
             for everyArchive in query:
                 # generate date first
                 retDict['date'].append(time.mktime(everyArchive.queryTime.timetuple()))
                 for oj in fields:
-                    retDict[oj].append(int(getattr(everyArchive,oj)))
+                    last[oj] = max(int(getattr(everyArchive, oj)), last[oj])
+                    retDict[oj].append(last[oj])
 
-        self.write(tornado.escape.json_encode(retDict))
-        self.finish()
+
+            self.write(tornado.escape.json_encode(retDict))
+            self.finish()
 
 

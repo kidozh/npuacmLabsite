@@ -107,7 +107,7 @@
     function genChartOption(data) {
         //deal with time
         for( timestamp in data['date']){
-            data['date'][timestamp] = new Date(data['date'][timestamp])
+            data['date'][timestamp] = new Date(data['date'][timestamp]*1000)
 
         }
 
