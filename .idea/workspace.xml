@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="364c09fe-4311-4225-b11e-f7aa0a8a51f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/queryProbInfo/board.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/queryProbInfo/cronQuery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/queryProbInfo/cronQueryResult.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/queryProbInfo/cron_realtime.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/back2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/clouds-space-sky-the-planet-the-rocket_2880x1800_sc.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/pexels-photo-262669.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/pexels-photo-large.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/image/portal/sky-night-space-galaxy.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acmDetectInfo/models.py" afterPath="$PROJECT_DIR$/acmDetectInfo/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acmDetectInfo/urls.py" afterPath="$PROJECT_DIR$/acmDetectInfo/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acmDetectInfo/view.py" afterPath="$PROJECT_DIR$/acmDetectInfo/view.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/urls/__init__.py" afterPath="$PROJECT_DIR$/conf/urls/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/admin/urls.py" afterPath="$PROJECT_DIR$/contrib/admin/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/admin/view.py" afterPath="$PROJECT_DIR$/contrib/admin/view.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/queryProbInfo/style.css" afterPath="$PROJECT_DIR$/static/css/queryProbInfo/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/queryProbInfo/bulk_query.html" afterPath="$PROJECT_DIR$/templates/queryProbInfo/bulk_query.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/queryProbInfo/navbar.html" afterPath="$PROJECT_DIR$/templates/queryProbInfo/navbar.html" />
     </list>
     <list id="1a6d81b2-094a-421d-8a57-b7db1f525df0" name="New changelist" comment="" />
     <ignored path="Tjango.iws" />
@@ -923,13 +914,6 @@
       <option name="presentableId" value="Default" />
       <updated>1478707543424</updated>
     </task>
-    <task id="LOCAL-00004" summary="change admin page style to adminLTE">
-      <created>1483406274573</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1483406274573</updated>
-    </task>
     <task id="LOCAL-00005" summary="add DataTables to admin Page">
       <created>1483573456944</created>
       <option name="number" value="00005" />
@@ -1266,7 +1250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495037868481</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add CRON module">
+      <created>1495103838711</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1495103838711</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1280,17 +1271,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-6" width="1301" height="774" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22302158" sideWeight="0.45064378" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22302158" sideWeight="0.45064378" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5136157" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19104716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2629921" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2629921" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496077" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31811023" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22290076" sideWeight="0.5104167" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22302158" sideWeight="0.5493562" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1322,7 +1312,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tjango could display and add data of model(Peewee) with no assigned PrimaryKeyField" />
     <MESSAGE value="add modifying function" />
     <MESSAGE value="add deleting function" />
     <MESSAGE value="add fast problem non-blocking async crawler" />
@@ -1347,7 +1336,8 @@
     <MESSAGE value="add police beian information" />
     <MESSAGE value="add transfer message for score" />
     <MESSAGE value="add multiple user query in detecting users' problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="add multiple user query in detecting users' problem" />
+    <MESSAGE value="add CRON module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add CRON module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
