@@ -698,13 +698,3 @@ input:not(:focus):invalid {
 input:not(:focus):valid {
     border: 1px solid green;
 }
-* {
-    box-sizing: border-box;
-}
-form ul {
-    list-style: none;
-}
-label {
-    cursor: pointer;
-    display: inline-block;
-}
