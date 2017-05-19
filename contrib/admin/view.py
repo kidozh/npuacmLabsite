@@ -15,7 +15,10 @@ from contrib.admin.appModel import modelFinder
 class BaseHandler(tornado.web.RequestHandler):
     # peewee
     def prepare(self):
-        database.connect()
+        try:
+            database.connect()
+        except:
+            pass
         return super(BaseHandler, self).prepare()
 
     def on_finish(self):

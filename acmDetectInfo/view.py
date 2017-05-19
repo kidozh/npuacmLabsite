@@ -970,7 +970,8 @@ def cronScan():
         a.startScan()
         import time
         saveTime = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
-        exeQueryTime,created = configOption.get_or_create(name='EXE_QUERY_TIME', value=saveTime)
+        exeQueryTime,created = configOption.get_or_create(name='EXE_QUERY_TIME')
+        exeQueryTime.value = saveTime
         exeQueryTime.save()
         logging.log(20, '[CRON] Started @%sh , executed .%s' % (datetime.datetime.now().hour, exeHour.value))
     else:
