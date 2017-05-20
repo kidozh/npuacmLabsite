@@ -29,6 +29,8 @@
             <p>请保持您的邮箱{{ email }}在最近1天内接受信息，我们会对您的账户进行人工审核，若不通过，将会以<strong>邮件</strong>的形式通知您。</p>
             <p>我们对您账户的一些疑问，需求，都只会通过邮箱：{{ email }}向您联络。同时，由于我们的性质，我们的服务是免费的。</p>
             <p>在服务过程中，如果有任何疑问，您可以随时发邮件至kidozh@npuacm.info。</p>
+            <h3>如何看到我每天的成果？</h3>
+            <p>请使用我们的<a href="{{ reverse_url('acmDetectInfo.view.historyRequestHandler') }}">历史曲线图</a>(上方标题栏 &gt; 扩展 &gt; 历史曲线图)这个功能，输入您的账户，您就可以看到所有我们检索这个账户的全部信息。</p>
             {% include 'cron_announcement.html' %}
         </div>
     </div>

@@ -26,6 +26,11 @@
 
                 {% end %}
             </ul>
+
+            <h3>如何看到我每天的成果？</h3>
+            <p>请使用我们的<a href="{{ reverse_url('acmDetectInfo.view.historyRequestHandler') }}">历史曲线图</a>(上方标题栏 &gt; 扩展 &gt; 历史曲线图)这个功能，输入您的账户，您就可以看到所有我们检索这个账户的全部信息。</p>
+
+
             {% include 'cron_announcement.html' %}
         </div>
     </div>
