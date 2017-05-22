@@ -365,7 +365,7 @@ class multipleQueryHandler(BaseHandler):
     @gen.coroutine
     def fetch(self,url):
         # print('fetcing', url)
-        headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0',
+        headers = {'User-Agent': 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11',
                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                    'Accept-Language': 'en-US,en;q=0.5',
                    'Accept-Encoding': 'deflate',}
@@ -382,6 +382,7 @@ class multipleQueryHandler(BaseHandler):
             html = res.body
             # print oj,type(html)
             if html :
+                print oj,url
                 # deal according to strategy
                 # json-format uestc,codeforce,vjudge
                 if oj == 'acdream':
@@ -944,6 +945,8 @@ class cronTask(object):
         with database.atomic():
             for idx in range(0, len(dataSource), 1000):
                 acRecordArchive.insert_many(dataSource[idx:idx + 1000]).execute()
+
+        logging.log(20,'[CRON] Executed for %s Users',len(dataSource))
         print('Done')
 
 

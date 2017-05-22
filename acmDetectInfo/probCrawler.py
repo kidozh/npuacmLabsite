@@ -607,7 +607,12 @@ class crawler:
 
     def paraseCodeforceJSON(self,html):
         oj = 'codeforces'
-        data = json.loads(html)
+        try:
+            data = json.loads(html)
+        except:
+            yield 0,0,0
+            return
+
         submit = 0
         ac = 0
         if data[u'status'] == u'OK':
