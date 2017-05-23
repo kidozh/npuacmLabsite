@@ -946,7 +946,7 @@ class cronTask(object):
             for idx in range(0, len(dataSource), 1000):
                 acRecordArchive.insert_many(dataSource[idx:idx + 1000]).execute()
 
-        logging.log(20,'[CRON] Executed for %s Users',len(dataSource))
+        logging.log(20,'[CRON] Executed for %s Users',dataSource)
         print('Done')
 
 
@@ -963,6 +963,7 @@ class cronTestRequestHandler(BaseHandler):
 
         self.write('%s'%(datetime.datetime.now().second))
 
+@gen.coroutine
 def cronScan():
     # check date for deciding whether this period task is done or not
     # start only in directed hours every day default is 3 am
