@@ -525,6 +525,7 @@ class multipleQueryHandler(BaseHandler):
             ratio = ratio,
         )
         saveData.save()
+        logging.log(20, '[FAST_QUERY] Query for %s '%(name))
         pass
 
 # -----------------------------------------------------
@@ -914,8 +915,10 @@ class cronTask(object):
                 submitTot += int(submit)
                 # change tuple str redirecting
                 dataDict[oj] = (int(ac),int(submit))
-
-            ratio = tot / submitTot
+            if submitTot !=0:
+                ratio = tot / submitTot
+            else:
+                ratio = 0
             defaultOption = (0,0)
             saveData = dict(
                 name=name,

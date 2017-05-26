@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="364c09fe-4311-4225-b11e-f7aa0a8a51f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acmDetectInfo/view.py" afterPath="$PROJECT_DIR$/acmDetectInfo/view.py" />
     </list>
     <list id="1a6d81b2-094a-421d-8a57-b7db1f525df0" name="New changelist" comment="" />
     <ignored path="Tjango.iws" />
@@ -57,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acmDetectInfo/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18544">
-              <caret line="987" column="68" lean-forward="false" selection-start-line="987" selection-start-column="68" selection-end-line="987" selection-end-column="68" />
+            <state relative-caret-position="175">
+              <caret line="526" column="23" lean-forward="true" selection-start-line="526" selection-start-column="23" selection-end-line="526" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -77,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/footer.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -243,10 +244,10 @@
         <option value="$PROJECT_DIR$/templates/queryProbInfo/historySearch.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/board.html" />
         <option value="$PROJECT_DIR$/acmDetectInfo/probCrawler.py" />
-        <option value="$PROJECT_DIR$/acmDetectInfo/view.py" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/cron_announcement.html" />
         <option value="$PROJECT_DIR$/templates/portal/index.html" />
         <option value="$PROJECT_DIR$/templates/queryProbInfo/footer.html" />
+        <option value="$PROJECT_DIR$/acmDetectInfo/view.py" />
       </list>
     </option>
   </component>
@@ -898,13 +899,6 @@
       <option name="presentableId" value="Default" />
       <updated>1478707543424</updated>
     </task>
-    <task id="LOCAL-00027" summary="modify index page of content">
-      <created>1490387060329</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1490387060329</updated>
-    </task>
     <task id="LOCAL-00028" summary="modify index page of content">
       <created>1490387379191</created>
       <option name="number" value="00028" />
@@ -1241,7 +1235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495807682353</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="add IPv6 support signal">
+      <created>1495807805205</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1495807805205</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1450,13 +1451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contrib/admin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1660,14 +1654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acmDetectInfo/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18544">
-          <caret line="987" column="68" lean-forward="false" selection-start-line="987" selection-start-column="68" selection-end-line="987" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/cron_announcement.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1691,6 +1677,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/portal/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -1699,10 +1701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/queryProbInfo/footer.html">
+    <entry file="file://$PROJECT_DIR$/acmDetectInfo/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="175">
+          <caret line="526" column="23" lean-forward="true" selection-start-line="526" selection-start-column="23" selection-end-line="526" selection-end-column="23" />
           <folding />
         </state>
       </provider>
