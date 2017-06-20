@@ -7,3 +7,4 @@ bcrypt
 pycparser
 sqlalchemy-utils
 MySQL-python
+pyYAML

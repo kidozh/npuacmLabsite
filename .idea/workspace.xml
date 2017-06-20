@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="364c09fe-4311-4225-b11e-f7aa0a8a51f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portal/index.html" afterPath="$PROJECT_DIR$/templates/portal/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <list id="1a6d81b2-094a-421d-8a57-b7db1f525df0" name="New changelist" comment="" />
     <ignored path="Tjango.iws" />
@@ -68,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/portal/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -76,6 +76,16 @@
               <folding>
                 <element signature="e#589#596#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/portal/base.html" />
         <option value="$PROJECT_DIR$/templates/codePlag/head.html" />
         <option value="$PROJECT_DIR$/templates/contestRegister/portal.html" />
         <option value="$PROJECT_DIR$/os&#13;" />
@@ -250,6 +259,7 @@
         <option value="$PROJECT_DIR$/templates/queryProbInfo/footer.html" />
         <option value="$PROJECT_DIR$/acmDetectInfo/view.py" />
         <option value="$PROJECT_DIR$/templates/portal/index.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -901,13 +911,6 @@
       <option name="presentableId" value="Default" />
       <updated>1478707543424</updated>
     </task>
-    <task id="LOCAL-00031" summary="modify citation from Deng">
-      <created>1490388471347</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1490388471347</updated>
-    </task>
     <task id="LOCAL-00032" summary="Make log include real IP address">
       <created>1490389954646</created>
       <option name="number" value="00032" />
@@ -1244,7 +1247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497969503749</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="add IPv6 support signal">
+      <created>1497969784978</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1497969784978</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1258,7 +1268,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25739408" sideWeight="0.45064378" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1268,7 +1277,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440946" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31811023" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22290076" sideWeight="0.5104167" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22302158" sideWeight="0.5493562" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1351,13 +1360,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/usefulTools/foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="134" lean-forward="false" selection-start-line="4" selection-start-column="134" selection-end-line="4" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usefulTools/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1708,6 +1710,14 @@
           <folding>
             <element signature="e#589#596#1#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
