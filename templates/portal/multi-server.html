@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-md-8 col-md-offset-4">
+            <h1>海外线路开放</h1>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 5rem;padding-bottom: 5rem">
+        <div class="col-md-10 col-md-offset-1" >
+            <!-- main area -->
+            <p>我们开通了一些海外的镜像站供大家更好的查询题目。</p>
+            <p>
+                他们分别是：
+            </p>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>所在区域</th>
+                    <th>网站地址</th>
+                    <th>附加</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>主站</td>
+                    <td>深圳</td>
+                    <td><a href="https://www.npuacm.info">https://www.npuacm.info</a></td>
+                    <td>连接速度快，支持IPv6</td>
+                </tr>
+                <tr>
+                    <td>NPUACM-SFO</td>
+                    <td>旧金山</td>
+                    <td><a href="https://ovs2.npuacm.info">https://ovs2.npuacm.info</a></td>
+                    <td>连接速度较慢，不支持IPv6</td>
+                </tr>
+                <tr>
+                    <td>NPUACM-TKY</td>
+                    <td>东京</td>
+                    <td><a href="https://tky.npuacm.info">https://tky.npuacm.info</a></td>
+                    <td>连接速度较快，不支持IPv6</td>
+                </tr>
+
+                </tbody>
+
+            </table>
+            <p>所有的海外节点对于Codeforces的支持更好，在目前Aliyun的网络环境下，CF访问速度不佳。</p>
+        </div>
+    </div>
+</div>
+{% end %}

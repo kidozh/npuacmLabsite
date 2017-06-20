@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>{% module get_option('site_name') %}</title>
+    <title>{% block content %} {% end %} {% module get_option('site_name') %} </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% module get_option('site_name') %}，提供查询题数，反作弊服务。">
     <meta name="author" content="kidozh">
@@ -45,6 +45,22 @@
 {% block content %}
 
 {% end %}
+
+<div class="row footer-screen">
+        <div class="col-md-10 col-md-offset-1">
+            <p class="text-center">版权所有 &copy; {{ datetime.datetime.now().year }} {% module get_option('SITE_NAME') %} All rights reversed。 </p>
+            <p class="text-center"><a href="http://www.miitbeian.gov.cn/">{% module get_option('BEIAN_NUM') %}</a></p>
+            <p class="text-center">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={% module get_option('POLICE_BEIAN_NUM') %}" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                    <img src="{{ static_url('image/police-beian/备案图标.png') }}" style="float:left;"/>
+                    {% module get_option('POLICE_BEIAN_NAME') %}
+
+                </a>
+            </p>
+            <p class="text-center"><a href='http://ipv6-test.com/validate.php?url=referer'><span class="fa fa-paper-plane"></span>为IPv6访问提供支持</a></p>
+
+        </div>
+    </div>
 
 {% block script %}
 {% end %}

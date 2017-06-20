@@ -24,3 +24,16 @@ class baseRedirectHandler(BaseHandler):
             self._reason = '你好像来到了一个荒原？'
             self._status_code = 404
             self.write_error(404)
+
+
+class staticNoticePage(BaseHandler):
+    def get(self, pageName, *args, **kwargs):
+        if pageName not in ['multi-server']:
+            self.write_error(404)
+            return
+        try:
+            self.render('portal/%s.html' % (pageName), *args)
+        except Exception as e:
+            raise e
+            self._reason = '瞄~'
+            self.write_error(404)

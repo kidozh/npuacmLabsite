@@ -6,6 +6,7 @@ from conf.urls import include
 urlpatterns = [
     #(r"^/admin",include('contrib.admin.urls')),
     (r"^/", 'portal.view.portalHandler'),
+    (r"^/doc", include('portal.urls')),
     (r'^/about/','portal.view.aboutHandler'),
     (r"^/query",include('acmCralwer.urls')),
     (r"^/queryProb",include('acmDetectInfo.urls')),
