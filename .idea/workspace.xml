@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="364c09fe-4311-4225-b11e-f7aa0a8a51f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notice/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notice/view.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portal/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/portal/multi-server.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portal/__init__.py" afterPath="$PROJECT_DIR$/portal/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portal/view.py" afterPath="$PROJECT_DIR$/portal/view.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portal/base.html" afterPath="$PROJECT_DIR$/templates/portal/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portal/index.html" afterPath="$PROJECT_DIR$/templates/portal/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portal/navbar.html" afterPath="$PROJECT_DIR$/templates/portal/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portal/multi-server.html" afterPath="$PROJECT_DIR$/templates/portal/multi-server.html" />
     </list>
     <list id="1a6d81b2-094a-421d-8a57-b7db1f525df0" name="New changelist" comment="" />
     <ignored path="Tjango.iws" />
@@ -107,17 +99,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multi-server.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="multi-server.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/portal/multi-server.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="261">
+              <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/portal/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -245,8 +237,8 @@
         <option value="$PROJECT_DIR$/portal/urls.py" />
         <option value="$PROJECT_DIR$/templates/portal/base.html" />
         <option value="$PROJECT_DIR$/templates/portal/index.html" />
-        <option value="$PROJECT_DIR$/templates/portal/multi-server.html" />
         <option value="$PROJECT_DIR$/templates/portal/navbar.html" />
+        <option value="$PROJECT_DIR$/templates/portal/multi-server.html" />
       </list>
     </option>
   </component>
@@ -814,13 +806,6 @@
       <option name="presentableId" value="Default" />
       <updated>1478707543424</updated>
     </task>
-    <task id="LOCAL-00033" summary="Add log record support">
-      <created>1490459478746</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1490459478746</updated>
-    </task>
     <task id="LOCAL-00034" summary="fix bug about log praser and add monitor system for ACM cralwer.">
       <created>1490906832623</created>
       <option name="number" value="00034" />
@@ -1157,7 +1142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497970068822</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="add notification for sites oversea.">
+      <created>1497975277337</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1497975277337</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1177,11 +1169,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.5136157" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19104716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26141733" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26141733" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440946" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31811023" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22290076" sideWeight="0.5104167" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22834645" sideWeight="0.48638427" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22302158" sideWeight="0.5493562" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1213,7 +1205,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modify index page" />
     <MESSAGE value="modify citation from Deng" />
     <MESSAGE value="Make log include real IP address" />
     <MESSAGE value="Add log record support" />
@@ -1238,7 +1229,8 @@
     <MESSAGE value="modify CRON module" />
     <MESSAGE value="modify some discription on CRON data" />
     <MESSAGE value="add IPv6 support signal" />
-    <option name="LAST_COMMIT_MESSAGE" value="add IPv6 support signal" />
+    <MESSAGE value="add notification for sites oversea." />
+    <option name="LAST_COMMIT_MESSAGE" value="add notification for sites oversea." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1623,18 +1615,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/portal/multi-server.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/portal/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/portal/multi-server.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
           <folding />
         </state>
       </provider>
