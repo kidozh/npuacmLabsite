@@ -1028,26 +1028,39 @@ class historyRequestHandler(BaseHandler):
         retDict = {}
         retDict['name'] = name
         query = acRecordArchive.select().where(acRecordArchive.name==name,
-                                       acRecordArchive.queryTime.between(datetime.date.today()-datetime.timedelta(days=beforeDay),datetime.date.today())
+                                       acRecordArchive.queryTime.between(datetime.date.today()-datetime.timedelta(days=beforeDay),datetime.datetime.now())
                                        )
 
         if (not len(query)):
+            print(query.count())
             self.write_error(404)
-            self.finish()
+            #self.finish()
         else:
             retDict['date'] = []
             fields = [ 'pojNum', 'hduNum', 'zojNum', 'cfNum', 'acdreamNum', 'bzojNum','otherOJNum']
             last ={}
+            lastDate = {}
             for oj in fields:
                 # initialize it
                 retDict[oj] = []
                 last[oj] = 0
+                lastDate = 0
             for everyArchive in query:
                 # generate date first
                 retDict['date'].append(time.mktime(everyArchive.queryTime.timetuple()))
+                recordsDate = time.mktime(everyArchive.queryTime.timetuple())
+
+                print(recordsDate,lastDate,recordsDate-lastDate)
+                if recordsDate - lastDate <= 1:
+                    lastDate = lastDate + 1
+                else:
+                    lastDate = recordsDate
+                print(lastDate)
+
                 for oj in fields:
+
                     last[oj] = max(int(getattr(everyArchive, oj)), last[oj])
-                    retDict[oj].append(last[oj])
+                    retDict[oj].append((lastDate,last[oj]))
 
 
             self.write(tornado.escape.json_encode(retDict))

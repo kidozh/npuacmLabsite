@@ -117,7 +117,8 @@
 
         option = {
             title: {
-                text: data['name']+'的情况'
+                text: data['name']+'的情况',
+                x: 'center',
             },
             tooltip : {
                 trigger: 'axis',
@@ -130,7 +131,10 @@
                     end: 100         // 右边在 60% 的位置。
                 }
             ],
-
+            legend: {
+                data:['POJ','HDU','ZOJ','CodeForces','ACDream','BZOJ','其他'],
+                x: 'left'
+            },
             toolbox: {
                 feature: {
                     dataZoom: {
@@ -139,17 +143,17 @@
                     saveAsImage: {}
                 }
             },
-            grid: {
+            /*grid: {
                 left: '3%',
                 right: '4%',
                 bottom: '3%',
                 containLabel: true
-            },
+            },*/
             xAxis : [
                 {
-                    type : '',
+                    type : 'time',
                     boundaryGap : false,
-                    data : data['date']
+                    /*data : data['date']*/
                 }
             ],
             yAxis : [
