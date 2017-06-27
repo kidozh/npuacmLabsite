@@ -14,4 +14,4 @@ class accountProbRecord(baseModel):
     cfNum  = IntegerField()
     vjudgeNum = IntegerField()
 
-    queryTime = DateTimeField(default=datetime.datetime.now())
+    queryTime = DateTimeField(default=datetime.datetime.now)

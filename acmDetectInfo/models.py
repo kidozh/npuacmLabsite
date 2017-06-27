@@ -10,7 +10,7 @@ class acRecordArchive(baseModel):
     archive record for ac
     """
     name = CharField(max_length=100)
-    queryTime = DateTimeField(default=datetime.datetime.now())
+    queryTime = DateTimeField(default=datetime.datetime.now)
     pojNum = IntegerField()
     hduNum = IntegerField()
     zojNum = IntegerField()
@@ -28,4 +28,4 @@ class cronInfo(baseModel):
     account = CharField(max_length=30)
     isPermit = BooleanField(default=True)
     freezeDay = IntegerField(default=0)
-    createTime = DateTimeField(default=datetime.datetime.now())
+    createTime = DateTimeField(default=datetime.datetime.now)

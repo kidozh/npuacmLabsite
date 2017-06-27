@@ -44,5 +44,5 @@ class studentInfo(baseModel):
     university = CharField(max_length=100,default='NWPU')
     email = CharField(max_length=50)
     phone = CharField(max_length=16)
-    registerTime = DateTimeField(default=datetime.datetime.now())
+    registerTime = DateTimeField(default=datetime.datetime.now)
     isAuth = BooleanField(default=False)
