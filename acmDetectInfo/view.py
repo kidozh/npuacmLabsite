@@ -1060,7 +1060,8 @@ class historyRequestHandler(BaseHandler):
                 for oj in fields:
 
                     last[oj] = max(int(getattr(everyArchive, oj)), last[oj])
-                    retDict[oj].append((lastDate,last[oj]))
+                    # prevent javascript transform
+                    retDict[oj].append((lastDate*1000,last[oj]))
 
 
             self.write(tornado.escape.json_encode(retDict))
