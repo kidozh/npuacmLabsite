@@ -20,7 +20,7 @@
             </li>
 
             <li class='nav-item'>
-                <a href="" class="nav-link">关于</a>
+                <a href="{{ reverse_url('portal.view.portalHandler') }}" class="nav-link">关于本站</a>
             </li>
 
             <li class='nav-item' >
@@ -29,6 +29,10 @@
 
             <li class=' nav-item'>
                 <a href="{{ reverse_url('acmDetectInfo.view.docRequestHandler','feature') }}"  class="nav-link">特征</a>
+            </li>
+
+            <li class=' nav-item'>
+                <a href="{{ reverse_url('codePlag.view.plagPortalRequestHandler') }}"  class="nav-link">代码查重</a>
             </li>
 
             <!--<li class="nav-item active">
