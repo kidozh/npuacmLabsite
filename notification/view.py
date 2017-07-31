@@ -93,11 +93,12 @@ class postPageRequestHandler(adminBaseHandler):
         :return: 
         '''
         change = False
-        if(len(args)>=1):
+        if(len(args)>=1) and args[0]:
             # need to query first
             notice_id = args[0]
             change = True
             changed_notice = markdownNotice.select().where(markdownNotice.id==notice_id).get()
+
             pass
         else:
             # execute new one
