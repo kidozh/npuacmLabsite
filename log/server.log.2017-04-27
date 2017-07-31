@@ -1,0 +1,372 @@
+2017-04-27 19:18:06,989 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 5, in _tt_execute
+    _tt_tmp = _tt_modules.getOption('site_name')  # portal/base.html:5
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'getOption'
+2017-04-27 19:18:07,154 - tornado.access - ERROR - 500 GET / (::1) 197.03ms
+2017-04-27 19:18:07,446 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 70.81ms
+2017-04-27 19:18:15,346 - tornado.access - INFO - 200 GET / (::1) 210.35ms
+2017-04-27 19:18:15,453 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=a41e2a0e07656c1ea4f59191812fd28c (::1) 68.08ms
+2017-04-27 19:18:15,454 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.62ms
+2017-04-27 19:18:15,455 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 0.60ms
+2017-04-27 19:18:15,456 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.65ms
+2017-04-27 19:18:15,494 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 0.70ms
+2017-04-27 19:18:15,497 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.72ms
+2017-04-27 19:18:15,500 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.74ms
+2017-04-27 19:18:15,675 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 52.44ms
+2017-04-27 19:18:49,151 - tornado.access - INFO - 302 GET /admin/login (::1) 1.38ms
+2017-04-27 19:18:49,379 - tornado.access - INFO - 200 GET /admin/login/ (::1) 224.01ms
+2017-04-27 19:18:49,413 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 1.06ms
+2017-04-27 19:18:49,416 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 0.60ms
+2017-04-27 19:18:52,670 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1294.54ms
+2017-04-27 19:18:52,705 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 1.20ms
+2017-04-27 19:18:52,707 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 1.10ms
+2017-04-27 19:18:52,802 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 0.66ms
+2017-04-27 19:18:52,805 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 0.61ms
+2017-04-27 19:18:54,201 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.70ms
+2017-04-27 19:18:57,838 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 53.30ms
+2017-04-27 19:19:06,535 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 14.49ms
+2017-04-27 19:19:10,551 - tornado.access - INFO - 200 GET /admin/manage/configOption/add/ (::1) 54.57ms
+2017-04-27 19:19:27,763 - tornado.access - INFO - 302 POST /admin/manage/configOption/add/ (::1) 290.78ms
+2017-04-27 19:19:27,763 - tornado.application - ERROR - Uncaught exception POST /admin/manage/configOption/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/configOption/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '134', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-04-27 19:19:27,849 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 11.05ms
+2017-04-27 19:19:28,598 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.97ms
+2017-04-27 19:19:34,873 - tornado.access - INFO - 200 GET / (::1) 5.24ms
+2017-04-27 19:24:54,965 - tornado.application - ERROR - Uncaught exception GET /admin/manage/configOption/show/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/configOption/show/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'If-None-Match': '"5aef4d5719f372b14116dc0462147fa7e2e131b2"', 'Upgrade-Insecure-Requests': '1', 'Cookie': '_accept_cookie=1; username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1488, in _execute
+    result = self.prepare()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 19:24:54,992 - tornado.access - ERROR - 500 GET /admin/manage/configOption/show/ (::1) 27.12ms
+2017-04-27 19:24:56,463 - tornado.access - INFO - 304 GET / (::1) 6.19ms
+2017-04-27 19:24:58,272 - tornado.access - INFO - 304 GET / (::1) 6.18ms
+2017-04-27 19:25:04,915 - tornado.access - INFO - 302 GET /admin/login (::1) 1.01ms
+2017-04-27 19:25:04,930 - tornado.access - INFO - 200 GET /admin/login/ (::1) 6.99ms
+2017-04-27 19:25:07,631 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1021.46ms
+2017-04-27 19:25:08,016 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.41ms
+2017-04-27 19:25:18,452 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 21.89ms
+2017-04-27 19:25:18,953 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.62ms
+2017-04-27 19:25:22,628 - tornado.access - INFO - 200 GET /admin/manage/configOption/change/3/ (::1) 73.87ms
+2017-04-27 19:25:27,836 - tornado.access - INFO - 302 POST /admin/manage/configOption/change/3/ (::1) 122.14ms
+2017-04-27 19:25:27,862 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 19.06ms
+2017-04-27 19:25:28,301 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 7.15ms
+2017-04-27 19:26:53,334 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 43.66ms
+2017-04-27 19:26:54,106 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.89ms
+2017-04-27 19:26:55,688 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 10.55ms
+2017-04-27 19:26:56,024 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 8.37ms
+2017-04-27 19:26:57,634 - tornado.access - INFO - 200 GET /admin/manage/configOption/add/ (::1) 48.99ms
+2017-04-27 19:27:06,468 - tornado.access - INFO - 302 POST /admin/manage/configOption/add/ (::1) 87.10ms
+2017-04-27 19:27:06,469 - tornado.application - ERROR - Uncaught exception POST /admin/manage/configOption/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/configOption/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '134', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-04-27 19:27:06,496 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 20.67ms
+2017-04-27 19:27:06,816 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.82ms
+2017-04-27 19:32:28,485 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 39.95ms
+2017-04-27 19:32:35,362 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 8.19ms
+2017-04-27 19:32:37,956 - tornado.access - INFO - 200 GET /admin/manage/configOption/change/1/ (::1) 45.31ms
+2017-04-27 19:32:45,843 - tornado.access - INFO - 302 POST /admin/manage/configOption/change/1/ (::1) 101.52ms
+2017-04-27 19:32:45,870 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 19.83ms
+2017-04-27 19:32:46,313 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.67ms
+2017-04-27 19:33:26,456 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 20.38ms
+2017-04-27 19:33:27,183 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.50ms
+2017-04-27 19:33:28,915 - tornado.access - INFO - 200 GET /admin/manage/configOption/add/ (::1) 33.75ms
+2017-04-27 19:33:38,156 - tornado.access - INFO - 302 POST /admin/manage/configOption/add/ (::1) 68.50ms
+2017-04-27 19:33:38,157 - tornado.application - ERROR - Uncaught exception POST /admin/manage/configOption/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/configOption/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '149', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-04-27 19:33:38,187 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 20.43ms
+2017-04-27 19:33:38,522 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.83ms
+2017-04-27 19:33:40,794 - tornado.access - INFO - 200 GET /admin/manage/configOption/change/1/ (::1) 25.12ms
+2017-04-27 19:33:46,400 - tornado.access - INFO - 302 POST /admin/manage/configOption/change/1/ (::1) 97.22ms
+2017-04-27 19:33:46,431 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 24.59ms
+2017-04-27 19:33:46,751 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.75ms
+2017-04-27 19:33:50,174 - tornado.access - INFO - 200 GET / (::1) 19.75ms
+2017-04-27 19:34:01,849 - tornado.access - INFO - 200 GET /query/ (::1) 62.55ms
+2017-04-27 19:34:01,918 - tornado.access - INFO - 200 GET /static/css/queryProblem/style.css?v=6048e518c91d28fc6ee9963bf5d39057 (::1) 36.30ms
+2017-04-27 19:36:28,496 - tornado.access - INFO - 200 GET /query/ (::1) 14.64ms
+2017-04-27 19:36:38,328 - tornado.access - INFO - 200 GET /plag/ (::1) 56.58ms
+2017-04-27 19:36:38,371 - tornado.access - INFO - 200 GET /static/css/plag/style.css?v=519f467b6708ee1d0141d3d2ccb91ac6 (::1) 5.44ms
+2017-04-27 19:36:38,558 - tornado.access - INFO - 200 GET /static/image/plag/background/geometry2.png (::1) 5.40ms
+2017-04-27 19:36:38,569 - tornado.access - INFO - 200 GET /static/image/plag/background/seigaiha.png (::1) 9.81ms
+2017-04-27 19:36:42,716 - tornado.access - INFO - 200 GET /plag/file/ (::1) 16.63ms
+2017-04-27 19:36:52,187 - tornado.access - INFO - 200 GET /plag/file/ (::1) 6.41ms
+2017-04-27 19:36:55,258 - tornado.access - INFO - 200 GET /plag/jplagFile/ (::1) 16.19ms
+2017-04-27 19:36:57,601 - tornado.access - INFO - 200 GET /plag/doc/file_use_guide/ (::1) 20.06ms
+2017-04-27 19:37:06,152 - tornado.access - INFO - 304 GET / (::1) 14.70ms
+2017-04-27 19:37:18,258 - tornado.access - INFO - 200 GET /query/ (::1) 4.58ms
+2017-04-27 19:37:35,412 - tornado.access - INFO - 304 GET /plag/ (::1) 4.98ms
+2017-04-27 19:37:38,394 - tornado.access - INFO - 200 GET /plag/file/ (::1) 6.09ms
+2017-04-27 19:37:40,814 - tornado.access - INFO - 200 GET /plag/jplagFile/ (::1) 4.87ms
+2017-04-27 19:37:47,115 - tornado.access - INFO - 304 GET /plag/ (::1) 4.91ms
+2017-04-27 19:37:50,259 - tornado.access - INFO - 200 GET /queryProb/ (::1) 356.41ms
+2017-04-27 19:37:50,283 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (::1) 0.87ms
+2017-04-27 19:37:50,285 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=dfb5a1f15a711a74fef68395cf5a2500 (::1) 0.89ms
+2017-04-27 19:37:50,286 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (::1) 0.86ms
+2017-04-27 19:37:50,288 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (::1) 0.88ms
+2017-04-27 19:37:54,090 - tornado.access - INFO - 200 GET /queryProb/doc/faq/ (::1) 14.52ms
+2017-04-27 19:37:56,246 - tornado.access - INFO - 200 GET /queryProb/doc/feature/ (::1) 12.98ms
+2017-04-27 19:37:56,274 - tornado.access - INFO - 200 GET /static/image/feature/save-time.svg?v=35478cf6515f023593e2bbae025fd127 (::1) 1.03ms
+2017-04-27 19:37:56,281 - tornado.access - INFO - 200 GET /static/image/feature/ultra-speed.svg?v=3ccc23f2a209457a9b0ecc744bb7da18 (::1) 0.81ms
+2017-04-27 19:37:56,286 - tornado.access - INFO - 200 GET /static/image/feature/complete-search.svg?v=1bad8ade8c52816d5f0c46abf369c72c (::1) 0.66ms
+2017-04-27 19:37:56,289 - tornado.access - INFO - 200 GET /static/image/feature/easy-using.svg?v=11c40af7d6562c35ae67257b8df15a87 (::1) 0.64ms
+2017-04-27 19:37:56,293 - tornado.access - INFO - 200 GET /static/image/feature/multi-search.svg?v=44a053bfd920246bda03a1baf76df829 (::1) 0.76ms
+2017-04-27 19:38:05,467 - tornado.access - INFO - 304 GET /queryProb/doc/faq/ (::1) 7.72ms
+2017-04-27 19:38:05,895 - tornado.access - INFO - 304 GET /queryProb/doc/faq/ (::1) 7.80ms
+2017-04-27 19:40:41,690 - tornado.access - INFO - 304 GET /queryProb/doc/faq/ (::1) 26.29ms
+2017-04-27 19:40:42,826 - tornado.access - INFO - 200 GET /queryProb/ (::1) 5.63ms
+2017-04-27 19:40:47,531 - tornado.access - INFO - 200 GET /queryProb/ (::1) 5.03ms
+2017-04-27 19:40:49,441 - tornado.access - INFO - 200 GET / (::1) 17.47ms
+2017-04-27 19:41:16,182 - tornado.access - INFO - 200 GET /contest2017/ (::1) 77.47ms
+2017-04-27 19:41:16,211 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=cb1937b9b101510cce0e5d90c3fdc12d (::1) 3.29ms
+2017-04-27 19:41:16,212 - tornado.access - INFO - 200 GET /static/js/registerContest/particle-config.js?v=9d4a8bca2eca2a2615ec132abcd23455 (::1) 0.68ms
+2017-04-27 19:41:16,221 - tornado.access - INFO - 200 GET /static/js/registerContest/jquery.dropkick-1.0.0.js?v=a1b1a2935eef5f5afbedee444cc01ee6 (::1) 0.99ms
+2017-04-27 19:41:16,223 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=6afee7c0f148bc8994c21e941f02cdb0 (::1) 0.98ms
+2017-04-27 19:41:21,788 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 29.25ms
+2017-04-27 19:42:09,231 - tornado.access - INFO - 200 GET /contest2017/ (::1) 21.72ms
+2017-04-27 19:42:12,472 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 9.96ms
+2017-04-27 20:42:21,115 - tornado.access - INFO - 304 GET / (::1) 10.12ms
+2017-04-27 20:42:21,983 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 1.11ms
+2017-04-27 20:42:46,269 - tornado.access - INFO - 200 GET /queryProb/ (::1) 7.00ms
+2017-04-27 20:42:54,255 - tornado.access - INFO - 200 GET /query/ (::1) 13.05ms
+2017-04-27 20:42:58,551 - tornado.access - INFO - 200 GET /plag/ (::1) 20.63ms
+2017-04-27 20:43:03,599 - tornado.access - INFO - 200 GET /plag/register/ (::1) 41.81ms
+2017-04-27 21:43:57,983 - tornado.access - INFO - 304 GET / (::1) 8.62ms
+2017-04-27 21:46:07,956 - tornado.access - INFO - 304 GET / (::1) 7.68ms
+2017-04-27 21:47:07,591 - tornado.access - INFO - 304 GET / (::1) 3.04ms
+2017-04-27 21:47:15,485 - tornado.access - INFO - 304 GET / (::1) 6.47ms
+2017-04-27 21:52:07,506 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 22:02:07,587 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 22:12:07,587 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 22:22:07,506 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 22:32:07,587 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 22:42:07,585 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 22:52:07,560 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 23:02:07,550 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 23:12:07,516 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 23:22:07,561 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 23:32:07,587 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 23:42:07,569 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-27 23:52:07,543 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open

@@ -1,0 +1,19 @@
+2017-07-20 12:18:47,906 - tornado.access - INFO - 302 GET /t (127.0.0.1) 340.32ms
+2017-07-20 12:18:48,075 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 162.99ms
+2017-07-20 12:18:48,896 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 41.38ms
+2017-07-20 12:18:49,062 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 67.91ms
+2017-07-20 12:18:58,798 - tornado.access - INFO - 302 GET /t/post (127.0.0.1) 2.17ms
+2017-07-20 12:18:59,035 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 214.65ms
+2017-07-20 12:25:42,556 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 23.79ms
+2017-07-20 12:27:58,305 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 8.53ms
+2017-07-20 12:28:04,103 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 21.46ms
+2017-07-20 12:28:06,193 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 10.82ms
+2017-07-20 13:28:03,392 - root - INFO - [CRON] Started @13h ,but not executed .17
+2017-07-20 13:46:12,015 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 25.64ms
+2017-07-20 13:46:12,043 - tornado.access - INFO - 200 GET /static/css/notification/offcanvas.css?v=380566ffe5969f9e6dcacea0aaaa2bca (127.0.0.1) 5.61ms
+2017-07-20 13:46:12,044 - tornado.access - INFO - 200 GET /static/js/notification/offcanvas.js?v=983d3e6d181ce621f4fc19cfcf8435a3 (127.0.0.1) 0.64ms
+2017-07-20 13:46:12,359 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.11ms
+2017-07-20 13:46:15,208 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 7.50ms
+2017-07-20 13:48:52,046 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 6.27ms
+2017-07-20 13:50:20,963 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 21.10ms
+2017-07-20 14:50:19,825 - root - INFO - [CRON] Started @14h ,but not executed .17

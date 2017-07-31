@@ -1,0 +1,61 @@
+2017-04-29 23:43:58,956 - tornado.access - INFO - 200 GET / (::1) 1133.53ms
+2017-04-29 23:43:59,233 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=a41e2a0e07656c1ea4f59191812fd28c (::1) 245.19ms
+2017-04-29 23:43:59,238 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 4.36ms
+2017-04-29 23:43:59,239 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 0.75ms
+2017-04-29 23:43:59,240 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.64ms
+2017-04-29 23:43:59,393 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 0.70ms
+2017-04-29 23:43:59,397 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.65ms
+2017-04-29 23:43:59,400 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.66ms
+2017-04-29 23:43:59,644 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 62.22ms
+2017-04-29 23:44:00,475 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 472.84ms
+2017-04-29 23:44:05,074 - tornado.application - ERROR - Uncaught exception GET /admin/manage/configOption/show/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/configOption/show/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929; _ga=GA1.1.1613137009.1493461748; io=PEfwugnfQSzcWgcTAAAM', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1488, in _execute
+    result = self.prepare()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-29 23:44:05,381 - tornado.access - ERROR - 500 GET /admin/manage/configOption/show/ (::1) 307.44ms
+2017-04-29 23:44:05,406 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 1.02ms
+2017-04-29 23:44:27,196 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 228.18ms
+2017-04-29 23:44:27,228 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 8.98ms
+2017-04-29 23:44:27,230 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 1.35ms
+2017-04-29 23:44:27,452 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 0.90ms
+2017-04-29 23:44:28,164 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.73ms
+2017-04-29 23:44:33,134 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 24.39ms
+2017-04-29 23:44:33,494 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.56ms
+2017-04-29 23:44:36,574 - tornado.access - INFO - 200 GET /admin/manage/filePermitArchive/show/ (::1) 18.30ms
+2017-04-29 23:44:36,910 - tornado.access - INFO - 200 POST /admin/manage/filePermitArchive/data/ (::1) 6.78ms
+2017-04-29 23:44:38,314 - tornado.access - INFO - 200 GET /admin/manage/filePermitArchive/add/ (::1) 43.67ms
+2017-04-29 23:45:00,013 - tornado.access - INFO - 302 POST /admin/manage/filePermitArchive/add/ (::1) 172.25ms
+2017-04-29 23:45:00,014 - tornado.application - ERROR - Uncaught exception POST /admin/manage/filePermitArchive/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/filePermitArchive/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '174', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/filePermitArchive/add/', 'Cache-Control': 'max-age=0', 'Cookie': 'username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929; _ga=GA1.1.1613137009.1493461748; io=PEfwugnfQSzcWgcTAAAM', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-04-29 23:45:00,030 - tornado.access - INFO - 200 GET /admin/manage/filePermitArchive/show/ (::1) 10.75ms
+2017-04-29 23:45:00,527 - tornado.access - INFO - 200 POST /admin/manage/filePermitArchive/data/ (::1) 7.67ms
+2017-04-29 23:45:11,658 - tornado.access - INFO - 200 GET /plag/ (::1) 175.43ms
+2017-04-29 23:45:11,678 - tornado.access - INFO - 200 GET /static/css/plag/style.css?v=519f467b6708ee1d0141d3d2ccb91ac6 (::1) 0.93ms
+2017-04-29 23:45:11,896 - tornado.access - INFO - 200 GET /static/image/plag/background/geometry2.png (::1) 1.06ms
+2017-04-29 23:45:11,905 - tornado.access - INFO - 200 GET /static/image/plag/background/seigaiha.png (::1) 1.60ms
+2017-04-29 23:45:13,430 - tornado.access - INFO - 200 GET /plag/jplagFile/ (::1) 18.32ms
+2017-04-29 23:45:29,575 - tornado.application - ERROR - Uncaught exception POST /plag/jplagFile/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/plag/jplagFile/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '72504', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/plag/jplagFile/', 'Cache-Control': 'max-age=0', 'Cookie': 'username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929; _ga=GA1.1.1613137009.1493461748; io=PEfwugnfQSzcWgcTAAAM', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryYNcCo935p3PwF0oI'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/codePlag/view.py", line 352, in post
+    from bs4 import BeautifulSoup
+ImportError: No module named bs4
+2017-04-29 23:45:29,620 - tornado.access - ERROR - 500 POST /plag/jplagFile/ (::1) 3644.15ms
+2017-04-29 23:46:27,251 - tornado.access - INFO - 200 POST /plag/jplagFile/ (::1) 2250.80ms
+2017-04-29 23:46:29,634 - tornado.access - INFO - 200 GET /plag/export/a3b4dc05-b936-4ac0-a0d7-b1a32f906e68/160946.zip/ (::1) 95.14ms

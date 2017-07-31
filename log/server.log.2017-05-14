@@ -1,0 +1,135 @@
+2017-05-14 00:04:01,151 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 00:14:01,148 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 00:24:01,150 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 00:34:01,059 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 00:44:01,109 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 00:54:01,136 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 01:04:01,148 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 01:14:01,133 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-14 01:24:01,131 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7ff15b1f7578>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open

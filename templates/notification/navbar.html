@@ -1,0 +1,29 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">{% module get_option('SITE_NAME') %}</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--
+
+        -->
+        <ul class="navbar-nav mr-auto">
+
+            <li class='nav-item'>
+                <a href="{{ reverse_url('portal.view.portalHandler') }}" class="nav-link">关于本站</a>
+            </li>
+
+            <li class='nav-item'>
+                <a href="{{ reverse_url('acmDetectInfo.view.docRequestHandler','feature') }}"  class="nav-link">特征</a>
+            </li>
+
+            <li class=' nav-item'>
+                <a href="{{ reverse_url('codePlag.view.plagPortalRequestHandler') }}"  class="nav-link">代码查重</a>
+            </li>
+
+        </ul>
+
+
+    </div>
+</nav>

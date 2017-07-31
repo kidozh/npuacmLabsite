@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8160284_lethalboy_E.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8160284_lethalboy_E.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstdlib&gt;
+#include&lt;cstdio&gt;
+#include&lt;cmath&gt;
+#include&lt;string&gt;
+#include&lt;cstring&gt;
+#include&lt;climits&gt;
+#include&lt;queue&gt;
+#include&lt;stack&gt;
+#include&lt;map&gt;
+#include&lt;set&gt;
+#define N 2000200
+#define M 4000400
+using namespace std;
+typedef long long ll;
+inline int read()
+{
+	int x=0,f=1;char ch=getchar();
+	while(ch&lt;'0'||ch&gt;'9'){if(ch=='-')f=-1;ch=getchar();}
+	while(ch&gt;='0'&amp;&amp;ch&lt;='9'){x=x*10+ch-'0';ch=getchar();}
+	return x*f;
+}
+int n,m,k,c[N],head[N],pos;
+int rk[N],f[N],cnt[N],tot;
+int find(int x){return x==f[x]?x:find(f[x]);}
+struct edge{int x,y,next;}e[M];
+void add(int cc,int u,int v)
+{
+	e[++tot].x=u,e[tot].y=v;
+	e[tot].next=head[cc],head[cc]=tot;
+}
+ll ans;
+struct node
+{
+	int x,y,rk1,rk2,ct1,ct2;
+}st[N];int top;
+void make(int l,int r)
+{
+	for(int i=l;i&lt;=r;i++)
+	{
+		for(int j=head[i];j;j=e[j].next)
+		{
+<A NAME="0"></A>			int x=e[j].x,y=e[j].y;
+			int fx=find(x),fy=find(y);
+			if(fx==fy)continue;top++;
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match0-1.html#0',3,'match0-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>			st[top].x=fx,st[top].y=fy,st[top].rk1=rk[fx],st[top].rk2=rk[fy],st[top].ct1=cnt[fx],st[top].ct2=cnt[fy];
+			ans+=(ll)cnt[fy]*cnt[fx];
+			if(rk[fx]&lt;=rk[fy])
+			{
+				f[fx]=fy;
+				rk[fy]=max(rk[fy],rk[fx]+1);
+				cnt[fy]+=cnt[fx];
+			}
+			else
+			{
+				f[fy]=fx;
+				rk[fx]=max(rk[fx],rk[fy]+1);</B></FONT>
+				cnt[fx]+=cnt[fy];
+			}
+		}
+	}
+}
+void back(int bt)
+{
+	while(top!=bt)
+	{
+		rk[st[top].x]=st[top].rk1;
+		rk[st[top].y]=st[top].rk2;
+		cnt[st[top].x]=st[top].ct1;
+<A NAME="1"></A>		cnt[st[top].y]=st[top].ct2;
+		ans-=(ll)st[top].ct1*st[top].ct2;
+		f[st[top].x]=st[top].x;
+<FONT color="#f63526"><A HREF="javascript:ZweiFrames('match0-1.html#1',3,'match0-top.html#1',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>		f[st[top].y]=st[top].y;top--;
+	}
+}
+void cdq(int l,int r)
+{
+	if(l==r)
+	{
+		printf(&quot;%lld\n&quot;,ans);
+		return;
+	}int mid=(l+r)&gt;&gt;1,now=top;</B></FONT>
+	make(mid+1,r);cdq(l,mid);back(now);
+	make(l,mid);cdq(mid+1,r);back(now);
+}
+int main()
+{
+	while(~scanf(&quot;%d&quot;,&amp;n))
+	{
+		top=tot=ans=pos=0;
+		memset(head,0,sizeof(head));
+		m=read(),k=read();
+		for(int i=1;i&lt;=m;i++)
+		{
+			int x=read(),y=read();
+			c[i]=read();add(c[i],x,y);
+		}for(int i=1;i&lt;=n;i++)
+			f[i]=i,cnt[i]=1,rk[i]=1;
+		cdq(1,k);
+	}
+}
+</PRE>
+</BODY>
+</HTML>

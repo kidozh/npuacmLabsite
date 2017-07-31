@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8158789_t51645_A.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8158789_t51645_A.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;iostream&gt;
+#include &lt;stdio.h&gt;
+#include &lt;algorithm&gt;
+#include &lt;math.h&gt;
+#include&lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include&lt;queue&gt;
+#include&lt;set&gt;
+#include&lt;map&gt;
+#include&lt;stack&gt;
+#include&lt;time.h&gt;
+using namespace std;
+#define MAX_N 200000005
+#define inf 0x7fffffff
+#define LL long long
+#define ull unsigned long long
+#define mod 10007
+LL INF=9e18;
+
+int main()
+{
+    char A[15], B[15];
+<A NAME="0"></A>    while(scanf(&quot;%s%s&quot;,A,B)!=EOF) {
+        int la = strlen(A);
+        int lb = strlen(B);
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match2-0.html#0',2,'match2-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>        int sum = 0;
+        for(int i=0;i&lt;la;i++) {
+            for(int j=0;j&lt;lb;j++) {
+                sum = sum + (A[i]-'0') * (B[j]-'0');
+            }
+        }</B></FONT>
+        printf(&quot;%d\n&quot;,sum);
+    }
+}
+</PRE>
+</BODY>
+</HTML>

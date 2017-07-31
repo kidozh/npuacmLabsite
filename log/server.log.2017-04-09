@@ -1,0 +1,150 @@
+2017-04-09 23:03:13,785 - tornado.access - INFO - 200 GET / (::1) 514.81ms
+2017-04-09 23:03:13,830 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 5.59ms
+2017-04-09 23:03:13,832 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f589302225e020a5a7847bfb4f0d2e80 (::1) 0.92ms
+2017-04-09 23:03:13,833 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.54ms
+2017-04-09 23:03:13,834 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 0.57ms
+2017-04-09 23:03:14,018 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 1.53ms
+2017-04-09 23:03:14,024 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 1.36ms
+2017-04-09 23:03:14,030 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 1.51ms
+2017-04-09 23:03:33,596 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 204.33ms
+2017-04-09 23:03:34,350 - tornado.access - INFO - 304 GET / (::1) 4.63ms
+2017-04-09 23:03:35,152 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 3.60ms
+2017-04-09 23:04:02,553 - tornado.access - INFO - 200 GET / (::1) 24.44ms
+2017-04-09 23:04:40,547 - tornado.access - INFO - 200 GET / (::1) 14.51ms
+2017-04-09 23:05:59,591 - tornado.access - INFO - 200 GET / (::1) 20.64ms
+2017-04-09 23:05:59,622 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=5f647ff1e0c2eb03d8311f4006cfd174 (::1) 3.60ms
+2017-04-09 23:10:01,592 - tornado.access - INFO - 200 GET / (::1) 22.53ms
+2017-04-09 23:10:01,620 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=58dda6985ca4eb5d2edc06e68bc946a2 (::1) 4.45ms
+2017-04-09 23:10:17,842 - tornado.application - ERROR - Uncaught exception GET /contest2017/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/contest2017/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/', 'Cookie': 'username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"; _xsrf=2|431f46c4|d04b35b34d677c14d4aadf78c4e9521c|1491654138', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1446, in _execute
+    result = self.prepare()
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 11, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-09 23:10:17,915 - tornado.access - ERROR - 500 GET /contest2017/ (::1) 73.31ms
+2017-04-09 23:10:17,962 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 0.77ms
+2017-04-09 23:10:52,771 - tornado.access - INFO - 200 GET /contest2017/ (::1) 89.38ms
+2017-04-09 23:10:52,811 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=cb1937b9b101510cce0e5d90c3fdc12d (::1) 4.82ms
+2017-04-09 23:10:52,813 - tornado.access - INFO - 200 GET /static/js/registerContest/particle-config.js?v=9d4a8bca2eca2a2615ec132abcd23455 (::1) 1.46ms
+2017-04-09 23:10:52,819 - tornado.access - INFO - 200 GET /static/js/registerContest/jquery.dropkick-1.0.0.js?v=a1b1a2935eef5f5afbedee444cc01ee6 (::1) 1.01ms
+2017-04-09 23:10:52,821 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=6afee7c0f148bc8994c21e941f02cdb0 (::1) 1.20ms
+2017-04-09 23:10:56,767 - tornado.access - INFO - 304 GET / (::1) 16.07ms
+2017-04-09 23:10:58,567 - tornado.application - ERROR - Uncaught exception GET /contest2017/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/contest2017/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/', 'Cookie': 'username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"; _xsrf=2|431f46c4|d04b35b34d677c14d4aadf78c4e9521c|1491654138', 'If-None-Match': '"09d14d4a3660b3e773a75cf3d5ca1e4357ff175b"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1446, in _execute
+    result = self.prepare()
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 11, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-09 23:10:58,579 - tornado.access - ERROR - 500 GET /contest2017/ (::1) 12.13ms
+2017-04-09 23:11:51,913 - tornado.access - INFO - 200 GET /contest2017/ (::1) 12.82ms
+2017-04-09 23:11:53,685 - tornado.access - INFO - 304 GET /contest2017/ (::1) 3.88ms
+2017-04-09 23:11:55,823 - tornado.access - INFO - 304 GET / (::1) 7.50ms
+2017-04-09 23:11:56,848 - tornado.access - INFO - 304 GET /contest2017/ (::1) 2.02ms
+2017-04-09 23:12:39,257 - tornado.access - INFO - 200 GET / (::1) 20.78ms
+2017-04-09 23:12:39,281 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=c9222f69d2a35d066dfe2d508f737a6d (::1) 5.56ms
+2017-04-09 23:12:53,546 - tornado.access - INFO - 200 GET / (::1) 19.50ms
+2017-04-09 23:13:15,091 - tornado.access - INFO - 304 GET / (::1) 4.80ms
+2017-04-09 23:13:42,742 - tornado.access - INFO - 200 GET / (::1) 28.37ms
+2017-04-09 23:13:42,771 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=23a48c384b5ddf4c07dbf18f0f559947 (::1) 3.75ms
+2017-04-09 23:14:08,158 - tornado.access - INFO - 200 GET / (::1) 19.69ms
+2017-04-09 23:14:08,188 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=8451c52caa66695ebc3ba0915b1227e1 (::1) 4.24ms
+2017-04-09 23:14:17,029 - tornado.access - INFO - 304 GET /contest2017/ (::1) 9.89ms
+2017-04-09 23:14:20,974 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 32.37ms
+2017-04-09 23:19:40,778 - tornado.access - INFO - 200 GET / (::1) 2.93ms
+2017-04-09 23:19:40,821 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.63ms
+2017-04-09 23:19:40,822 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=8451c52caa66695ebc3ba0915b1227e1 (::1) 0.56ms
+2017-04-09 23:19:40,823 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.50ms
+2017-04-09 23:19:40,824 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 0.72ms
+2017-04-09 23:19:41,011 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 0.66ms
+2017-04-09 23:19:41,013 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.56ms
+2017-04-09 23:19:41,014 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.54ms
+2017-04-09 23:19:41,771 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 1.58ms
+2017-04-09 23:19:42,603 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 1.64ms
+2017-04-09 23:24:06,301 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f6cdf5bfc80>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1041, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-09 23:25:15,108 - tornado.access - INFO - 304 GET / (::1) 6.39ms
+2017-04-09 23:25:25,321 - tornado.access - INFO - 200 GET / (::1) 23.21ms
+2017-04-09 23:26:59,503 - tornado.access - INFO - 200 GET / (::1) 17.25ms
+2017-04-09 23:26:59,524 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=0e5026d066397a922d35362d50b2fd3b (::1) 5.53ms
+2017-04-09 23:27:59,345 - tornado.access - INFO - 200 GET / (::1) 19.67ms
+2017-04-09 23:27:59,366 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f73e608de49f25698536207977e89c3b (::1) 5.02ms
+2017-04-09 23:28:01,230 - tornado.access - INFO - 200 GET /contest2017/ (::1) 9.19ms
+2017-04-09 23:28:01,268 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=cb1937b9b101510cce0e5d90c3fdc12d (::1) 1.02ms
+2017-04-09 23:28:01,269 - tornado.access - INFO - 200 GET /static/js/registerContest/particle-config.js?v=9d4a8bca2eca2a2615ec132abcd23455 (::1) 0.84ms
+2017-04-09 23:28:01,280 - tornado.access - INFO - 200 GET /static/js/registerContest/jquery.dropkick-1.0.0.js?v=a1b1a2935eef5f5afbedee444cc01ee6 (::1) 0.83ms
+2017-04-09 23:28:01,282 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=6afee7c0f148bc8994c21e941f02cdb0 (::1) 0.95ms
+2017-04-09 23:30:25,992 - tornado.access - INFO - 200 GET / (::1) 14.39ms
+2017-04-09 23:30:31,860 - tornado.access - INFO - 304 GET / (::1) 3.77ms
+2017-04-09 23:32:14,909 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'If-None-Match': '"bbd1a0863fe6301d661d3edfc9c8e1746a14e1d8"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 32, in _tt_execute
+    _tt_tmp = reverse-url('contestRegister.views.portalRequestHandler')  # portal/index.html:22 (via portal/base.html:45)
+NameError: global name 'reverse' is not defined
+2017-04-09 23:32:14,947 - tornado.access - ERROR - 500 GET / (::1) 46.37ms
+2017-04-09 23:32:28,641 - tornado.access - INFO - 200 GET / (::1) 22.45ms
+2017-04-09 23:32:56,313 - tornado.access - INFO - 200 GET / (::1) 23.15ms
+2017-04-09 23:40:36,199 - tornado.access - INFO - 200 GET / (::1) 19.98ms
+2017-04-09 23:40:36,219 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=56a9631361beb39cc88d7fb57154aa6e (::1) 4.25ms
+2017-04-09 23:41:04,185 - tornado.access - INFO - 200 GET / (::1) 21.69ms
+2017-04-09 23:41:04,210 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e809115bfdd9af96d632e996a11cd198 (::1) 5.41ms
+2017-04-09 23:41:30,272 - tornado.access - INFO - 200 GET / (::1) 21.05ms
+2017-04-09 23:41:32,932 - tornado.access - INFO - 304 GET /contest2017/ (::1) 10.07ms
+2017-04-09 23:42:00,846 - tornado.access - INFO - 200 GET / (::1) 16.78ms
+2017-04-09 23:43:47,448 - tornado.access - INFO - 200 GET / (::1) 30.18ms
+2017-04-09 23:43:47,467 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=27a709c9fa54eaafb689712100c17d78 (::1) 3.18ms
+2017-04-09 23:43:52,870 - tornado.access - INFO - 304 GET /contest2017/ (::1) 8.28ms
+2017-04-09 23:45:20,925 - tornado.access - INFO - 200 GET / (::1) 22.31ms
+2017-04-09 23:45:20,940 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=8ebdcf9e186d7f757e865bb77e3ce05e (::1) 5.46ms
+2017-04-09 23:45:49,372 - tornado.access - INFO - 200 GET / (::1) 27.59ms
+2017-04-09 23:45:49,396 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=a4c97dc60c0f7a27d6e7975afb917cbf (::1) 7.01ms
+2017-04-09 23:48:52,343 - tornado.access - INFO - 200 GET / (::1) 19.18ms
+2017-04-09 23:50:48,664 - tornado.access - INFO - 200 GET / (::1) 20.72ms
+2017-04-09 23:50:50,867 - tornado.access - INFO - 304 GET / (::1) 2.72ms
+2017-04-09 23:51:50,977 - tornado.access - INFO - 200 GET / (::1) 24.59ms
+2017-04-09 23:55:43,787 - tornado.access - INFO - 304 GET / (::1) 2.59ms
+2017-04-09 23:56:48,726 - tornado.access - INFO - 200 GET /query/ (::1) 28.70ms
+2017-04-09 23:56:48,761 - tornado.access - INFO - 200 GET /static/css/queryProblem/style.css?v=6048e518c91d28fc6ee9963bf5d39057 (::1) 3.06ms
+2017-04-09 23:57:13,800 - tornado.access - INFO - 200 GET /query/ (::1) 1.03ms
+2017-04-09 23:57:21,495 - tornado.access - INFO - 200 GET /query/ (::1) 1.30ms
+2017-04-09 23:57:25,508 - tornado.access - INFO - 200 GET /query/ (::1) 0.82ms
+2017-04-09 23:57:26,610 - tornado.access - INFO - 200 GET /query/ (::1) 1.73ms
+2017-04-09 23:57:27,382 - tornado.access - INFO - 200 GET /query/ (::1) 1.30ms
+2017-04-09 23:57:27,887 - tornado.access - INFO - 200 GET /query/ (::1) 1.25ms
+2017-04-09 23:58:17,879 - tornado.access - INFO - 200 GET / (::1) 14.72ms
+2017-04-09 23:58:29,123 - tornado.access - INFO - 200 GET /queryProb/ (::1) 59.46ms
+2017-04-09 23:58:29,149 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (::1) 3.98ms
+2017-04-09 23:58:29,150 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=dfb5a1f15a711a74fef68395cf5a2500 (::1) 0.93ms
+2017-04-09 23:58:29,151 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (::1) 0.72ms
+2017-04-09 23:58:29,152 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (::1) 0.62ms

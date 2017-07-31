@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8160478_779235890_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8160478_779235890_C.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+#include&lt;cstdlib&gt;
+#include&lt;cmath&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+int map[1005][1005];
+int map2[1005][1005];
+int d[1005];
+int d2[1005];
+int n,m,x;
+int head,tail;
+int que[100000];
+int book[1005];
+void spfa(int v)
+{
+	head=0;
+	tail=0;
+	for(int i=1;i&lt;=n;i++)
+	{
+		d[i]=99999999;
+	}
+	d[v]=0;
+	que[tail]=v;
+	book[v]=1;
+<A NAME="0"></A>	tail++;
+	while(head!=tail)
+	{
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match0-1.html#0',3,'match0-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>		int p=que[head];
+		for(int i=1;i&lt;=n;i++)
+		{
+			if(d[i]&gt;d[p]+map[p][i])
+			{
+				//printf(&quot;%d %d:::%d\n&quot;,p,i,map[p][i]);
+				d[i]=map[p][i]+d[p];
+				if(book[i]==0)
+				{
+				que[tail]=i;</B></FONT>
+				tail++;
+				book[i]=1;
+				}
+			}
+					
+		}
+		book[p]=0;
+		head++;
+	//	for(int i=1;i&lt;=n;i++)
+	//	{
+	//		printf(&quot;%d &quot;,d[i]);
+	//	}
+	//	printf(&quot;\n&quot;);
+	}
+}
+void spfa2(int v)
+{
+	memset(book,0,sizeof(book));
+	head=0;
+	tail=0;
+	for(int i=1;i&lt;=n;i++)
+	{
+		d2[i]=99999999;
+	}
+	d2[v]=0;
+	que[tail]=v;
+	book[v]=1;
+<A NAME="1"></A>	tail++;
+	while(head!=tail)
+	{
+<FONT color="#f63526"><A HREF="javascript:ZweiFrames('match0-1.html#1',3,'match0-top.html#1',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>		int p=que[head];
+		for(int i=1;i&lt;=n;i++)
+		{
+			if(d2[i]&gt;d2[p]+map2[p][i])
+			{
+				d2[i]=map2[p][i]+d2[p];
+				if(book[i]==0)
+				{
+				que[tail]=i;</B></FONT>
+				tail++;
+				book[i]=1;
+				}
+			}
+					
+		}
+		book[p]=0;
+		head++;
+	}
+}
+int main()
+{
+	//freopen(&quot;.in&quot;,&quot;r&quot;,stdin);
+	//freopen(&quot;.out&quot;,&quot;w&quot;,stdout);
+
+	scanf(&quot;%d%d%d&quot;,&amp;n,&amp;m,&amp;x);
+	int a,b,t;
+	for(int i=1;i&lt;=n;i++)
+	{
+		for(int j=1;j&lt;=n;j++)
+		{
+<A NAME="2"></A>			map[i][j]=99999999;
+			map2[i][j]=99999999;
+		}
+<FONT color="#77bfc7"><A HREF="javascript:ZweiFrames('match0-1.html#2',3,'match0-top.html#2',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>		map[i][i]=0;
+		map2[i][i]=0;
+	}
+	for(int i=1;i&lt;=m;i++)
+	{	
+		scanf(&quot;%d%d%d&quot;,&amp;a,&amp;b,&amp;t);
+		map[a][b]=t;
+		map2[b][a]=t;
+	}
+//	for(int i=1;i&lt;=n;i++)
+//	{
+//		for(int j=1;j&lt;=n;j++)
+//		{
+//			printf(&quot;%10d&quot;,map[i][j]);
+//			
+//		}
+//		printf(&quot;\n&quot;);
+//	}
+	spfa(x); 
+	spfa2(x);
+	int max=0;</B></FONT>
+	int ans;
+	
+	for(int i=1;i&lt;=n;i++)
+	{
+	//	printf(&quot;%d %d\n&quot;,d[i],d2[i]);
+		ans=d[i]+d2[i];
+		if(ans&gt;max)
+		max=ans;
+	}
+	printf(&quot;%d&quot;,max);
+}
+</PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!--
+<link href="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/codemirror.min.css" rel="stylesheet">
+
+
+
+
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/codemirror.min.js"></script>
+
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/addon/mode/overlay.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/mode/markdown/markdown.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/addon/fold/markdown-fold.min.js"></script>
+<link href="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/theme/base16-light.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/mode/gfm/gfm.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/mode/xml/xml.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/mode/javascript/javascript.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/mode/css/css.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/addon/edit/continuelist.min.js"></script>
+<script src="//cdn.bootcss.com/codemirror/{{ codemirror_version }}/mode/xml/xml.min.js"></script>
+<script src="{{ static_url('js/notification/rawdeflate.js') }}"></script>
+<script src="{{ static_url('js/notification/rawinflate.js') }}"></script>
+
+<link href="//cdn.bootcss.com/codemirror/5.27.4/addon/display/fullscreen.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/codemirror/5.27.4/addon/display/fullscreen.js"></script>
+
+
+-->
+
+
+<script src="//cdn.bootcss.com/emojify.js/0.9.5/emojify.min.js"></script>
+
+<link href="//cdn.bootcss.com/toastr.js/latest/toastr.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+
+
+<!--<link href="{{ static_url('css/notification/offcanvas.css') }}" rel="stylesheet">-->
+
+<!-- simpleMDE -->
+<link href="//cdn.bootcss.com/simplemde/1.11.2/simplemde.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/simplemde/1.11.2/simplemde.min.js"></script>
+
+{% end %}
+
+{% block content %}
+<div class="container-fluid wrt" >
+    <form method="post" action="">
+
+        {% raw xsrf_form_html() %}
+
+        <div class="row">
+            <!-- writing -->
+            <div class="col-md-9">
+                <div class="row tool-area row-offcanvas row-offcanvas-right">
+
+                    <div class="col-md-12">
+                        <input name="title" required class="form-control" placeholder="请在这里输入你的标题"
+                               {% if change %}value="{{ changed_notice.title }}"{% end %}
+                        >
+                    </div>
+                </div>
+
+                <div class="row optional-area">
+                    <div class="col-md-6">
+                        <select class="form-control" name="publish_status">
+                            <option name="publish_status" value="draft">草稿</option>
+                            <option name="publish_status" value="prerelease">预发布</option>
+                            <option name="publish_status" value="release">正式发布</option>
+                            <option name="publish_status" value="depreciate">弃用</option>
+                            <option name="publish_status" value="delete">删除</option>
+                        </select>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label label">
+                                <input class="form-check-input radio" type="radio" name="is_top" id="inlineRadio1" value="1">
+                                <span class="radioInput"></span>置顶
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label label">
+                                <input class="form-check-input radio" checked type="radio" name="is_top" id="inlineRadio2" value="0">
+                                <span class="radioInput"></span>正常
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input class="form-control" type="date" id="example-date-input">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input class="form-control" type="date" id="example-date-input">
+                    </div>
+
+                </div>
+
+                <!-- main content -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea id="markdown-input" name="content" placeholder="Input your idea"
+                                  {% if change %}value="{{ changed_notice.markdown_cotent }}"{% end %}
+                        ></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <!-- function part -->
+            <div class="col-md-3 func sidebar-offcanvas" id="wrt-area">
+                <h4 class="text-center">功能区</h4>
+                <hr/>
+                <div class="card card-primary">
+                    <div class="card-header ">
+                        我的文章信息
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">当前文章/草稿的ID被分配为<strong>{{ next_notice_id }}</strong></li>
+
+                        <li class="list-group-item">
+                            <span class="fa fa-check status-success"></span>
+                            你的文章已经于<span class="status-success">5</span>分钟前备份至数据库
+                        </li>
+
+                        <li class="list-group-item">
+                            <button class="btn btn-info" type="submit"><span class="fa fa-paper-plane"></span> 发表</button>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-header">
+                        历史草稿
+                    </div>
+
+                    {% if draft_notice.count() == 0 %}
+                    <div class="card-block">
+                        <p class="card-text">你暂时没有保存的草稿！</p>
+                    </div>
+                    {% else %}
+                    <ul class="list-group list-group-flush">
+                        {% for notice in draft_notice %}
+                        <li class="list-group-item"><a href="{{ notice.id }}">{{ notice.title }}</a></li>
+                        {% end %}
+
+                    </ul>
+                    {% end %}
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </form>
+</div>
+{% end %}
+
+{% block footerJS %}
+<!--<script src="{{ static_url('js/notification/codemirror-config.js') }}"></script>-->
+<!--<script src="{{ static_url('js/notification/offcanvas.js') }}"></script>-->
+
+<script>
+    var wrt_vm = new Vue({
+        el:'#wrt-area',
+        data:{
+            broswer_sync_time:false,
+            show_tool_area:false,
+            show_valid_time:true,
+        },
+        computed:{
+            broswer_sync_time_text:function () {
+                if (this.broswer_sync_time === false){
+                    return '未就绪'
+                }
+                else{
+                    var curtime = new Date();
+                    var delta_misecond = curtime - this.broswer_sync_time;
+                    return '在'+delta_misecond+'秒前完成'
+                }
+            }
+        }
+    });
+
+    function heredoc(fn) {
+        return fn.toString().split('\n').slice(1,-1).join('\n') + '\n'
+    }
+
+    var md_content_text = heredoc(function(){/*
+        {% if change %}{{ changed_notice.markdown_cotent }}{% else %}{% end %}
+    */});
+
+
+    function editor_fullscreen() {
+        editor.setOption("fullScreen", !editor.getOption("fullScreen"));
+        toastr.info('按下Esc即可解除全屏。');
+    }
+
+    function change_editor_theme(theme) {
+        // load css first
+        function loadCSS(file){
+            //var cssTag = document.getElementById('loadCss');
+            var head = document.getElementsByTagName('head').item(0);
+            //if(cssTag) head.removeChild(cssTag);
+            css = document.createElement('link');
+            css.href = "//cdn.bootcss.com/codemirror/{{ codemirror_version }}/theme/"+file+".min.css";
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            css.id = 'loadCSS';
+            head.appendChild(css);
+        }
+        loadCSS(theme);
+        toastr.success('你的markdown编辑器主题已经变更为 '+theme);
+
+        simplemde.setOption('theme',theme);
+    }
+
+
+    function customMarkdownParser(text) {
+        var languageOverrides = {
+            js: 'javascript',
+            html: 'xml'
+        };
+
+        var md = markdownit({
+            html: true,
+            linkify: true,
+            highlight: function(code, lang){
+                if(languageOverrides[lang]) lang = languageOverrides[lang];
+                console.log(lang);
+                if(lang && hljs.getLanguage(lang)){
+                    try {
+                        return hljs.highlight(lang, code).value;
+                    }
+                    catch(e){
+                        console.error(e);
+
+                    }
+                }
+                return '';
+            }
+        }).use(markdownitFootnote);
+
+        return md.render(text);
+    }
+
+    $(document).ready(function () {
+        // enable tooltip
+        $('.tooltip-btn').tooltip();
+        toastr.warning('编辑器刷新时内容驻留的功能已经开启。')
+    });
+
+    // simple MDE
+    // Most options demonstrate the non-default behavior
+    var simplemde = new SimpleMDE({
+        autofocus: true,
+        autosave: {
+            enabled: true,
+            uniqueId: "1",
+            delay: 1000,
+        },
+        blockStyles: {
+            bold: "__",
+            italic: "_"
+        },
+        element: document.getElementById("markdown-input"),
+        forceSync: true,
+        //hideIcons: ["guide", "heading"],
+        indentWithTabs: true,
+
+        initialValue:md_content_text,
+        insertTexts: {
+            horizontalRule: ["", "\n\n-----\n\n"],
+            image: ["![](https://", ")"],
+            link: ["[", "](https://)"],
+            table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n"],
+        },
+        lineWrapping: false,
+        parsingConfig: {
+            allowAtxHeaderWithoutSpace: true,
+            strikethrough: false,
+            underscoresBreakWords: true,
+        },
+        //placeholder: "",
+        previewRender: function(plainText) {
+            return customMarkdownParser(plainText); // Returns HTML from a custom parser
+        },
+        previewRender: function(plainText, preview) { // Async method
+            setTimeout(function(){
+                preview.innerHTML = customMarkdownParser(plainText);
+            }, 250);
+
+            return "Loading...";
+        },
+        promptURLs: true,
+        renderingConfig: {
+            singleLineBreaks: false,
+            codeSyntaxHighlighting: true,
+        },
+        shortcuts: {
+            drawTable: "Cmd-Alt-T"
+        },
+        showIcons: ["code", "table"],
+        spellChecker: false,
+        //status: false,
+        status: ["autosave", "lines", "words", "cursor"], // Optional usage
+        status: ["autosave", "lines", "words", "cursor", {
+            className: "keystrokes",
+            defaultValue: function(el) {
+                this.keystrokes = 0;
+                el.innerHTML = "0 Keystrokes";
+            },
+            onUpdate: function(el) {
+                el.innerHTML = ++this.keystrokes + " Keystrokes";
+            }
+        }], // Another optional usage, with a custom status bar item that counts keystrokes
+        styleSelectedText: true,
+        tabSize: 4,
+        //toolbar: true,
+        //toolbarTips: true,
+    });
+
+</script>
+{% end %}

@@ -1,0 +1,241 @@
+2017-05-19 00:02:20,994 - tornado.access - INFO - 304 GET /queryProb/history/ (::1) 10.53ms
+2017-05-19 00:03:50,542 - tornado.access - INFO - 304 GET /queryProb/history/ (::1) 8.82ms
+2017-05-19 00:24:35,297 - root - INFO - [CRON] Started @0h ,but not executed .18
+2017-05-19 00:34:35,172 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f24f3e22140>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-19 00:44:35,174 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f24f3e22140>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-19 00:46:04,603 - tornado.access - INFO - 304 GET / (::1) 22.97ms
+2017-05-19 00:46:12,046 - tornado.access - INFO - 200 GET /queryProb/ (::1) 13.59ms
+2017-05-19 00:46:17,146 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 15.23ms
+2017-05-19 00:48:43,557 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 24.80ms
+2017-05-19 00:48:58,695 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 31.63ms
+2017-05-19 00:50:02,265 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 30.26ms
+2017-05-19 00:51:00,678 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 24.02ms
+2017-05-19 00:51:03,443 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 13.85ms
+2017-05-19 00:51:03,443 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '79', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': '_xsrf=2|75f4e8a6|ca45398809b0b32c5f49dbe36e382e59|1495022509; username="2|1:0|10:1495095212|8:username|8:a2lkb3po|4082514893f25dc751945f3d1d6df03b0f8b5f3ea21e5b264962e81e60c7b3e4"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1028, in post
+    self.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 962, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+2017-05-19 00:52:02,756 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '85', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': '_xsrf=2|75f4e8a6|ca45398809b0b32c5f49dbe36e382e59|1495022509; username="2|1:0|10:1495095212|8:username|8:a2lkb3po|4082514893f25dc751945f3d1d6df03b0f8b5f3ea21e5b264962e81e60c7b3e4"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1037, in post
+    retDict['date'].append(time.mktime(everyArchive.queryTime.timetuple()))
+AttributeError: 'unicode' object has no attribute 'mktime'
+2017-05-19 00:52:02,760 - tornado.access - ERROR - 500 POST /queryProb/history/ (::1) 9.72ms
+2017-05-19 00:54:08,735 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 12.51ms
+2017-05-19 01:03:13,102 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 29.04ms
+2017-05-19 01:03:18,679 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 5.17ms
+2017-05-19 01:03:35,462 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 27.34ms
+2017-05-19 01:03:39,219 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.15ms
+2017-05-19 01:03:47,593 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 5.37ms
+2017-05-19 01:03:48,913 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 6.70ms
+2017-05-19 01:05:33,712 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 27.62ms
+2017-05-19 01:06:16,412 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 26.67ms
+2017-05-19 01:06:22,793 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.00ms
+2017-05-19 01:07:34,792 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 8.93ms
+2017-05-19 01:07:40,682 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.84ms
+2017-05-19 01:08:51,094 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 9.91ms
+2017-05-19 01:13:16,585 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 33.58ms
+2017-05-19 01:13:37,379 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.76ms
+2017-05-19 01:14:07,634 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 9.65ms
+2017-05-19 01:16:36,433 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 28.68ms
+2017-05-19 01:16:41,169 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.15ms
+2017-05-19 01:19:03,436 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 25.54ms
+2017-05-19 01:19:07,894 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 2.65ms
+2017-05-19 01:24:49,912 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 21.86ms
+2017-05-19 01:24:54,324 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.30ms
+2017-05-19 01:27:14,221 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 12.85ms
+2017-05-19 01:27:15,073 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 27.35ms
+2017-05-19 01:27:20,753 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.04ms
+2017-05-19 01:31:02,256 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 23.60ms
+2017-05-19 01:31:09,862 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.94ms
+2017-05-19 01:32:29,230 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 30.42ms
+2017-05-19 01:32:35,955 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.39ms
+2017-05-19 01:32:46,172 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 5.98ms
+2017-05-19 01:32:46,993 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 5.12ms
+2017-05-19 01:33:10,489 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 32.79ms
+2017-05-19 01:33:15,998 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.76ms
+2017-05-19 01:33:47,005 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 31.30ms
+2017-05-19 01:33:50,745 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.30ms
+2017-05-19 01:34:10,776 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 37.02ms
+2017-05-19 01:34:14,864 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.47ms
+2017-05-19 01:36:10,220 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 34.19ms
+2017-05-19 01:36:13,975 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.44ms
+2017-05-19 01:36:26,295 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 29.54ms
+2017-05-19 01:36:30,899 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.30ms
+2017-05-19 01:39:19,672 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 24.06ms
+2017-05-19 01:39:24,436 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.10ms
+2017-05-19 01:41:35,765 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 29.50ms
+2017-05-19 01:41:39,851 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.05ms
+2017-05-19 01:42:56,227 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 21.69ms
+2017-05-19 01:43:00,581 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.76ms
+2017-05-19 01:44:36,818 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 26.67ms
+2017-05-19 01:44:43,119 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.58ms
+2017-05-19 01:46:19,617 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 28.67ms
+2017-05-19 01:46:21,878 - tornado.access - INFO - 304 GET /queryProb/history/ (::1) 12.19ms
+2017-05-19 01:50:27,394 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 10.42ms
+2017-05-19 01:50:30,225 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 29.59ms
+2017-05-19 01:50:34,001 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.19ms
+2017-05-19 01:53:53,129 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 30.81ms
+2017-05-19 01:53:59,061 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.65ms
+2017-05-19 01:58:17,691 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 33.40ms
+2017-05-19 01:58:23,567 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.19ms
+2017-05-19 01:59:45,028 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 32.68ms
+2017-05-19 01:59:48,325 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.29ms
+2017-05-19 02:00:10,216 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 10.67ms
+2017-05-19 02:00:13,755 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 3.02ms
+2017-05-19 02:09:31,127 - tornado.access - INFO - 200 GET /queryProb/cron/ (::1) 15.31ms
+2017-05-19 02:09:31,386 - tornado.access - INFO - 304 GET /static/image/portal/pexels-photo-large.jpg (::1) 12.33ms
+2017-05-19 02:09:34,484 - tornado.access - INFO - 200 GET /queryProb/doc/feature/ (::1) 18.82ms
+2017-05-19 02:18:31,527 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 8.78ms
+2017-05-19 02:18:36,472 - tornado.access - INFO - 200 GET /queryProb/board/ (::1) 11.00ms
+2017-05-19 02:18:36,719 - tornado.access - INFO - 200 POST /queryProb/board/ (::1) 6.00ms
+2017-05-19 02:18:44,682 - tornado.access - INFO - 200 GET /queryProb/board/ (::1) 20.25ms
+2017-05-19 02:18:44,886 - tornado.access - INFO - 200 POST /queryProb/board/ (::1) 4.63ms
+2017-05-19 02:18:49,414 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 25.51ms
+2017-05-19 02:19:57,129 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 30.53ms
+2017-05-19 02:20:00,631 - tornado.access - INFO - 304 GET /queryProb/history/ (::1) 10.03ms
+2017-05-19 02:20:03,540 - tornado.access - INFO - 200 GET /queryProb/board/ (::1) 15.03ms
+2017-05-19 02:20:03,743 - tornado.access - INFO - 200 POST /queryProb/board/ (::1) 4.98ms
+2017-05-19 11:44:41,147 - root - INFO - [CRON] Started @11h ,but not executed .18
+2017-05-19 11:49:15,264 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fbc6eac8140>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    try:
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-19 11:52:01,613 - root - INFO - [CRON] Started @11h ,but not executed .18
+2017-05-19 11:52:01,615 - tornado.access - INFO - 200 GET /queryProb/update/manually/ (::1) 93.62ms
+2017-05-19 11:52:21,516 - tornado.access - INFO - 302 GET /admin/login (::1) 2.08ms
+2017-05-19 11:52:21,543 - tornado.access - INFO - 200 GET /admin/login/ (::1) 16.93ms
+2017-05-19 11:52:23,916 - tornado.access - INFO - 302 POST /admin/login/ (::1) 319.14ms
+2017-05-19 11:52:24,969 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1047.96ms
+2017-05-19 11:52:25,501 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.52ms
+2017-05-19 11:52:27,447 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 28.23ms
+2017-05-19 11:52:27,961 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 7.79ms
+2017-05-19 11:52:31,099 - tornado.access - INFO - 200 GET /admin/manage/configOption/change/5/ (::1) 44.83ms
+2017-05-19 11:52:34,666 - tornado.access - INFO - 302 POST /admin/manage/configOption/change/5/ (::1) 97.39ms
+2017-05-19 11:52:34,686 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 15.95ms
+2017-05-19 11:52:35,039 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 7.75ms
+2017-05-19 11:52:49,289 - root - INFO - [CRON] Started @11h , executed .11
+2017-05-19 11:52:49,291 - tornado.access - INFO - 200 GET /queryProb/update/manually/ (::1) 11171.62ms
+2017-05-19 11:55:22,814 - tornado.access - INFO - 200 GET /admin/manage/acRecordArchive/show/ (::1) 35.84ms
+2017-05-19 11:55:23,783 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 17.80ms
+2017-05-19 11:55:26,000 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 21.68ms
+2017-05-19 11:55:27,334 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 21.88ms
+2017-05-19 11:55:40,199 - tornado.access - INFO - 304 GET /admin/manage/acRecordArchive/show/ (::1) 29.73ms
+2017-05-19 11:55:40,801 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 10.22ms
+2017-05-19 11:55:42,572 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 23.69ms
+2017-05-19 11:55:46,342 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 24.49ms
+2017-05-19 11:56:04,169 - tornado.access - INFO - 304 GET /admin/manage/acRecordArchive/show/ (::1) 24.23ms
+2017-05-19 11:56:05,127 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 10.83ms
+2017-05-19 11:56:07,623 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 21.52ms
+2017-05-19 11:56:08,525 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 13.29ms
+2017-05-19 11:57:29,524 - tornado.access - INFO - 304 GET /admin/manage/acRecordArchive/show/ (::1) 28.92ms
+2017-05-19 11:57:30,469 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 11.73ms
+2017-05-19 11:57:32,983 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (::1) 26.35ms
+2017-05-19 11:58:00,469 - tornado.access - INFO - 200 POST /queryProb/board/ (::1) 4.37ms
+2017-05-19 11:58:01,513 - tornado.access - INFO - 200 POST /queryProb/board/ (::1) 8.79ms
+2017-05-19 12:51:50,414 - root - INFO - [CRON] Started @12h ,but not executed .11
+2017-05-19 13:51:50,466 - root - INFO - [CRON] Started @13h ,but not executed .11
+2017-05-19 14:51:50,413 - root - INFO - [CRON] Started @14h ,but not executed .11
+2017-05-19 15:51:50,381 - root - INFO - [CRON] Started @15h ,but not executed .11
+2017-05-19 16:51:50,433 - root - INFO - [CRON] Started @16h ,but not executed .11
+2017-05-19 17:51:50,445 - root - INFO - [CRON] Started @17h ,but not executed .11
+2017-05-19 18:51:50,345 - root - INFO - [CRON] Started @18h ,but not executed .11
+2017-05-19 19:48:27,327 - tornado.access - INFO - 304 GET / (::1) 21.18ms
+2017-05-19 19:48:31,987 - tornado.access - INFO - 200 GET /queryProb/ (::1) 13.80ms
+2017-05-19 19:49:55,705 - tornado.access - INFO - 200 GET /queryProb/ (::1) 25.10ms
+2017-05-19 19:49:55,729 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=6e446ab8298116e7a9d12bb8019e3645 (::1) 6.25ms
+2017-05-19 19:50:09,045 - tornado.access - INFO - 200 POST /queryProb/ (::1) 14.74ms
+2017-05-19 19:50:09,065 - tornado.access - INFO - 200 GET /static/js/queryProbInfo/queryProbInfo.js?v=cbe759d8b72d3d9dae77073caa61b214 (::1) 1.07ms
+2017-05-19 19:50:19,678 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495194609257 (::1) 10163.11ms
+2017-05-19 19:51:11,574 - tornado.access - INFO - 200 POST /queryProb/ (::1) 37.58ms
+2017-05-19 19:51:21,911 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495194671764 (::1) 10057.05ms
+2017-05-19 19:51:50,765 - tornado.access - INFO - 200 GET /queryProb/ (::1) 25.11ms
+2017-05-19 19:51:51,683 - tornado.access - INFO - 200 GET /queryProb/ (::1) 4.62ms
+2017-05-19 19:51:53,072 - tornado.access - INFO - 200 GET /queryProb/ (::1) 6.29ms
+2017-05-19 19:51:57,678 - tornado.access - INFO - 200 POST /queryProb/ (::1) 25.11ms
+2017-05-19 19:52:08,152 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495194717797 (::1) 10270.74ms
+2017-05-19 19:53:02,245 - tornado.access - INFO - 200 POST /queryProb/ (::1) 32.89ms
+2017-05-19 19:53:12,657 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495194782425 (::1) 10046.09ms
+2017-05-19 19:53:24,693 - tornado.access - INFO - 200 POST /queryProb/ (::1) 23.96ms
+2017-05-19 19:53:35,098 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495194804914 (::1) 10053.61ms
+2017-05-19 19:55:19,632 - tornado.access - INFO - 200 GET /queryProb/ (::1) 22.52ms
+2017-05-19 19:55:28,378 - tornado.access - INFO - 302 GET /queryProb/cron (::1) 1.89ms
+2017-05-19 19:55:28,404 - tornado.access - INFO - 200 GET /queryProb/cron/ (::1) 18.54ms
+2017-05-19 19:55:28,611 - tornado.access - INFO - 304 GET /static/image/portal/pexels-photo-large.jpg (::1) 30.39ms
+2017-05-19 19:55:30,573 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 22.39ms
+2017-05-19 19:55:30,729 - tornado.access - INFO - 304 GET /static/image/portal/sky-night-space-galaxy.jpeg (::1) 17.07ms
+2017-05-19 19:56:05,333 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 42.51ms
+2017-05-19 20:02:40,582 - tornado.access - INFO - 200 POST /queryProb/ (::1) 33.40ms
+2017-05-19 20:02:43,405 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 16.06ms
+2017-05-19 20:02:51,060 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495195360814 (::1) 10091.39ms
+2017-05-19 20:02:58,433 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 37.40ms
+2017-05-19 20:07:19,512 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 27.30ms
+2017-05-19 20:07:19,536 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (::1) 4.83ms
+2017-05-19 20:07:58,318 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 27.57ms
+2017-05-19 20:09:49,243 - tornado.access - INFO - 200 POST /queryProb/ (::1) 29.83ms
+2017-05-19 20:09:59,642 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1495195789468 (::1) 10046.89ms
+2017-05-19 20:10:27,800 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 32.43ms
+2017-05-19 20:10:54,814 - tornado.access - INFO - 304 GET /queryProb/cron/realtime/ (::1) 13.98ms
+2017-05-19 20:11:07,745 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 34.78ms
+2017-05-19 20:11:18,060 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 31.25ms
+2017-05-19 20:11:45,829 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 32.88ms
+2017-05-19 20:11:47,778 - tornado.access - INFO - 304 GET /queryProb/cron/realtime/ (::1) 12.53ms
+2017-05-19 20:12:23,080 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 29.02ms
+2017-05-19 20:12:24,655 - tornado.access - INFO - 304 GET /queryProb/cron/realtime/ (::1) 15.18ms
+2017-05-19 20:12:56,233 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (::1) 28.57ms
+2017-05-19 20:18:41,281 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 22.59ms
+2017-05-19 20:18:46,819 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 5.68ms
+2017-05-19 20:20:02,640 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 25.47ms
+2017-05-19 20:20:11,809 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.46ms
+2017-05-19 20:20:25,380 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 26.01ms
+2017-05-19 20:20:35,022 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 22.14ms
+2017-05-19 20:20:42,471 - tornado.access - INFO - 200 GET /queryProb/history/ (::1) 22.08ms
+2017-05-19 20:20:53,248 - tornado.access - INFO - 200 POST /queryProb/history/ (::1) 4.50ms

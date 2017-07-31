@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8970550_2602690897_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8970550_2602690897_C.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;iostream&gt;
+#include&lt;string.h&gt;
+using namespace std;
+bool isapp[1000];
+int next(int num)
+{
+    int ans=0;
+    while(num&gt;0)
+    {
+        int t=num%10;
+        ans+=t*t;
+<A NAME="0"></A>        num/=10;
+    }
+    return ans;
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match8-1.html#0',3,'match8-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>}
+bool isprime(int num)
+{
+    if(num==1)return false;
+    for(int i=2;i*i&lt;=num;i++)
+    {
+        if(num%i==0)
+        return false;
+    }
+    return true;
+}
+int main()
+{
+    int p,k,t;</B></FONT>
+    cin&gt;&gt;p;
+    for(int i=1;i&lt;=p;i++)
+    {
+        cin&gt;&gt;k;
+        cin&gt;&gt;t;
+        cout&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt;t&lt;&lt;&quot; &quot;;
+        memset(isapp,0,sizeof(isapp));
+        if(isprime(t))
+        {
+            int flag=false;
+            t=next(t);
+            while(isapp[t]==false)
+            {
+                isapp[t]=true;
+                if(t==1)
+                {
+                    cout&lt;&lt;&quot;YES&quot;&lt;&lt;endl;
+                    flag=true;
+                    break;
+                }
+                t=next(t);
+            }
+            if(flag==false)
+            {
+                cout&lt;&lt;&quot;NO&quot;&lt;&lt;endl;
+            }
+        }
+        else
+        {
+            cout&lt;&lt;&quot;NO&quot;&lt;&lt;endl;
+            continue;
+        }
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

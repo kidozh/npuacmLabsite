@@ -1,0 +1,188 @@
+2017-06-27 15:23:01,111 - tornado.access - INFO - 200 GET / (127.0.0.1) 382.91ms
+2017-06-27 15:23:01,174 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (127.0.0.1) 31.19ms
+2017-06-27 15:23:01,175 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (127.0.0.1) 0.71ms
+2017-06-27 15:23:01,177 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (127.0.0.1) 0.64ms
+2017-06-27 15:23:01,178 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (127.0.0.1) 1.00ms
+2017-06-27 15:23:01,184 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (127.0.0.1) 0.97ms
+2017-06-27 15:23:01,192 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (127.0.0.1) 0.66ms
+2017-06-27 15:23:01,197 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (127.0.0.1) 0.66ms
+2017-06-27 15:23:01,205 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (127.0.0.1) 1.11ms
+2017-06-27 15:23:01,340 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (127.0.0.1) 2.10ms
+2017-06-27 15:23:01,756 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 30.11ms
+2017-06-27 15:23:05,010 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 101.21ms
+2017-06-27 15:23:05,043 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 1.28ms
+2017-06-27 15:23:05,053 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 1.36ms
+2017-06-27 15:23:05,056 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 1.10ms
+2017-06-27 15:23:05,059 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 1.04ms
+2017-06-27 15:23:07,037 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 2.08ms
+2017-06-27 15:23:09,009 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 14.34ms
+2017-06-27 15:23:12,453 - tornado.access - INFO - 200 GET /queryProb/board/ (127.0.0.1) 46.85ms
+2017-06-27 15:23:12,729 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 5.36ms
+2017-06-27 15:23:14,201 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 5.33ms
+2017-06-27 15:23:14,732 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 10.94ms
+2017-06-27 15:23:15,405 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 9.00ms
+2017-06-27 15:23:15,908 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 8.51ms
+2017-06-27 15:23:21,901 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 3.45ms
+2017-06-27 15:23:35,304 - tornado.access - INFO - 304 GET / (127.0.0.1) 8.99ms
+2017-06-27 15:23:40,790 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 1.41ms
+2017-06-27 15:23:45,433 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 69.42ms
+2017-06-27 15:23:45,467 - tornado.access - INFO - 200 GET /static/js/queryProbInfo/queryProbInfo.js?v=cbe759d8b72d3d9dae77073caa61b214 (127.0.0.1) 1.48ms
+2017-06-27 15:23:55,837 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1498548225479 (127.0.0.1) 10162.03ms
+2017-06-27 15:23:55,901 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-06-27 15:24:05,317 - tornado.access - INFO - 200 GET /queryProb/board/ (127.0.0.1) 4.75ms
+2017-06-27 15:24:05,558 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 7.00ms
+2017-06-27 15:24:06,784 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 9.55ms
+2017-06-27 15:24:07,262 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 7.46ms
+2017-06-27 15:24:10,609 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.83ms
+2017-06-27 15:24:11,394 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.52ms
+2017-06-27 15:24:11,827 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 6.06ms
+2017-06-27 15:24:12,042 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 5.49ms
+2017-06-27 15:24:12,291 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 5.76ms
+2017-06-27 15:24:12,489 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 2.54ms
+2017-06-27 15:25:40,128 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 23.13ms
+2017-06-27 15:25:44,353 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 3.78ms
+2017-06-27 15:26:38,580 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 26.73ms
+2017-06-27 15:26:42,255 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 5.14ms
+2017-06-27 15:28:00,497 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 26.80ms
+2017-06-27 15:28:03,972 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.16ms
+2017-06-27 15:28:22,569 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 34.52ms
+2017-06-27 15:28:26,190 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 5.29ms
+2017-06-27 15:30:16,125 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 24.38ms
+2017-06-27 15:30:20,399 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 5.04ms
+2017-06-27 15:31:00,378 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 37.30ms
+2017-06-27 15:31:06,093 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.60ms
+2017-06-27 15:31:26,413 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 23.33ms
+2017-06-27 15:31:30,178 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.83ms
+2017-06-27 15:33:10,600 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 25.10ms
+2017-06-27 15:33:14,207 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.01ms
+2017-06-27 15:35:04,888 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 21.00ms
+2017-06-27 15:35:08,622 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 3.50ms
+2017-06-27 15:41:27,587 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 21.89ms
+2017-06-27 15:41:31,467 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '86', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1051, in post
+    retDict[oj].append(recordsDate,last[oj])
+TypeError: append() takes exactly one argument (2 given)
+2017-06-27 15:41:31,511 - tornado.access - ERROR - 500 POST /queryProb/history/ (127.0.0.1) 47.08ms
+2017-06-27 15:41:55,953 - tornado.access - INFO - 304 GET /queryProb/history/ (127.0.0.1) 40.92ms
+2017-06-27 15:41:59,730 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 3.62ms
+2017-06-27 15:42:33,911 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 10.91ms
+2017-06-27 15:42:33,912 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '89', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1036, in post
+    self.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 962, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+2017-06-27 15:42:39,072 - tornado.access - INFO - 200 GET /queryProb/board/ (127.0.0.1) 11.77ms
+2017-06-27 15:42:39,362 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 5.41ms
+2017-06-27 15:42:45,484 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 6.36ms
+2017-06-27 15:42:48,080 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 3.87ms
+2017-06-27 15:42:48,080 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '89', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1036, in post
+    self.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 962, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+2017-06-27 15:42:49,516 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 3.87ms
+2017-06-27 15:42:49,516 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '89', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1036, in post
+    self.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 962, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+2017-06-27 15:43:13,904 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 22.06ms
+2017-06-27 15:43:18,049 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 8.05ms
+2017-06-27 15:43:18,050 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '89', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1036, in post
+    self.finish()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 962, in finish
+    raise RuntimeError("finish() called twice")
+RuntimeError: finish() called twice
+2017-06-27 15:43:50,387 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 23.84ms
+2017-06-27 15:43:55,763 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 9.60ms
+2017-06-27 15:44:09,708 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.54ms
+2017-06-27 15:44:14,183 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.21ms
+2017-06-27 15:44:57,057 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 15.59ms
+2017-06-27 15:45:31,528 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 13.64ms
+2017-06-27 15:45:55,560 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 22.98ms
+2017-06-27 15:46:00,280 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 7.73ms
+2017-06-27 15:46:15,065 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '89', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1035, in post
+    print(query.counts())
+AttributeError: 'SelectQuery' object has no attribute 'counts'
+2017-06-27 15:46:15,071 - tornado.access - ERROR - 500 POST /queryProb/history/ (127.0.0.1) 12.48ms
+2017-06-27 15:46:21,889 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '89', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1035, in post
+    print(query.counts())
+AttributeError: 'SelectQuery' object has no attribute 'counts'
+2017-06-27 15:46:21,897 - tornado.access - ERROR - 500 POST /queryProb/history/ (127.0.0.1) 16.43ms
+2017-06-27 15:46:38,902 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 15.48ms
+2017-06-27 15:47:03,795 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 5.10ms
+2017-06-27 15:51:44,746 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 11.94ms
+2017-06-27 15:52:59,603 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 22.35ms
+2017-06-27 15:53:03,620 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.44ms
+2017-06-27 15:54:07,247 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 9.74ms
+2017-06-27 15:54:16,640 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.84ms
+2017-06-27 15:54:19,715 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.78ms
+2017-06-27 15:54:26,788 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 6.57ms
+2017-06-27 15:55:33,217 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 7.25ms
+2017-06-27 15:55:35,352 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 4.91ms
+2017-06-27 15:55:36,278 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 6.99ms
+2017-06-27 15:56:27,513 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '86', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1060, in post
+    print(lastDate[oj],recordsDate)
+TypeError: 'float' object has no attribute '__getitem__'
+2017-06-27 15:56:27,520 - tornado.access - ERROR - 500 POST /queryProb/history/ (127.0.0.1) 13.28ms
+2017-06-27 15:56:30,065 - tornado.application - ERROR - Uncaught exception POST /queryProb/history/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/queryProb/history/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '86', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/queryProb/history/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|159ee9bf|7bc55e7cab1627f388ca2e822b2a64db|1498548185', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 1060, in post
+    print(lastDate[oj],recordsDate)
+TypeError: 'float' object has no attribute '__getitem__'
+2017-06-27 15:56:30,068 - tornado.access - ERROR - 500 POST /queryProb/history/ (127.0.0.1) 5.40ms
+2017-06-27 15:57:08,830 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 6.71ms
+2017-06-27 15:57:50,480 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 7.24ms
+2017-06-27 15:58:58,381 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 15.83ms
+2017-06-27 15:59:13,723 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 11.02ms
+2017-06-27 16:00:52,380 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 8.42ms
+2017-06-27 16:01:04,599 - tornado.access - INFO - 200 POST /queryProb/history/ (127.0.0.1) 8.74ms
+2017-06-27 17:01:14,380 - root - INFO - [CRON] Started @17h , executed .17
+2017-06-27 17:01:24,898 - root - INFO - [CRON] Executed for [{'submitNum': 1705, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 586, 'bzojNum': 12, 'zojNum': 2, 'pojNum': 0, 'cfNum': 0, 'hduNum': 421, 'totalNum': 1021}, {'submitNum': 301, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 1, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 16, 'pojNum': 129, 'cfNum': 13, 'hduNum': 86, 'totalNum': 246}] Users
+2017-06-27 18:01:03,186 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-06-27 19:01:03,228 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-06-27 20:01:03,233 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-06-27 21:01:03,238 - root - INFO - [CRON] Started @21h ,but not executed .17
+2017-06-27 22:01:03,188 - root - INFO - [CRON] Started @22h ,but not executed .17

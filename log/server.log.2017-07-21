@@ -1,0 +1,28 @@
+2017-07-21 11:23:55,490 - tornado.access - INFO - 302 GET /t (127.0.0.1) 162.48ms
+2017-07-21 11:23:55,638 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 143.02ms
+2017-07-21 11:23:57,680 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 32.41ms
+2017-07-21 11:23:58,478 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 29.10ms
+2017-07-21 11:24:06,444 - tornado.access - INFO - 302 GET /t/post (127.0.0.1) 2.24ms
+2017-07-21 11:24:06,646 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 171.78ms
+2017-07-21 11:35:02,502 - tornado.access - INFO - 302 GET /t/post (127.0.0.1) 6.43ms
+2017-07-21 11:35:02,525 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 19.17ms
+2017-07-21 11:35:02,693 - tornado.access - INFO - 200 GET /static/js/notification/codemirror-config.js?v=28379cc3c5b32def4737adfdc2b782a1 (127.0.0.1) 139.33ms
+2017-07-21 11:35:19,985 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 7.99ms
+2017-07-21 11:35:56,155 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 31.04ms
+2017-07-21 11:35:56,188 - tornado.access - INFO - 200 GET /static/js/notification/codemirror-config.js?v=4b7408bb20f35f565260f985159b9d31 (127.0.0.1) 6.04ms
+2017-07-21 11:36:52,644 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.82ms
+2017-07-21 11:37:35,238 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 31.17ms
+2017-07-21 11:40:03,583 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 31.83ms
+2017-07-21 11:40:28,128 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 32.99ms
+2017-07-21 11:41:05,159 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 22.25ms
+2017-07-21 11:42:33,043 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 30.12ms
+2017-07-21 11:42:33,078 - tornado.access - INFO - 200 GET /static/js/notification/codemirror-config.js?v=4606ad22677f748aae0dd0da2751b986 (127.0.0.1) 5.70ms
+2017-07-21 11:47:34,285 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 28.91ms
+2017-07-21 12:47:32,082 - root - INFO - [CRON] Started @12h ,but not executed .17
+2017-07-21 13:47:32,144 - root - INFO - [CRON] Started @13h ,but not executed .17
+2017-07-21 14:47:32,119 - root - INFO - [CRON] Started @14h ,but not executed .17
+2017-07-21 15:47:32,239 - root - INFO - [CRON] Started @15h ,but not executed .17
+2017-07-21 16:47:32,232 - root - INFO - [CRON] Started @16h ,but not executed .17
+2017-07-21 17:47:41,076 - root - INFO - [CRON] Started @17h , executed .17
+2017-07-21 17:47:52,831 - root - INFO - [CRON] Executed for [{'submitNum': 1679, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 602, 'bzojNum': 0, 'zojNum': 2, 'pojNum': 0, 'cfNum': 0, 'hduNum': 421, 'totalNum': 1025}, {'submitNum': 185, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 0, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 16, 'pojNum': 129, 'cfNum': 13, 'hduNum': 0, 'totalNum': 159}] Users
+2017-07-21 18:47:32,144 - root - INFO - [CRON] Started @18h ,but not executed .17

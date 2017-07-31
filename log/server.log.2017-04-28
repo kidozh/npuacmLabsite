@@ -1,0 +1,15 @@
+2017-04-28 00:02:07,584 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f1c164207d0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open

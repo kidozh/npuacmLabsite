@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8159231_lethalboy_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8159231_lethalboy_C.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;iostream&gt;
+#include&lt;algorithm&gt;
+#include&lt;cstring&gt;
+#include&lt;string&gt;
+#include&lt;queue&gt;
+#include&lt;cstdio&gt;
+#define N 3020
+#define M 2000020
+#define inf 1&lt;&lt;29
+#define ll long long
+using namespace std;
+int n,m,x,y,c,ret;
+bool vis[N];
+int dis[N],t,ans[N];
+queue&lt;int&gt;Q;
+int head[N],pos;
+struct node{int x,y,c;}p[M];
+struct edge{int to,next,c;}e[M];
+void add(int a,int b,int c)
+<A NAME="0"></A>{pos++;e[pos].to=b,e[pos].c=c,e[pos].next=head[a],head[a]=pos;}
+void spfa(int s)
+{
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match6-1.html#0',3,'match6-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>	for(int i=1;i&lt;=n;i++)vis[i]=0,dis[i]=inf;
+	Q.push(s);dis[s]=0;vis[s]=1;
+	while(!Q.empty())
+	{
+		int u=Q.front();Q.pop();vis[u
+		]=0;
+		for(int i=head[u];i;i=e[i].next)
+		{
+			int v=e[i].to;
+			if(dis[v]&gt;dis[u]+e[i].c)
+			{
+				dis[v]=dis[u]+e[i].c;
+				if(!vis[v]){Q.push(v);vis[v]=1;}</B></FONT>
+			}
+		}
+	}
+}
+int main()
+{
+	scanf(&quot;%d%d%d&quot;,&amp;n,&amp;m,&amp;t);
+	for(int i=1;i&lt;=m;i++)
+	{
+		scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;c);
+		p[i].x=x,p[i].y=y,p[i].c=c;add(x,y,c);
+	}spfa(t);for(int i=1;i&lt;=n;i++)ans[i]=dis[i];
+	pos=0;memset(head,0,sizeof(head));
+	for(int i=1;i&lt;=m;i++)
+		add(p[i].y,p[i].x,p[i].c);
+	spfa(t);for(int i=1;i&lt;=n;i++)ans[i]+=dis[i];
+	for(int i=1;i&lt;=n;i++)ret=max(ret,ans[i]);
+	printf(&quot;%d\n&quot;,ret);
+}
+</PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8969704_jinjiaodawang_A.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8969704_jinjiaodawang_A.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;bits/stdc++.h&gt;
+typedef long long ll;
+using namespace std;
+#define debug(a) cout&lt;&lt;a&lt;&lt;endl
+#define clr(a) memset(a,0,sizeof(a))
+#define clrne(a) memset(a,-1,sizeof(a))
+#define clrinf(a) memset(a,0x3f,sizeof(a))
+#define clrneinf(a) memset(a,0xc0,sizeof(a))
+#define pb(a) push_back(a)
+#define maxn 10001
+#define mod 1000000007
+#define eps 1e-9
+#define inf 0x7fffffff
+int h[30];
+int main()
+{
+//  freopen(&quot;in.txt&quot;,&quot;r&quot;,stdin);
+//  freopen(&quot;out.txt&quot;,&quot;w&quot;,stdout);
+    int T;
+    scanf(&quot;%d&quot;,&amp;T);
+    while (T--)
+    {
+        int temp;
+<A NAME="0"></A>        scanf(&quot;%d&quot;,&amp;temp);
+        for (int i=  1;i&lt;=20;i++)
+            scanf(&quot;%d&quot;,&amp;h[i]);
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match8-1.html#0',3,'match8-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>        int ans = 0;
+        for (int i = 1;i&lt;=19;i++)
+        {
+            for (int j = i+1;j&lt;=20;j++)
+                if (h[i]&gt;h[j]) ans++;
+        }</B></FONT>
+        cout&lt;&lt;temp&lt;&lt;' '&lt;&lt;ans&lt;&lt;endl;
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8970692_shadowboy_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8970692_shadowboy_C.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;string&gt;
+#include &lt;stdlib.h&gt;
+<A NAME="0"></A>using namespace std;
+int num[30];
+bool judge(int num){
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match18-0.html#0',2,'match18-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>    for(int i=2;i*i&lt;=num;i++){
+        if(num%i==0)
+            return false;
+    }
+    return true;
+}
+bool vis[100001];
+int main()
+{
+    int n;</B></FONT>
+    scanf(&quot;%d&quot;,&amp;n);
+    for(int cases=1;cases&lt;=n;cases++){
+        int tmp;
+        scanf(&quot;%d&quot;,&amp;tmp);
+        int num;
+        scanf(&quot;%d&quot;,&amp;num);
+        memset(vis,0,sizeof(vis));
+        if(judge(num)==false||num&lt;7){
+            printf(&quot;%d %d NO\n&quot;,tmp,num);
+            continue;
+        }
+        bool flag=true;
+        int a=num;
+        while(1){
+            if(a==1)
+                break;
+            else if(vis[a]==true){
+                flag=false;
+                break;
+            }
+            else{
+                vis[a]=true;
+                int sum=0;
+                while(a!=0){
+                    sum+=(a%10)*(a%10);
+                    a/=10;
+                }
+                a=sum;
+            }
+        }
+        if(flag){
+            printf(&quot;%d %d YES\n&quot;,tmp,num);
+        }else{
+            printf(&quot;%d %d NO\n&quot;,tmp,num);
+        }
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

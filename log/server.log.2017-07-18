@@ -1,0 +1,467 @@
+2017-07-18 13:27:37,082 - tornado.access - INFO - 200 GET / (127.0.0.1) 376.84ms
+2017-07-18 13:27:37,117 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 19.69ms
+2017-07-18 13:27:37,119 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 0.85ms
+2017-07-18 13:27:37,120 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.94ms
+2017-07-18 13:27:37,122 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 1.40ms
+2017-07-18 13:27:40,960 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 32.62ms
+2017-07-18 13:27:44,423 - tornado.access - INFO - 200 GET /history/ (127.0.0.1) 35.94ms
+2017-07-18 14:11:15,543 - tornado.access - INFO - 302 GET /t (127.0.0.1) 317.74ms
+2017-07-18 14:11:15,665 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 106.35ms
+2017-07-18 14:11:15,720 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=11a97e511e2cb0db54c727b780ec2fb9 (127.0.0.1) 39.48ms
+2017-07-18 14:11:18,820 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 28.37ms
+2017-07-18 14:11:38,101 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.07ms
+2017-07-18 14:27:13,224 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.96ms
+2017-07-18 14:32:48,650 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.15ms
+2017-07-18 14:32:48,670 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a097bcb38311bcc602475b88d78809dc (127.0.0.1) 6.93ms
+2017-07-18 14:32:51,102 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 6.46ms
+2017-07-18 14:32:51,824 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 12.35ms
+2017-07-18 14:32:52,418 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 8.33ms
+2017-07-18 14:33:24,512 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 9.15ms
+2017-07-18 14:34:34,499 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 31.33ms
+2017-07-18 14:37:39,152 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.99ms
+2017-07-18 14:37:39,172 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9d4ea0599f9b165e282e8be20d0b341c (127.0.0.1) 6.89ms
+2017-07-18 14:37:42,071 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 10.40ms
+2017-07-18 14:37:42,810 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 8.73ms
+2017-07-18 14:38:12,124 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 17.56ms
+2017-07-18 14:38:14,203 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 8.77ms
+2017-07-18 14:38:14,900 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 9.08ms
+2017-07-18 14:38:57,730 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.70ms
+2017-07-18 14:42:57,583 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 26.01ms
+2017-07-18 14:43:06,973 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 6.01ms
+2017-07-18 14:44:16,555 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.05ms
+2017-07-18 14:44:33,257 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.52ms
+2017-07-18 14:44:51,985 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.60ms
+2017-07-18 14:45:21,764 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.98ms
+2017-07-18 14:45:38,537 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.68ms
+2017-07-18 14:47:18,255 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.88ms
+2017-07-18 14:49:37,136 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.22ms
+2017-07-18 14:50:53,156 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.88ms
+2017-07-18 15:06:44,690 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 23.62ms
+2017-07-18 15:25:56,100 - tornado.access - INFO - 200 GET / (127.0.0.1) 267.29ms
+2017-07-18 15:25:59,538 - tornado.access - INFO - 302 GET /t (127.0.0.1) 2.53ms
+2017-07-18 15:25:59,565 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.62ms
+2017-07-18 15:33:09,405 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.84ms
+2017-07-18 15:33:15,046 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1500025728|8:username|8:a2lkb3po|ede04d2f0fcb2437dd4c71d885998869ae5972e08e2db1ea533a5d71109967ee"; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 29, in post
+    for notice in pinned_query.all():
+AttributeError: 'SelectQuery' object has no attribute 'all'
+2017-07-18 15:33:15,083 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 38.00ms
+2017-07-18 15:35:09,245 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1500025728|8:username|8:a2lkb3po|ede04d2f0fcb2437dd4c71d885998869ae5972e08e2db1ea533a5d71109967ee"; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 49, in post
+    .paginate(query_page_num,query_page_length)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 391, in inner
+    func(clone, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3086, in paginate
+    page -= 1
+TypeError: unsupported operand type(s) for -=: 'unicode' and 'int'
+2017-07-18 15:35:09,350 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 150.54ms
+2017-07-18 15:36:28,622 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 9.29ms
+2017-07-18 15:36:51,205 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.17ms
+2017-07-18 15:38:13,746 - tornado.access - INFO - 200 GET / (127.0.0.1) 27.70ms
+2017-07-18 15:38:17,668 - tornado.access - INFO - 302 GET /admin/login (127.0.0.1) 2.77ms
+2017-07-18 15:38:17,746 - tornado.access - INFO - 200 GET /admin/login/ (127.0.0.1) 72.44ms
+2017-07-18 15:38:17,771 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 5.23ms
+2017-07-18 15:38:17,773 - tornado.access - INFO - 200 GET /static/admin/css/style.css (127.0.0.1) 0.79ms
+2017-07-18 15:38:35,337 - tornado.access - INFO - 302 POST /admin/login/ (127.0.0.1) 303.96ms
+2017-07-18 15:38:36,447 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1106.76ms
+2017-07-18 15:38:36,465 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (127.0.0.1) 1.14ms
+2017-07-18 15:38:36,467 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (127.0.0.1) 1.00ms
+2017-07-18 15:38:49,958 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (127.0.0.1) 1.44ms
+2017-07-18 15:38:49,962 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (127.0.0.1) 1.24ms
+2017-07-18 15:39:39,860 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1019.90ms
+2017-07-18 15:40:33,844 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.58ms
+2017-07-18 15:40:58,470 - tornado.access - INFO - 200 GET /admin/manage/markdownNotice/show/ (127.0.0.1) 61.76ms
+2017-07-18 15:41:38,109 - tornado.access - INFO - 304 GET /admin/manage/markdownNotice/show/ (127.0.0.1) 21.03ms
+2017-07-18 15:42:31,807 - tornado.access - INFO - 200 POST /admin/manage/markdownNotice/data/ (127.0.0.1) 14.22ms
+2017-07-18 15:42:35,078 - tornado.access - INFO - 200 GET /admin/manage/markdownNotice/add/ (127.0.0.1) 102.75ms
+2017-07-18 15:44:15,024 - tornado.application - ERROR - Uncaught exception POST /admin/manage/markdownNotice/add/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/markdownNotice/add/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '346', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/markdownNotice/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 357, in post
+    raise e
+OperationalError: (1366, "Incorrect string value: '\\xE5\\x84\\x92\\xE7\\x94\\x9F...' for column 'markdown_cotent' at row 1")
+2017-07-18 15:44:15,162 - tornado.access - ERROR - 500 POST /admin/manage/markdownNotice/add/ (127.0.0.1) 145.36ms
+2017-07-18 15:45:04,016 - tornado.access - INFO - 302 POST /admin/manage/markdownNotice/add/ (127.0.0.1) 45.59ms
+2017-07-18 15:45:04,016 - tornado.application - ERROR - Uncaught exception POST /admin/manage/markdownNotice/add/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/markdownNotice/add/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '304', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/markdownNotice/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 365, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-07-18 15:45:04,034 - tornado.access - INFO - 200 GET /admin/manage/markdownNotice/show/ (127.0.0.1) 15.80ms
+2017-07-18 15:45:04,559 - tornado.access - INFO - 200 POST /admin/manage/markdownNotice/data/ (127.0.0.1) 10.01ms
+2017-07-18 15:45:06,980 - tornado.access - INFO - 200 GET /admin/manage/markdownNotice/add/ (127.0.0.1) 19.98ms
+2017-07-18 15:45:50,711 - tornado.access - INFO - 302 POST /admin/manage/markdownNotice/add/ (127.0.0.1) 97.90ms
+2017-07-18 15:45:50,711 - tornado.application - ERROR - Uncaught exception POST /admin/manage/markdownNotice/add/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/markdownNotice/add/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '328', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/markdownNotice/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 365, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-07-18 15:45:50,848 - tornado.access - INFO - 200 GET /admin/manage/markdownNotice/show/ (127.0.0.1) 135.10ms
+2017-07-18 15:45:51,562 - tornado.access - INFO - 200 POST /admin/manage/markdownNotice/data/ (127.0.0.1) 12.12ms
+2017-07-18 15:46:02,207 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 36, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:46:02,214 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 10.54ms
+2017-07-18 15:46:42,433 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 36, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:46:42,442 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 17.35ms
+2017-07-18 15:47:07,056 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 32, in post
+    .order_by('publish_time').all()
+AttributeError: 'SelectQuery' object has no attribute 'all'
+2017-07-18 15:47:07,067 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 16.19ms
+2017-07-18 15:56:59,944 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 38, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:56:59,956 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 25.08ms
+2017-07-18 15:57:02,308 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 38, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:57:02,313 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 11.63ms
+2017-07-18 15:57:03,812 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 38, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:57:03,817 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 10.10ms
+2017-07-18 15:58:09,560 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.50ms
+2017-07-18 15:58:13,204 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 38, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:58:13,210 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 8.30ms
+2017-07-18 15:58:20,060 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 38, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 15:58:20,063 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 6.88ms
+2017-07-18 16:00:39,155 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 39, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 16:00:39,168 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 27.19ms
+2017-07-18 16:00:45,394 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 39, in post
+    for name,attr in notice.retrieve_all_info():
+AttributeError: 'markdownNotice' object has no attribute 'retrieve_all_info'
+2017-07-18 16:00:45,404 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 14.71ms
+2017-07-18 16:02:27,391 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 76, in post
+    self.write(tornado.escape.json_encode(ret_dict))
+  File "/usr/local/lib/python2.7/dist-packages/tornado/escape.py", line 82, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2017, 4, 1, 12, 30, 36) is not JSON serializable
+2017-07-18 16:02:27,847 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 468.59ms
+2017-07-18 16:02:29,109 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 76, in post
+    self.write(tornado.escape.json_encode(ret_dict))
+  File "/usr/local/lib/python2.7/dist-packages/tornado/escape.py", line 82, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2017, 4, 1, 12, 30, 36) is not JSON serializable
+2017-07-18 16:02:29,113 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 8.03ms
+2017-07-18 16:07:04,982 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 74, in post
+    self.write(tornado.escape.json_encode(ret_dict))
+  File "/usr/local/lib/python2.7/dist-packages/tornado/escape.py", line 82, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2017, 4, 1, 12, 30, 36) is not JSON serializable
+2017-07-18 16:07:04,995 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 22.44ms
+2017-07-18 16:09:39,956 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 75, in post
+    self.write(tornado.escape.json_encode(ret_dict))
+  File "/usr/local/lib/python2.7/dist-packages/tornado/escape.py", line 82, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2017, 4, 1, 12, 30, 36) is not JSON serializable
+2017-07-18 16:09:39,998 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 51.48ms
+2017-07-18 16:35:48,157 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 75, in post
+    self.write(tornado.escape.json_encode(ret_dict))
+  File "/usr/local/lib/python2.7/dist-packages/tornado/escape.py", line 82, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2017, 4, 1, 12, 30, 36) is not JSON serializable
+2017-07-18 16:35:48,167 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 25.57ms
+2017-07-18 16:50:39,655 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 36, in post
+    print(notice.retrive_all_info())
+  File "/home/exbot/code/python/tornado/Tjango/notification/models.py", line 38, in retrive_all_info
+    return vars(self).items()['_data']
+TypeError: list indices must be integers, not str
+2017-07-18 16:50:39,665 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 19.67ms
+2017-07-18 16:52:03,271 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 36, in post
+    print('#',notice.retrive_all_info())
+  File "/home/exbot/code/python/tornado/Tjango/notification/models.py", line 38, in retrive_all_info
+    return vars(self).items()['_data']
+TypeError: list indices must be integers, not str
+2017-07-18 16:52:03,285 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 24.55ms
+2017-07-18 16:52:57,053 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 37, in post
+    for name,attr in notice.retrive_all_info():
+ValueError: too many values to unpack
+2017-07-18 16:52:57,062 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 18.36ms
+2017-07-18 16:55:28,002 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 37, in post
+    for name,attr in notice.retrive_all_info():
+ValueError: too many values to unpack
+2017-07-18 16:55:28,018 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 26.78ms
+2017-07-18 16:55:41,839 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 37, in post
+    for name,attr in notice.retrive_all_info():
+ValueError: too many values to unpack
+2017-07-18 16:55:41,846 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 16.30ms
+2017-07-18 16:56:21,445 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 37, in post
+    for name,attr in notice.retrive_all_info():
+ValueError: too many values to unpack
+2017-07-18 16:56:21,457 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 20.00ms
+2017-07-18 16:56:44,387 - tornado.application - ERROR - Uncaught exception POST /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '104', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:8000/t/', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 60, in post
+    for name,attr in notice.retrive_all_info():
+ValueError: too many values to unpack
+2017-07-18 16:56:44,398 - tornado.access - ERROR - 500 POST /t/ (127.0.0.1) 23.08ms
+2017-07-18 16:56:58,365 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 13.95ms
+2017-07-18 16:57:35,355 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 9.18ms
+2017-07-18 16:57:44,873 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.56ms
+2017-07-18 16:59:52,466 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.70ms
+2017-07-18 16:59:54,610 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 7.14ms
+2017-07-18 16:59:58,100 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 9.09ms
+2017-07-18 17:08:49,115 - tornado.application - ERROR - Uncaught exception GET /t/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/t/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 16, in get
+    self.render('notification/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "notification/index_html.generated.py", line 49, in _tt_execute
+    _tt_tmp = notice.title  # notification/index.html:34 (via notification/base.html:12)
+NameError: global name 'notice' is not defined
+2017-07-18 17:08:49,142 - tornado.access - ERROR - 500 GET /t/ (127.0.0.1) 47.91ms
+2017-07-18 17:09:15,658 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.17ms
+2017-07-18 17:09:37,466 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.00ms
+2017-07-18 17:09:37,716 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.86ms
+2017-07-18 17:10:51,285 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.26ms
+2017-07-18 17:10:51,506 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.40ms
+2017-07-18 17:11:56,975 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.27ms
+2017-07-18 17:12:00,614 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.06ms
+2017-07-18 17:12:52,877 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.89ms
+2017-07-18 17:12:53,063 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 5.91ms
+2017-07-18 17:14:28,880 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.92ms
+2017-07-18 17:14:29,062 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 6.73ms
+2017-07-18 17:15:05,358 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 5.02ms
+2017-07-18 17:15:09,025 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 5.65ms
+2017-07-18 17:18:50,126 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.57ms
+2017-07-18 17:18:50,310 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 5.14ms
+2017-07-18 17:20:29,994 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.61ms
+2017-07-18 17:20:30,010 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=05c14c9f0b8dfda5a88c36ab284f2214 (127.0.0.1) 6.19ms
+2017-07-18 17:20:30,188 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.40ms
+2017-07-18 17:21:41,447 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.01ms
+2017-07-18 17:21:41,683 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.73ms
+2017-07-18 17:22:05,127 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.79ms
+2017-07-18 17:22:05,142 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=3b8c36e89148b9b009e4c9c9535fdd76 (127.0.0.1) 3.35ms
+2017-07-18 17:22:05,369 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.85ms
+2017-07-18 17:22:14,759 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 8.32ms
+2017-07-18 17:22:17,805 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 6.96ms
+2017-07-18 17:23:01,196 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.20ms
+2017-07-18 17:23:01,210 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5479248b063a017e2a2b40d8933ffbb9 (127.0.0.1) 5.67ms
+2017-07-18 17:23:01,396 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.88ms
+2017-07-18 17:23:33,609 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 27.99ms
+2017-07-18 17:23:33,626 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=d5b8343f26dd09b9f5ce9766bd59f0bf (127.0.0.1) 4.48ms
+2017-07-18 17:23:33,788 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.87ms
+2017-07-18 17:25:17,919 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 27.68ms
+2017-07-18 17:25:17,936 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=32e1bfc7d2e4db117380a4a4644cb5b0 (127.0.0.1) 5.31ms
+2017-07-18 17:25:18,088 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.43ms
+2017-07-18 17:26:16,764 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.79ms
+2017-07-18 17:26:16,778 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=fb57b33c595ade039fade3d598cecad8 (127.0.0.1) 3.59ms
+2017-07-18 17:26:16,930 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.77ms
+2017-07-18 17:26:39,735 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 7.86ms
+2017-07-18 17:26:39,968 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.05ms
+2017-07-18 17:26:44,420 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 8.30ms
+2017-07-18 17:31:11,022 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.88ms
+2017-07-18 17:31:11,266 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.90ms
+2017-07-18 17:31:47,349 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.05ms
+2017-07-18 17:31:47,607 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.57ms
+2017-07-18 17:33:48,557 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.23ms
+2017-07-18 17:33:48,829 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 6.34ms
+2017-07-18 17:39:22,901 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 24.77ms
+2017-07-18 17:39:23,079 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.61ms
+2017-07-18 17:39:36,755 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 6.66ms
+2017-07-18 17:39:36,987 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 5.10ms
+2017-07-18 17:40:25,514 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.60ms
+2017-07-18 17:40:25,701 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.47ms
+2017-07-18 17:41:09,560 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.98ms
+2017-07-18 17:41:09,735 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.70ms
+2017-07-18 17:44:03,545 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.62ms
+2017-07-18 17:44:04,419 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.62ms
+2017-07-18 17:44:07,541 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.86ms
+2017-07-18 17:44:15,061 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 8.25ms
+2017-07-18 18:25:39,923 - tornado.access - INFO - 302 GET /t (127.0.0.1) 0.97ms
+2017-07-18 18:25:39,933 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 5.71ms
+2017-07-18 18:25:40,206 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.34ms
+2017-07-18 18:25:40,276 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.12ms
+2017-07-18 18:25:42,838 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.79ms
+2017-07-18 18:26:10,149 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 5.68ms
+2017-07-18 18:26:10,390 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.30ms
+2017-07-18 18:26:20,888 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 4.54ms
+2017-07-18 18:26:25,634 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 6.21ms
+2017-07-18 18:26:25,900 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 3.33ms
+2017-07-18 18:43:57,893 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-07-18 19:43:57,902 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-07-18 20:43:57,918 - root - INFO - [CRON] Started @20h ,but not executed .17

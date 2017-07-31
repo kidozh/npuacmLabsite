@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8971007_GeniusYang_B.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8971007_GeniusYang_B.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;bits/stdc++.h&gt;
+
+#define inf 0x3f3f3f3f
+
+const int maxn=100;
+
+using namespace std;
+
+int t;
+
+int a[maxn+10];
+
+int main()
+{
+       scanf(&quot;%d&quot;,&amp;t);
+       while(t--){
+<A NAME="0"></A>                int k;
+                scanf(&quot;%d&quot;,&amp;k);
+                memset(a, 0 , sizeof(a));
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match23-0.html#0',2,'match23-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>                for(int i = 1; i &lt;= 12; ++i){
+                        scanf(&quot;%d&quot;,&amp;a[i]);
+                }
+
+                int ans = 0;
+                for(int i = 1; i &lt;= 12; ++i){
+                        for(int j = i; j &lt;= 12; ++j){
+
+                                int imin = 0x7f7f7f7f;
+                                for(int k = i; k &lt;= j; ++k){
+                                        imin = min(a[k], imin);
+                                }
+
+                                if(imin &gt; a[i-1] &amp;&amp; imin &gt; a[j+1]){</B></FONT>
+                                        ++ans;
+                                }
+                        }
+                }
+                printf(&quot;%d %d\n&quot;,k,ans);
+       }
+    return 0;
+}
+/*
+4
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+*/
+</PRE>
+</BODY>
+</HTML>

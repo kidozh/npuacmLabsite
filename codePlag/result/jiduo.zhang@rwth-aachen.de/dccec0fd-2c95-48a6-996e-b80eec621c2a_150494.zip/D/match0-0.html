@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8159409_PiscesCrab_D.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8159409_PiscesCrab_D.cpp</CENTER></H3><HR>
+<PRE>
+//By Sean Chen
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+int n;
+int ans[100005],tp;
+<A NAME="0"></A>int main()
+{
+    scanf(&quot;%d&quot;,&amp;n);
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match0-1.html#0',3,'match0-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>    while(n)
+    {
+        int k=n%(-2);
+        int t=n/(-2);
+        if (k&lt;0)
+        {
+            k+=2;
+            t++;
+        }
+        n=t;
+        tp++;
+        ans[tp]=k;
+    }</B></FONT>
+    for (int i=tp;i&gt;=1;i--)
+        printf(&quot;%d&quot;,ans[i]);
+    if (tp==0)
+        printf(&quot;0&quot;);
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

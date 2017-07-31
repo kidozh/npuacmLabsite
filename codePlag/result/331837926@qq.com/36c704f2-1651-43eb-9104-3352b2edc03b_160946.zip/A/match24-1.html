@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8969581_PiscesCrab_A.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8969581_PiscesCrab_A.cpp</CENTER></H3><HR>
+<PRE>
+//By Sean Chen
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+#include &lt;map&gt;
+#include &lt;algorithm&gt;
+#include &lt;queue&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+int T,Case;
+int a[25];
+int main()
+{
+    scanf(&quot;%d&quot;,&amp;T);
+<A NAME="0"></A>    for (int i=0;i&lt;T;i++)
+    {
+        scanf(&quot;%d&quot;,&amp;Case);
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match24-0.html#0',2,'match24-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>        int cnt=0;
+        for (int i=0;i&lt;20;i++)
+        {
+            scanf(&quot;%d&quot;,&amp;a[i]);
+            for (int j=0;j&lt;i;j++)
+                if (a[j]&gt;a[i])
+                    cnt++;
+        }</B></FONT>
+        printf(&quot;%d %d\n&quot;,Case,cnt);
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

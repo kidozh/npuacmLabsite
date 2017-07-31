@@ -1,0 +1,15 @@
+2017-05-24 00:10:45,348 - root - INFO - [CRON] Started @0h ,but not executed .17
+2017-05-24 12:06:36,335 - root - INFO - [CRON] Started @12h ,but not executed .17
+2017-05-24 12:10:45,458 - root - INFO - [CRON] Started @12h ,but not executed .17
+2017-05-24 13:10:45,389 - root - INFO - [CRON] Started @13h ,but not executed .17
+2017-05-24 14:10:45,345 - root - INFO - [CRON] Started @14h ,but not executed .17
+2017-05-24 15:10:45,515 - root - INFO - [CRON] Started @15h ,but not executed .17
+2017-05-24 16:10:45,435 - root - INFO - [CRON] Started @16h ,but not executed .17
+2017-05-24 17:10:51,572 - root - INFO - [CRON] Started @17h , executed .17
+2017-05-24 17:11:01,802 - root - INFO - [CRON] Executed for [{'submitNum': 3967, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 586, 'bzojNum': 12, 'zojNum': 0, 'pojNum': 142, 'cfNum': 843, 'hduNum': 421, 'totalNum': 2004}, {'submitNum': 300, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 1, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 0, 'pojNum': 129, 'cfNum': 21, 'hduNum': 86, 'totalNum': 238}] Users
+2017-05-24 18:10:45,440 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-05-24 19:10:45,460 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-05-24 20:10:45,440 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-05-24 21:10:45,386 - root - INFO - [CRON] Started @21h ,but not executed .17
+2017-05-24 22:10:45,407 - root - INFO - [CRON] Started @22h ,but not executed .17
+2017-05-24 23:10:45,424 - root - INFO - [CRON] Started @23h ,but not executed .17

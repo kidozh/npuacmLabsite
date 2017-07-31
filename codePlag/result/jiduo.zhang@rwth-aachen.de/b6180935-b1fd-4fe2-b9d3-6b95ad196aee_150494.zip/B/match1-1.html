@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8159223_779235890_B.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8159223_779235890_B.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;cstdio&gt;    
+<A NAME="0"></A>#include&lt;algorithm&gt;
+using namespace std;
+int dp[2002][2002];
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match1-0.html#0',2,'match1-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>int a[2002] ;
+int main()  
+{  
+    int n,i,j;  
+    scanf(&quot;%d&quot;,&amp;n);  
+    for(i=1;i&lt;=n;i++)  
+        scanf(&quot;%d&quot;,a+i);  
+    for(i=n;i&gt;0;i--)  
+        for(j=i;j&lt;=n;j++)  </B></FONT>
+            dp[i][j]=max(dp[i+1][j]+a[i]*(n+i-j),dp[i][j-1]+a[j]*(n+i-j));  
+    printf(&quot;%d&quot;,dp[1][n]);  
+}  
+</PRE>
+</BODY>
+</HTML>

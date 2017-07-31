@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8970238_jkrs_B.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8970238_jkrs_B.cpp</CENTER></H3><HR>
+<PRE>
+/*jkrs*/
+#include &lt;bits/stdc++.h&gt;
+#define ff first
+#define ss second
+#define clr(_x,_y) memset(_x,_y,sizeof (_x))
+#define pt(y) push_back(y)
+#define mk(x,y) make_pair(x,y)
+#define pof() pop_front()
+#define pob() pop_back()
+#define puf() push_front()
+#define ls p &lt;&lt; 1
+#define rs p &lt;&lt; 1 | 1
+using namespace std;
+
+typedef long long ll;
+typedef unsigned long long ull;
+
+const int inf = 0x3f3f3f3f;
+const ll linf = 1e18;
+const double pi = acos(-1.0);
+const int MAXN = 1e5 + 10;
+<A NAME="0"></A>const int MAXM = 1e5 + 10;
+const double eps = 1e-8;
+
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match13-0.html#0',2,'match13-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>int a[25];
+
+int main()
+{
+    int t;
+    scanf(&quot;%d&quot;,&amp;t);
+    while (t --)
+    {
+        int k;
+<A NAME="1"></A>        scanf(&quot;%d&quot;,&amp;k);
+        for (int i = 0 ;i &lt; 12; ++ i)</B></FONT>
+            scanf(&quot;%d&quot;,&amp;a[i]);
+<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match13-0.html#1',2,'match13-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>        int sum = 0;
+        for (int i = 1;i &lt; 11; ++ i)
+        {
+            for (int j = i;j &lt; 11; ++ j)
+            {
+                bool flag = 1;
+                for (int k = i;k &lt;= j; ++ k)
+                {
+                    if (a[k] &lt;= a[i - 1] || a[k] &lt;= a[j + 1])
+                    {
+                        flag = 0;
+                        break;
+                    }
+                }</B></FONT>
+                sum += flag;
+            }
+        }
+        printf(&quot;%d %d\n&quot;,k,sum);
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

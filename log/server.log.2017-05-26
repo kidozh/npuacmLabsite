@@ -1,0 +1,16 @@
+2017-05-26 00:03:34,881 - root - INFO - [CRON] Started @0h ,but not executed .17
+2017-05-26 21:52:27,504 - root - INFO - [CRON] Started @21h ,but not executed .17
+2017-05-26 22:03:34,861 - root - INFO - [CRON] Started @22h ,but not executed .17
+2017-05-26 22:04:28,966 - tornado.access - INFO - 200 GET / (127.0.0.1) 21.26ms
+2017-05-26 22:04:29,790 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.14ms
+2017-05-26 22:04:41,613 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 14.75ms
+2017-05-26 22:04:44,414 - tornado.access - INFO - 200 GET /queryProb/history/ (127.0.0.1) 33.28ms
+2017-05-26 22:04:47,501 - tornado.access - INFO - 200 GET /queryProb/board/ (127.0.0.1) 24.50ms
+2017-05-26 22:04:47,821 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 5.93ms
+2017-05-26 22:05:03,913 - tornado.access - INFO - 304 GET / (127.0.0.1) 12.26ms
+2017-05-26 22:06:51,970 - tornado.access - INFO - 200 GET / (127.0.0.1) 20.57ms
+2017-05-26 22:06:52,472 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.10ms
+2017-05-26 22:07:38,610 - tornado.access - INFO - 200 GET / (127.0.0.1) 19.76ms
+2017-05-26 22:07:44,725 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 14.46ms
+2017-05-26 22:07:46,686 - tornado.access - INFO - 200 GET /queryProb/board/ (127.0.0.1) 10.13ms
+2017-05-26 22:07:46,883 - tornado.access - INFO - 200 POST /queryProb/board/ (127.0.0.1) 8.64ms

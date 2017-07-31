@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8970968_xinxxx_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8970968_xinxxx_C.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include &lt;set&gt;
+#include &lt;vector&gt;
+<A NAME="0"></A>#include &lt;queue&gt;
+using namespace std;
+bool vis[100005];
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match17-0.html#0',2,'match17-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>bool is_prime(int x)
+{
+    if(x==1) return false;
+    for(int i=2;i*i&lt;=x;i++)
+    {
+        if(x%i==0) return false;
+    }
+    return true;
+}
+
+int cal(int x)</B></FONT>
+{
+    int sum=0;
+    while(x)
+    {
+        sum+=(x%10)*(x%10);
+        x=x/10;
+    }
+    return sum;
+}
+
+int main()
+{
+    int t,a,kase;
+    scanf(&quot;%d&quot;,&amp;t);
+    while(t--)
+    {
+        memset(vis,false,sizeof(vis));
+        bool f=false;
+        scanf(&quot;%d %d&quot;,&amp;kase,&amp;a);
+        if(is_prime(a))
+        {
+           int tmp=a;
+           vis[a]=true;
+           while(1)
+           {
+               tmp=cal(tmp);
+               if(tmp==1) {f=true;break;}
+               else if(vis[tmp]) break;
+               vis[tmp]=true;
+           }
+        }
+        if(f) printf(&quot;%d %d YES\n&quot;,kase,a);
+        else printf(&quot;%d %d NO\n&quot;,kase,a);
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

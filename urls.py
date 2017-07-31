@@ -10,7 +10,7 @@ urlpatterns = [
     (r"^/doc", include('portal.urls')),
     # (r'^/about/','portal.view.aboutHandler'),
     (r"^/query",include('acmCralwer.urls')),
-
+    (r"^/t",include('notification.urls')),
     (r"^/admin",include('contrib.admin.urls')),
     (r"^/plag",include('codePlag.urls')),
     (r'^/contest2017',include('contestRegister.urls')),

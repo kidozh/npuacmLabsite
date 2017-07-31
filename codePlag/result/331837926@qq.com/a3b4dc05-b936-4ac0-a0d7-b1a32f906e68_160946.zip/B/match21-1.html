@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8969671_357554710_B.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8969671_357554710_B.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;cstdio&gt;
+#include&lt;algorithm&gt;
+#define maxn 20
+#define inf 0x3f3f3f3f
+<A NAME="0"></A>using namespace std;
+
+int a[maxn+5];
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match21-0.html#0',2,'match21-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>int minnum[maxn+5][maxn+5];
+
+int getminnum(int i,int j)
+{
+    int ans=inf;
+    for(int x=i;x&lt;=j;x++)
+    {</B></FONT>
+        ans=min(ans,a[x]);
+    }
+    return ans;
+}
+
+int solve()
+{
+    for(int i=1;i&lt;=12;i++)
+    {
+        for(int j=i;j&lt;=12;j++)
+        {
+            minnum[i][j]=getminnum(i,j);
+<A NAME="1"></A>        }
+    }
+
+<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match21-0.html#1',2,'match21-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>    int ans=0;
+    for(int i=2;i&lt;=11;i++)
+    {
+        for(int j=i;j&lt;=11;j++)
+        {
+            if(minnum[i][j]&gt;a[i-1] &amp;&amp; minnum[i][j]&gt;a[j+1]) ans++;
+        }
+    }</B></FONT>
+    return ans;
+}
+
+int main()
+{
+    int T;
+    scanf(&quot;%d&quot;,&amp;T);
+    for(int kase=1;kase&lt;=T;kase++)
+    {
+        int id;
+        scanf(&quot;%d&quot;,&amp;id);
+        for(int i=1;i&lt;=12;i++)
+        {
+            scanf(&quot;%d&quot;,&amp;a[i]);
+        }
+        printf(&quot;%d %d\n&quot;,id,solve());
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

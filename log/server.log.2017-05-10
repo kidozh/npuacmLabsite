@@ -1,0 +1,70 @@
+2017-05-10 12:27:04,433 - tornado.access - INFO - 200 GET / (::1) 320.28ms
+2017-05-10 12:27:04,503 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=a41e2a0e07656c1ea4f59191812fd28c (::1) 34.45ms
+2017-05-10 12:27:04,505 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 1.78ms
+2017-05-10 12:27:04,507 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.57ms
+2017-05-10 12:27:04,507 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.50ms
+2017-05-10 12:27:04,525 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 0.65ms
+2017-05-10 12:27:04,528 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.59ms
+2017-05-10 12:27:04,531 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.64ms
+2017-05-10 12:27:04,710 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 2.89ms
+2017-05-10 12:27:05,340 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 110.86ms
+2017-05-10 12:30:16,999 - tornado.access - INFO - 200 GET / (::1) 24.47ms
+2017-05-10 12:30:17,027 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (::1) 7.29ms
+2017-05-10 12:30:24,951 - tornado.access - INFO - 302 GET /admin/login (::1) 0.50ms
+2017-05-10 12:30:25,105 - tornado.access - INFO - 200 GET /admin/login/ (::1) 149.50ms
+2017-05-10 12:30:25,137 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 0.71ms
+2017-05-10 12:30:25,140 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 0.60ms
+2017-05-10 12:30:35,380 - tornado.access - INFO - 302 POST /admin/login/ (::1) 303.30ms
+2017-05-10 12:30:36,490 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1104.66ms
+2017-05-10 12:30:36,530 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 1.39ms
+2017-05-10 12:30:36,533 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 1.21ms
+2017-05-10 12:30:36,719 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.24ms
+2017-05-10 12:30:36,725 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.22ms
+2017-05-10 12:30:38,242 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.44ms
+2017-05-10 12:30:42,753 - tornado.access - INFO - 200 GET /admin/manage/friendLinks/show/ (::1) 36.05ms
+2017-05-10 12:30:46,875 - tornado.access - INFO - 200 POST /admin/manage/friendLinks/data/ (::1) 11.72ms
+2017-05-10 12:30:48,904 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 18.92ms
+2017-05-10 12:30:49,357 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 9.66ms
+2017-05-10 12:30:53,912 - tornado.access - INFO - 200 GET /admin/manage/configOption/add/ (::1) 154.95ms
+2017-05-10 12:31:16,181 - tornado.access - INFO - 302 POST /admin/manage/configOption/add/ (::1) 164.07ms
+2017-05-10 12:31:16,182 - tornado.application - ERROR - Uncaught exception POST /admin/manage/configOption/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/configOption/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '121', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929; _ga=GA1.1.1613137009.1493461748; authEmail="2|1:0|10:1493480785|9:authEmail|24:MzMxODM3OTI2QHFxLmNvbQ==|e7154f536af303b9027efa56aebf1367ad96058aeaff952deef9055f09f68d61"; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1494390635|8:username|8:a2lkb3po|c14846f6ea9f36d72ebc107553d3a611087c18f8a8d0d3d83b7bc3da4ce05110"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-05-10 12:31:16,223 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 14.28ms
+2017-05-10 12:31:16,914 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.41ms
+2017-05-10 12:31:22,746 - tornado.access - INFO - 200 GET / (::1) 6.79ms
+2017-05-10 12:40:12,712 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f14081fa488>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-10 12:45:28,011 - tornado.application - ERROR - Uncaught exception GET /admin/manage/configOption/show/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/configOption/show/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'If-None-Match': '"d5efc736a1d78cf9ed92a00b399bc32dfb032877"', 'Upgrade-Insecure-Requests': '1', 'Cookie': '_accept_cookie=1; _xsrf=2|c580268f|8051f3371b8cc81fbc3a558dfc6db423|1493291929; _ga=GA1.1.1613137009.1493461748; authEmail="2|1:0|10:1493480785|9:authEmail|24:MzMxODM3OTI2QHFxLmNvbQ==|e7154f536af303b9027efa56aebf1367ad96058aeaff952deef9055f09f68d61"; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1494390635|8:username|8:a2lkb3po|c14846f6ea9f36d72ebc107553d3a611087c18f8a8d0d3d83b7bc3da4ce05110"'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1488, in _execute
+    result = self.prepare()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-05-10 12:45:28,048 - tornado.access - ERROR - 500 GET /admin/manage/configOption/show/ (::1) 37.34ms
+2017-05-10 12:45:30,066 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 23.38ms
+2017-05-10 12:45:30,733 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 6.37ms

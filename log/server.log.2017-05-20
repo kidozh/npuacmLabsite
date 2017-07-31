@@ -1,0 +1,21 @@
+2017-05-20 14:48:42,893 - tornado.access - INFO - 304 GET / (127.0.0.1) 445.69ms
+2017-05-20 14:48:42,942 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (127.0.0.1) 3.69ms
+2017-05-20 14:48:42,943 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (127.0.0.1) 0.70ms
+2017-05-20 14:48:43,749 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 91.83ms
+2017-05-20 14:48:47,604 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 92.24ms
+2017-05-20 14:48:47,628 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.78ms
+2017-05-20 14:48:54,409 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 55.17ms
+2017-05-20 14:49:08,671 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=Heart_Blue&_=1495262934523 (127.0.0.1) 14027.38ms
+2017-05-20 19:53:21,577 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 598.98ms
+2017-05-20 19:53:21,994 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 33.06ms
+2017-05-20 19:53:26,303 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 133.95ms
+2017-05-20 19:53:43,852 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=Heart_Blue&_=1495281206444 (127.0.0.1) 17219.79ms
+2017-05-20 19:57:14,159 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 37.98ms
+2017-05-20 19:57:24,723 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=Heart_Blue&_=1495281434342 (127.0.0.1) 10290.84ms
+2017-05-20 19:58:29,519 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 31.99ms
+2017-05-20 19:58:44,854 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=Heart_Blue&_=1495281509713 (127.0.0.1) 15046.65ms
+2017-05-20 20:00:24,072 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 37.55ms
+2017-05-20 20:00:34,628 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=Heart_Blue&_=1495281624212 (127.0.0.1) 10270.19ms
+2017-05-20 21:00:19,646 - root - INFO - [CRON] Started @21h ,but not executed .11
+2017-05-20 22:00:19,562 - root - INFO - [CRON] Started @22h ,but not executed .11
+2017-05-20 23:00:19,945 - root - INFO - [CRON] Started @23h ,but not executed .11

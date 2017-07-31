@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8973416_njzwj2007_F.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8973416_njzwj2007_F.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;bits/stdc++.h&gt;
+<A NAME="0"></A>using namespace std;
+int seq[50];
+
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match1-1.html#0',3,'match1-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>int main() {
+    int T, icase, x, y;
+    scanf(&quot;%d&quot;, &amp;T);
+    while (T--) {
+        scanf(&quot;%d%d%d&quot;, &amp;icase, &amp;x, &amp;y);
+        printf(&quot;%d &quot;, icase);
+        if (x&lt;3&amp;&amp;y&lt;=x||y&lt;4) {
+            puts(&quot;NO PATH&quot;);
+            continue;
+        }
+        if (y&gt;x) {</B></FONT>
+            printf(&quot;2 %d %d\n&quot;, x, y);
+        }else {
+            int ans=0x3f3f3f3f, len=0;
+            for (int i=1;i&lt;=5;++i) {
+                int a, b, c;
+                b=x+2*i;c=b+1;
+                a=c-(y-2*i);
+                if (a&lt;=i*4-1) {
+                    a=i*4;
+                    c=a+y-2*i;
+                }
+                int tmp=(4*i-1)*2*i+a+b+c;
+                if (tmp&lt;ans) {
+                    ans=tmp;
+                    len=4*i+2;
+                    for (int j=1;j&lt;4*i;++j) seq[j]=j;
+                    seq[4*i]=a; seq[4*i+1]=b; seq[4*i+2]=c;
+                }
+                //for (int j=1;j&lt;4*i;++j) printf(&quot;%d &quot;, j);
+                //printf(&quot;%d %d %d, %d\n&quot;, a, b, c, ans);
+            }
+            printf(&quot;%d&quot;, len);
+            for (int i=1;i&lt;=len;++i) printf(&quot; %d&quot;, seq[i]);
+                puts(&quot;&quot;);   
+        }
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

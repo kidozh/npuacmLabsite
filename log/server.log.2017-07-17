@@ -1,0 +1,31 @@
+2017-07-17 16:07:10,165 - tornado.access - INFO - 200 GET / (127.0.0.1) 607.42ms
+2017-07-17 16:07:10,222 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 46.16ms
+2017-07-17 16:07:10,224 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.73ms
+2017-07-17 16:07:10,225 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.76ms
+2017-07-17 16:07:10,226 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 0.73ms
+2017-07-17 16:07:13,688 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 32.31ms
+2017-07-17 16:07:16,779 - tornado.access - INFO - 302 GET /t (127.0.0.1) 2.56ms
+2017-07-17 16:07:16,877 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 93.73ms
+2017-07-17 16:07:16,892 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=13b35d763611be01badae37a8a293a6e (127.0.0.1) 1.01ms
+2017-07-17 16:10:03,550 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.90ms
+2017-07-17 16:10:04,485 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 8.69ms
+2017-07-17 16:12:24,446 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 24.90ms
+2017-07-17 16:12:24,462 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=e07ea0c8f4479a140d771454fb314722 (127.0.0.1) 5.14ms
+2017-07-17 16:12:50,519 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 4.74ms
+2017-07-17 16:12:52,075 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 7.07ms
+2017-07-17 16:12:55,948 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.00ms
+2017-07-17 16:12:55,963 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=43a52475197e117ddce965b499ba2516 (127.0.0.1) 4.43ms
+2017-07-17 16:13:12,760 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.02ms
+2017-07-17 16:13:31,119 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.81ms
+2017-07-17 16:20:30,257 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.31ms
+2017-07-17 16:20:30,272 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=11a97e511e2cb0db54c727b780ec2fb9 (127.0.0.1) 3.62ms
+2017-07-17 16:24:19,760 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 9.37ms
+2017-07-17 16:24:28,515 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 12.14ms
+2017-07-17 16:24:32,743 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.91ms
+2017-07-17 17:24:55,327 - root - INFO - [CRON] Started @17h , executed .17
+2017-07-17 17:25:12,604 - root - INFO - [CRON] Executed for [{'submitNum': 639, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 595, 'bzojNum': 0, 'zojNum': 0, 'pojNum': 0, 'cfNum': 0, 'hduNum': 0, 'totalNum': 595}, {'submitNum': 316, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 1, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 16, 'pojNum': 129, 'cfNum': 21, 'hduNum': 86, 'totalNum': 254}] Users
+2017-07-17 18:24:31,789 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-07-17 19:24:31,769 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-07-17 20:24:31,828 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-07-17 20:56:31,809 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 8.50ms
+2017-07-17 20:56:31,937 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.11ms

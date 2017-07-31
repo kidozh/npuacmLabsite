@@ -32,7 +32,8 @@ INSTALLED_APPS = (
     'acmDetectInfo',
     'codePlag',
     'contestRegister',
-    'usefulTools'
+    'usefulTools',
+    'notification',
 )
 
 # for root urls

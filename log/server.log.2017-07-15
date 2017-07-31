@@ -1,0 +1,93 @@
+2017-07-15 00:11:45,890 - root - INFO - [CRON] Started @0h ,but not executed .17
+2017-07-15 00:35:34,967 - tornado.access - INFO - 200 GET / (127.0.0.1) 19.34ms
+2017-07-15 00:35:34,982 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 0.87ms
+2017-07-15 00:35:34,983 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.74ms
+2017-07-15 00:35:34,984 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.80ms
+2017-07-15 00:35:34,986 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 1.17ms
+2017-07-15 00:35:38,065 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.94ms
+2017-07-15 00:35:40,442 - tornado.access - INFO - 200 GET /about/ (127.0.0.1) 122.64ms
+2017-07-15 00:35:40,467 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (127.0.0.1) 2.55ms
+2017-07-15 00:35:40,470 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (127.0.0.1) 1.40ms
+2017-07-15 00:35:40,472 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (127.0.0.1) 1.18ms
+2017-07-15 00:35:40,474 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (127.0.0.1) 1.61ms
+2017-07-15 00:35:41,209 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (127.0.0.1) 1.22ms
+2017-07-15 00:35:41,212 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (127.0.0.1) 0.96ms
+2017-07-15 00:35:41,215 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (127.0.0.1) 1.26ms
+2017-07-15 00:35:41,218 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (127.0.0.1) 1.07ms
+2017-07-15 00:35:41,446 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (127.0.0.1) 2.21ms
+2017-07-15 00:35:45,317 - tornado.access - INFO - 302 GET /t (127.0.0.1) 0.95ms
+2017-07-15 00:35:45,328 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 7.10ms
+2017-07-15 00:35:45,345 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=572f789a96622d90c68dd6ce657d3a14 (127.0.0.1) 1.21ms
+2017-07-15 00:38:14,759 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.02ms
+2017-07-15 00:38:14,777 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=b74093373e4dc1e89746eb8998126b78 (127.0.0.1) 5.06ms
+2017-07-15 00:38:45,638 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.99ms
+2017-07-15 00:40:33,605 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 16.02ms
+2017-07-15 00:40:34,814 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 6.55ms
+2017-07-15 00:40:39,360 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 17.98ms
+2017-07-15 00:41:08,531 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.93ms
+2017-07-15 00:41:20,712 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.63ms
+2017-07-15 00:41:31,801 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.80ms
+2017-07-15 00:41:32,696 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 6.56ms
+2017-07-15 00:41:58,784 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.23ms
+2017-07-15 00:41:59,735 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 7.00ms
+2017-07-15 00:42:00,167 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 7.62ms
+2017-07-15 00:42:10,699 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 26.06ms
+2017-07-15 00:42:11,370 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 8.20ms
+2017-07-15 00:42:11,792 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 7.22ms
+2017-07-15 00:43:14,774 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.62ms
+2017-07-15 00:43:57,839 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 17.49ms
+2017-07-15 00:47:54,526 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.48ms
+2017-07-15 00:47:58,719 - tornado.access - INFO - 200 GET /doc/feature/ (127.0.0.1) 55.34ms
+2017-07-15 00:47:58,745 - tornado.access - INFO - 200 GET /static/image/feature/save-time.svg?v=35478cf6515f023593e2bbae025fd127 (127.0.0.1) 4.85ms
+2017-07-15 00:47:58,750 - tornado.access - INFO - 200 GET /static/image/feature/ultra-speed.svg?v=3ccc23f2a209457a9b0ecc744bb7da18 (127.0.0.1) 1.22ms
+2017-07-15 00:47:58,752 - tornado.access - INFO - 200 GET /static/image/feature/complete-search.svg?v=1bad8ade8c52816d5f0c46abf369c72c (127.0.0.1) 1.23ms
+2017-07-15 00:47:58,755 - tornado.access - INFO - 200 GET /static/image/feature/easy-using.svg?v=11c40af7d6562c35ae67257b8df15a87 (127.0.0.1) 0.72ms
+2017-07-15 00:47:58,757 - tornado.access - INFO - 200 GET /static/image/feature/multi-search.svg?v=44a053bfd920246bda03a1baf76df829 (127.0.0.1) 0.64ms
+2017-07-15 00:50:03,804 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.38ms
+2017-07-15 00:50:03,822 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=4e9128e687f7f8a614958283f85da31e (127.0.0.1) 4.91ms
+2017-07-15 00:50:19,663 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.21ms
+2017-07-15 00:50:19,679 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=13091114617b29f578b59a02040f3310 (127.0.0.1) 4.57ms
+2017-07-15 00:50:30,368 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 27.35ms
+2017-07-15 00:50:30,388 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=d056ba1508e3d2f1c91e924824e9822a (127.0.0.1) 7.51ms
+2017-07-15 00:52:57,962 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 31.85ms
+2017-07-15 00:52:57,980 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=78112b41e206b09a9ceceec7c6402d66 (127.0.0.1) 6.67ms
+2017-07-15 00:54:29,932 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.91ms
+2017-07-15 00:54:29,952 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=c2b0df13b5edd72176cfad7fa56a9bac (127.0.0.1) 7.25ms
+2017-07-15 00:54:48,117 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 26.65ms
+2017-07-15 00:54:48,135 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=de054b81115b7669f4ac719fb6e02108 (127.0.0.1) 6.76ms
+2017-07-15 00:55:16,990 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 19.95ms
+2017-07-15 00:55:17,005 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=be04a5555eba158a6896a512ffa849f5 (127.0.0.1) 5.82ms
+2017-07-15 00:55:35,187 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.16ms
+2017-07-15 00:55:35,206 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=d35f2d687ab0bbf63f1b570471a684fe (127.0.0.1) 6.64ms
+2017-07-15 00:55:46,131 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.28ms
+2017-07-15 00:57:36,934 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 26.09ms
+2017-07-15 00:57:56,828 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.87ms
+2017-07-15 00:58:55,118 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.67ms
+2017-07-15 01:02:45,953 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 29.91ms
+2017-07-15 01:02:45,971 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=903aadc8c9489ed4ec249c19e569a056 (127.0.0.1) 6.90ms
+2017-07-15 01:03:28,522 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.94ms
+2017-07-15 01:04:07,622 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 20.46ms
+2017-07-15 01:04:07,638 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=ddf4cf900e167791036c56efdcc38466 (127.0.0.1) 6.03ms
+2017-07-15 01:04:42,506 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.84ms
+2017-07-15 01:05:07,733 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.85ms
+2017-07-15 01:05:25,863 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 21.47ms
+2017-07-15 01:05:25,878 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9c7012d56884f67bf7be618705cfb9b6 (127.0.0.1) 4.05ms
+2017-07-15 01:06:01,903 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 25.43ms
+2017-07-15 01:06:01,921 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=29914a9ae0f0330bfc6a33d4744d0b1b (127.0.0.1) 5.29ms
+2017-07-15 01:06:26,434 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.21ms
+2017-07-15 01:06:26,449 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=7e88d98e154589043c8949ba2a114b10 (127.0.0.1) 4.50ms
+2017-07-15 10:58:14,310 - root - INFO - [CRON] Started @10h ,but not executed .17
+2017-07-15 11:06:25,454 - root - INFO - [CRON] Started @11h ,but not executed .17
+2017-07-15 12:06:25,496 - root - INFO - [CRON] Started @12h ,but not executed .17
+2017-07-15 13:06:25,467 - root - INFO - [CRON] Started @13h ,but not executed .17
+2017-07-15 14:06:25,440 - root - INFO - [CRON] Started @14h ,but not executed .17
+2017-07-15 15:06:25,478 - root - INFO - [CRON] Started @15h ,but not executed .17
+2017-07-15 16:06:25,461 - root - INFO - [CRON] Started @16h ,but not executed .17
+2017-07-15 17:06:32,753 - root - INFO - [CRON] Started @17h , executed .17
+2017-07-15 17:06:51,825 - root - INFO - [CRON] Executed for [{'submitNum': 44, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 0, 'bzojNum': 12, 'zojNum': 2, 'pojNum': 0, 'cfNum': 0, 'hduNum': 0, 'totalNum': 14}, {'submitNum': 300, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 0, 'otherOJNum': 1, 'bzojNum': 0, 'zojNum': 16, 'pojNum': 129, 'cfNum': 8, 'hduNum': 86, 'totalNum': 240}] Users
+2017-07-15 18:06:25,485 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-07-15 19:06:25,479 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-07-15 20:06:25,488 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-07-15 21:06:25,405 - root - INFO - [CRON] Started @21h ,but not executed .17
+2017-07-15 22:06:25,464 - root - INFO - [CRON] Started @22h ,but not executed .17
+2017-07-15 23:06:25,482 - root - INFO - [CRON] Started @23h ,but not executed .17

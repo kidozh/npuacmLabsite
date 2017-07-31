@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8159126_PiscesCrab_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8159126_PiscesCrab_C.cpp</CENTER></H3><HR>
+<PRE>
+//By Sean Chen
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+#include &lt;queue&gt;
+#include &lt;vector&gt;
+#define inf 0x3f3f3f3f
+using namespace std;
+struct edge{
+    int e,dis;
+};
+struct cmp{
+    bool operator()(edge a,edge b)
+    {
+        return a.dis&gt;b.dis;
+    }
+};
+
+int Map1[1005][1005],Map2[1005][1004];
+int visit[1005];
+int n,m,x,a,b,dis;
+void shortest1(int pos)
+{
+    queue &lt;int&gt; q;
+    int temp;
+    for (int i=1;i&lt;=n;i++)
+    {
+        if (i!=pos &amp;&amp; Map1[pos][i]!=inf)
+        {
+            q.push(i);
+        }
+    }
+<A NAME="0"></A>    while (q.size())
+    {
+        memset(visit,0,sizeof(visit));
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match1-0.html#0',2,'match1-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>        temp=q.front();
+        q.pop();
+        for (int i=1;i&lt;=n;i++)
+        {
+            if (Map1[temp][i]+Map1[pos][temp]&lt;Map1[pos][i])
+            {
+                //cout&lt;&lt;i&lt;&lt;' ';
+                Map1[pos][i]=Map1[temp][i]+Map1[pos][temp];
+                if (!visit[i])
+                {
+                    visit[i]=1;</B></FONT>
+                    q.push(i);
+                }
+            }
+        }
+    }
+    return;
+}
+void shortest2(int pos)
+{
+    queue &lt;int&gt; q;
+    int temp;
+    for (int i=1;i&lt;=n;i++)
+    {
+        if (i!=pos &amp;&amp; Map2[pos][i]!=inf)
+        {
+            q.push(i);
+        }
+    }
+    while (q.size())
+    {
+        memset(visit,0,sizeof(visit));
+        temp=q.front();
+        q.pop();
+        for (int i=1;i&lt;=n;i++)
+        {
+            if (Map2[temp][i]+Map2[pos][temp]&lt;Map2[pos][i])
+            {
+                //cout&lt;&lt;i&lt;&lt;' ';
+                Map2[pos][i]=Map2[temp][i]+Map2[pos][temp];
+                if (!visit[i])
+                {
+                    visit[i]=1;
+                    q.push(i);
+                }
+            }
+        }
+    }
+    return;
+}
+int main()
+{
+    scanf(&quot;%d%d%d&quot;,&amp;n,&amp;m,&amp;x);
+    memset(Map1,inf,sizeof(Map1));
+    memset(Map2,inf,sizeof(Map2));
+    for (int i=1;i&lt;=m;i++)
+    {
+        scanf(&quot;%d%d%d&quot;,&amp;a,&amp;b,&amp;dis);
+        Map1[a][b]=dis;
+        Map2[b][a]=dis;
+    }
+<A NAME="1"></A>    for (int i=1;i&lt;=n;i++)
+    {
+        Map1[i][i]=0;
+<FONT color="#f63526"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match1-0.html#1',2,'match1-top.html#1',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>        Map2[i][i]=0;
+    }
+    /*for (int j=1;j&lt;=n;j++)
+        {
+            for (int k=1;k&lt;=n;k++)
+                if (Map[j][k]!=inf)
+                    printf(&quot;%5d&quot;,Map[j][k]);
+                else
+                    printf(&quot;    0&quot;);
+            printf(&quot;\n&quot;);
+        }*/
+    shortest1(x);
+    shortest2(x);
+    int ans=0;
+    for (int i=1;i&lt;=n;i++)
+    {
+        if (Map1[x][i]+Map2[x][i]&gt;ans)
+            ans=Map1[x][i]+Map2[x][i];
+    }
+    printf(&quot;%d\n&quot;,ans);
+    return 0;
+}</B></FONT>
+</PRE>
+</BODY>
+</HTML>

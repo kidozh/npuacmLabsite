@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8969997_jsrbl_B.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8969997_jsrbl_B.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+
+using namespace std;
+int a[100];
+
+int main()
+<A NAME="0"></A>{
+    int p;
+    cin&gt;&gt;p;
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match29-1.html#0',3,'match29-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>    for(int C=1;C&lt;=p;C++)
+    {
+        int s=0;
+        int k;
+        cin&gt;&gt;k;
+        for(int j=1;j&lt;=12;j++)
+            cin&gt;&gt;a[j];
+        for(int i=2;i&lt;=11;i++)
+            for(int j=i;j&lt;=11;j++)
+        {</B></FONT>
+            bool flag=true;
+            for(int l=i;l&lt;=j;l++)
+            if (a[l]&lt;=a[i-1]||a[l]&lt;=a[j+1]) {flag=false;break;}
+            if (flag) s++;
+        }
+        cout&lt;&lt;k&lt;&lt;' '&lt;&lt;s&lt;&lt;endl;
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

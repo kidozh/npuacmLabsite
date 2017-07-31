@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8971683_jinjiaodawang_D.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff" style="margin-left:25">
+<HR>
+<H3><CENTER>8971683_jinjiaodawang_D.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;bits/stdc++.h&gt;
+typedef long long ll;
+using namespace std;
+#define debug(a) cout&lt;&lt;a&lt;&lt;endl
+#define clr(a) memset(a,0,sizeof(a))
+#define clrne(a) memset(a,-1,sizeof(a))
+#define clrinf(a) memset(a,0x3f,sizeof(a))
+#define clrneinf(a) memset(a,0xc0,sizeof(a))
+#define pb(a) push_back(a)
+#define mp(a,b) make_pair(a,b)
+#define mod 1000000007
+#define eps 1e-9
+#define inf 0x7fffffff
+#define pr pair&lt;int,int&gt;
+int a[100];
+void solve(int n)
+{
+    clr(a);
+    a[0] = n;
+    while (a[0])
+    {
+        int cnt = 0;
+        for (; a[cnt]!=0; cnt++);
+        a[cnt] += cnt;
+        for (int i = 0; i&lt;cnt; i++)
+            a[i]--;
+//        cout&lt;&lt;cnt&lt;&lt;endl;
+    }
+}
+int main()
+{
+//  freopen(&quot;in.txt&quot;,&quot;r&quot;,stdin);
+//  freopen(&quot;out.txt&quot;,&quot;w&quot;,stdout);
+    int T;
+    scanf(&quot;%d&quot;,&amp;T);
+    while (T--)
+    {
+        int temp;
+        scanf(&quot;%d&quot;,&amp;temp);
+        int n;
+        scanf(&quot;%d&quot;,&amp;n);
+        solve(n);
+//        cout&lt;&lt;'!'&lt;&lt;endl;
+        for (int  i = 99;; i--)
+        {
+            if (a[i])
+<A NAME="0"></A>            {
+                n = i;
+                break;
+<FONT color="#0000ff"><div style="position:absolute;left:0"><A HREF="javascript:ZweiFrames('match2-0.html#0',2,'match2-top.html#0',1)"><IMG SRC="back.gif" ALT="other" BORDER="0" ALIGN="left"></A></div><B>            }
+        }
+        cout&lt;&lt;temp&lt;&lt;' '&lt;&lt;n&lt;&lt;endl;
+        int line = 0;
+        for (int i = 1; i&lt;=n; i++)
+        {
+            printf(&quot;%d&quot;,a[i]);
+            line++;
+            if (line==10||i==n)
+            {
+                line = 0;
+                cout&lt;&lt;endl;
+            }
+
+            else cout&lt;&lt;' ';</B></FONT>
+        }
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

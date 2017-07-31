@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8970284_npu2015300180_A.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8970284_npu2015300180_A.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+#include&lt;stdlib.h&gt;
+using namespace std;
+int a[50];
+int dj()
+<A NAME="0"></A>{
+    int ans = 0;
+    int turn = 0;
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match30-1.html#0',3,'match30-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>    int tu = 0;
+    //printf(&quot;1\n&quot;);
+    for(int i=0;i&lt;=19;i++)
+    {
+        for(int j = i+1;j&lt;=19;j++)
+        {
+            if(a[i] &gt; a[j]){tu = a[i];a[i] = a[j];a[j] = tu;ans++;</B></FONT>
+            if(j != 19)j = i;
+            }
+        }
+    }
+    return ans;
+}
+int main()
+{
+    int t;
+    scanf(&quot;%d&quot;,&amp;t);
+    for(int i=1;i&lt;=t;i++)
+    {
+        int c;
+        scanf(&quot;%d&quot;,&amp;c);
+        for(int j=0;j&lt;=19;j++)scanf(&quot;%d&quot;,&amp;a[j]);
+        //for(int j=0;j&lt;=19;j++)printf(&quot;%d &quot;,a[j]);
+        int ans = 0;
+        ans = dj();
+        printf(&quot;%d %d\n&quot;,i,ans);
+        memset(a,0,sizeof(a));
+
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

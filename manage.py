@@ -10,7 +10,7 @@ from db import database
 import sys
 
 if len(sys.argv) != 2:
-    print '''Only one argv is supported'''
+    print('''Only one argv is supported''')
 else:
     if sys.argv[1] == 'migrate':
         modelsFinder = modelFinder()

@@ -1,0 +1,2136 @@
+2017-03-24 23:20:37,553 - tornado.access - INFO - 304 GET / (::1) 67.00ms
+2017-03-24 23:20:58,714 - tornado.access - INFO - 304 GET /static/image/portal/flat_parallax.jpg (::1) 321.00ms
+2017-03-24 23:21:23,635 - tornado.access - INFO - 200 GET /plag/ (::1) 175.00ms
+2017-03-24 23:21:23,651 - tornado.access - INFO - 200 GET /static/css/plag/style.css?v=519f467b6708ee1d0141d3d2ccb91ac6 (::1) 1.00ms
+2017-03-24 23:21:24,417 - tornado.access - INFO - 200 GET /static/image/plag/background/geometry2.png (::1) 20.00ms
+2017-03-24 23:21:24,470 - tornado.access - INFO - 200 GET /static/image/plag/background/seigaiha.png (::1) 52.00ms
+2017-03-24 23:42:09,173 - tornado.general - INFO - F:\python\tornado\Tjango\contrib\admin\models.py modified; restarting server
+2017-03-24 23:44:57,812 - tornado.general - INFO - F:\python\tornado\Tjango\contrib\admin\models.py modified; restarting server
+2017-03-24 23:46:14,930 - tornado.general - INFO - F:\python\tornado\Tjango\contrib\admin\models.py modified; restarting server
+2017-03-24 23:48:14,635 - tornado.general - INFO - F:\python\tornado\Tjango\contrib\admin\models.py modified; restarting server
+2017-03-24 23:49:18,740 - tornado.general - INFO - F:\python\tornado\Tjango\contrib\admin\models.py modified; restarting server
+2017-03-25 14:25:57,542 - tornado.access - INFO - 304 GET / (::1) 45.00ms
+2017-03-25 14:25:58,219 - tornado.access - INFO - 304 GET /static/image/portal/flat_parallax.jpg (::1) 355.00ms
+2017-03-25 14:26:06,721 - tornado.access - INFO - 200 GET /queryProb/ (::1) 76.00ms
+2017-03-25 14:26:06,742 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (::1) 2.00ms
+2017-03-25 14:26:06,743 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (::1) 1.00ms
+2017-03-25 14:26:06,746 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=dfb5a1f15a711a74fef68395cf5a2500 (::1) 2.00ms
+2017-03-25 14:26:06,749 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (::1) 2.00ms
+2017-03-25 14:26:11,246 - tornado.access - INFO - 200 POST /queryProb/ (::1) 60.00ms
+2017-03-25 14:26:11,275 - tornado.access - INFO - 200 GET /static/js/queryProbInfo/queryProbInfo.js?v=cbe759d8b72d3d9dae77073caa61b214 (::1) 1.00ms
+2017-03-25 14:26:34,155 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=dengsiyu&_=1490448371292 (::1) 21945.00ms
+2017-03-25 16:39:37,674 - tornado.access - INFO - 200 GET / (::1) 162.00ms
+2017-03-25 16:39:38,546 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f589302225e020a5a7847bfb4f0d2e80 (::1) 304.00ms
+2017-03-25 16:39:38,565 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 1.00ms
+2017-03-25 16:39:38,617 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 1.00ms
+2017-03-25 16:39:38,622 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 1.00ms
+2017-03-25 16:39:38,628 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 2.00ms
+2017-03-25 16:39:38,631 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 2.00ms
+2017-03-25 16:39:38,634 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 2.00ms
+2017-03-25 16:39:38,773 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 2.00ms
+2017-03-25 16:39:39,086 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 19.00ms
+2017-03-25 16:39:39,621 - tornado.access - INFO - 200 GET /admin/login/ (::1) 120.00ms
+2017-03-25 16:39:39,694 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 1.00ms
+2017-03-25 16:39:39,697 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 1.00ms
+2017-03-25 16:39:44,055 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1149.00ms
+2017-03-25 16:39:44,078 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 2.00ms
+2017-03-25 16:39:44,081 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 1.00ms
+2017-03-25 16:39:44,990 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.00ms
+2017-03-25 16:39:45,036 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.00ms
+2017-03-25 16:40:36,653 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 117.00ms
+2017-03-25 16:40:37,842 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 14.00ms
+2017-03-25 16:41:02,868 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 37.00ms
+2017-03-25 16:41:03,769 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.00ms
+2017-03-25 16:41:08,963 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 12.00ms
+2017-03-25 16:41:19,634 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.00ms
+2017-03-25 16:42:31,861 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.00ms
+2017-03-25 16:42:32,770 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.00ms
+2017-03-25 16:42:34,348 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.00ms
+2017-03-25 16:42:35,002 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 12.00ms
+2017-03-25 16:42:36,401 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.00ms
+2017-03-25 16:42:36,849 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 16:42:57,426 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 35.00ms
+2017-03-25 16:42:58,220 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.00ms
+2017-03-25 16:58:28,523 - tornado.general - INFO - F:/python/tornado/Tjango/server.py modified; restarting server
+2017-03-25 16:58:42,240 - tornado.general - INFO - F:/python/tornado/Tjango/server.py modified; restarting server
+2017-03-25 17:02:30,486 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:02:32,586 - tornado.access - INFO - 200 GET / (::1) 30.00ms
+2017-03-25 17:02:32,961 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f589302225e020a5a7847bfb4f0d2e80 (::1) 330.00ms
+2017-03-25 17:02:32,964 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 2.00ms
+2017-03-25 17:02:33,016 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 2.00ms
+2017-03-25 17:02:33,020 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 1.00ms
+2017-03-25 17:02:33,072 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 2.00ms
+2017-03-25 17:02:35,474 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:02:36,237 - tornado.access - INFO - 200 GET /query/ (::1) 53.00ms
+2017-03-25 17:02:36,263 - tornado.access - INFO - 200 GET /static/css/queryProblem/style.css?v=6048e518c91d28fc6ee9963bf5d39057 (::1) 2.00ms
+2017-03-25 17:02:40,473 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:02:42,114 - tornado.access - INFO - 200 POST /query/ (::1) 144.00ms
+2017-03-25 17:02:45,476 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:02:50,730 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:02:55,474 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:00,476 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:05,476 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:08,526 - tornado.access - INFO - 200 GET /query/api/?mainName=dengsiyu&viceName=&timestamp=1490457762466&revKey=0.3613666497427608&_=1490457762254 (::1) 26019.00ms
+2017-03-25 17:03:10,474 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:15,476 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:20,474 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:25,474 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000053F7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '../../log/server.log'
+2017-03-25 17:03:33,321 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000052B7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '/log/server.log'
+2017-03-25 17:03:33,529 - tornado.access - INFO - 200 POST /query/ (::1) 27.00ms
+2017-03-25 17:03:38,312 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000052B7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '/log/server.log'
+2017-03-25 17:03:43,313 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000052B7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '/log/server.log'
+2017-03-25 17:03:48,311 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000052B7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '/log/server.log'
+2017-03-25 17:03:53,313 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000052B7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '/log/server.log'
+2017-03-25 17:03:58,311 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000052B7438>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 87, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 39, in parase_log
+    with open(self.log_path,'r+') as f:
+IOError: [Errno 2] No such file or directory: '/log/server.log'
+2017-03-25 17:03:58,404 - tornado.access - INFO - 200 GET /query/api/?mainName=dengsiyu&viceName=&timestamp=1490457813805&revKey=0.4970789915927305&_=1490457813621 (::1) 24533.00ms
+2017-03-25 17:04:26,444 - tornado.access - INFO - 200 POST /query/ (::1) 11.00ms
+2017-03-25 17:04:47,063 - tornado.access - INFO - 304 GET / (::1) 12.00ms
+2017-03-25 17:04:48,650 - tornado.access - INFO - 200 GET /query/api/?mainName=dengsiyu&viceName=&timestamp=1490457866715&revKey=0.4814518207014462&_=1490457866529 (::1) 21857.00ms
+2017-03-25 17:04:53,724 - tornado.access - INFO - 200 GET /admin/login/ (::1) 16.00ms
+2017-03-25 17:04:54,084 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 331.00ms
+2017-03-25 17:04:54,085 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 1.00ms
+2017-03-25 17:04:56,670 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1047.00ms
+2017-03-25 17:04:56,710 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 2.00ms
+2017-03-25 17:05:06,622 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 45.00ms
+2017-03-25 17:05:07,338 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:05:11,211 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:05:12,131 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:05:19,493 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:05:20,026 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:06:03,719 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 33.00ms
+2017-03-25 17:06:07,411 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:06:08,072 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:06:08,592 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:06:09,187 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 33.00ms
+2017-03-25 17:06:10,072 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:06:10,993 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:06:11,730 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:06:12,257 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:06:13,355 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:11:20,240 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 54.00ms
+2017-03-25 17:11:21,009 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 12.00ms
+2017-03-25 17:11:25,427 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 43.00ms
+2017-03-25 17:11:26,030 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.00ms
+2017-03-25 17:11:53,299 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 73.00ms
+2017-03-25 17:11:53,960 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 16.00ms
+2017-03-25 17:12:13,539 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 33.00ms
+2017-03-25 17:12:14,017 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 13.00ms
+2017-03-25 17:12:58,828 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 64.00ms
+2017-03-25 17:12:59,611 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 12.00ms
+2017-03-25 17:12:59,845 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:02,526 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 34.00ms
+2017-03-25 17:13:02,977 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:03,911 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 34.00ms
+2017-03-25 17:13:04,367 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.00ms
+2017-03-25 17:13:04,894 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:05,006 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 35.00ms
+2017-03-25 17:13:05,474 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:05,799 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 33.00ms
+2017-03-25 17:13:06,246 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.00ms
+2017-03-25 17:13:06,596 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 32.00ms
+2017-03-25 17:13:07,039 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 12.00ms
+2017-03-25 17:13:07,405 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 33.00ms
+2017-03-25 17:13:07,845 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.00ms
+2017-03-25 17:13:08,316 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 33.00ms
+2017-03-25 17:13:08,778 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:09,119 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 34.00ms
+2017-03-25 17:13:09,582 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:09,885 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:09,977 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 36.00ms
+2017-03-25 17:13:10,423 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:10,799 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 35.00ms
+2017-03-25 17:13:11,234 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.00ms
+2017-03-25 17:13:11,525 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 33.00ms
+2017-03-25 17:13:11,993 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 12.00ms
+2017-03-25 17:13:12,388 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 33.00ms
+2017-03-25 17:13:12,828 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:13,855 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 35.00ms
+2017-03-25 17:13:14,321 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 13.00ms
+2017-03-25 17:13:14,834 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:14,868 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 34.00ms
+2017-03-25 17:13:15,332 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 11.00ms
+2017-03-25 17:13:15,799 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 34.00ms
+2017-03-25 17:13:16,278 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 14.00ms
+2017-03-25 17:13:17,892 - tornado.access - INFO - 304 GET /admin/manage/configOption/show/ (::1) 32.00ms
+2017-03-25 17:13:18,338 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 10.00ms
+2017-03-25 17:13:19,858 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:21,267 - tornado.access - INFO - 200 GET /admin/manage/friendLinks/show/ (::1) 36.00ms
+2017-03-25 17:13:21,720 - tornado.access - INFO - 200 POST /admin/manage/friendLinks/data/ (::1) 11.00ms
+2017-03-25 17:13:25,095 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:27,786 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 48.00ms
+2017-03-25 17:13:28,470 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 16.00ms
+2017-03-25 17:13:29,844 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:34,025 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.00ms
+2017-03-25 17:13:34,969 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:39,900 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:44,865 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:49,823 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:54,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:13:59,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:04,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:09,859 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:14,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:19,844 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:24,813 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:29,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:34,842 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:39,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:44,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:50,062 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:54,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:14:59,803 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:04,872 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:09,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:14,839 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:19,905 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:24,937 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:29,924 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:34,915 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:39,829 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:44,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:49,836 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:54,806 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:15:59,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:04,813 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:09,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:14,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:19,878 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:24,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:29,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:34,956 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:39,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:44,841 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:49,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:54,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:16:59,816 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:04,976 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:09,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:14,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:19,956 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:24,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:29,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:34,818 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:39,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:44,825 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:49,960 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:54,980 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:17:59,823 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:04,882 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:09,808 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:14,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:19,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:24,806 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:29,821 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:34,891 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:39,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:44,798 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:49,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:54,803 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:18:59,808 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:04,911 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:09,858 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:14,806 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:19,954 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:24,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:29,838 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:34,887 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:39,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:44,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:49,984 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:54,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:19:59,825 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:04,884 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:09,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:14,825 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:19,882 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:24,831 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:29,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:34,881 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:39,808 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:44,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:49,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:54,806 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:20:59,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:04,957 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:09,816 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:14,908 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:19,867 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:25,092 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:29,808 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:34,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:39,836 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:44,818 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:49,821 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:54,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:21:59,816 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:04,908 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:09,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:14,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:19,940 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:24,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:29,934 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:34,871 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:39,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:44,891 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:49,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:54,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:22:59,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:04,848 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:09,841 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:14,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:20,069 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:24,806 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:29,910 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:34,901 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:39,828 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:44,953 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:49,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:54,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:23:59,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:04,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:09,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:14,839 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:19,835 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:24,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:29,953 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:34,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:39,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:45,026 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:49,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:54,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:24:59,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:04,928 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:09,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:14,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:19,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:24,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:29,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:34,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:39,808 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:44,900 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:49,813 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:54,828 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:25:59,821 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:04,857 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:09,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:14,984 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:19,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:24,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:29,894 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:34,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:39,813 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:44,884 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:49,825 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:54,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:26:59,982 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:04,907 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:09,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:15,079 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:19,806 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:24,811 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:30,089 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:34,884 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:39,821 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:44,911 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:49,848 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:54,808 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:27:59,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:04,802 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:09,828 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:15,042 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:19,825 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:24,816 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:29,809 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:34,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:39,805 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:44,842 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:49,900 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:54,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:28:59,818 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:04,822 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:09,825 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:15,033 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:19,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:24,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:29,815 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:34,819 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:39,812 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:44,947 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:49,828 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'
+2017-03-25 17:29:54,821 - tornado.application - ERROR - Exception in callback <function praseLog at 0x00000000054253C8>
+Traceback (most recent call last):
+  File "D:\Canopy\User\lib\site-packages\tornado\ioloop.py", line 1020, in _run
+    return self.callback()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 94, in praseLog
+    a.parase_log()
+  File "F:\python\tornado\Tjango\contrib\admin\log.py", line 89, in parase_log
+    lastest_log_update_time.save()
+AttributeError: 'str' object has no attribute 'save'

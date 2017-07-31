@@ -1,0 +1,38 @@
+2017-05-29 19:21:36,307 - tornado.access - INFO - 200 GET / (127.0.0.1) 1478.39ms
+2017-05-29 19:21:36,382 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (127.0.0.1) 33.00ms
+2017-05-29 19:21:36,383 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (127.0.0.1) 0.62ms
+2017-05-29 19:21:36,384 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (127.0.0.1) 0.60ms
+2017-05-29 19:21:36,386 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (127.0.0.1) 1.12ms
+2017-05-29 19:21:36,596 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (127.0.0.1) 0.76ms
+2017-05-29 19:21:36,600 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (127.0.0.1) 0.73ms
+2017-05-29 19:21:36,604 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (127.0.0.1) 0.64ms
+2017-05-29 19:21:36,607 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (127.0.0.1) 0.75ms
+2017-05-29 19:21:36,772 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (127.0.0.1) 22.55ms
+2017-05-29 19:21:37,241 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 30.02ms
+2017-05-29 19:21:42,193 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 1719.23ms
+2017-05-29 19:21:42,199 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 4.78ms
+2017-05-29 19:21:42,310 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 0.83ms
+2017-05-29 19:21:42,311 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.97ms
+2017-05-29 19:21:42,313 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 0.91ms
+2017-05-29 19:21:42,314 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.90ms
+2017-05-29 19:21:47,761 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 120.50ms
+2017-05-29 19:21:47,795 - tornado.access - INFO - 200 GET /static/js/queryProbInfo/queryProbInfo.js?v=cbe759d8b72d3d9dae77073caa61b214 (127.0.0.1) 1.10ms
+2017-05-29 19:22:02,887 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1496056907897 (127.0.0.1) 14847.60ms
+2017-05-29 19:22:02,958 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-05-29 19:23:48,760 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 11.04ms
+2017-05-29 19:23:59,484 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1496057028970 (127.0.0.1) 10420.49ms
+2017-05-29 19:23:59,529 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-05-29 19:24:07,680 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 5.47ms
+2017-05-29 19:24:18,026 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1496057047846 (127.0.0.1) 10087.16ms
+2017-05-29 19:24:18,069 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-05-29 19:24:28,337 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 7.45ms
+2017-05-29 19:24:38,673 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1496057068502 (127.0.0.1) 10080.87ms
+2017-05-29 19:24:38,716 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-05-29 19:48:18,522 - tornado.access - INFO - 200 GET /queryProb/? (127.0.0.1) 5.90ms
+2017-05-29 19:48:23,834 - tornado.access - INFO - 200 POST /queryProb/ (127.0.0.1) 5.90ms
+2017-05-29 19:48:32,267 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1496058501658 (127.0.0.1) 10436.22ms
+2017-05-29 19:48:32,424 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-05-29 19:48:34,597 - tornado.access - INFO - 200 GET /queryProb/api/test/?name=fangcun&_=1496058503964 (127.0.0.1) 10455.50ms
+2017-05-29 19:48:34,629 - root - INFO - [FAST_QUERY] Query for fangcun 
+2017-05-29 20:21:31,743 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-05-29 21:21:31,751 - root - INFO - [CRON] Started @21h ,but not executed .17

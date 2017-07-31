@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+
+{% block webTitle %}通知 & 我们的心声{% end %}
+
+{% block content %}
+<!-- main -->
+<div class="container" id="notice-board">
+    <!-- add first part -->
+    <div class="row cover-screen align-items-center">
+        <div class="col col-md-12">
+            <h1 class="cssbe61941af4be4 title text-center">通知<br/>中心</h1>
+            <h4 class="text-center" style="padding-top: 2rem">Notification hub of {% module get_option('SITE_NAME') %}</h4>
+        </div>
+    </div>
+
+    <div class="row nav-board">
+        <div class="col-md-2 offset-md-1">
+            <a href="#"  @click="get_previous_page" class="nav-btn" v-if="previous_page_accessible">Prev</a>
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center">当前第{{! cur_page }}页</h3>
+        </div>
+        <div class="col-md-2">
+            <a href="#"  v-on:click="get_next_page" class="nav-btn">Next</a>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <!-- for article -->
+        <div class="col-md-10 offset-md-1">
+            <!-- for pinned one -->
+            <div class="article" v-for="notice in top_notices">
+                <h3><span class="badge badge-info badge-pinned">置顶</span>{{! notice.title }} </h3>
+                <p>
+                <ol class="breadcrumb">
+
+                    <li class="breadcrumb-item">{{! notice.publish_time | time2string }}</li>
+                    <li class="breadcrumb-item active"><span class="badge badge-danger">{{! notice.publish_status | toLocaleType  }}</span></li>
+                </ol>
+                </p>
+
+
+
+                <div class="article-content">
+                    <div v-html="notice.markdown_html"></div>
+                </div>
+
+
+                <div v-if="notice.publish_status == 'prerelease'">
+                    <div class="alert alert-info" role="alert">
+                        <strong>预发布</strong> 这是一个提前的通知，这个消息目前并不生效。
+                    </div>
+                </div>
+                <div v-if="notice.publish_status == 'depreciate'">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>准备废止</strong> 这个通知目前将要被新的通知所取代，即将失去效力。
+                    </div>
+                </div>
+                <div v-if="notice.publish_status == 'delete'">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>已经废止</strong> 目前已经有现有的通知取代这个通知。
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="article" v-for="notice in notices">
+                <h3>{{! notice.title }} </h3>
+                <p>
+                <ol class="breadcrumb">
+
+                    <li class="breadcrumb-item">{{! notice.publish_time | time2string }}</li>
+                    <li class="breadcrumb-item active">{{! notice.publish_status | toLocaleType }}</li>
+                </ol>
+                </p>
+                <div class="article-content">
+                    <div v-html="notice.markdown_html"></div>
+                </div>
+
+                <div v-if="notice.publish_status == 'prerelease'">
+                    <div class="alert alert-info" role="alert">
+                        <strong>预发布</strong> 这是一个提前的通知，这个消息目前并不生效。
+                    </div>
+                </div>
+                <div v-if="notice.publish_status == 'depreciate'">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>准备废止</strong> 这个通知目前将要被新的通知所取代, 现在仍然有效，但是即将失去效力。
+                    </div>
+                </div>
+                <div v-if="notice.publish_status == 'delete'">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>已经废止</strong> 目前已经有现有的通知取代这个通知。
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% end %}
+
+
+{% block footerJS %}
+<script>
+    function customMarkdownParser(text) {
+        var languageOverrides = {
+            js: 'javascript',
+            html: 'xml'
+        };
+
+        var md = markdownit({
+            html: true,
+            linkify: true,
+            highlight: function(code, lang){
+                if(languageOverrides[lang]) lang = languageOverrides[lang];
+                console.log(lang);
+                if(lang && hljs.getLanguage(lang)){
+                    try {
+                        return hljs.highlight(lang, code).value;
+                    }
+                    catch(e){
+                        console.error(e);
+
+                    }
+                }
+                return '';
+            }
+        }).use(markdownitFootnote);
+
+        return md.render(text);
+    }
+    
+    
+    function getCookie(name) {
+        var c = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        return c ? c[1] : undefined;
+    }
+
+    var notice_vm = new Vue({
+        el:'#notice-board',
+        data:{
+            cur_page:1,
+            query_page_length:10,
+            // only number of displayed page without sticky
+            display_page_length:10,
+            query_page_num :0,
+            top_notices:[],
+            notices:[],
+        },
+        computed:{
+            previous_page_accessible:function () {
+                return this.cur_page > 1;
+            },
+            markdown_rendered_html:function () {
+
+            }
+        },
+        filters:{
+            time2string:function (timestamp) {
+                return new Date(parseInt(timestamp) * 1000).toLocaleString();
+            },
+            md2html:function (md_content) {
+                return markdown.toHTML( md_content );
+            },
+            unescape:function (html) {
+                return html
+                    .replace(html ? /&(?!#?\w+;)/g : /&/g, '&amp;')
+                    .replace(/&lt;/g, "<")
+                    .replace(/&gt;/g, ">")
+                    .replace(/&quot;/g, "\"")
+                    .replace(/&#39;/g, "\'");
+            },
+            toLocaleType:function(eng_name){
+                typeDict = {
+                    'draft': '草稿',
+                    'prerelease':'预发布',
+                    'publish': '发布',
+                    'depreciate':'废止',
+                    'delete':'删除'
+                };
+                return typeDict[eng_name];
+            }
+        },
+
+        methods:{
+            get_cur_page:function () {
+                var vm = this;
+                $.ajax({
+                    url:'{{ reverse_url('notification.view.indexPageRequestHandler') }}',
+                    type:'POST',
+                    dataType:'json',
+                    data:{
+                        _xsrf:getCookie('_xsrf'),
+                        query_page_length:this.query_page_length,
+                        query_page_num:this.cur_page
+                    },
+                    success:function (data) {
+
+                        vm.top_notices = data['top_notice'];
+                        vm.notices = data['notice'];
+
+                        for(i in vm.top_notices){
+                            vm.top_notices[i].markdown_html = customMarkdownParser(vm.top_notices[i].markdown_cotent)
+                        }
+
+                        for(i in vm.notices){
+                            vm.notices[i].markdown_html = customMarkdownParser(vm.notices[i].markdown_cotent)
+                        }
+
+                    }
+                });
+            },
+            get_previous_page:function () {
+                if(this.previous_page_accessible){
+                    this.cur_page-=1;
+                    this.get_cur_page();
+                }
+            },
+            get_next_page:function () {
+                this.cur_page +=1;
+                this.get_cur_page();
+            }
+        }
+    });
+
+    //load at the beginning of page
+    $(document).ready(function () {
+        notice_vm.get_cur_page();
+    });
+
+</script>
+{% end %}

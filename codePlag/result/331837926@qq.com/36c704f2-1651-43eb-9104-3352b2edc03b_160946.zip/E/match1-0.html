@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8972306_SellinaFelton_E.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8972306_SellinaFelton_E.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+#include &lt;stdio.h&gt;
+using namespace std ;
+int main()
+{
+    int n , k ;
+    int fenzi , fenmu;
+    cin &gt;&gt;n ;
+    while(n--)
+    {
+        cin &gt;&gt;k ;
+        scanf(&quot;%d/%d&quot; , &amp;fenzi , &amp;fenmu) ;
+        printf(&quot;%d &quot;,k);
+        if(fenmu == 1)
+            printf(&quot;%d/%d\n&quot; , 1,fenzi+fenmu);
+        else if(fenzi &lt; fenmu)
+            printf(&quot;%d/%d\n&quot; , fenmu,fenmu-fenzi);
+        else
+<A NAME="0"></A>        {
+            int A = fenzi-fenmu;
+            int B = fenmu ;
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match1-1.html#0',3,'match1-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>            int step  = 1 ;
+            while(A&gt;B)
+            {
+                A = A-B;
+                step ++ ;
+            }
+            int t ;
+            t = A ;
+            A = B ;
+            B = t ;
+            B = A-t;
+            while(step --)</B></FONT>
+            {
+                B = A+B;
+            }
+            printf(&quot;%d/%d\n&quot; , A,B) ;
+        }
+    }
+    return 0 ;
+}
+</PRE>
+</BODY>
+</HTML>

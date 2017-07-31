@@ -1,0 +1,73 @@
+2017-04-10 00:07:14,881 - tornado.access - INFO - 304 GET / (::1) 6.40ms
+2017-04-10 00:08:14,915 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fb49e183c80>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1041, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-10 00:08:21,775 - tornado.access - INFO - 304 GET / (::1) 4.47ms
+2017-04-10 00:10:21,866 - tornado.access - INFO - 200 GET / (::1) 26.61ms
+2017-04-10 00:10:21,896 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f59ca6ceed0c02cc688f3746cd2ff786 (::1) 4.31ms
+2017-04-10 00:13:43,273 - tornado.access - INFO - 200 GET / (::1) 21.03ms
+2017-04-10 00:17:47,858 - tornado.access - INFO - 200 GET / (::1) 25.99ms
+2017-04-10 00:17:47,886 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f79566a7e90bca8a2fd7939280dd7281 (::1) 3.97ms
+2017-04-10 00:18:57,693 - tornado.access - INFO - 200 GET / (::1) 25.26ms
+2017-04-10 00:18:57,723 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=21b1fac889239b879e75ef2ae4b8d3e5 (::1) 5.60ms
+2017-04-10 00:19:33,184 - tornado.access - INFO - 200 GET / (::1) 19.74ms
+2017-04-10 00:19:33,212 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=585447e9a90937f6c2de7840425902f2 (::1) 3.55ms
+2017-04-10 00:20:05,004 - tornado.access - INFO - 200 GET / (::1) 24.74ms
+2017-04-10 00:20:05,037 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=a41e2a0e07656c1ea4f59191812fd28c (::1) 4.35ms
+2017-04-10 00:30:02,960 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f0cca83bc80>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1041, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-10 00:40:02,993 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f0cca83bc80>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1041, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-10 00:50:02,899 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7f0cca83bc80>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1041, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 21, in get_lastest_log_offset
+    BaseHandler.prepare(self)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 18, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open

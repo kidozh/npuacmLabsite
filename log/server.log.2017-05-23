@@ -1,0 +1,51 @@
+2017-05-23 00:29:18,474 - root - INFO - [CRON] Started @0h ,but not executed .15
+2017-05-23 16:59:22,195 - root - INFO - [CRON] Started @16h ,but not executed .15
+2017-05-23 16:59:22,196 - tornado.access - INFO - 200 GET /queryProb/update/manually/ (127.0.0.1) 454.86ms
+2017-05-23 16:59:22,446 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 24.53ms
+2017-05-23 16:59:35,184 - tornado.access - INFO - 302 GET /admin/login (127.0.0.1) 2.58ms
+2017-05-23 16:59:35,346 - tornado.access - INFO - 200 GET /admin/login/ (127.0.0.1) 157.57ms
+2017-05-23 16:59:35,387 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 5.37ms
+2017-05-23 16:59:35,392 - tornado.access - INFO - 200 GET /static/admin/css/style.css (127.0.0.1) 0.61ms
+2017-05-23 16:59:38,178 - tornado.access - INFO - 302 POST /admin/login/ (127.0.0.1) 302.50ms
+2017-05-23 16:59:39,288 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1106.32ms
+2017-05-23 16:59:39,331 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (127.0.0.1) 0.86ms
+2017-05-23 16:59:39,338 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (127.0.0.1) 1.21ms
+2017-05-23 16:59:39,550 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (127.0.0.1) 1.13ms
+2017-05-23 16:59:39,555 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (127.0.0.1) 1.24ms
+2017-05-23 16:59:40,791 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.46ms
+2017-05-23 16:59:44,864 - tornado.access - INFO - 200 GET /admin/manage/cronInfo/show/ (127.0.0.1) 38.35ms
+2017-05-23 16:59:46,261 - tornado.access - INFO - 200 POST /admin/manage/cronInfo/data/ (127.0.0.1) 11.00ms
+2017-05-23 16:59:52,946 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (127.0.0.1) 116.38ms
+2017-05-23 16:59:54,987 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (127.0.0.1) 22.87ms
+2017-05-23 16:59:56,615 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (127.0.0.1) 42.02ms
+2017-05-23 17:00:09,410 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (127.0.0.1) 27.99ms
+2017-05-23 17:00:09,794 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (127.0.0.1) 7.42ms
+2017-05-23 17:00:13,038 - tornado.access - INFO - 200 GET /admin/manage/configOption/change/5/ (127.0.0.1) 68.90ms
+2017-05-23 17:00:16,474 - tornado.access - INFO - 302 POST /admin/manage/configOption/change/5/ (127.0.0.1) 95.17ms
+2017-05-23 17:00:16,501 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (127.0.0.1) 22.09ms
+2017-05-23 17:00:16,863 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (127.0.0.1) 8.15ms
+2017-05-23 17:00:30,987 - root - INFO - [CRON] Started @17h , executed .17
+2017-05-23 17:00:30,987 - tornado.access - INFO - 200 GET /queryProb/update/manually/ (127.0.0.1) 11833.91ms
+2017-05-23 17:00:41,372 - root - INFO - [CRON] Executed for [{'submitNum': 2455, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 586, 'bzojNum': 12, 'zojNum': 0, 'pojNum': 0, 'cfNum': 843, 'hduNum': 0, 'totalNum': 1441}, {'submitNum': 300, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 1, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 0, 'pojNum': 129, 'cfNum': 21, 'hduNum': 86, 'totalNum': 238}] Users
+2017-05-23 17:59:16,778 - root - INFO - [CRON] Started @17h , executed .17
+2017-05-23 17:59:27,009 - root - INFO - [CRON] Executed for [{'submitNum': 3967, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 586, 'bzojNum': 12, 'zojNum': 0, 'pojNum': 142, 'cfNum': 843, 'hduNum': 421, 'totalNum': 2004}, {'submitNum': 300, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 1, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 0, 'pojNum': 129, 'cfNum': 21, 'hduNum': 86, 'totalNum': 238}] Users
+2017-05-23 18:02:33,315 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 266.61ms
+2017-05-23 18:02:33,349 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 3.94ms
+2017-05-23 18:02:33,351 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.73ms
+2017-05-23 18:02:33,352 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.67ms
+2017-05-23 18:02:33,353 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 0.68ms
+2017-05-23 18:02:37,071 - tornado.access - INFO - 200 GET /queryProb/bulk/ (127.0.0.1) 31.56ms
+2017-05-23 18:02:38,869 - tornado.access - INFO - 200 GET /queryProb/cron/ (127.0.0.1) 56.92ms
+2017-05-23 18:02:39,120 - tornado.access - INFO - 200 GET /static/image/portal/pexels-photo-large.jpg (127.0.0.1) 92.80ms
+2017-05-23 18:02:41,934 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (127.0.0.1) 58.06ms
+2017-05-23 18:02:42,474 - tornado.access - INFO - 200 GET /static/image/portal/sky-night-space-galaxy.jpeg (127.0.0.1) 365.45ms
+2017-05-23 18:04:09,352 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (127.0.0.1) 30.95ms
+2017-05-23 18:06:58,131 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (127.0.0.1) 27.42ms
+2017-05-23 18:07:09,881 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (127.0.0.1) 34.11ms
+2017-05-23 18:09:03,299 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (127.0.0.1) 26.04ms
+2017-05-23 18:10:46,206 - tornado.access - INFO - 200 GET /queryProb/cron/realtime/ (127.0.0.1) 26.13ms
+2017-05-23 19:10:45,410 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-05-23 20:10:45,398 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-05-23 21:10:45,428 - root - INFO - [CRON] Started @21h ,but not executed .17
+2017-05-23 22:10:45,433 - root - INFO - [CRON] Started @22h ,but not executed .17
+2017-05-23 23:10:45,529 - root - INFO - [CRON] Started @23h ,but not executed .17

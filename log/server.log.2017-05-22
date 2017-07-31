@@ -1,0 +1,44 @@
+2017-05-22 15:27:06,843 - tornado.access - INFO - 200 GET / (127.0.0.1) 452.54ms
+2017-05-22 15:27:06,892 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (127.0.0.1) 4.21ms
+2017-05-22 15:27:06,894 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (127.0.0.1) 0.82ms
+2017-05-22 15:27:06,895 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (127.0.0.1) 1.04ms
+2017-05-22 15:27:06,896 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (127.0.0.1) 0.78ms
+2017-05-22 15:27:06,954 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (127.0.0.1) 0.70ms
+2017-05-22 15:27:06,957 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (127.0.0.1) 0.71ms
+2017-05-22 15:27:06,960 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (127.0.0.1) 0.64ms
+2017-05-22 15:27:06,964 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (127.0.0.1) 0.74ms
+2017-05-22 15:27:07,134 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (127.0.0.1) 1.77ms
+2017-05-22 15:27:07,620 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 28.66ms
+2017-05-22 15:27:10,606 - tornado.access - INFO - 302 GET /admin/login (127.0.0.1) 0.51ms
+2017-05-22 15:27:10,711 - tornado.access - INFO - 200 GET /admin/login/ (127.0.0.1) 99.72ms
+2017-05-22 15:27:10,752 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 1.53ms
+2017-05-22 15:27:10,757 - tornado.access - INFO - 200 GET /static/admin/css/style.css (127.0.0.1) 0.67ms
+2017-05-22 15:27:12,640 - tornado.access - INFO - 302 POST /admin/login/ (127.0.0.1) 317.38ms
+2017-05-22 15:27:13,835 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1189.83ms
+2017-05-22 15:27:13,880 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (127.0.0.1) 2.08ms
+2017-05-22 15:27:13,882 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (127.0.0.1) 1.10ms
+2017-05-22 15:27:14,034 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (127.0.0.1) 0.66ms
+2017-05-22 15:27:14,038 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (127.0.0.1) 0.70ms
+2017-05-22 15:27:14,827 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.50ms
+2017-05-22 15:27:20,781 - root - INFO - [CRON] Started @15h ,but not executed .11
+2017-05-22 15:27:20,782 - tornado.access - INFO - 200 GET /queryProb/update/manually/ (127.0.0.1) 348.40ms
+2017-05-22 15:27:29,191 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (127.0.0.1) 50.96ms
+2017-05-22 15:27:30,720 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (127.0.0.1) 9.28ms
+2017-05-22 15:27:33,260 - tornado.access - INFO - 200 GET /admin/manage/configOption/change/5/ (127.0.0.1) 32.99ms
+2017-05-22 15:27:36,226 - tornado.access - INFO - 302 POST /admin/manage/configOption/change/5/ (127.0.0.1) 106.44ms
+2017-05-22 15:27:36,242 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (127.0.0.1) 12.60ms
+2017-05-22 15:27:36,743 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (127.0.0.1) 8.39ms
+2017-05-22 15:27:54,478 - root - INFO - [CRON] Started @15h , executed .15
+2017-05-22 15:27:54,479 - tornado.access - INFO - 200 GET /queryProb/update/manually/ (127.0.0.1) 5668.25ms
+2017-05-22 15:29:23,893 - tornado.access - INFO - 200 GET /admin/manage/acRecordArchive/show/ (127.0.0.1) 55.49ms
+2017-05-22 15:29:24,887 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (127.0.0.1) 10.05ms
+2017-05-22 15:29:26,439 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (127.0.0.1) 20.43ms
+2017-05-22 15:29:27,343 - tornado.access - INFO - 200 POST /admin/manage/acRecordArchive/data/ (127.0.0.1) 13.78ms
+2017-05-22 16:29:18,477 - root - INFO - [CRON] Started @16h ,but not executed .15
+2017-05-22 17:29:18,517 - root - INFO - [CRON] Started @17h ,but not executed .15
+2017-05-22 18:29:18,526 - root - INFO - [CRON] Started @18h ,but not executed .15
+2017-05-22 19:29:18,574 - root - INFO - [CRON] Started @19h ,but not executed .15
+2017-05-22 20:29:18,529 - root - INFO - [CRON] Started @20h ,but not executed .15
+2017-05-22 21:29:18,483 - root - INFO - [CRON] Started @21h ,but not executed .15
+2017-05-22 22:29:18,494 - root - INFO - [CRON] Started @22h ,but not executed .15
+2017-05-22 23:29:18,545 - root - INFO - [CRON] Started @23h ,but not executed .15

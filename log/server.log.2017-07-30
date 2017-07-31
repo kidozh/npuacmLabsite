@@ -1,0 +1,418 @@
+2017-07-30 13:11:23,488 - root - INFO - [CRON] Started @13h ,but not executed .17
+2017-07-30 13:12:04,855 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 20.13ms
+2017-07-30 13:15:18,833 - tornado.access - INFO - 200 GET / (127.0.0.1) 20.20ms
+2017-07-30 13:15:18,883 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 3.55ms
+2017-07-30 13:15:18,884 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.66ms
+2017-07-30 13:15:18,885 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.57ms
+2017-07-30 13:15:18,886 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 0.54ms
+2017-07-30 13:56:42,144 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 20.13ms
+2017-07-30 13:56:45,982 - tornado.general - WARNING - 403 POST /t/post/ (127.0.0.1): '_xsrf' argument missing from POST
+2017-07-30 13:56:46,057 - tornado.access - WARNING - 403 POST /t/post/ (127.0.0.1) 75.30ms
+2017-07-30 13:56:46,102 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 6.67ms
+2017-07-30 13:58:12,414 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 24.92ms
+2017-07-30 13:58:52,977 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 22.11ms
+2017-07-30 13:59:07,985 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 29.01ms
+2017-07-30 14:01:03,090 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 29.85ms
+2017-07-30 14:01:14,618 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.90ms
+2017-07-30 14:02:01,241 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 21.94ms
+2017-07-30 14:19:37,164 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.17ms
+2017-07-30 14:20:09,634 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 27.19ms
+2017-07-30 14:20:09,673 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5b1e7da78af208a8fcada097eb0bee71 (127.0.0.1) 6.21ms
+2017-07-30 14:20:09,690 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.40ms
+2017-07-30 14:20:09,693 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 2.28ms
+2017-07-30 14:20:09,696 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.05ms
+2017-07-30 14:20:39,257 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.25ms
+2017-07-30 14:20:39,299 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 6.68ms
+2017-07-30 14:20:39,302 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.97ms
+2017-07-30 14:20:39,304 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.01ms
+2017-07-30 14:20:39,305 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.87ms
+2017-07-30 14:20:43,783 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 5.81ms
+2017-07-30 14:20:43,814 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.07ms
+2017-07-30 14:20:43,816 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.48ms
+2017-07-30 14:20:43,818 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.17ms
+2017-07-30 14:20:43,819 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.78ms
+2017-07-30 14:21:31,759 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 7.15ms
+2017-07-30 14:21:31,808 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.17ms
+2017-07-30 14:21:31,819 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.43ms
+2017-07-30 14:21:31,825 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.77ms
+2017-07-30 14:21:31,833 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.77ms
+2017-07-30 14:22:22,776 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 8.73ms
+2017-07-30 14:22:22,814 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.58ms
+2017-07-30 14:22:22,825 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.96ms
+2017-07-30 14:22:22,830 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.21ms
+2017-07-30 14:22:22,839 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.60ms
+2017-07-30 14:25:05,078 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.82ms
+2017-07-30 14:25:05,459 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 22.23ms
+2017-07-30 14:25:05,509 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 4.70ms
+2017-07-30 14:25:05,517 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.78ms
+2017-07-30 14:25:05,524 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.05ms
+2017-07-30 14:25:05,538 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.86ms
+2017-07-30 14:25:51,132 - tornado.general - WARNING - 403 POST /t/post/ (127.0.0.1): '_xsrf' argument missing from POST
+2017-07-30 14:25:51,137 - tornado.access - WARNING - 403 POST /t/post/ (127.0.0.1) 5.55ms
+2017-07-30 14:25:51,190 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 1.14ms
+2017-07-30 14:26:06,445 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 5.99ms
+2017-07-30 14:26:06,490 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.45ms
+2017-07-30 14:26:06,499 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.05ms
+2017-07-30 14:26:06,505 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 2.17ms
+2017-07-30 14:26:06,515 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.08ms
+2017-07-30 14:28:51,109 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 23.60ms
+2017-07-30 14:28:51,152 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 3.96ms
+2017-07-30 14:28:51,168 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.97ms
+2017-07-30 14:28:51,170 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.16ms
+2017-07-30 14:28:51,180 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 2.00ms
+2017-07-30 14:29:39,596 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 6.77ms
+2017-07-30 14:29:51,533 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 3.15ms
+2017-07-30 14:29:58,690 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 1.74ms
+2017-07-30 14:30:02,604 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 1.95ms
+2017-07-30 14:31:43,577 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 7.32ms
+2017-07-30 14:31:49,410 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 18.78ms
+2017-07-30 14:31:49,455 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 6.02ms
+2017-07-30 14:31:49,460 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.82ms
+2017-07-30 14:31:49,466 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.48ms
+2017-07-30 14:31:49,476 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.82ms
+2017-07-30 14:32:54,136 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.54ms
+2017-07-30 14:32:59,724 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 1.76ms
+2017-07-30 14:33:12,945 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 1.99ms
+2017-07-30 15:32:50,637 - root - INFO - [CRON] Started @15h ,but not executed .17
+2017-07-30 16:23:50,110 - tornado.application - ERROR - Uncaught exception POST /t/post/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '140', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 123, in post
+    markdown_content=content)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4926, in get_or_create
+    query = query.where(getattr(cls, field) == value)
+AttributeError: type object 'markdownNotice' has no attribute 'markdown_content'
+2017-07-30 16:23:50,131 - tornado.access - ERROR - 500 POST /t/post/ (127.0.0.1) 28.19ms
+2017-07-30 16:23:50,187 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 6.35ms
+2017-07-30 16:23:50,989 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 45.92ms
+2017-07-30 16:23:51,038 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.16ms
+2017-07-30 16:23:51,053 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.14ms
+2017-07-30 16:23:51,061 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.63ms
+2017-07-30 16:23:51,076 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.07ms
+2017-07-30 16:28:14,053 - tornado.application - ERROR - Uncaught exception POST /t/post/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '140', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 123, in post
+    markdown_content=content)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4926, in get_or_create
+    query = query.where(getattr(cls, field) == value)
+AttributeError: type object 'markdownNotice' has no attribute 'markdown_content'
+2017-07-30 16:28:14,058 - tornado.access - ERROR - 500 POST /t/post/ (127.0.0.1) 6.51ms
+2017-07-30 16:28:14,121 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 1.35ms
+2017-07-30 16:28:26,001 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 6.45ms
+2017-07-30 16:28:26,050 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.78ms
+2017-07-30 16:28:26,061 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.83ms
+2017-07-30 16:28:26,068 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 2.17ms
+2017-07-30 16:28:26,081 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.83ms
+2017-07-30 16:29:34,317 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 11.27ms
+2017-07-30 16:29:34,380 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.24ms
+2017-07-30 16:29:34,389 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.14ms
+2017-07-30 16:29:34,397 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.27ms
+2017-07-30 16:29:34,410 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.81ms
+2017-07-30 16:32:13,564 - tornado.application - ERROR - Uncaught exception POST /t/post/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '142', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/', 'Cache-Control': 'max-age=0', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 123, in post
+    isTop=isTop,
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4926, in get_or_create
+    query = query.where(getattr(cls, field) == value)
+AttributeError: type object 'markdownNotice' has no attribute 'markdown_content'
+2017-07-30 16:32:13,568 - tornado.access - ERROR - 500 POST /t/post/ (127.0.0.1) 5.11ms
+2017-07-30 16:32:55,911 - tornado.application - ERROR - Uncaught exception POST /t/post/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '142', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/', 'Cache-Control': 'max-age=0', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 125, in post
+    publish_status=publish_status)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4926, in get_or_create
+    query = query.where(getattr(cls, field) == value)
+AttributeError: type object 'markdownNotice' has no attribute 'isTop'
+2017-07-30 16:32:55,923 - tornado.access - ERROR - 500 POST /t/post/ (127.0.0.1) 19.04ms
+2017-07-30 16:33:28,469 - tornado.application - ERROR - Uncaught exception POST /t/post/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '142', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/', 'Cache-Control': 'max-age=0', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 125, in post
+    publish_status=publish_status)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1267, "Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='")
+2017-07-30 16:33:28,506 - tornado.access - ERROR - 500 POST /t/post/ (127.0.0.1) 48.20ms
+2017-07-30 16:38:45,749 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.13ms
+2017-07-30 16:38:59,544 - tornado.application - ERROR - Uncaught exception POST /t/post/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '117', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/', 'Cache-Control': 'max-age=0', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 126, in post
+    saved_notice.save()
+AttributeError: 'tuple' object has no attribute 'save'
+2017-07-30 16:38:59,548 - tornado.access - ERROR - 500 POST /t/post/ (127.0.0.1) 54.04ms
+2017-07-30 16:39:32,120 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 57.03ms
+2017-07-30 16:39:42,484 - tornado.access - INFO - 302 GET /t (127.0.0.1) 1.32ms
+2017-07-30 16:39:42,519 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 28.96ms
+2017-07-30 16:39:42,941 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 15.45ms
+2017-07-30 16:40:18,263 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 56.90ms
+2017-07-30 16:41:19,299 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 17.46ms
+2017-07-30 16:41:19,499 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 15.95ms
+2017-07-30 16:41:20,072 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 8.11ms
+2017-07-30 16:41:20,225 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.57ms
+2017-07-30 16:41:26,102 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 16.73ms
+2017-07-30 16:41:47,055 - tornado.access - INFO - 200 POST /t/post/ (127.0.0.1) 237.81ms
+2017-07-30 16:41:49,844 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 6.73ms
+2017-07-30 16:41:50,086 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.35ms
+2017-07-30 16:41:52,875 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 7.79ms
+2017-07-30 16:41:53,056 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.35ms
+2017-07-30 16:41:53,740 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 8.86ms
+2017-07-30 16:41:53,902 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 4.82ms
+2017-07-30 16:42:10,332 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 10.29ms
+2017-07-30 16:42:12,708 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 8.79ms
+2017-07-30 16:42:15,961 - tornado.access - WARNING - 404 GET /t/post/4/ (127.0.0.1) 8.67ms
+2017-07-30 16:42:24,920 - tornado.access - WARNING - 404 GET /t/post/3/ (127.0.0.1) 4.24ms
+2017-07-30 16:42:28,593 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 9.99ms
+2017-07-30 16:44:37,368 - tornado.access - INFO - 200 POST /t/post/3 (127.0.0.1) 193.27ms
+2017-07-30 16:44:53,829 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 20.34ms
+2017-07-30 16:44:53,903 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 40.72ms
+2017-07-30 16:44:53,905 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.05ms
+2017-07-30 16:44:53,907 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.07ms
+2017-07-30 16:44:53,909 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.50ms
+2017-07-30 16:45:03,833 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 10.72ms
+2017-07-30 16:45:03,872 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 0.95ms
+2017-07-30 16:45:03,875 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.77ms
+2017-07-30 16:45:03,877 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.90ms
+2017-07-30 16:45:03,879 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.10ms
+2017-07-30 17:08:11,652 - tornado.application - ERROR - Uncaught exception GET /t/post/3 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/t/post/3', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Cache-Control': 'max-age=0', 'If-None-Match': '"339f81e33224fe7d9c6af5a61df7c1ebdfce2607"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 97, in get
+    changed_notice = markdownNotice.select().get(id=notice_id)
+TypeError: get() got an unexpected keyword argument 'id'
+2017-07-30 17:08:11,660 - tornado.access - ERROR - 500 GET /t/post/3 (127.0.0.1) 12.43ms
+2017-07-30 17:08:41,758 - tornado.application - ERROR - Uncaught exception GET /t/post/3 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/t/post/3', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 97, in get
+    changed_notice = markdownNotice.select().get(markdownNotice.id==notice_id)
+TypeError: get() takes exactly 1 argument (2 given)
+2017-07-30 17:08:41,765 - tornado.access - ERROR - 500 GET /t/post/3 (127.0.0.1) 11.77ms
+2017-07-30 17:10:07,262 - tornado.application - ERROR - Uncaught exception GET /t/post/3 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/t/post/3', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 110, in get
+    self.render('notification/post.html',**args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "notification/post_html.generated.py", line 157, in _tt_execute
+    _tt_tmp = changed_notice.title  # notification/post.html:63 (via notification/base.html:12)
+AttributeError: 'SelectQuery' object has no attribute 'title'
+2017-07-30 17:10:07,283 - tornado.access - ERROR - 500 GET /t/post/3 (127.0.0.1) 46.75ms
+2017-07-30 17:10:57,865 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 22.98ms
+2017-07-30 17:11:11,826 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.41ms
+2017-07-30 17:13:08,415 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 24.56ms
+2017-07-30 17:13:11,132 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.19ms
+2017-07-30 17:13:15,406 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 8.16ms
+2017-07-30 17:13:16,341 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.59ms
+2017-07-30 17:13:19,028 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 7.97ms
+2017-07-30 17:46:46,474 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 37.88ms
+2017-07-30 17:47:30,042 - tornado.access - INFO - 200 POST /t/post/3 (127.0.0.1) 112.50ms
+2017-07-30 17:47:33,343 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 10.74ms
+2017-07-30 17:47:43,596 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 10.05ms
+2017-07-30 17:47:44,059 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 16.15ms
+2017-07-30 18:46:43,142 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-07-30 19:46:43,109 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-07-30 20:21:23,052 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 76.54ms
+2017-07-30 20:21:25,419 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 9.91ms
+2017-07-30 20:21:28,015 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 9.45ms
+2017-07-30 20:22:23,945 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 34.20ms
+2017-07-30 20:23:35,076 - tornado.application - ERROR - Uncaught exception POST /t/post/3 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/t/post/3', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '306', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/t/post/3', 'Cache-Control': 'max-age=0', 'Cookie': 'Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; _xsrf=2|caa0ac69|fa5e7268f50a8aba35583bdd7812c1b5|1500050134; username="2|1:0|10:1500363515|8:username|8:a2lkb3po|42ccb8d3f08accba97a1bc98c14c76531089e1709e1038fed84b4dddf0368129"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/notification/view.py", line 144, in post
+    print(insert)
+UnboundLocalError: local variable 'insert' referenced before assignment
+2017-07-30 20:23:35,084 - tornado.access - ERROR - 500 POST /t/post/3 (127.0.0.1) 104.16ms
+2017-07-30 20:24:06,799 - tornado.access - INFO - 200 POST /t/post/3 (127.0.0.1) 82.55ms
+2017-07-30 20:24:11,897 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 23.25ms
+2017-07-30 20:24:13,825 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 7.79ms
+2017-07-30 20:24:18,064 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.57ms
+2017-07-30 20:24:19,135 - tornado.access - INFO - 200 GET /t/post/5 (127.0.0.1) 7.26ms
+2017-07-30 20:24:35,789 - tornado.access - INFO - 200 POST /t/post/5 (127.0.0.1) 44.23ms
+2017-07-30 20:24:38,477 - tornado.access - INFO - 200 GET /t/post/5 (127.0.0.1) 8.27ms
+2017-07-30 20:24:39,917 - tornado.access - INFO - 200 GET /t/post/5 (127.0.0.1) 5.78ms
+2017-07-30 20:24:41,376 - tornado.access - INFO - 200 GET /t/post/5 (127.0.0.1) 8.49ms
+2017-07-30 20:24:43,515 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 8.04ms
+2017-07-30 20:24:54,174 - tornado.access - INFO - 200 POST /t/post/4 (127.0.0.1) 60.77ms
+2017-07-30 20:24:57,183 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.29ms
+2017-07-30 20:24:58,417 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 8.26ms
+2017-07-30 20:24:59,418 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.82ms
+2017-07-30 20:25:00,175 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 6.38ms
+2017-07-30 20:25:44,969 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 26.44ms
+2017-07-30 20:25:45,000 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 4.27ms
+2017-07-30 20:25:45,003 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.24ms
+2017-07-30 20:25:45,006 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.89ms
+2017-07-30 20:25:45,008 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.03ms
+2017-07-30 20:54:13,397 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 15.12ms
+2017-07-30 20:54:13,710 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 31.24ms
+2017-07-30 20:56:28,168 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 5.77ms
+2017-07-30 21:08:18,579 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 33.60ms
+2017-07-30 21:08:18,615 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 3.82ms
+2017-07-30 21:08:18,618 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.98ms
+2017-07-30 21:08:18,620 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.31ms
+2017-07-30 21:08:18,622 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.23ms
+2017-07-30 21:08:27,904 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 7.80ms
+2017-07-30 21:16:42,866 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 9.01ms
+2017-07-30 21:23:23,783 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.83ms
+2017-07-30 21:23:23,813 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.08ms
+2017-07-30 21:23:23,817 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.15ms
+2017-07-30 21:23:23,821 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.05ms
+2017-07-30 21:23:23,823 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.12ms
+2017-07-30 21:24:00,621 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 29.65ms
+2017-07-30 21:24:00,653 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 5.11ms
+2017-07-30 21:24:00,655 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.64ms
+2017-07-30 21:24:00,656 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.66ms
+2017-07-30 21:24:00,657 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.70ms
+2017-07-30 21:24:09,523 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 8.75ms
+2017-07-30 21:24:09,548 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 0.96ms
+2017-07-30 21:24:09,551 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.49ms
+2017-07-30 21:24:09,553 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.00ms
+2017-07-30 21:24:09,555 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.74ms
+2017-07-30 21:24:27,866 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 8.00ms
+2017-07-30 21:24:38,107 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.71ms
+2017-07-30 21:24:38,140 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.20ms
+2017-07-30 21:24:38,142 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.66ms
+2017-07-30 21:24:38,144 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.07ms
+2017-07-30 21:24:38,146 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.03ms
+2017-07-30 21:25:25,175 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 26.89ms
+2017-07-30 21:25:25,207 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 3.88ms
+2017-07-30 21:25:25,215 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.25ms
+2017-07-30 21:25:25,218 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.29ms
+2017-07-30 21:25:25,220 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.14ms
+2017-07-30 21:26:37,220 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 8.99ms
+2017-07-30 21:26:46,373 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 10.39ms
+2017-07-30 21:26:46,645 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 21.34ms
+2017-07-30 21:35:18,813 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 7.38ms
+2017-07-30 21:35:18,855 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.00ms
+2017-07-30 21:35:18,862 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.06ms
+2017-07-30 21:35:18,864 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.11ms
+2017-07-30 21:35:18,866 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.34ms
+2017-07-30 21:35:43,176 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 9.25ms
+2017-07-30 21:35:43,205 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.00ms
+2017-07-30 21:35:43,207 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.70ms
+2017-07-30 21:35:43,208 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.62ms
+2017-07-30 21:35:43,209 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.68ms
+2017-07-30 21:35:47,345 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 9.12ms
+2017-07-30 21:35:47,387 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.05ms
+2017-07-30 21:35:47,389 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.05ms
+2017-07-30 21:35:47,391 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.25ms
+2017-07-30 21:35:47,393 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.48ms
+2017-07-30 21:36:53,287 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 6.00ms
+2017-07-30 21:36:53,336 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.66ms
+2017-07-30 21:36:53,343 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 2.73ms
+2017-07-30 21:36:53,347 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.28ms
+2017-07-30 21:36:53,356 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.26ms
+2017-07-30 21:36:54,456 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 2.16ms
+2017-07-30 21:36:56,135 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 7.59ms
+2017-07-30 21:37:43,265 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 29.08ms
+2017-07-30 21:37:43,324 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 5.86ms
+2017-07-30 21:37:43,340 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.16ms
+2017-07-30 21:37:43,349 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 4.24ms
+2017-07-30 21:37:43,358 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.36ms
+2017-07-30 21:38:18,490 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 24.19ms
+2017-07-30 21:38:18,537 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 5.94ms
+2017-07-30 21:38:18,540 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.13ms
+2017-07-30 21:38:18,546 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.21ms
+2017-07-30 21:38:18,555 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.83ms
+2017-07-30 21:48:10,467 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 24.26ms
+2017-07-30 21:48:10,517 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 6.18ms
+2017-07-30 21:48:10,530 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.40ms
+2017-07-30 21:48:10,540 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.35ms
+2017-07-30 21:48:10,553 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.17ms
+2017-07-30 21:51:35,715 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 26.10ms
+2017-07-30 21:51:35,794 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 5.46ms
+2017-07-30 21:51:35,801 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.86ms
+2017-07-30 21:51:35,815 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.97ms
+2017-07-30 21:51:35,826 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.90ms
+2017-07-30 21:51:43,607 - tornado.access - INFO - 302 GET /admin (127.0.0.1) 1.48ms
+2017-07-30 21:51:43,619 - tornado.access - WARNING - 404 GET /admin/ (127.0.0.1) 4.56ms
+2017-07-30 21:51:43,661 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 1.10ms
+2017-07-30 21:51:59,369 - tornado.access - INFO - 302 GET /admin/log (127.0.0.1) 3.73ms
+2017-07-30 21:51:59,379 - tornado.access - WARNING - 404 GET /admin/log/ (127.0.0.1) 3.13ms
+2017-07-30 21:51:59,424 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 1.05ms
+2017-07-30 21:52:03,731 - tornado.access - INFO - 302 GET /admin/login (127.0.0.1) 1.30ms
+2017-07-30 21:52:03,784 - tornado.access - INFO - 200 GET /admin/login/ (127.0.0.1) 48.47ms
+2017-07-30 21:52:03,829 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (127.0.0.1) 1.34ms
+2017-07-30 21:52:03,845 - tornado.access - INFO - 200 GET /static/admin/css/style.css (127.0.0.1) 0.64ms
+2017-07-30 21:52:08,014 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1123.88ms
+2017-07-30 21:52:08,062 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (127.0.0.1) 1.29ms
+2017-07-30 21:52:08,077 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (127.0.0.1) 1.32ms
+2017-07-30 21:52:08,207 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (127.0.0.1) 1.00ms
+2017-07-30 21:52:08,222 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (127.0.0.1) 0.67ms
+2017-07-30 21:52:08,836 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.67ms
+2017-07-30 22:51:33,211 - root - INFO - [CRON] Started @22h ,but not executed .17
+2017-07-30 23:32:40,491 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1016.04ms
+2017-07-30 23:32:40,974 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.55ms
+2017-07-30 23:32:45,153 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1017.79ms
+2017-07-30 23:32:45,350 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.42ms
+2017-07-30 23:32:52,879 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1014.08ms
+2017-07-30 23:32:53,068 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.69ms
+2017-07-30 23:32:59,410 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1015.43ms
+2017-07-30 23:32:59,623 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.47ms
+2017-07-30 23:33:04,627 - tornado.access - INFO - 302 GET /admin/login (127.0.0.1) 2.59ms
+2017-07-30 23:33:04,638 - tornado.access - INFO - 200 GET /admin/login/ (127.0.0.1) 5.24ms
+2017-07-30 23:33:12,966 - tornado.access - INFO - 200 POST /admin/login/ (127.0.0.1) 24.93ms
+2017-07-30 23:33:17,230 - tornado.access - INFO - 200 POST /admin/login/ (127.0.0.1) 4.70ms
+2017-07-30 23:33:22,185 - tornado.access - INFO - 302 GET /admin/login (127.0.0.1) 1.34ms
+2017-07-30 23:33:22,195 - tornado.access - INFO - 200 GET /admin/login/ (127.0.0.1) 4.85ms
+2017-07-30 23:33:25,460 - tornado.access - INFO - 302 POST /admin/login/ (127.0.0.1) 298.79ms
+2017-07-30 23:33:26,486 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1020.45ms
+2017-07-30 23:33:26,902 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.67ms
+2017-07-30 23:33:48,495 - tornado.access - INFO - 302 GET /admin/manage/ (127.0.0.1) 2.07ms
+2017-07-30 23:33:48,504 - tornado.access - INFO - 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (127.0.0.1) 2.74ms
+2017-07-30 23:33:51,128 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 5.98ms
+2017-07-30 23:34:03,025 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.88ms
+2017-07-30 23:34:04,124 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 6.47ms
+2017-07-30 23:34:10,009 - tornado.access - INFO - 200 GET /t/post/5 (127.0.0.1) 6.28ms
+2017-07-30 23:35:20,942 - tornado.access - INFO - 302 GET /t/post/5 (127.0.0.1) 6.41ms
+2017-07-30 23:35:20,956 - tornado.access - INFO - 200 GET /admin/login/?next=%2Ft%2Fpost%2F5 (127.0.0.1) 7.85ms
+2017-07-30 23:35:24,126 - tornado.access - INFO - 302 POST /admin/login/ (127.0.0.1) 304.02ms
+2017-07-30 23:35:25,173 - tornado.access - INFO - 200 GET /admin/manage/ (127.0.0.1) 1039.93ms
+2017-07-30 23:35:25,709 - tornado.access - INFO - 101 GET /admin/serverStatusWS (127.0.0.1) 0.51ms
+2017-07-30 23:35:30,111 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 19.47ms
+2017-07-30 23:35:31,264 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 5.37ms
+2017-07-30 23:35:38,333 - tornado.access - INFO - 200 POST /t/post/4 (127.0.0.1) 44.00ms

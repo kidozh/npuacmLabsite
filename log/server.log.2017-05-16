@@ -1,0 +1,273 @@
+2017-05-16 17:22:18,302 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-05-16 17:22:18,303 - tornado.application - WARNING - Multiple handlers named contestRegister.views.registerRequestHandler; replacing previous value
+2017-05-16 17:22:26,805 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 5, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('site_name')  # portal/base.html:5
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 17, in render
+    if configOption.select().where(configOption.name == option).exists():
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3166, in exists
+    return bool(clone.scalar())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2911, in scalar
+    row = self._execute().fetchone()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3756, in execute_sql
+    cursor = self.get_cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3704, in get_cursor
+    return self.get_conn().cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3693, in get_conn
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+2017-05-16 17:22:26,990 - tornado.access - ERROR - 500 GET / (::1) 301.38ms
+2017-05-16 17:22:27,243 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 15.09ms
+2017-05-16 17:22:59,671 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 5, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('site_name')  # portal/base.html:5
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 17, in render
+    if configOption.select().where(configOption.name == option).exists():
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3166, in exists
+    return bool(clone.scalar())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2911, in scalar
+    row = self._execute().fetchone()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3756, in execute_sql
+    cursor = self.get_cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3704, in get_cursor
+    return self.get_conn().cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3693, in get_conn
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+2017-05-16 17:22:59,674 - tornado.access - ERROR - 500 GET / (::1) 3.96ms
+2017-05-16 17:23:42,463 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-05-16 17:23:42,463 - tornado.application - WARNING - Multiple handlers named contestRegister.views.registerRequestHandler; replacing previous value
+2017-05-16 17:23:46,712 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 5, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('site_name')  # portal/base.html:5
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 17, in render
+    if configOption.select().where(configOption.name == option).exists():
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3166, in exists
+    return bool(clone.scalar())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2911, in scalar
+    row = self._execute().fetchone()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3756, in execute_sql
+    cursor = self.get_cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3704, in get_cursor
+    return self.get_conn().cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3693, in get_conn
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' (111)")
+2017-05-16 17:23:46,716 - tornado.access - ERROR - 500 GET / (::1) 20.20ms
+2017-05-16 17:32:06,396 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-05-16 17:32:06,397 - tornado.application - WARNING - Multiple handlers named contestRegister.views.registerRequestHandler; replacing previous value
+2017-05-16 17:32:13,077 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-05-16 17:32:13,078 - tornado.application - WARNING - Multiple handlers named contestRegister.views.registerRequestHandler; replacing previous value
+2017-05-16 17:32:17,466 - tornado.access - INFO - 200 GET / (::1) 142.44ms
+2017-05-16 17:32:17,494 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (::1) 4.97ms
+2017-05-16 17:32:17,496 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 1.02ms
+2017-05-16 17:32:17,498 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.98ms
+2017-05-16 17:32:17,500 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 1.30ms
+2017-05-16 17:32:18,077 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 1.18ms
+2017-05-16 17:32:18,085 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 1.42ms
+2017-05-16 17:32:18,090 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 1.12ms
+2017-05-16 17:32:18,095 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (::1) 1.31ms
+2017-05-16 17:32:18,783 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 1.90ms
+2017-05-16 17:32:57,591 - tornado.access - INFO - 302 GET /usefulTools/deut (::1) 0.71ms
+2017-05-16 17:32:57,687 - tornado.access - WARNING - 404 GET /usefulTools/deut/ (::1) 91.19ms
+2017-05-16 17:32:57,709 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 1.07ms
+2017-05-16 17:33:20,878 - tornado.access - INFO - 302 GET /usefulTools/deustch_score_transfer (::1) 2.11ms
+2017-05-16 17:33:20,885 - tornado.access - WARNING - 404 GET /usefulTools/deustch_score_transfer/ (::1) 2.44ms
+2017-05-16 17:33:46,187 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-05-16 17:33:46,187 - tornado.application - WARNING - Multiple handlers named contestRegister.views.registerRequestHandler; replacing previous value
+2017-05-16 17:33:47,466 - tornado.access - WARNING - 404 GET /usefulTools/deustch_score_transfer/ (::1) 12.69ms
+2017-05-16 17:35:04,640 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-05-16 17:35:04,641 - tornado.application - WARNING - Multiple handlers named contestRegister.views.registerRequestHandler; replacing previous value
+2017-05-16 17:35:18,763 - tornado.access - WARNING - 404 GET /usefulTools/deustch_score_transfer/ (::1) 12.57ms
+2017-05-16 17:35:21,740 - tornado.access - INFO - 302 GET /usefulTools/deustch_score_transfer1 (::1) 2.11ms
+2017-05-16 17:35:21,749 - tornado.access - WARNING - 404 GET /usefulTools/deustch_score_transfer1/ (::1) 3.62ms
+2017-05-16 17:36:12,369 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer1/ (::1) 17.43ms
+2017-05-16 17:36:23,478 - tornado.application - ERROR - Uncaught exception GET /usefulTools/deustch_score_transfer/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/usefulTools/deustch_score_transfer/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/usefulTools/views.py", line 14, in get
+    raise e
+IOError: [Errno 2] No such file or directory: '/home/exbot/code/python/tornado/Tjango/templates/usefulTools/navbar.html'
+2017-05-16 17:36:23,481 - tornado.access - ERROR - 500 GET /usefulTools/deustch_score_transfer/ (::1) 7.28ms
+2017-05-16 17:36:52,573 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 28.77ms
+2017-05-16 17:36:52,597 - tornado.access - INFO - 200 GET /static/css/plag/style.css?v=519f467b6708ee1d0141d3d2ccb91ac6 (::1) 5.10ms
+2017-05-16 17:37:47,587 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 26.54ms
+2017-05-16 17:38:33,273 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 30.49ms
+2017-05-16 17:38:42,360 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 20.24ms
+2017-05-16 17:40:52,061 - tornado.access - INFO - 200 GET / (::1) 13.27ms
+2017-05-16 17:43:33,816 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 18.25ms
+2017-05-16 17:44:25,748 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 18.04ms
+2017-05-16 17:44:25,766 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=5c42a718a61e83f05434cb4c079c397a (::1) 3.24ms
+2017-05-16 17:45:55,666 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 23.23ms
+2017-05-16 17:45:55,686 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=eae81e1dbf9aa7219142d954ac2a5aeb (::1) 3.72ms
+2017-05-16 17:47:07,361 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 24.38ms
+2017-05-16 17:47:07,387 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=21df1462ecf3e50801bcead89d1fcd09 (::1) 4.75ms
+2017-05-16 17:48:15,105 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.90ms
+2017-05-16 17:48:15,125 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=9fa6f4f6ed4210f3459854cea4a86d83 (::1) 4.98ms
+2017-05-16 17:48:26,938 - tornado.access - INFO - 302 GET /plag (::1) 1.48ms
+2017-05-16 17:48:27,179 - tornado.access - INFO - 200 GET /plag/ (::1) 231.82ms
+2017-05-16 17:48:27,489 - tornado.access - INFO - 200 GET /static/image/plag/background/geometry2.png (::1) 11.07ms
+2017-05-16 17:48:27,491 - tornado.access - INFO - 200 GET /static/image/plag/background/seigaiha.png (::1) 2.12ms
+2017-05-16 17:48:31,796 - tornado.access - INFO - 200 GET /plag/doc/terms_of_service/ (::1) 36.40ms
+2017-05-16 17:52:32,665 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 22.37ms
+2017-05-16 17:52:32,689 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=5f5e3ed272aac9cb2d5289269957143c (::1) 6.58ms
+2017-05-16 17:52:55,896 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 20.89ms
+2017-05-16 17:53:12,045 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 24.28ms
+2017-05-16 17:55:21,176 - tornado.access - INFO - 304 GET / (::1) 21.89ms
+2017-05-16 17:55:30,943 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 15.96ms
+2017-05-16 17:55:36,855 - tornado.access - INFO - 304 GET /usefulTools/deustch_score_transfer/ (::1) 19.84ms
+2017-05-16 17:56:26,196 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 25.90ms
+2017-05-16 18:00:27,874 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 24.48ms
+2017-05-16 18:00:42,067 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 16.96ms
+2017-05-16 18:01:28,491 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 18.22ms
+2017-05-16 18:01:28,513 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=5e31176a381858a88f2fae71d357df2c (::1) 5.90ms
+2017-05-16 18:08:38,477 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 22.22ms
+2017-05-16 18:09:59,951 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 25.82ms
+2017-05-16 18:10:46,901 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.68ms
+2017-05-16 18:11:07,775 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.53ms
+2017-05-16 18:12:27,142 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 21.43ms
+2017-05-16 18:12:57,111 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 25.30ms
+2017-05-16 18:13:33,621 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 20.31ms
+2017-05-16 18:16:24,954 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 25.61ms
+2017-05-16 18:16:24,982 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=86a8c3b48e7ad15bb14c65e6c24358f1 (::1) 6.44ms
+2017-05-16 18:16:44,883 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 17.23ms
+2017-05-16 18:16:44,905 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=fb29dbf3b68626844cb181d04c127250 (::1) 5.15ms
+2017-05-16 18:20:38,776 - tornado.access - INFO - 304 GET /plag/doc/terms_of_service/ (::1) 26.71ms
+2017-05-16 18:20:46,186 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 14.22ms
+2017-05-16 18:23:01,950 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 21.46ms
+2017-05-16 18:23:25,568 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 24.28ms
+2017-05-16 18:23:59,361 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.06ms
+2017-05-16 18:23:59,381 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=5a8df060568bcb30295dc03db33c6171 (::1) 3.26ms
+2017-05-16 18:25:51,405 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 27.29ms
+2017-05-16 18:27:13,035 - tornado.access - INFO - 304 GET /usefulTools/deustch_score_transfer/ (::1) 9.82ms
+2017-05-16 18:28:00,876 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 26.53ms
+2017-05-16 18:30:55,730 - tornado.access - INFO - 304 GET /usefulTools/deustch_score_transfer/ (::1) 29.87ms
+2017-05-16 18:31:36,765 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 18.01ms
+2017-05-16 18:31:43,927 - tornado.access - INFO - 304 GET /usefulTools/deustch_score_transfer/ (::1) 9.17ms
+2017-05-16 18:34:04,803 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 29.05ms
+2017-05-16 18:34:49,719 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 20.41ms
+2017-05-16 18:40:27,729 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 21.35ms
+2017-05-16 18:42:03,365 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 26.07ms
+2017-05-16 18:42:16,887 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 23.60ms
+2017-05-16 18:46:25,592 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 24.98ms
+2017-05-16 18:50:04,271 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.29ms
+2017-05-16 18:50:34,044 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 22.38ms
+2017-05-16 18:51:27,679 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.15ms
+2017-05-16 19:52:40,192 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.55ms
+2017-05-16 19:58:33,673 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 24.60ms
+2017-05-16 19:58:57,444 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 21.93ms
+2017-05-16 19:59:42,908 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 18.60ms
+2017-05-16 20:02:38,358 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 17.76ms
+2017-05-16 20:02:38,712 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 1.18ms
+2017-05-16 20:03:28,620 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 19.96ms
+2017-05-16 20:10:58,527 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 21.18ms
+2017-05-16 20:11:37,867 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 22.55ms
+2017-05-16 20:23:05,072 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 21.47ms
+2017-05-16 20:27:23,172 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 22.06ms
+2017-05-16 20:27:23,197 - tornado.access - INFO - 200 GET /static/css/usefulTools/style.css?v=92958cef4c6aa35368a7924998af29bb (::1) 5.69ms
+2017-05-16 20:28:14,489 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 25.07ms
+2017-05-16 20:35:03,842 - tornado.access - INFO - 200 GET /usefulTools/deustch_score_transfer/ (::1) 26.48ms

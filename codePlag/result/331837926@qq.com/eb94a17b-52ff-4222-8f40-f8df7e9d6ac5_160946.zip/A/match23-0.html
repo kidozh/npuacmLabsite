@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8970132_npugenji_A.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8970132_npugenji_A.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;algorithm&gt;
+#include &lt;cstdio&gt;
+#include &lt;string&gt;
+
+using namespace std;
+int que[22];
+int n,m,cnt,k;
+
+
+int main()
+{
+    int t;
+    cin&gt;&gt;t;
+    while (t--)
+<A NAME="0"></A>    {
+        cnt=0;
+        scanf(&quot;%d&quot;,&amp;k);
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match23-1.html#0',3,'match23-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>        for (int i=0;i&lt;20;i++) scanf(&quot;%d&quot;,&amp;que[i]);
+        for (int i=1;i&lt;20;i++)
+            for (int j=0;j&lt;i;j++)
+                if (que[j]&gt;que[i]) cnt++;
+        printf(&quot;%d %d\n&quot;,k,cnt);
+    }
+    return 0;
+}</B></FONT>
+</PRE>
+</BODY>
+</HTML>

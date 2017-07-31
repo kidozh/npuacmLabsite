@@ -1,0 +1,593 @@
+2017-04-08 14:44:15,566 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 76, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('SITE_NAME')  # portal/index.html:149 (via portal/base.html:45)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1556, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 36, in render
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'npuacm'")
+2017-04-08 14:44:15,570 - tornado.access - ERROR - 500 GET / (::1) 73.70ms
+2017-04-08 14:44:15,597 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 1.14ms
+2017-04-08 14:47:11,097 - tornado.access - INFO - 200 GET / (::1) 13.81ms
+2017-04-08 14:47:11,129 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f589302225e020a5a7847bfb4f0d2e80 (::1) 3.51ms
+2017-04-08 14:47:11,130 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.76ms
+2017-04-08 14:47:11,132 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 1.28ms
+2017-04-08 14:47:11,133 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.76ms
+2017-04-08 14:47:11,288 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 1.01ms
+2017-04-08 14:47:11,290 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.60ms
+2017-04-08 14:47:11,292 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.61ms
+2017-04-08 14:47:21,262 - tornado.access - INFO - 304 GET / (::1) 2.64ms
+2017-04-08 14:47:21,384 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 1.26ms
+2017-04-08 14:48:06,479 - tornado.access - INFO - 302 GET /admin/login (::1) 2.27ms
+2017-04-08 14:48:06,497 - tornado.access - INFO - 200 GET /admin/login/ (::1) 12.11ms
+2017-04-08 14:48:06,534 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 1.25ms
+2017-04-08 14:48:06,545 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 0.59ms
+2017-04-08 14:48:15,388 - tornado.access - INFO - 302 POST /admin/login/ (::1) 311.85ms
+2017-04-08 14:48:15,394 - tornado.application - ERROR - Uncaught exception GET /admin/manage/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|72c9d747|1c7e68c94dada6dd18d3bba05036fa52|1491634086; username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 2829, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 114, in get
+    logicalCPU = psutil.cpu_count(logical=True)
+AttributeError: 'module' object has no attribute 'cpu_count'
+2017-04-08 14:48:15,397 - tornado.access - ERROR - 500 GET /admin/manage/ (::1) 5.85ms
+2017-04-08 14:54:16,736 - tornado.application - ERROR - Uncaught exception GET /admin/manage/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; _xsrf=2|72c9d747|1c7e68c94dada6dd18d3bba05036fa52|1491634086; username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 2829, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 146, in get
+    self.render('contrib/admin/manage.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contrib/admin/manage_html.generated.py", line 174, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('LOGFILE')  # contrib/admin/manage.html:298 (via contrib/admin/manageBase.html:52)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1556, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 36, in render
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-08 14:54:16,747 - tornado.access - ERROR - 500 GET /admin/manage/ (::1) 1067.01ms
+2017-04-08 14:55:20,022 - tornado.application - ERROR - Uncaught exception GET /admin/manage/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; _xsrf=2|72c9d747|1c7e68c94dada6dd18d3bba05036fa52|1491634086; username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 2829, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 146, in get
+    self.render('contrib/admin/manage.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contrib/admin/manage_html.generated.py", line 174, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('LOGFILE')  # contrib/admin/manage.html:298 (via contrib/admin/manageBase.html:52)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1556, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 36, in render
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-08 14:55:20,033 - tornado.access - ERROR - 500 GET /admin/manage/ (::1) 1060.16ms
+2017-04-08 14:57:26,951 - tornado.access - INFO - 304 GET / (::1) 22.01ms
+2017-04-08 14:57:29,926 - tornado.access - INFO - 200 GET /query/ (::1) 8.16ms
+2017-04-08 14:57:29,953 - tornado.access - INFO - 200 GET /static/css/queryProblem/style.css?v=6048e518c91d28fc6ee9963bf5d39057 (::1) 5.21ms
+2017-04-08 14:57:38,304 - tornado.access - INFO - 302 GET /admin/login (::1) 2.24ms
+2017-04-08 14:57:38,322 - tornado.access - INFO - 200 GET /admin/login/ (::1) 15.82ms
+2017-04-08 14:57:41,152 - tornado.application - ERROR - Uncaught exception GET /admin/manage/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/', 'Cookie': '_accept_cookie=1; _xsrf=2|72c9d747|1c7e68c94dada6dd18d3bba05036fa52|1491634086; username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 2829, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 146, in get
+    self.render('contrib/admin/manage.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contrib/admin/manage_html.generated.py", line 174, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('LOGFILE')  # contrib/admin/manage.html:298 (via contrib/admin/manageBase.html:52)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1556, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 36, in render
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-08 14:57:41,160 - tornado.access - ERROR - 500 GET /admin/manage/ (::1) 1052.40ms
+2017-04-08 15:02:29,025 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1054.48ms
+2017-04-08 15:02:29,064 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 4.64ms
+2017-04-08 15:02:29,066 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 0.87ms
+2017-04-08 15:02:29,242 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.35ms
+2017-04-08 15:02:29,245 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.24ms
+2017-04-08 15:02:42,130 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 30.38ms
+2017-04-08 15:02:45,952 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.33ms
+2017-04-08 15:16:09,692 - tornado.access - INFO - 302 GET /contest2017 (::1) 8.68ms
+2017-04-08 15:16:09,704 - tornado.access - INFO - 200 GET /contest2017/ (::1) 9.53ms
+2017-04-08 15:16:09,724 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (::1) 3.96ms
+2017-04-08 15:16:09,725 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=dfb5a1f15a711a74fef68395cf5a2500 (::1) 0.58ms
+2017-04-08 15:16:09,726 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (::1) 0.53ms
+2017-04-08 15:16:09,727 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (::1) 0.51ms
+2017-04-08 15:16:12,968 - tornado.access - INFO - 200 GET /contest2017/ (::1) 4.61ms
+2017-04-08 15:16:50,843 - tornado.access - INFO - 200 GET /contest2017/ (::1) 14.78ms
+2017-04-08 15:42:52,776 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-04-08 15:43:05,575 - tornado.access - INFO - 302 GET /contest2017/register (::1) 7.79ms
+2017-04-08 15:43:05,590 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 7.21ms
+2017-04-08 15:43:05,918 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 2.62ms
+2017-04-08 15:43:37,403 - tornado.application - WARNING - Multiple handlers named contestRegister.views.portalRequestHandler; replacing previous value
+2017-04-08 15:43:39,290 - tornado.access - INFO - 304 GET /contest2017/register/ (::1) 19.20ms
+2017-04-08 15:44:13,448 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 19.60ms
+2017-04-08 15:47:13,251 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 19.53ms
+2017-04-08 15:51:33,846 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 19.51ms
+2017-04-08 15:57:51,198 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 18.38ms
+2017-04-08 15:57:51,225 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=d41d8cd98f00b204e9800998ecf8427e (::1) 4.50ms
+2017-04-08 15:57:53,661 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 2.71ms
+2017-04-08 15:57:54,158 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 4.08ms
+2017-04-08 16:05:07,150 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 23.04ms
+2017-04-08 16:05:07,173 - tornado.access - INFO - 200 GET /static/js/registerContest/jquery.dropkick-1.0.0.js?v=a1b1a2935eef5f5afbedee444cc01ee6 (::1) 4.31ms
+2017-04-08 16:05:07,175 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=1d907ac363dc670f9ad044889160394c (::1) 0.80ms
+2017-04-08 16:08:58,814 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 21.69ms
+2017-04-08 16:08:58,845 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=dda90c6c40853b35a1378ce61d166549 (::1) 6.73ms
+2017-04-08 16:09:13,515 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 3.23ms
+2017-04-08 16:11:32,261 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 18.96ms
+2017-04-08 16:11:32,282 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=6afee7c0f148bc8994c21e941f02cdb0 (::1) 6.07ms
+2017-04-08 16:13:41,370 - tornado.access - INFO - 200 GET /contest2017/ (::1) 17.23ms
+2017-04-08 16:15:38,436 - tornado.access - INFO - 200 GET /contest2017/ (::1) 15.02ms
+2017-04-08 16:15:44,310 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 5.63ms
+2017-04-08 16:20:29,075 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 20.53ms
+2017-04-08 16:29:33,949 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 5.19ms
+2017-04-08 16:29:39,543 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 19.61ms
+2017-04-08 16:31:32,103 - tornado.general - WARNING - 400 POST /contest2017/register/ (::1): Missing argument phone
+2017-04-08 16:31:32,110 - tornado.access - WARNING - 400 POST /contest2017/register/ (::1) 16.09ms
+2017-04-08 16:32:15,102 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 19.48ms
+2017-04-08 16:32:42,323 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '193', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contestRegister/views.py", line 47, in post
+    stuInfo.save()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 5098, in save
+    pk_from_cursor = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3516, in execute
+    cursor = self._execute()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'npuacm.studentinfo' doesn't exist")
+2017-04-08 16:32:42,332 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 10.51ms
+2017-04-08 16:33:40,437 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 68.06ms
+2017-04-08 16:34:48,261 - tornado.access - INFO - 302 GET /admin/manage/ (::1) 6.37ms
+2017-04-08 16:34:48,274 - tornado.access - INFO - 200 GET /admin/login/?next=%2Fadmin%2Fmanage%2F (::1) 10.51ms
+2017-04-08 16:34:54,730 - tornado.access - INFO - 302 POST /admin/login/ (::1) 306.57ms
+2017-04-08 16:34:55,780 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1048.51ms
+2017-04-08 16:35:02,315 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 25.46ms
+2017-04-08 16:35:03,111 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 9.89ms
+2017-04-08 16:39:55,945 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '193', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1446, in _execute
+    result = self.prepare()
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 11, in prepare
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 221, in __init__
+    self.set_character_set(charset)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 312, in set_character_set
+    super(Connection, self).set_character_set(charset)
+OperationalError: (2019, "Can't initialize character set utf-8 (path: /usr/share/mysql/charsets/)")
+2017-04-08 16:39:55,957 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 994, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 38, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 824, in render_string
+    namespace = self.get_template_namespace()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 840, in get_template_namespace
+    current_user=self.current_user,
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1115, in current_user
+    self._current_user = self.get_current_user()
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 25, in get_current_user
+    if admin.select().where(admin.username == username).exists():
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3166, in exists
+    return bool(clone.scalar())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2911, in scalar
+    row = self._execute().fetchone()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3756, in execute_sql
+    cursor = self.get_cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3704, in get_cursor
+    return self.get_conn().cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3693, in get_conn
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 221, in __init__
+    self.set_character_set(charset)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 312, in set_character_set
+    super(Connection, self).set_character_set(charset)
+OperationalError: (2019, "Can't initialize character set utf-8 (path: /usr/share/mysql/charsets/)")
+2017-04-08 16:39:55,958 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 20.83ms
+2017-04-08 16:40:29,689 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 15.19ms
+2017-04-08 16:40:54,435 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 122.36ms
+2017-04-08 16:40:59,896 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 39.23ms
+2017-04-08 16:41:00,635 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 10.33ms
+2017-04-08 16:48:35,588 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 48.61ms
+2017-04-08 16:48:41,632 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 40.85ms
+2017-04-08 16:48:50,227 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 105.33ms
+2017-04-08 16:48:53,306 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 45.68ms
+2017-04-08 16:48:54,055 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 12.65ms
+2017-04-08 16:50:09,824 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 72.13ms
+2017-04-08 16:50:17,464 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 33.08ms
+2017-04-08 16:50:18,189 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 8.64ms
+2017-04-08 16:50:56,225 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '237', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contestRegister/views.py", line 29, in post
+    name = self.get_argument('name').decode('utf8')
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-7: ordinal not in range(128)
+2017-04-08 16:50:56,237 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 22.04ms
+2017-04-08 16:51:22,870 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 73.80ms
+2017-04-08 16:51:28,956 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 37.84ms
+2017-04-08 16:51:29,716 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 13.45ms
+2017-04-08 16:51:34,201 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 49.67ms
+2017-04-08 16:51:35,999 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 24.47ms
+2017-04-08 16:51:36,596 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 10.33ms
+2017-04-08 16:55:25,389 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 67.54ms
+2017-04-08 16:55:28,766 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 34.13ms
+2017-04-08 16:55:29,525 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 14.29ms
+2017-04-08 16:57:20,683 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/change/1/ (::1) 32.53ms
+2017-04-08 17:02:57,693 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 84.46ms
+2017-04-08 17:05:34,098 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '237', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contestRegister/views.py", line 51, in post
+    self.render('contestRegister/result.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contestRegister/result_html.generated.py", line 19, in _tt_execute
+    _tt_tmp = dict(stuInfo.gender.choices)[stuInfo.gender]  # contestRegister/result.html:27 (via contestRegister/base.html:37)
+AttributeError: 'str' object has no attribute 'choices'
+2017-04-08 17:05:34,102 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 77.30ms
+2017-04-08 17:06:15,425 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '237', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contestRegister/views.py", line 51, in post
+    self.render('contestRegister/result.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contestRegister/result_html.generated.py", line 19, in _tt_execute
+    _tt_tmp = dict(studentInfo.gender.choices)[stuInfo.gender]  # contestRegister/result.html:27 (via contestRegister/base.html:37)
+NameError: global name 'studentInfo' is not defined
+2017-04-08 17:06:15,430 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 86.17ms
+2017-04-08 17:09:24,420 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '237', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contestRegister/views.py", line 51, in post
+    self.render('contestRegister/result.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contestRegister/result_html.generated.py", line 19, in _tt_execute
+    _tt_tmp = stuInfo.get_gender_display  # contestRegister/result.html:27 (via contestRegister/base.html:37)
+AttributeError: 'studentInfo' object has no attribute 'get_gender_display'
+2017-04-08 17:09:24,429 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 76.68ms
+2017-04-08 17:10:49,346 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 68.27ms
+2017-04-08 17:11:27,858 - tornado.application - ERROR - Uncaught exception POST /contest2017/register/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/contest2017/register/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '237', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/contest2017/register/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contestRegister/views.py", line 51, in post
+    self.render('contestRegister/result.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "contestRegister/result_html.generated.py", line 31, in _tt_execute
+    _tt_tmp = dict(stuInfo.schoolChoices)[stuInfo.college]  # contestRegister/result.html:35 (via contestRegister/base.html:37)
+AttributeError: 'studentInfo' object has no attribute 'schoolChoices'
+2017-04-08 17:11:27,862 - tornado.access - ERROR - 500 POST /contest2017/register/ (::1) 74.11ms
+2017-04-08 17:11:49,671 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 73.67ms
+2017-04-08 17:11:56,269 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 10.07ms
+2017-04-08 17:12:21,781 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 106.65ms
+2017-04-08 17:12:57,629 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 34.18ms
+2017-04-08 17:12:58,339 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 10.02ms
+2017-04-08 17:13:09,045 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/delete/1/ (::1) 35.28ms
+2017-04-08 17:14:01,193 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 10.42ms
+2017-04-08 17:14:01,777 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 27.54ms
+2017-04-08 17:14:02,342 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 10.75ms
+2017-04-08 17:23:34,277 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 17.15ms
+2017-04-08 17:23:39,869 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=01d6de1657851a0c30e593f3ac307da8 (::1) 4.52ms
+2017-04-08 17:24:23,684 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 24.37ms
+2017-04-08 17:26:53,564 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 19.91ms
+2017-04-08 17:27:09,206 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=bf2532f1dc370335fa50898c8ad4f6ae (::1) 5.27ms
+2017-04-08 17:27:29,992 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 4.63ms
+2017-04-08 17:29:44,078 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 12.53ms
+2017-04-08 17:30:28,240 - tornado.access - INFO - 200 GET /contest2017/ (::1) 9.86ms
+2017-04-08 17:32:24,105 - tornado.access - INFO - 200 GET /contest2017/ (::1) 5.18ms
+2017-04-08 17:32:24,152 - tornado.access - INFO - 200 GET /static/js/registerContest/jquery.dropkick-1.0.0.js?v=a1b1a2935eef5f5afbedee444cc01ee6 (::1) 3.63ms
+2017-04-08 17:32:24,154 - tornado.access - INFO - 200 GET /static/js/registerContest/index.js?v=6afee7c0f148bc8994c21e941f02cdb0 (::1) 0.82ms
+2017-04-08 17:32:56,401 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=bf2532f1dc370335fa50898c8ad4f6ae (::1) 0.74ms
+2017-04-08 17:33:30,844 - tornado.access - INFO - 200 GET /contest2017/ (::1) 17.16ms
+2017-04-08 17:34:10,281 - tornado.access - INFO - 200 GET /contest2017/ (::1) 20.69ms
+2017-04-08 17:34:10,303 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=914b78acca22bf87d93dcc5ad2e6cdd8 (::1) 6.61ms
+2017-04-08 17:34:30,395 - tornado.access - INFO - 304 GET /contest2017/ (::1) 2.83ms
+2017-04-08 17:34:32,876 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 9.23ms
+2017-04-08 17:35:31,363 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 21.27ms
+2017-04-08 17:36:38,910 - tornado.access - INFO - 200 GET /contest2017/ (::1) 21.83ms
+2017-04-08 17:36:38,932 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=00d51947d2c831b011db69429b4b7a6a (::1) 5.28ms
+2017-04-08 17:38:29,525 - tornado.access - INFO - 200 GET /contest2017/ (::1) 18.87ms
+2017-04-08 17:38:29,544 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=8cfb00500e34539bdb45cbb796f015fc (::1) 3.63ms
+2017-04-08 17:40:36,463 - tornado.access - INFO - 200 GET /contest2017/ (::1) 15.81ms
+2017-04-08 17:43:01,344 - tornado.access - INFO - 200 GET /contest2017/ (::1) 25.53ms
+2017-04-08 17:43:01,365 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 3.74ms
+2017-04-08 17:45:04,836 - tornado.access - INFO - 200 GET /contest2017/ (::1) 23.23ms
+2017-04-08 17:45:04,858 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=8f1eb71b737f715ace69890376af0e96 (::1) 4.38ms
+2017-04-08 17:45:04,859 - tornado.access - INFO - 200 GET /static/js/registerContest/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.93ms
+2017-04-08 17:45:21,699 - tornado.access - INFO - 200 GET /contest2017/ (::1) 17.43ms
+2017-04-08 17:49:33,265 - tornado.access - INFO - 200 GET /contest2017/ (::1) 15.79ms
+2017-04-08 17:50:34,257 - tornado.access - INFO - 200 GET / (::1) 10.16ms
+2017-04-08 17:50:34,284 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=f589302225e020a5a7847bfb4f0d2e80 (::1) 3.51ms
+2017-04-08 17:50:34,286 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 0.93ms
+2017-04-08 17:50:34,287 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 0.94ms
+2017-04-08 17:50:34,383 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 1.59ms
+2017-04-08 17:50:34,387 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 1.59ms
+2017-04-08 17:50:34,391 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 1.48ms
+2017-04-08 17:50:34,471 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 2.08ms
+2017-04-08 17:53:41,178 - tornado.access - INFO - 200 GET /contest2017/ (::1) 17.59ms
+2017-04-08 17:53:41,201 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=022188ef4a730a37a26c998f3f0269d0 (::1) 4.63ms
+2017-04-08 17:54:16,928 - tornado.access - INFO - 200 GET /contest2017/ (::1) 19.31ms
+2017-04-08 17:54:16,949 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=1fc5af30734ff527e9b33dac884a7b86 (::1) 4.71ms
+2017-04-08 17:54:41,048 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 8.18ms
+2017-04-08 17:57:49,771 - tornado.access - INFO - 200 GET /contest2017/ (::1) 20.21ms
+2017-04-08 17:57:49,794 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=68c70c431ec1a88f39c337532f2c259a (::1) 5.07ms
+2017-04-08 18:06:27,962 - tornado.access - INFO - 200 GET /contest2017/ (::1) 11.92ms
+2017-04-08 18:06:27,986 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=b77fd85425bf48e1ad1acb43687ae2d2 (::1) 8.46ms
+2017-04-08 18:06:27,988 - tornado.access - INFO - 200 GET /static/js/registerContest/particle-config.js?v=0c4b8feb1eabbda7af27a3b6d6d29524 (::1) 1.24ms
+2017-04-08 18:06:28,127 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 2.05ms
+2017-04-08 18:06:58,093 - tornado.access - INFO - 200 GET /contest2017/ (::1) 14.71ms
+2017-04-08 18:06:58,110 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=91020c9c45bb0c228383d69d4dde26f2 (::1) 4.02ms
+2017-04-08 18:07:35,418 - tornado.access - INFO - 200 GET /contest2017/ (::1) 18.57ms
+2017-04-08 18:07:35,433 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=1ba14863ec0159a47bf03fa6787ba032 (::1) 3.62ms
+2017-04-08 18:08:11,041 - tornado.access - INFO - 200 GET /contest2017/ (::1) 18.56ms
+2017-04-08 18:08:11,067 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=def66cffec3149554da4705777864214 (::1) 6.98ms
+2017-04-08 18:08:54,261 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 8.33ms
+2017-04-08 18:09:06,970 - tornado.access - INFO - 200 GET /contest2017/ (::1) 22.56ms
+2017-04-08 18:09:06,990 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=e79aa20143f9625bd6331bf58184224b (::1) 4.46ms
+2017-04-08 18:09:57,956 - tornado.access - INFO - 200 GET /contest2017/ (::1) 27.19ms
+2017-04-08 18:09:57,977 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=0c7f30bcfebaa1c46edd3a77a9b48168 (::1) 4.80ms
+2017-04-08 18:09:57,978 - tornado.access - INFO - 200 GET /static/js/registerContest/particle-config.js?v=9d4a8bca2eca2a2615ec132abcd23455 (::1) 0.61ms
+2017-04-08 18:09:59,525 - tornado.access - INFO - 304 GET /contest2017/ (::1) 4.66ms
+2017-04-08 18:10:04,362 - tornado.access - INFO - 304 GET /contest2017/ (::1) 21.88ms
+2017-04-08 18:10:31,901 - tornado.access - INFO - 200 GET /contest2017/ (::1) 14.00ms
+2017-04-08 18:10:31,917 - tornado.access - INFO - 200 GET /static/css/contestRegister/style.css?v=cb1937b9b101510cce0e5d90c3fdc12d (::1) 5.73ms
+2017-04-08 18:10:41,349 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 10.56ms
+2017-04-08 18:11:55,119 - tornado.access - INFO - 200 GET /contest2017/ (::1) 21.04ms
+2017-04-08 18:12:26,009 - tornado.access - INFO - 200 GET /contest2017/ (::1) 24.69ms
+2017-04-08 18:18:36,507 - tornado.access - INFO - 200 GET /contest2017/register/ (::1) 9.44ms
+2017-04-08 18:19:03,816 - tornado.access - INFO - 200 POST /contest2017/register/ (::1) 110.81ms
+2017-04-08 18:19:12,179 - tornado.access - INFO - 302 GET /admin/login (::1) 1.92ms
+2017-04-08 18:19:12,199 - tornado.access - INFO - 200 GET /admin/login/ (::1) 16.03ms
+2017-04-08 18:19:12,234 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 5.05ms
+2017-04-08 18:19:12,241 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 0.62ms
+2017-04-08 18:19:15,691 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1078.65ms
+2017-04-08 18:19:15,721 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 1.02ms
+2017-04-08 18:19:15,722 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 0.67ms
+2017-04-08 18:19:16,184 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.49ms
+2017-04-08 18:19:16,188 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.35ms
+2017-04-08 18:19:22,036 - tornado.access - INFO - 200 GET /admin/manage/studentInfo/show/ (::1) 30.24ms
+2017-04-08 18:19:25,685 - tornado.access - INFO - 200 POST /admin/manage/studentInfo/data/ (::1) 12.99ms
+2017-04-08 18:19:30,717 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 21.52ms
+2017-04-08 18:19:31,382 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 8.04ms
+2017-04-08 18:19:32,494 - tornado.access - INFO - 200 GET /admin/manage/admin/add/ (::1) 28.55ms
+2017-04-08 18:20:15,190 - tornado.access - INFO - 302 POST /admin/manage/admin/add/ (::1) 346.13ms
+2017-04-08 18:20:15,190 - tornado.application - ERROR - Uncaught exception POST /admin/manage/admin/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/admin/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '180', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/admin/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; _xsrf=2|942a336c|cc0617d9f155375e852b54045745df4a|1491637453; Pycharm-9f2934ce=ecfbc250-8c73-4c93-8991-e03a489563cf; username="2|1:0|10:1491640494|8:username|8:a2lkb3po|e1553a7b1243c2e0e461496f7749c5b4d36323474ba294c33adf27b1a9901f59"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 718, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-04-08 18:20:15,220 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 25.91ms
+2017-04-08 18:20:15,906 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 9.21ms
+2017-04-08 18:21:44,174 - tornado.access - INFO - 200 GET /admin/manage/admin/change/2/ (::1) 39.01ms
+2017-04-08 18:24:33,556 - tornado.access - INFO - 302 POST /admin/manage/admin/change/2/ (::1) 63.63ms
+2017-04-08 18:24:33,585 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 24.73ms
+2017-04-08 18:24:34,263 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 10.62ms
+2017-04-08 18:24:43,647 - tornado.access - INFO - 200 GET /admin/manage/admin/change/2/ (::1) 20.88ms
+2017-04-08 18:24:47,846 - tornado.access - INFO - 302 POST /admin/manage/admin/change/2/ (::1) 63.73ms
+2017-04-08 18:24:47,874 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 24.22ms
+2017-04-08 18:24:48,530 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 8.12ms
+2017-04-08 19:12:10,356 - tornado.access - INFO - 200 GET / (::1) 14.99ms
+2017-04-08 19:12:10,830 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 1.52ms
+2017-04-08 19:12:26,618 - tornado.access - INFO - 304 GET / (::1) 2.12ms
+2017-04-08 19:13:06,865 - tornado.access - INFO - 200 GET / (::1) 17.80ms
+2017-04-08 19:16:33,971 - tornado.access - INFO - 200 GET / (::1) 21.84ms
+2017-04-08 19:16:42,427 - tornado.access - INFO - 304 GET / (::1) 4.29ms
+2017-04-08 19:16:46,818 - tornado.access - INFO - 304 GET / (::1) 2.56ms
+2017-04-08 19:16:51,796 - tornado.access - INFO - 304 GET / (::1) 4.11ms
+2017-04-08 19:51:10,060 - tornado.access - INFO - 304 GET / (::1) 4.78ms
+2017-04-08 19:51:21,714 - tornado.access - INFO - 200 GET / (::1) 20.76ms
+2017-04-08 20:21:30,168 - tornado.application - ERROR - Uncaught exception GET /plag/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/plag/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/', 'Cookie': 'username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/codePlag/view.py", line 15, in get
+    self.render('codePlag/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "codePlag/index_html.generated.py", line 109, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('site_name')  # codePlag/foot.html:5 (via codePlag/base.html:17)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1556, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 36, in render
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-08 20:21:30,173 - tornado.access - ERROR - 500 GET /plag/ (::1) 31.46ms
+2017-04-08 20:22:18,458 - tornado.access - INFO - 302 GET /admin/login (::1) 1.26ms
+2017-04-08 20:22:18,473 - tornado.access - INFO - 200 GET /admin/login/ (::1) 12.72ms
+2017-04-08 20:22:21,374 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1037.38ms
+2017-04-08 20:22:33,144 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 30.48ms
+2017-04-08 20:22:33,715 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 9.46ms
+2017-04-08 20:22:35,814 - tornado.access - INFO - 200 GET /admin/manage/configOption/add/ (::1) 44.78ms
+2017-04-08 20:23:06,209 - tornado.access - INFO - 302 POST /admin/manage/configOption/add/ (::1) 105.54ms
+2017-04-08 20:23:06,209 - tornado.application - ERROR - Uncaught exception POST /admin/manage/configOption/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/configOption/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '101', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"; _xsrf=2|431f46c4|d04b35b34d677c14d4aadf78c4e9521c|1491654138', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 362, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 718, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-04-08 20:23:06,230 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 18.89ms
+2017-04-08 20:23:06,929 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 8.18ms
+2017-04-08 20:23:18,779 - tornado.application - ERROR - Uncaught exception GET /plag/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/plag/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'username="2|1:0|10:1491634095|8:username|8:a2lkb3po|9a0018910a12c3a41b41ee9cc6015a291197d6cab546a80c2eaf7f1d91b574dc"; _xsrf=2|431f46c4|d04b35b34d677c14d4aadf78c4e9521c|1491654138', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/codePlag/view.py", line 15, in get
+    self.render('codePlag/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "codePlag/index_html.generated.py", line 109, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('site_name')  # codePlag/foot.html:5 (via codePlag/base.html:17)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1556, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 36, in render
+    database.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3669, in connect
+    raise OperationalError('Connection already open')
+OperationalError: Connection already open
+2017-04-08 20:23:18,782 - tornado.access - ERROR - 500 GET /plag/ (::1) 6.08ms
+2017-04-08 20:26:07,799 - tornado.access - INFO - 200 GET /plag/ (::1) 30.48ms
+2017-04-08 20:26:07,820 - tornado.access - INFO - 200 GET /static/css/plag/style.css?v=519f467b6708ee1d0141d3d2ccb91ac6 (::1) 3.56ms
+2017-04-08 20:26:08,055 - tornado.access - INFO - 200 GET /static/image/plag/background/geometry2.png (::1) 1.50ms
+2017-04-08 20:26:08,060 - tornado.access - INFO - 200 GET /static/image/plag/background/seigaiha.png (::1) 1.18ms
+2017-04-08 20:29:49,772 - tornado.access - INFO - 200 GET /plag/single/ (::1) 11.73ms
+2017-04-08 20:29:49,807 - tornado.access - INFO - 200 GET /static/js/plag/codemirror-config.js?v=9ce008ca486f320bf58bb55c61f2ecbe (::1) 1.31ms
+2017-04-08 20:29:50,317 - tornado.access - INFO - 200 GET /static/image/plag/background/school.png (::1) 1.14ms
+2017-04-08 20:29:55,981 - tornado.access - INFO - 200 GET /plag/register/ (::1) 16.98ms

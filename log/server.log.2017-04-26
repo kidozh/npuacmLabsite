@@ -1,0 +1,400 @@
+2017-04-26 16:06:25,911 - tornado.application - ERROR - Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 13, in get
+    self.render('portal/index.html')
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "portal/index_html.generated.py", line 82, in _tt_execute
+    _tt_tmp = _tt_modules.get_option('SITE_NAME')  # portal/index.html:166 (via portal/base.html:45)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 42, in render
+    if configOption.select().where(configOption.name == option).exists():
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3166, in exists
+    return bool(clone.scalar())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2911, in scalar
+    row = self._execute().fetchone()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3756, in execute_sql
+    cursor = self.get_cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3704, in get_cursor
+    return self.get_conn().cursor()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3693, in get_conn
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3670, in connect
+    self._local.conn = self._create_connection()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3698, in _create_connection
+    return self._connect(self.database, **self.connect_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4246, in _connect
+    return mysql.connect(db=database, **conn_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'npuacm'")
+2017-04-26 16:06:25,942 - tornado.access - ERROR - 500 GET / (::1) 415.43ms
+2017-04-26 16:06:26,166 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 1.80ms
+2017-04-26 16:09:03,757 - tornado.access - INFO - 200 GET / (::1) 16.05ms
+2017-04-26 16:09:03,798 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=a41e2a0e07656c1ea4f59191812fd28c (::1) 5.57ms
+2017-04-26 16:09:03,801 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 1.44ms
+2017-04-26 16:09:03,802 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 0.97ms
+2017-04-26 16:09:03,803 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.59ms
+2017-04-26 16:09:03,856 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 0.67ms
+2017-04-26 16:09:03,859 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.64ms
+2017-04-26 16:09:03,863 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.62ms
+2017-04-26 16:09:04,175 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 31.75ms
+2017-04-26 16:09:12,731 - tornado.access - INFO - 302 GET /admin (::1) 1.69ms
+2017-04-26 16:09:12,815 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 18, in render
+    url = it._path
+AttributeError: 'URLSpec' object has no attribute '_path'
+2017-04-26 16:09:12,834 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 18, in render
+    url = it._path
+AttributeError: 'URLSpec' object has no attribute '_path'
+2017-04-26 16:09:12,835 - tornado.access - ERROR - 500 GET /admin/ (::1) 96.80ms
+2017-04-26 16:14:02,849 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 18, in render
+    if not flag:
+AttributeError: 'URLSpec' object has no attribute '_path'
+2017-04-26 16:14:02,854 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1598, in render
+    rendered = self._active_modules[name].render(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/uimodule.py", line 18, in render
+    if not flag:
+AttributeError: 'URLSpec' object has no attribute '_path'
+2017-04-26 16:14:02,855 - tornado.access - ERROR - 500 GET /admin/ (::1) 11.04ms
+2017-04-26 16:14:22,717 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:14:22,719 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:14:22,721 - tornado.access - ERROR - 500 GET /admin/ (::1) 24.44ms
+2017-04-26 16:15:52,675 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:15:52,677 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:15:52,678 - tornado.access - ERROR - 500 GET /admin/ (::1) 22.23ms
+2017-04-26 16:42:48,542 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:42:48,544 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:42:48,545 - tornado.access - ERROR - 500 GET /admin/ (::1) 22.31ms
+2017-04-26 16:45:21,609 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:45:21,611 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:45:21,611 - tornado.access - ERROR - 500 GET /admin/ (::1) 22.68ms
+2017-04-26 16:45:22,585 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:45:22,588 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:45:22,589 - tornado.access - ERROR - 500 GET /admin/ (::1) 6.77ms
+2017-04-26 16:48:00,799 - tornado.application - ERROR - Uncaught exception GET /admin/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/portal/view.py", line 26, in get
+    self.write_error(404)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:48:00,800 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1036, in send_error
+    self.write_error(status_code, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/core/requestHandler.py", line 41, in write_error
+    self.render('error.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 724, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 865, in render_string
+    return t.generate(**namespace)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/template.py", line 348, in generate
+    return execute()
+  File "error_html.generated.py", line 34, in _tt_execute
+    _tt_tmp = _tt_modules.get_url_from_handler('contrib.admin.view.authRequestHandler')  # error.html:14 (via base.html:46)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 3058, in __getattr__
+    raise AttributeError(str(e))
+AttributeError: 'get_url_from_handler'
+2017-04-26 16:48:00,801 - tornado.access - ERROR - 500 GET /admin/ (::1) 20.60ms
+2017-04-26 16:48:56,134 - tornado.access - WARNING - 404 GET /admin/ (::1) 20.70ms
+2017-04-26 16:48:56,161 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 3.86ms
+2017-04-26 16:49:06,763 - tornado.access - INFO - 302 GET /admin/login (::1) 1.83ms
+2017-04-26 16:49:06,849 - tornado.access - INFO - 200 GET /admin/login/ (::1) 77.11ms
+2017-04-26 16:49:06,870 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 0.61ms
+2017-04-26 16:49:17,799 - tornado.access - INFO - 302 POST /admin/login/ (::1) 306.33ms
+2017-04-26 16:49:17,813 - tornado.application - ERROR - Uncaught exception GET /admin/manage/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='GET', uri='/admin/manage/', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/login/', 'Cache-Control': 'max-age=0', 'Cookie': '_xsrf=2|de85c5c7|fab4332f1a2ad6b261854e68492e1743|1493196546; username="2|1:0|10:1493196557|8:username|8:a2lkb3po|5215f88e0a3782704ac7799275f54c113425dda79c5750353618b1e7daca6b53"', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 2897, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/view.py", line 114, in get
+    logicalCPU = psutil.cpu_count(logical=True)
+AttributeError: 'module' object has no attribute 'cpu_count'
+2017-04-26 16:49:17,835 - tornado.access - ERROR - 500 GET /admin/manage/ (::1) 25.60ms
+2017-04-26 16:55:02,971 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1108.23ms
+2017-04-26 16:55:03,021 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 5.07ms
+2017-04-26 16:55:03,023 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 0.87ms
+2017-04-26 16:55:03,144 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 0.73ms
+2017-04-26 16:55:03,148 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 0.66ms
+2017-04-26 16:56:03,835 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1050.10ms
+2017-04-26 16:56:04,402 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.52ms
+2017-04-26 16:56:20,336 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1019.77ms
+2017-04-26 16:56:21,001 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.50ms

@@ -1,0 +1,1240 @@
+2017-07-29 15:06:59,027 - tornado.access - INFO - 200 GET / (127.0.0.1) 625.73ms
+2017-07-29 15:06:59,095 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 32.15ms
+2017-07-29 15:06:59,097 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 0.78ms
+2017-07-29 15:06:59,098 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.80ms
+2017-07-29 15:06:59,099 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 0.71ms
+2017-07-29 15:06:59,921 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 65.67ms
+2017-07-29 15:07:04,445 - tornado.access - INFO - 302 GET /t (127.0.0.1) 1.78ms
+2017-07-29 15:07:04,699 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 247.83ms
+2017-07-29 15:07:04,759 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9b001c6db2c80e0cbcb00d3ca3f0b4c6 (127.0.0.1) 2.38ms
+2017-07-29 15:07:05,771 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 50.98ms
+2017-07-29 15:13:04,587 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 11.03ms
+2017-07-29 15:13:04,696 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.89ms
+2017-07-29 16:06:54,069 - root - INFO - [CRON] Started @16h ,but not executed .17
+2017-07-29 16:16:53,892 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2013, 'Lost connection to MySQL server during query')
+2017-07-29 16:26:53,903 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 16:36:53,893 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 16:46:53,891 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 16:56:53,897 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:06:53,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:06:53,966 - tornado.application - ERROR - Exception in callback <functools.partial object at 0x7fdf3440baa0>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 626, in _discard_future_result
+    future.result()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/gen.py", line 292, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 973, in cronScan
+    exeHour,created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:16:53,898 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:26:53,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:36:53,906 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:46:53,894 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 17:56:53,895 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:06:53,903 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:06:53,904 - tornado.application - ERROR - Exception in callback <functools.partial object at 0x7fdf3a4332b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 626, in _discard_future_result
+    future.result()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/gen.py", line 292, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 973, in cronScan
+    exeHour,created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:16:53,889 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:26:53,902 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:36:53,888 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:46:53,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 18:56:53,896 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:06:53,900 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:06:53,901 - tornado.application - ERROR - Exception in callback <functools.partial object at 0x7fdf3c011e68>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 626, in _discard_future_result
+    future.result()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/gen.py", line 292, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 973, in cronScan
+    exeHour,created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:16:53,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:26:53,905 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:36:53,903 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:46:53,891 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 19:56:53,895 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:06:53,897 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:06:53,898 - tornado.application - ERROR - Exception in callback <functools.partial object at 0x7fdf3c018998>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 626, in _discard_future_result
+    future.result()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/gen.py", line 292, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 973, in cronScan
+    exeHour,created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:16:53,905 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:26:53,888 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:36:53,898 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:46:53,905 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 20:56:53,906 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 21:06:53,907 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 21:06:53,908 - tornado.application - ERROR - Exception in callback <functools.partial object at 0x7fdf347492b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 626, in _discard_future_result
+    future.result()
+  File "/usr/local/lib/python2.7/dist-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/gen.py", line 292, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/exbot/code/python/tornado/Tjango/acmDetectInfo/view.py", line 973, in cronScan
+    exeHour,created = configOption.get_or_create(name='EXE_HOURS',defaults={'value': 3})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 21:16:53,902 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 21:26:53,904 - tornado.application - ERROR - Exception in callback <function praseLog at 0x7fdf357ec1b8>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/ioloop.py", line 1026, in _run
+    return self.callback()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 94, in praseLog
+    a.parase_log()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 33, in parase_log
+    latest_log_offset = self.get_lastest_log_offset()
+  File "/home/exbot/code/python/tornado/Tjango/contrib/admin/log.py", line 23, in get_lastest_log_offset
+    defaults={'value': '0'})
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 4929, in get_or_create
+    return query.get(), False
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3171, in get
+    return next(clone.execute())
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3223, in execute
+    self._qr = ResultWrapper(model_class, self._execute(), query_meta)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2902, in _execute
+    return self.database.execute_sql(sql, params, self.require_commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3765, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3588, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 3758, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+2017-07-29 21:35:52,105 - tornado.access - INFO - 304 GET /t/ (127.0.0.1) 181.84ms
+2017-07-29 21:35:52,395 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 15.72ms
+2017-07-29 21:35:55,331 - tornado.access - INFO - 302 GET /t/post (127.0.0.1) 2.33ms
+2017-07-29 21:35:55,534 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 197.75ms
+2017-07-29 21:35:55,589 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 19.75ms
+2017-07-29 21:35:55,611 - tornado.access - INFO - 200 GET /static/js/notification/rawdeflate.js?v=434bce7b6a80ea0e78a83d81c096936b (127.0.0.1) 0.80ms
+2017-07-29 21:35:55,612 - tornado.access - INFO - 200 GET /static/js/notification/rawinflate.js?v=8c0a8703388b685bb1c4cced7a471ddc (127.0.0.1) 0.66ms
+2017-07-29 21:35:55,621 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=392a82e14ea365f7a2e8d631dc6ac368 (127.0.0.1) 0.73ms
+2017-07-29 21:35:55,629 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.67ms
+2017-07-29 21:35:55,635 - tornado.access - INFO - 200 GET /static/js/notification/codemirror-config.js?v=4606ad22677f748aae0dd0da2751b986 (127.0.0.1) 0.71ms
+2017-07-29 21:36:37,224 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 7.23ms
+2017-07-29 21:37:00,837 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 7.36ms
+2017-07-29 21:37:49,799 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.64ms
+2017-07-29 21:41:12,361 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 24.72ms
+2017-07-29 21:42:28,243 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 20.34ms
+2017-07-29 21:42:49,502 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 7.45ms
+2017-07-29 21:45:47,420 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 31.71ms
+2017-07-29 21:49:10,556 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 20.24ms
+2017-07-29 21:50:51,642 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 21.88ms
+2017-07-29 21:50:53,213 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 7.10ms
+2017-07-29 21:54:53,927 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.41ms
+2017-07-29 21:54:53,958 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 4.66ms
+2017-07-29 21:56:37,384 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 33.91ms
+2017-07-29 21:57:58,977 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.37ms
+2017-07-29 21:58:44,899 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 28.88ms
+2017-07-29 22:00:41,992 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 23.31ms
+2017-07-29 22:00:45,080 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 9.79ms
+2017-07-29 22:00:45,617 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 5.92ms
+2017-07-29 22:00:46,991 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 8.51ms
+2017-07-29 22:00:49,150 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 8.05ms
+2017-07-29 22:00:50,066 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 6.71ms
+2017-07-29 22:04:13,797 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 34.17ms
+2017-07-29 22:11:12,834 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.33ms
+2017-07-29 22:12:31,671 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 28.60ms
+2017-07-29 22:12:31,694 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9e4e3d8889cc393e449c924bcbc13dca (127.0.0.1) 4.04ms
+2017-07-29 22:19:10,671 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 9.90ms
+2017-07-29 22:19:14,061 - tornado.access - INFO - 304 GET /t/post/ (127.0.0.1) 10.25ms
+2017-07-29 22:22:10,591 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 27.69ms
+2017-07-29 22:23:03,157 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 21.48ms
+2017-07-29 22:24:20,199 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 25.04ms
+2017-07-29 22:24:20,228 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=811764b82083e167433144e3a081c394 (127.0.0.1) 4.32ms
+2017-07-29 22:28:04,608 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 19.62ms
+2017-07-29 22:28:04,657 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=10431e4bda227fe5899c5b74b4f232d2 (127.0.0.1) 6.39ms
+2017-07-29 22:28:04,664 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.26ms
+2017-07-29 22:28:04,667 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.99ms
+2017-07-29 22:28:04,679 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.35ms
+2017-07-29 22:29:16,293 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 27.68ms
+2017-07-29 22:29:16,343 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=10431e4bda227fe5899c5b74b4f232d2 (127.0.0.1) 5.14ms
+2017-07-29 22:29:16,352 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.82ms
+2017-07-29 22:29:16,357 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.09ms
+2017-07-29 22:29:16,372 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.31ms
+2017-07-29 22:33:53,413 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 26.27ms
+2017-07-29 22:33:53,462 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=bfa4f44de1a0e4cb070b017e557b1794 (127.0.0.1) 3.39ms
+2017-07-29 22:33:53,477 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.03ms
+2017-07-29 22:33:53,481 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.99ms
+2017-07-29 22:33:53,498 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.85ms
+2017-07-29 22:35:08,417 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 25.57ms
+2017-07-29 22:35:08,460 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=38fd392919b04f0e211c619afd9848a7 (127.0.0.1) 4.23ms
+2017-07-29 22:35:08,481 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.12ms
+2017-07-29 22:35:08,485 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.99ms
+2017-07-29 22:35:08,500 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.71ms
+2017-07-29 22:35:47,059 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 27.87ms
+2017-07-29 22:35:47,113 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=21b1df499fd29385974a8059437768fb (127.0.0.1) 5.99ms
+2017-07-29 22:35:47,120 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.11ms
+2017-07-29 22:35:47,123 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.08ms
+2017-07-29 22:35:47,137 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.83ms
+2017-07-29 22:36:05,446 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 24.60ms
+2017-07-29 22:36:05,488 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9f804c669d1659cfc96e7ca1c007ebdf (127.0.0.1) 5.31ms
+2017-07-29 22:36:05,496 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.12ms
+2017-07-29 22:36:05,500 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.14ms
+2017-07-29 22:36:05,512 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.94ms
+2017-07-29 22:56:04,067 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 6.93ms
+2017-07-29 22:56:04,118 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9f804c669d1659cfc96e7ca1c007ebdf (127.0.0.1) 0.92ms
+2017-07-29 22:56:04,131 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.99ms
+2017-07-29 22:56:04,137 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.09ms
+2017-07-29 22:56:04,156 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.04ms
+2017-07-29 22:56:19,149 - tornado.access - INFO - 200 GET / (127.0.0.1) 359.05ms
+2017-07-29 22:56:21,680 - tornado.access - INFO - 200 GET /history/ (127.0.0.1) 42.95ms
+2017-07-29 22:58:09,966 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 21.13ms
+2017-07-29 22:58:09,994 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 4.70ms
+2017-07-29 22:58:36,277 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 22.80ms
+2017-07-29 22:59:06,896 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 10.11ms
+2017-07-29 22:59:06,951 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 5.80ms
+2017-07-29 22:59:06,958 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.28ms
+2017-07-29 22:59:06,966 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.02ms
+2017-07-29 22:59:06,982 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.08ms
+2017-07-29 22:59:26,475 - tornado.access - INFO - 304 GET /history/ (127.0.0.1) 22.86ms
+2017-07-29 23:00:27,539 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 22.03ms
+2017-07-29 23:00:27,589 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 6.94ms
+2017-07-29 23:00:27,595 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.08ms
+2017-07-29 23:00:27,600 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 2.42ms
+2017-07-29 23:00:27,610 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.04ms
+2017-07-29 23:01:19,396 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 8.55ms
+2017-07-29 23:01:19,446 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 0.81ms
+2017-07-29 23:01:19,456 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.75ms
+2017-07-29 23:01:19,460 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.72ms
+2017-07-29 23:01:19,472 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.73ms
+2017-07-29 23:02:29,477 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 27.84ms
+2017-07-29 23:02:29,529 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 6.63ms
+2017-07-29 23:02:29,538 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.03ms
+2017-07-29 23:02:29,543 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.74ms
+2017-07-29 23:02:29,560 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.09ms
+2017-07-29 23:03:04,195 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 20.56ms
+2017-07-29 23:03:04,241 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 4.56ms
+2017-07-29 23:03:04,249 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.08ms
+2017-07-29 23:03:04,258 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.64ms
+2017-07-29 23:03:04,270 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.19ms
+2017-07-29 23:03:27,606 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 23.05ms
+2017-07-29 23:03:27,649 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5493a8d41f70ed59d2bfa991ddc237c4 (127.0.0.1) 3.58ms
+2017-07-29 23:03:27,661 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.80ms
+2017-07-29 23:03:27,663 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.77ms
+2017-07-29 23:03:27,679 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.04ms
+2017-07-29 23:05:50,737 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 20.23ms
+2017-07-29 23:05:50,801 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9f804c669d1659cfc96e7ca1c007ebdf (127.0.0.1) 5.59ms
+2017-07-29 23:05:50,826 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 0.78ms
+2017-07-29 23:05:50,831 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.21ms
+2017-07-29 23:05:50,849 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.09ms
+2017-07-29 23:06:19,679 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 20.32ms
+2017-07-29 23:06:19,732 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=9f804c669d1659cfc96e7ca1c007ebdf (127.0.0.1) 5.70ms
+2017-07-29 23:06:19,746 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.18ms
+2017-07-29 23:06:19,756 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.19ms
+2017-07-29 23:06:19,774 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.06ms
+2017-07-29 23:12:29,365 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 28.76ms
+2017-07-29 23:12:29,398 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=16c6775111317e6fd81bd00306109bb3 (127.0.0.1) 6.37ms
+2017-07-29 23:16:50,260 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 22.62ms
+2017-07-29 23:16:50,315 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5b1e7da78af208a8fcada097eb0bee71 (127.0.0.1) 5.88ms
+2017-07-29 23:16:50,325 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.50ms
+2017-07-29 23:16:50,329 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.88ms
+2017-07-29 23:16:50,335 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.13ms
+2017-07-29 23:20:47,952 - tornado.access - INFO - 200 GET /t/post/ (127.0.0.1) 29.32ms
+2017-07-29 23:20:48,009 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=5b1e7da78af208a8fcada097eb0bee71 (127.0.0.1) 4.42ms
+2017-07-29 23:20:48,017 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.03ms
+2017-07-29 23:20:48,021 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.04ms
+2017-07-29 23:20:48,036 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 0.90ms

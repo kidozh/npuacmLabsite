@@ -1,0 +1,30 @@
+2017-05-25 13:02:45,566 - tornado.access - INFO - 200 GET / (127.0.0.1) 421.88ms
+2017-05-25 13:02:45,717 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (127.0.0.1) 99.81ms
+2017-05-25 13:02:45,719 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (127.0.0.1) 0.75ms
+2017-05-25 13:02:45,720 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (127.0.0.1) 0.59ms
+2017-05-25 13:02:45,721 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (127.0.0.1) 0.69ms
+2017-05-25 13:02:45,723 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (127.0.0.1) 0.62ms
+2017-05-25 13:02:45,726 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (127.0.0.1) 0.60ms
+2017-05-25 13:02:45,729 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (127.0.0.1) 0.60ms
+2017-05-25 13:02:45,732 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (127.0.0.1) 0.74ms
+2017-05-25 13:02:45,859 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (127.0.0.1) 2.00ms
+2017-05-25 13:02:46,321 - tornado.access - WARNING - 404 GET /favicon.ico (127.0.0.1) 37.96ms
+2017-05-25 13:03:35,585 - tornado.access - INFO - 200 GET / (127.0.0.1) 19.30ms
+2017-05-25 13:03:44,532 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 104.95ms
+2017-05-25 13:03:44,560 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 4.20ms
+2017-05-25 13:03:44,562 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (127.0.0.1) 1.19ms
+2017-05-25 13:03:44,563 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (127.0.0.1) 0.81ms
+2017-05-25 13:03:44,565 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (127.0.0.1) 0.69ms
+2017-05-25 13:03:46,969 - tornado.access - INFO - 200 GET /queryProb/ (127.0.0.1) 4.91ms
+2017-05-25 13:03:47,899 - tornado.access - INFO - 200 GET /queryProb/doc/faq/ (127.0.0.1) 37.45ms
+2017-05-25 14:03:34,871 - root - INFO - [CRON] Started @14h ,but not executed .17
+2017-05-25 15:03:34,829 - root - INFO - [CRON] Started @15h ,but not executed .17
+2017-05-25 16:03:34,851 - root - INFO - [CRON] Started @16h ,but not executed .17
+2017-05-25 17:03:46,159 - root - INFO - [CRON] Started @17h , executed .17
+2017-05-25 17:03:56,877 - root - INFO - [CRON] Executed for [{'submitNum': 2413, 'ratio': 0, 'name': u'2013300262', 'acdreamNum': 0, 'otherOJNum': 586, 'bzojNum': 0, 'zojNum': 0, 'pojNum': 0, 'cfNum': 843, 'hduNum': 0, 'totalNum': 1429}, {'submitNum': 300, 'ratio': 0, 'name': u'kidozh', 'acdreamNum': 1, 'otherOJNum': 14, 'bzojNum': 0, 'zojNum': 0, 'pojNum': 129, 'cfNum': 21, 'hduNum': 86, 'totalNum': 238}] Users
+2017-05-25 18:03:34,839 - root - INFO - [CRON] Started @18h ,but not executed .17
+2017-05-25 19:03:34,929 - root - INFO - [CRON] Started @19h ,but not executed .17
+2017-05-25 20:03:34,854 - root - INFO - [CRON] Started @20h ,but not executed .17
+2017-05-25 21:03:34,891 - root - INFO - [CRON] Started @21h ,but not executed .17
+2017-05-25 22:03:34,870 - root - INFO - [CRON] Started @22h ,but not executed .17
+2017-05-25 23:03:34,817 - root - INFO - [CRON] Started @23h ,but not executed .17

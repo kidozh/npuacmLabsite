@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8969815_shadowboy_A.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8969815_shadowboy_A.cpp</CENTER></H3><HR>
+<PRE>
+#include &lt;iostream&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;string&gt;
+#include &lt;stdlib.h&gt;
+using namespace std;
+int num[30];
+int main()
+{
+    int n;
+    scanf(&quot;%d&quot;,&amp;n);
+    for(int cases=1;cases&lt;=n;cases++){
+        int tmp;
+        int sum=0;
+        scanf(&quot;%d&quot;,&amp;tmp);
+<A NAME="0"></A>        for(int i=1;i&lt;=20;i++){
+            scanf(&quot;%d&quot;,&amp;num[i]);
+        }
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match12-1.html#0',3,'match12-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>        for(int i=1;i&lt;=20;i++){
+            for(int j=i+1;j&lt;=20;j++){
+                if(num[i]&gt;num[j])
+                    sum++;
+            }
+        }</B></FONT>
+        printf(&quot;%d %d\n&quot;,cases,sum);
+
+    }
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>

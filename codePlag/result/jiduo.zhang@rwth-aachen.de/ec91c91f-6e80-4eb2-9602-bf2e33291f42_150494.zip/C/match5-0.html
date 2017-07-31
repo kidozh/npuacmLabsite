@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+ <TITLE>8159522_HappyPlay_C.cpp</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <script type="text/javascript">
+  <!--
+   function ZweiFrames(URL1,F1,URL2,F2)
+   {
+    parent.frames[F1].location.href=URL1;
+    parent.frames[F2].location.href=URL2;
+   }
+  //-->
+  </script>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<HR>
+<H3><CENTER>8159522_HappyPlay_C.cpp</CENTER></H3><HR>
+<PRE>
+#include&lt;vector&gt;
+#include&lt;cstdio&gt;
+#include&lt;queue&gt;
+
+using namespace std;
+
+const int MAXN = 1005;
+const int INF = 100000000;
+
+struct Node{
+    int v, w;
+};
+
+int N, M, X;
+int dis1[MAXN];
+int dis2[MAXN];
+int mark[MAXN];
+vector&lt;Node&gt;graph[MAXN];
+vector&lt;Node&gt;nGraph[MAXN];
+
+void getDis(int u, vector&lt;Node&gt; g[], int dis[]){
+    for(int i = 1; i &lt;= N; ++i){
+        dis[i] = INF;
+        mark[i] = 0;
+    }
+    queue&lt;int&gt; q;
+    dis[u] = 0;
+    q.push(u);
+    mark[u] = 1;
+    while(!q.empty()){
+        int v = q.front();
+<A NAME="0"></A>        q.pop();
+        mark[v] = 0;
+        for(int i = 0; i &lt; (int)g[v].size(); ++i){
+<FONT color="#0000ff"><A HREF="javascript:ZweiFrames('match5-1.html#0',3,'match5-top.html#0',1)"><IMG SRC="forward.gif" ALT="other" BORDER="0" ALIGN="right"></A><B>            Node now = g[v][i];
+            if(dis[now.v] &gt; dis[v] + now.w){
+                dis[now.v] = dis[v] + now.w;
+                if(!mark[now.v]){
+                    q.push(now.v);
+                    mark[now.v] = 1;
+                }
+            }
+        }
+    }
+}
+
+int main(){
+    scanf(&quot;%d%d%d&quot;, &amp;N, &amp;M, &amp;X);
+    for(int i = 1; i &lt;= M; ++i){</B></FONT>
+        int u, v, w;
+        scanf(&quot;%d%d%d&quot;, &amp;u, &amp;v, &amp;w);
+        graph[u].push_back({v, w});
+        nGraph[v].push_back({u, w});
+    }
+    getDis(X, graph, dis1);
+    getDis(X, nGraph, dis2);
+    int tempAns = 0;
+    for(int i =1; i &lt;= N; ++i){
+        tempAns = max(tempAns, dis1[i] + dis2[i]);
+    }
+    printf(&quot;%d\n&quot;, tempAns);
+    return 0;
+}
+</PRE>
+</BODY>
+</HTML>
