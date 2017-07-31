@@ -119,7 +119,7 @@ class postPageRequestHandler(adminBaseHandler):
     @tornado.web.authenticated
     def post(self,*args,**kwargs):
         change = False
-        if (len(args) >= 1):
+        if (len(args) >= 1) and args[0]:
             # need to query first
             notice_id = args[0]
             change = True
