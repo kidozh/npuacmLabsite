@@ -27,7 +27,7 @@ class admin(baseModel):
 
 
 class log(baseModel):
-    queryTime = DateTimeField()
+    queryTime = DateTimeField(default=datetime.datetime.now)
     logType = CharField(max_length=20)
     logLevel = CharField(max_length=10)
     requestStatus = SmallIntegerField()

@@ -92,7 +92,7 @@
                                     <textarea class="form-control" name="{{ fieldName }}" value="{{ getattr(aimRow,fieldName) }}">{{ getattr(aimRow,fieldName) }}</textarea>
 
                                 {% elif fieldClassName == 'DateTimeField' %}
-                                    <input type="datetime" value="{{ getattr(aimRow,fieldName) }}" {% if field.null == None or field.null == False %} required {% end %} class="form-control" name="{{ fieldName }}" id="datetime">
+                                    <input type="datetime-local" value="{{ getattr(aimRow,fieldName) }}" {% if field.null == None or field.null == False %} required {% end %} class="form-control" name="{{ fieldName }}" id="datetime">
                                 {% elif fieldClassName == 'IntegerField' or fieldClassName == 'BigIntegerField' or fieldClassName == 'SmallIntegerField' %}
                                     <input type="number" value="{{ getattr(aimRow,fieldName) }}" {% if field.null == None or field.null == False %} required {% end %} class="form-control" name="{{ fieldName }}" id="">
 

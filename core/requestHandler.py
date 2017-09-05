@@ -4,6 +4,7 @@ import tornado.web
 import tornado
 from db import connectHandler, database
 from contrib.admin.models import *
+import datetime
 
 class BaseHandler(tornado.web.RequestHandler):
     # peewee
@@ -15,6 +16,18 @@ class BaseHandler(tornado.web.RequestHandler):
         return super(BaseHandler, self).prepare()
 
     def on_finish(self):
+        # save to database...
+        browser_log = log(
+            logLevel='INFO',
+            logType='access',
+            requestStatus=self.get_status(),
+            requestType=self.request.method,
+            requestURL=self.request.uri,
+            requestIP=self.request.remote_ip,
+            requestDuration=1000.0 * self.request.request_time()
+        )
+        browser_log.save()
+
         if not database.is_closed():
             database.close()
         return super(BaseHandler, self).on_finish()

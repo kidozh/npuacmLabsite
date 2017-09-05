@@ -6,6 +6,7 @@ import contrib.admin.uimodule
 from tornado.web import URLSpec,url
 
 urlpatterns = [
+    ('/','contrib.admin.view.adminManageHandler'),
     ('/login/','contrib.admin.view.authRequestHandler'),
     ('/manage/','contrib.admin.view.adminManageHandler'),
     ('/manage/(?P<modelName>.+)/data/','contrib.admin.view.appModelApiManager'),
@@ -30,5 +31,5 @@ from contrib.admin.log import praseLog
 # cron should be (func,every ms)
 
 cron = [
-    (praseLog,10*60*1000)
+    #(praseLog,10*60*1000)
 ]

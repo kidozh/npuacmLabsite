@@ -1,52 +1,126 @@
-2017-07-31 13:41:12,398 - root - INFO - [CRON] Started @13h ,but not executed .17
-2017-07-31 13:44:45,707 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 22.31ms
-2017-07-31 13:44:47,546 - tornado.access - INFO - 200 GET / (127.0.0.1) 109.11ms
-2017-07-31 13:44:47,587 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (127.0.0.1) 5.43ms
-2017-07-31 13:44:51,020 - tornado.access - INFO - 302 GET /t (127.0.0.1) 1.51ms
-2017-07-31 13:44:51,035 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 8.87ms
-2017-07-31 13:44:51,146 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 18.43ms
-2017-07-31 13:54:17,613 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 9.47ms
-2017-07-31 13:54:20,889 - tornado.access - INFO - 302 POST /t/post/3 (127.0.0.1) 149.35ms
-2017-07-31 13:54:20,907 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 9.75ms
-2017-07-31 13:54:21,092 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 6.99ms
-2017-07-31 13:54:29,891 - tornado.access - INFO - 302 GET /t/5 (127.0.0.1) 1.19ms
-2017-07-31 13:54:29,901 - tornado.access - WARNING - 404 GET /t/5/ (127.0.0.1) 6.27ms
-2017-07-31 13:54:34,984 - tornado.access - INFO - 302 GET /t/4 (127.0.0.1) 1.93ms
-2017-07-31 13:54:34,993 - tornado.access - WARNING - 404 GET /t/4/ (127.0.0.1) 3.22ms
-2017-07-31 13:54:41,233 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 7.07ms
-2017-07-31 13:54:46,175 - tornado.access - INFO - 302 POST /t/post/4 (127.0.0.1) 58.74ms
-2017-07-31 13:54:46,187 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 4.51ms
-2017-07-31 13:54:46,372 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 6.92ms
-2017-07-31 13:56:32,624 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 6.52ms
-2017-07-31 13:56:32,680 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 0.72ms
-2017-07-31 13:56:33,559 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 10.63ms
-2017-07-31 13:56:34,491 - tornado.access - INFO - 200 GET /t/post/4 (127.0.0.1) 8.95ms
-2017-07-31 13:56:34,525 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 0.85ms
-2017-07-31 13:56:34,532 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.12ms
-2017-07-31 13:56:34,541 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.83ms
-2017-07-31 13:56:34,555 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.61ms
-2017-07-31 13:56:43,362 - tornado.access - INFO - 302 POST /t/post/4 (127.0.0.1) 53.87ms
-2017-07-31 13:56:43,382 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 5.48ms
-2017-07-31 13:56:43,428 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 1.00ms
-2017-07-31 13:56:43,864 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 5.79ms
-2017-07-31 14:01:02,229 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 23.61ms
-2017-07-31 14:01:02,281 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 6.24ms
-2017-07-31 14:01:02,833 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 18.50ms
-2017-07-31 14:01:07,292 - tornado.access - INFO - 200 GET /t/post/3 (127.0.0.1) 22.36ms
-2017-07-31 14:01:07,346 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 2.22ms
-2017-07-31 14:01:07,356 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.39ms
-2017-07-31 14:01:07,365 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 1.34ms
-2017-07-31 14:01:07,379 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (127.0.0.1) 1.50ms
-2017-07-31 14:01:17,814 - tornado.access - INFO - 302 POST /t/post/3 (127.0.0.1) 49.65ms
-2017-07-31 14:01:17,825 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 5.71ms
-2017-07-31 14:01:18,072 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 11.06ms
-2017-07-31 14:16:48,967 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 6.39ms
-2017-07-31 14:16:52,009 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 10.74ms
-2017-07-31 14:20:56,783 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 22.48ms
-2017-07-31 14:20:56,826 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (127.0.0.1) 4.43ms
-2017-07-31 14:20:56,831 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (127.0.0.1) 1.27ms
-2017-07-31 14:20:56,849 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (127.0.0.1) 0.79ms
-2017-07-31 14:20:58,248 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 24.63ms
-2017-07-31 14:21:09,230 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 4.67ms
-2017-07-31 14:24:13,686 - tornado.access - INFO - 200 GET /t/ (127.0.0.1) 18.91ms
-2017-07-31 14:24:14,018 - tornado.access - INFO - 200 POST /t/ (127.0.0.1) 30.42ms
+2017-09-05 17:05:54,529 - tornado.access - INFO - 200 GET / (::1) 307.11ms
+2017-09-05 17:05:54,592 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/light-theme.css?v=d41d8cd98f00b204e9800998ecf8427e (::1) 35.98ms
+2017-09-05 17:05:54,594 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/inputs.css?v=ee55ff34d8f7435776272a98d414b99f (::1) 1.30ms
+2017-09-05 17:05:54,596 - tornado.access - INFO - 200 GET /static/js/inputs/bootstrap-inputs.js?v=630c56b84234872e57eeeff1d77a3dde (::1) 0.93ms
+2017-09-05 17:05:54,598 - tornado.access - INFO - 200 GET /static/css/queryProbInfo/style.css?v=5b5939ebfb2c1a23158cdd3c20428841 (::1) 0.94ms
+2017-09-05 17:05:56,873 - tornado.access - WARNING - 404 GET /favicon.ico (::1) 31.92ms
+2017-09-05 17:06:00,552 - tornado.access - INFO - 302 GET /admin (::1) 1.69ms
+2017-09-05 17:06:00,605 - tornado.access - WARNING - 404 GET /admin/ (::1) 47.27ms
+2017-09-05 17:06:00,642 - tornado.access - INFO - 200 GET /static/admin/css/style.css?v=cb61db3ca837baf698c32e99e212cbd9 (::1) 1.02ms
+2017-09-05 17:06:06,543 - tornado.access - INFO - 302 GET /admin/login (::1) 1.57ms
+2017-09-05 17:06:06,591 - tornado.access - INFO - 200 GET /admin/login/ (::1) 41.37ms
+2017-09-05 17:06:06,615 - tornado.access - INFO - 200 GET /static/admin/css/style.css (::1) 1.07ms
+2017-09-05 17:06:10,287 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1087.36ms
+2017-09-05 17:06:10,326 - tornado.access - INFO - 200 GET /static/admin/css/manageStyle.css?v=0d2466fc8efbccdfd5e4c6a4dca7c515 (::1) 1.18ms
+2017-09-05 17:06:10,334 - tornado.access - INFO - 200 GET /static/admin/css/light-custome.css?v=e831a11822892ac5a7500db8dcf00ac9 (::1) 2.42ms
+2017-09-05 17:06:11,709 - tornado.access - INFO - 200 GET /static/admin/js/manage/manage.js?v=33496f1af7be7335871c61077156dd44 (::1) 1.38ms
+2017-09-05 17:06:11,718 - tornado.access - INFO - 200 GET /static/admin/js/manage/manageView.js?v=7203a454b6f3eb8a32f3781d4d540e71 (::1) 1.31ms
+2017-09-05 17:06:13,462 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.52ms
+2017-09-05 17:08:59,133 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1069.43ms
+2017-09-05 17:08:59,641 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.95ms
+2017-09-05 17:10:05,283 - tornado.access - INFO - 200 GET / (::1) 38.17ms
+2017-09-05 17:10:10,879 - tornado.access - INFO - 200 GET /t/ (::1) 84.59ms
+2017-09-05 17:10:10,933 - tornado.access - INFO - 200 GET /static/css/notification/style.css?v=a9968385feb4bc4abe79c6c7a677b730 (::1) 6.71ms
+2017-09-05 17:10:10,936 - tornado.access - INFO - 200 GET /static/js/notification/highlight.pack.js?v=6919a2f275556bf8cf32aa5ef329b749 (::1) 1.24ms
+2017-09-05 17:10:10,944 - tornado.access - INFO - 200 GET /static/js/notification/markdown-it-footnote.js?v=019d73c598f90c38f1a14c22bb689034 (::1) 1.69ms
+2017-09-05 17:10:10,952 - tornado.access - INFO - 200 GET /static/css/notification/synax-highlight.css?v=9dad3d32a0ba3438ef75c3cc7ce317b7 (::1) 3.43ms
+2017-09-05 17:10:13,149 - tornado.access - INFO - 200 POST /t/ (::1) 3.98ms
+2017-09-05 17:10:24,910 - tornado.access - INFO - 200 GET /admin/manage/ (::1) 1036.67ms
+2017-09-05 17:10:25,317 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.50ms
+2017-09-05 17:10:31,728 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 50.51ms
+2017-09-05 17:10:51,994 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 9.18ms
+2017-09-05 17:10:55,886 - tornado.access - INFO - 200 GET /admin/manage/configOption/add/ (::1) 62.71ms
+2017-09-05 17:11:19,077 - tornado.access - INFO - 302 POST /admin/manage/configOption/add/ (::1) 115.77ms
+2017-09-05 17:11:19,078 - tornado.application - ERROR - Uncaught exception POST /admin/manage/configOption/add/ (::1)
+HTTPServerRequest(protocol='http', host='localhost:8000', method='POST', uri='/admin/manage/configOption/add/', version='HTTP/1.1', remote_ip='::1', headers={'Origin': 'http://localhost:8000', 'Content-Length': '106', 'Accept-Language': 'zh-CN,zh;q=0.8,de;q=0.6', 'Accept-Encoding': 'gzip, deflate, br', 'Host': 'localhost:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Dnt': '1', 'Connection': 'keep-alive', 'Referer': 'http://localhost:8000/admin/manage/configOption/add/', 'Cache-Control': 'max-age=0', 'Cookie': '_accept_cookie=1; _xsrf=2|ede2875e|b22fdf270ae1027f6a47ba22876fc703|1504087331; username-localhost-8888="2|1:0|10:1504087331|23:username-localhost-8888|44:MmI5MTBjNGMwODk1NDQ5YWE3NTE0MDk3YTkxYTRiOGQ=|f5430d0d7b4e4a93bf248b4ce320d409d73f2c23724e58bf940cccd1d058e68e"; username="2|1:0|10:1504170872|8:username|8:a2lkb3po|6bc7375ee785433d240c0b4f1cbc884a341fc4efc5cc676f873ba612c3838f9e"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/kidozh/code/python/tornado/Tjango/contrib/admin/view.py", line 365, in post
+    self.render('contrib/admin/addData.html', **args)
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 723, in render
+    raise RuntimeError("Cannot render() after finish()")
+RuntimeError: Cannot render() after finish()
+2017-09-05 17:11:19,142 - tornado.access - INFO - 200 GET /admin/manage/configOption/show/ (::1) 24.27ms
+2017-09-05 17:11:19,857 - tornado.access - INFO - 200 POST /admin/manage/configOption/data/ (::1) 12.05ms
+2017-09-05 17:11:24,297 - tornado.access - INFO - 200 GET /t/ (::1) 7.41ms
+2017-09-05 17:11:24,592 - tornado.access - INFO - 200 POST /t/ (::1) 5.31ms
+2017-09-05 17:11:29,142 - tornado.access - INFO - 200 GET / (::1) 5.74ms
+2017-09-05 17:11:30,157 - tornado.access - INFO - 200 GET /about/ (::1) 68.89ms
+2017-09-05 17:11:30,190 - tornado.access - INFO - 200 GET /static/css/portal/portal.css?v=e4c11611a0ca4c3fa502cbecd158c2a9 (::1) 1.41ms
+2017-09-05 17:11:30,195 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.plugins.min.js?v=a32f049a77974f646743fe2a4055a47e (::1) 1.96ms
+2017-09-05 17:11:30,199 - tornado.access - INFO - 200 GET /static/js/portal/jquery.themepunch.revolution.min.js?v=e28129cf4df03d30010aef096fc3a3d8 (::1) 1.11ms
+2017-09-05 17:11:30,202 - tornado.access - INFO - 200 GET /static/js/portal/particle-config.js?v=def98e260e40544c5cccf92f782b6d08 (::1) 0.71ms
+2017-09-05 17:11:30,628 - tornado.access - INFO - 200 GET /static/image/portal/security.svg?v=21d1a26ff94e5fef48ebf4617dfc0d06 (::1) 1.53ms
+2017-09-05 17:11:30,635 - tornado.access - INFO - 200 GET /static/image/portal/open-source.svg?v=c50a347670996c94a711f29077916b02 (::1) 0.66ms
+2017-09-05 17:11:30,641 - tornado.access - INFO - 200 GET /static/image/portal/fast.svg?v=58250b31780867cba7cefc21b425e9c8 (::1) 0.74ms
+2017-09-05 17:11:30,648 - tornado.access - INFO - 200 GET /static/image/police-beian/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png?v=d0289dc0a46fc5b15b3363ffa78cf6c7 (::1) 0.87ms
+2017-09-05 17:11:31,215 - tornado.access - INFO - 200 GET /static/image/portal/flat_parallax.jpg (::1) 274.98ms
+2017-09-05 17:12:05,748 - tornado.access - INFO - 200 GET /doc/multi-server/ (::1) 34.08ms
+2017-09-05 17:12:13,286 - tornado.access - INFO - 200 GET / (::1) 4.15ms
+2017-09-05 17:12:17,457 - tornado.access - INFO - 304 GET /about/ (::1) 13.79ms
+2017-09-05 17:12:22,931 - tornado.access - INFO - 200 GET /doc/faq/ (::1) 17.52ms
+2017-09-05 17:14:18,982 - tornado.access - INFO - 200 GET /t/ (::1) 6.29ms
+2017-09-05 17:14:19,253 - tornado.access - INFO - 200 POST /t/ (::1) 4.91ms
+2017-09-05 17:14:22,071 - tornado.access - INFO - 200 GET / (::1) 4.87ms
+2017-09-05 17:15:10,931 - tornado.access - INFO - 200 GET /plag/ (::1) 96.13ms
+2017-09-05 17:15:10,959 - tornado.access - INFO - 200 GET /static/css/plag/style.css?v=519f467b6708ee1d0141d3d2ccb91ac6 (::1) 1.01ms
+2017-09-05 17:15:12,232 - tornado.access - INFO - 200 GET /static/image/plag/background/geometry2.png (::1) 27.36ms
+2017-09-05 17:15:12,245 - tornado.access - INFO - 200 GET /static/image/plag/background/seigaiha.png (::1) 11.68ms
+2017-09-05 17:24:28,363 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:24:33,992 - tornado.access - INFO - 302 GET /admin/login (::1) 25.35ms
+2017-09-05 17:24:34,014 - tornado.access - INFO - 200 GET /admin/login/ (::1) 15.09ms
+2017-09-05 17:24:38,388 - tornado.access - INFO - 200 GET /admin/ (::1) 1042.11ms
+2017-09-05 17:24:38,969 - tornado.access - INFO - 101 GET /admin/serverStatusWS (::1) 0.54ms
+2017-09-05 17:24:46,739 - tornado.access - INFO - 200 GET /admin/manage/admin/show/ (::1) 29.15ms
+2017-09-05 17:24:47,271 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 9.72ms
+2017-09-05 17:24:53,279 - tornado.access - INFO - 200 GET /admin/manage/log/show/ (::1) 26.12ms
+2017-09-05 17:24:53,819 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 9.89ms
+2017-09-05 17:26:31,818 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 10.99ms
+2017-09-05 17:26:32,599 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 16.79ms
+2017-09-05 17:43:55,733 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:43:58,023 - tornado.access - INFO - 304 GET /admin/manage/log/show/ (::1) 33.65ms
+2017-09-05 17:43:59,054 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 9.77ms
+2017-09-05 17:44:02,711 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 11.99ms
+2017-09-05 17:44:03,558 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 12.67ms
+2017-09-05 17:44:18,107 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:44:21,301 - tornado.access - INFO - 304 GET /admin/manage/log/show/ (::1) 56.26ms
+2017-09-05 17:44:22,219 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.83ms
+2017-09-05 17:44:24,370 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.37ms
+2017-09-05 17:44:25,964 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.40ms
+2017-09-05 17:44:28,748 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 12.58ms
+2017-09-05 17:44:30,432 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.59ms
+2017-09-05 17:44:31,453 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 9.94ms
+2017-09-05 17:44:36,821 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.04ms
+2017-09-05 17:44:37,311 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 11.69ms
+2017-09-05 17:44:49,885 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:44:52,221 - tornado.access - INFO - 304 GET /admin/manage/log/show/ (::1) 54.83ms
+2017-09-05 17:44:53,009 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 10.75ms
+2017-09-05 17:44:54,087 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 11.96ms
+2017-09-05 17:44:54,943 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 16.83ms
+2017-09-05 17:44:55,416 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 14.72ms
+2017-09-05 17:44:56,586 - tornado.access - INFO - 304 GET /admin/manage/log/show/ (::1) 18.78ms
+2017-09-05 17:44:56,988 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 12.06ms
+2017-09-05 17:44:57,863 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.19ms
+2017-09-05 17:45:46,301 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:45:48,886 - tornado.access - INFO - 304 GET /admin/manage/log/show/ (::1) 52.87ms
+2017-09-05 17:45:49,644 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 8.91ms
+2017-09-05 17:45:52,892 - tornado.access - INFO - 304 GET /admin/manage/admin/show/ (::1) 19.56ms
+2017-09-05 17:45:53,212 - tornado.access - INFO - 200 POST /admin/manage/admin/data/ (::1) 11.34ms
+2017-09-05 17:45:57,609 - tornado.access - INFO - 304 GET /admin/manage/log/show/ (::1) 20.71ms
+2017-09-05 17:45:57,976 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 10.67ms
+2017-09-05 17:45:59,622 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 17.06ms
+2017-09-05 17:46:00,278 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 15.19ms
+2017-09-05 17:46:29,802 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:46:48,497 - tornado.access - INFO - 200 GET / (::1) 43.33ms
+2017-09-05 17:46:50,626 - tornado.access - INFO - 200 GET /doc/faq/ (::1) 21.39ms
+2017-09-05 17:46:53,460 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 16.09ms
+2017-09-05 17:46:53,986 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.10ms
+2017-09-05 17:48:05,859 - tornado.application - WARNING - Multiple handlers named contrib.admin.view.adminManageHandler; replacing previous value
+2017-09-05 17:48:16,720 - tornado.access - INFO - 200 GET /history/ (::1) 77.99ms
+2017-09-05 17:48:22,422 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 11.10ms
+2017-09-05 17:48:22,870 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 11.46ms
+2017-09-05 17:48:32,674 - tornado.access - INFO - 304 GET /plag/ (::1) 17.82ms
+2017-09-05 17:48:35,440 - tornado.access - INFO - 200 GET /plag/file/ (::1) 79.87ms
+2017-09-05 17:55:12,208 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 13.25ms
+2017-09-05 17:55:12,685 - tornado.access - INFO - 200 POST /admin/manage/log/data/ (::1) 17.97ms

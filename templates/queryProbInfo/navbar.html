@@ -3,7 +3,7 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="{{ reverse_url('acmDetectInfo.view.queryRequestHandler') }}">NWPUACM</a>
+    <a class="navbar-brand" href="{{ reverse_url('acmDetectInfo.view.queryRequestHandler') }}">{% module get_option('site_name') %}</a>
 
     <div class="collapse navbar-collapse " id="navbarCollapse">
 
@@ -33,6 +33,10 @@
 
             <li class=' nav-item'>
                 <a href="{{ reverse_url('codePlag.view.plagPortalRequestHandler') }}"  class="nav-link">代码查重</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ reverse_url('notification.view.indexPageRequestHandler') }}" class="nav-link">通知</a>
             </li>
 
             <!--<li class="nav-item active">
